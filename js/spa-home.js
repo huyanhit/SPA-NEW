@@ -148,4 +148,25 @@ jQuery(document).ready(function($){
         */
         $(".tab-cont-wrap").eq(nIn).addClass("now").siblings(".tab-cont-wrap").removeClass("now");
     });
-}); 
+
+	//huy js
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $("#menu-scroll").addClass("active");
+        }else{
+            $("#menu-scroll").removeClass("active");
+        }
+    })
+
+    var offset = $(".float-nav-wrap").offset();
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >  offset.top) {
+            $(".float-nav-wrap").addClass("active");
+        }
+        else if($(this).scrollTop() <  offset.top){
+            $(".float-nav-wrap").removeClass("active");
+        }
+    })
+
+});

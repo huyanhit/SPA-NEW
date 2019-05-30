@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css"  >
+
+      <style>
+
+      </style>
+
   </head>
   <body>
     <!-- header wap -->
@@ -51,6 +56,42 @@
           </nav>
         </div>
     </div>
+
+    <div class="right-fixed-nav">
+        <div class="data-cont">
+            <a href="javascript:;" onclick="showAlertLogin()" class="data-head"><img src="https://www.yuemei.com/images/weibo/noavatar1_50_50.jpg" alt=""></a>
+            <a href="javascript:;" onclick="showAlertLogin()" class="my-order"><i class="icon"></i><div><p>我的订单</p></div></a>
+            <a href="javascript:;"> <span class="icon"></span><p>我的消息</p></a>
+            <a href="javascript:;" onclick="showAlertLogin()" class="hover-list hover-juan"><span class="icon"></span><p>我的优惠券</p></a>
+            <a href="javascript:;" _ymaname="chat_hospital" _ymapos="tao_list_right" class="hover-list hover-service chat-button _yma"><span class="icon"></span><p>在线客服</p></a>
+            <a href="javascript:;" class="hover-list hover-phone"><span class="icon"></span><p>悦美客服 400-056-7118</p></a>
+            <a href="https://www.yuemei.com/app/kuaiwen.html" class="hover-list hover-app"><span class="icon"></span><p>下载APP</p></a>
+        </div>
+        <div class="go-top">
+            <div class="icon"></div>
+        </div>
+    </div>
+
+    <!-- menu scroll -->
+    <div id="menu-scroll">
+        <div class="menu-scroll-top">
+            <div class="fixed-main">
+                <div class="logo">
+                    <a href="#" ></a>
+                </div>
+                <div class="form_search">
+                    <form>
+                        <button>Search</button>
+
+                        <input id="searchWd" class="search" data-type="tao" type="text" msg="" value="">
+                    </form>
+                </div>
+                <div class="app-link" >App Link</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end menu scroll -->
     <div class="container padding0">
       <div class="row header-main">
             <div class="col-md-4">
@@ -642,27 +683,27 @@
           <!-- spa serrvie -->
           <div class="fixBox">
             <div class="float-nav-wrap">
-            <div>
-            <div>
-              <span>
-                <a data-cateid="0" href="javascript:;" class="now">Mục đích </a>
-                <a data-cateid="1" href="javascript:;" class="">hình </a>
-                <a data-cateid="78" href="javascript:;" class="">mắt </a>
-                <a data-cateid="134" href="javascript:;" >mũi </a>
-                <a data-cateid="292" href="javascript:;" class="">đường viền trên khuôn mặt </a>
-                <a data-cateid="392" href="javascript:;" class="">nhăn lão hóa </a>
-                <a data-cateid="538" href="javascript:;" class="">chăm sóc da </a>
-                <a data-cateid="591" href="javascript:;">ngực </a>
-                <a data-cateid="640" href="javascript:;">thân hình </a>
-                <a data-cateid="997" href="javascript:;">răng thẩm mỹ </a>
-                <a data-cateid="1085" href="javascript:;">cấy tóc </a>
-                <a data-cateid="10477" href="javascript:;">tiêm mỹ phẩm </a>
-                <a data-cateid="8971" href="javascript:;">giữa kim </a>
-                <a data-cateid="8920" href="javascript:;">tự thân mỡ </a>
-                <a data-cateid="8878" href="javascript:;">hút mỡ </a>
-                <a data-cateid="10483" href="javascript:;">phẫu thuật thẩm mỹ riêng</a>
-              </span>
-            </div>
+            <div class="float-nav-wrap-contain">
+                <div>
+                  <span>
+                    <a data-cateid="0" href="javascript:;" class="now">Mục đích </a>
+                    <a data-cateid="1" href="javascript:;" class="">hình </a>
+                    <a data-cateid="78" href="javascript:;" class="">mắt </a>
+                    <a data-cateid="134" href="javascript:;" >mũi </a>
+                    <a data-cateid="292" href="javascript:;" class="">đường viền trên khuôn mặt </a>
+                    <a data-cateid="392" href="javascript:;" class="">nhăn lão hóa </a>
+                    <a data-cateid="538" href="javascript:;" class="">chăm sóc da </a>
+                    <a data-cateid="591" href="javascript:;">ngực </a>
+                    <a data-cateid="640" href="javascript:;">thân hình </a>
+                    <a data-cateid="997" href="javascript:;">răng thẩm mỹ </a>
+                    <a data-cateid="1085" href="javascript:;">cấy tóc </a>
+                    <a data-cateid="10477" href="javascript:;">tiêm mỹ phẩm </a>
+                    <a data-cateid="8971" href="javascript:;">giữa kim </a>
+                    <a data-cateid="8920" href="javascript:;">tự thân mỡ </a>
+                    <a data-cateid="8878" href="javascript:;">hút mỡ </a>
+                    <a data-cateid="10483" href="javascript:;">phẫu thuật thẩm mỹ riêng</a>
+                  </span>
+                </div>
             </div>
             <span class="prev" style="display: none;"></span>
             <span class="next" style="display: block;"></span>
@@ -1026,7 +1067,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="http://code.jquery.com/jquery-1.9.1.js" ></script>   
+    <script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/spa-home.js" charset="utf-8"></script>
