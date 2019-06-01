@@ -612,49 +612,26 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     position: relative;
     z-index: 10;
 }
-.float-nav-wrap div {
+.float-nav-wrap{
+    max-width: 1200px;
+}
+.float-nav-wrap .item {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    height: 50px;
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.float-nav-wrap .owl-item a{
+    display: inline-block;
+    line-height: 25px;
     white-space: nowrap;
-}
-.float-nav-wrap>div {
-    position: relative;
-    overflow-x: hidden;
-    width: 953px;
-}
-.float-nav-wrap div a {
-    display: inline-block;
-    padding-right: 41px;
-    font-size: 20px;
-    line-height: 28px;
-    color: #333;
-}
-.float-nav-wrap div a {
-    display: inline-block;
-    padding-right: 41px;
-    font-size: 20px;
-    line-height: 28px;
-    color: #333;
-    text-decoration: none;
-}
-.float-nav-wrap div a.now {
-    color: #ff5370;
-}
-.float-nav-wrap .prev, .float-nav-wrap .next {
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    background: url(../images/yuemei-home.png?v=1) no-repeat;
-}
-.float-nav-wrap .prev {
-    left: 0;
-    display: none;
-    background-position: -108px -141px;
-}
-.float-nav-wrap .next {
-    right: 0;
-    background-position: -143px -141px;
+    width: 160px;
+    overflow: hidden;
+    text-overflow:ellipsis;
 }
 
 /* content list service spa */
@@ -1133,24 +1110,13 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 /*<-- Menu right -->*/
-
 .right-fixed-nav{ position: fixed; z-index: 300; top: 0; right: 0; width: 35px; height: 100%; background: #000; }
 .right-fixed-nav .data-head{ margin: 0 auto; }
 .right-fixed-nav .data-head, .right-fixed-nav .data-head img{ display: block; width: 25px; height: 25px; border-radius: 50%; }
 .right-fixed-nav .my-order{ position: relative; display: block; height: 126px; margin-top: 12px; padding: 0 5px; }
 .right-fixed-nav .my-order .icon{ position: absolute; top: 18px; left: 50%; display: block; width: 18px; height: 19px; margin-left: -9px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -74px; }
 .right-fixed-nav .my-order div{ position: relative; top: -1px; padding: 19px 0; border-top: 1px solid #444; border-bottom: 1px solid #444; }
-.right-fixed-nav .my-order p{ position: relative;
-    position: relative;
-    width: 30px;
-    padding: 30px 0 18px 0;
-    font-size: 10px;
-    line-height: 20px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-left: -2px;
-}
+.right-fixed-nav .my-order p{ position: relative;position: relative;width: 30px;padding: 30px 0 18px 0;font-size: 10px;line-height: 20px;text-align: center;color: #fff;text-transform: uppercase;margin-left: -2px;}
 .right-fixed-nav .my-order:hover{ background: #ff5370; }
 .right-fixed-nav .hover-list{ position: relative; display: block; height: 35px; margin-top: 9px; line-height: 35px; }
 .right-fixed-nav .hover-list .icon{ position: absolute; z-index: 1; top: 50%; left: 50%; display: block; width: 20px; height: 20px; margin: -10px 0 0 -10px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat; }
@@ -1172,23 +1138,22 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .right-fixed-nav .go-top .icon{ position: absolute; top: 50%; left: 50%; display: block; width: 22px; height: 18px; margin: -9px 0 0 -11px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -50px; }
 
 /*<-- Popup menu -->*/
-
-.nav-tabs {
+.modal .nav-tabs {
     padding-bottom: 8px;
     border-bottom: 1px #000 solid;
 }
 
-.nav-tabs li a{
+.modal .nav-tabs li a{
     padding-right: 15px;
     text-decoration: none;
     color: #ff5370;
     width: 50%;
 }
-.nav-tabs li{
+.modal .nav-tabs li{
     width: 50%;
     position: relative;
 }
-.nav-tabs li a.active:before{
+.modal .nav-tabs li a.active:before{
     content: "";
     height: 3px;
     position: absolute;
@@ -1197,11 +1162,11 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     top: 30px;
 }
 
-.modal-dialog{
+.modal .modal-dialog{
     width: 360px;
 }
 
-.login-input-box input[type="text"]{
+.modal .login-input-box input[type="text"]{
     width: 200px;
     border: 1px #ff5370 solid;
     height: 40px;
@@ -1209,7 +1174,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     margin-top: 13px;
 }
 
-.login-input-box input[type="button"]{
+.modal .login-input-box input[type="button"]{
     height: 40px;
     background: #eee;
     padding: 5px;
@@ -1219,7 +1184,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     border: 1px #000 solid;
 }
 
-#sms-ma,#account,#account-pwd1 {
+.modal #sms-ma,#account,#account-pwd1 {
     height: 40px;
     border: 1px #ff5370 solid;
     height: 40px;
@@ -1228,13 +1193,13 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     width: 324px;
 }
 
-.sms-bot{
+.modal .sms-bot{
     font-size: 12px;
     padding-top: 10px;
     color: #ccc;
 }
 
-.tel-login-btn, .login-btn{
+.modal .tel-login-btn, .login-btn{
     height: 40px;
     border: none;
     padding: 5px;
@@ -1246,43 +1211,171 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     color: #fff;
 }
 
-.remember-ls {
+.modal .remember-ls {
     float: left;
 }
 
-.forget {
+.modal .forget {
     float: right;
 }
 
-.remember-box{
+.modal .remember-box{
     padding-top:  10px;
 }
 
-.other-login{
+.modal .other-login{
     clear: both;
     text-align: center;
     padding-top: 10px;
     color: #ccc;
 }
-.other-lab{
+.modal .other-lab{
     text-align: center;
     padding: 15px;
 }
-.other-lab a{
+.modal .other-lab a{
     display: inline-block;width: 37px;
     height: 37px;
     margin: 0 22px;
     background: url(../images/alert-login.png) no-repeat;
 }
-.other-lab a.sina{
+.modal .other-lab a.sina{
     background-position: 0 -31px;
 }
-.other-lab a.qq{
+.modal .other-lab a.qq{
     background-position: -47px -77px;
 }
-.other-lab a.weixin{
+.modal .other-lab a.weixin{
     background-position: -96px -31px;
 }
-.register-test{
+.modal .register-test{
     text-align: center ;
 }
+
+/*Hiden element on mobile*/
+@media only screen and (max-width: 1024px) {
+    .header-main, #menu-scroll, .header-main, .menu-left, .spa-main,
+    .floor-tit, .buy-floor-wrap, .right-fixed-nav,
+    .footer-app-wrap, .footer-wrap, .footer-app-wrap, .banner-scroll{display: none !important;}
+}
+
+/*Mobile UI*/
+.mobile-header{
+    position: relative;
+    z-index: 5;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 1px solid #ff5370;
+    background: #ff5370;
+    display: inline-block;
+}
+
+.mobile-header .icon-menu{
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    top: 0px;
+    right: -19px;
+    background: url(../images/mCommon-logo.png) no-repeat;
+    background-size: 50px auto;
+    background-position: right -37px;
+}
+
+.mobile-header .contry{
+    color: #fff;
+    margin-top: 2px;
+    display: inline-block;
+    position: relative;
+}
+
+.mobile-header .logo{
+    display: block;
+    width: 41px;
+    height: 30px;
+    margin: 0 auto;
+    background: url(../images/mCommon-logo.png) no-repeat;
+    background-size: 50px auto;
+    background-position: 0 4px;
+}
+
+.mobile-header .menu{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 35px;
+    height: 42px;
+    background: url(../images/mCommon-logo.png) no-repeat;
+    background-size: 50px auto;
+    background-position: right -110px;
+}
+
+.mobile-header .top-box>img {
+    position: absolute;
+    top: 20%;
+    left: 23px;
+    width: 15px;
+    height: 15px;
+    z-index: 3;
+}
+
+.mobile-header .search{
+    margin-top: 10px;
+}
+
+.mobile-header .top-box .search-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 0;
+    height: 25px;
+    line-height: 26px;
+    color: #999;
+    border: none;
+    outline: none;
+    background: #F1F1F1;
+    z-index: 1;
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    border-radius: 34px;
+    padding-left: 39px;
+}
+
+.navList{ overflow: hidden; width: 100%; margin-bottom: 10px; padding-bottom: 12px; background: #fff; }
+.navList ul{ padding-top: 6px; }
+.navList li{     float: left;
+    width: 25%;
+    height: 67px;
+    padding: 0px 0 0;
+    text-align: center;
+    margin-top: 0px;
+    margin-top: 9px; }
+.navList li a{ padding-top: 46px;
+    font-size: 10px;
+    text-align: center;
+    color: #666;
+    line-height: 10px;
+    width: 70px;
+    display: inline-block;}
+.navList li .ask{ background: url(../images/ask-v2.png) center 0 no-repeat; background-size: 38px 38px; }
+.navList li .dairy{ background: url(../images/dairy-v1.png) center 0 no-repeat; background-size: 42px 42px; }
+.navList li .doc{ background: url(../images/doc-v1.png) center 0 no-repeat; background-size: 42px 42px; }
+.navList li .hos{ background: url(../images/hos-v2.png) center 0 no-repeat; background-size: 38px 38px; }
+.navList li .haoyi{ background: url(../images/haoyi.png) center 0 no-repeat; background-size: 38px 38px; }
+.navList li .limit-sale{ background: url(../images/haoyi.png) center 0 no-repeat; background-size: 38px 38px; }
+.navList li .tao{ background: url(../images/tao-v1.png) center 0 no-repeat; background-size: 42px 42px; }
+.navList li .items{ background: url(../images/items-v1.png) center 0 no-repeat; background-size: 42px 42px; }
+
+.navList li .note{ background: url(../images/note.png) center 0 no-repeat; background-size: 42px 42px; }
+
+.flex{display: -webkit-flex; display: flex;}
+.flex a{ flex:1; }
+.flex a img{ width: 100%; display: block}
+.need-bd .flex a{ border-right: 1px solid #efefef; box-sizing: border-box; }
+.need-bd .flex a.no-border{ border: none; }
+.need-bd .flex a:last-child{ border: none}
+.hot-huodong{ margin-top: 10px;}
+.guanfang-icon{ position: relative; top:1px; left: 5px; display: inline-block; width: 25px; height: 13px; background: url("../images/index-v2.png") 0 -35px no-repeat; background-size: 50px auto;}
