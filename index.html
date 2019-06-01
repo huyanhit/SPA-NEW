@@ -16,10 +16,48 @@
 
   </head>
   <body>
-    <!-- header wap -->
-    <div class="head-wrap">
+
+  <!-- Popup -->
+  <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Login | Quick Registration</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <ul class="nav nav-tabs">
+                      <li class="active"><a data-toggle="tab" href="#registration">SMS Registration</a></li>
+                      <li><a data-toggle="tab" href="#login">Login </a></li>
+                  </ul>
+                  <div class="tab-content">
+                      <div id="registration" class="tab-pane active">
+                          <div class="nav-cont">
+                              <div class="login-input-box">
+                                    <input type="text" id="sms-tel" class="sms-input samll-input input-error" init="" value="Phone Number">
+                                    <input type="button" class="get-tel-code down-time" value="SMS code" disabled="disabled">
+                              </div>
+                              <input type="text" id="sms-ma" class="sms-input input-error" value="">
+                              <input type="button" class="tel-login-btn" value="log in">
+                              <div class="sms-bot">Unregistered will automatically create a account</div>
+                          </div>
+                      </div>
+                      <div id="login" class="tab-pane">
+                          <h3>Login</h3>
+                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- header wap -->
+  <div class="head-wrap">
         <div class="container">
-          <nav class="navbar navbar-expand-lg >
+          <nav class="navbar navbar-expand-lg" >
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -55,44 +93,47 @@
             </div>
           </nav>
         </div>
-    </div>
+  </div>
 
-    <div class="right-fixed-nav">
-        <div class="data-cont">
-            <a href="javascript:;" onclick="showAlertLogin()" class="data-head"><img src="https://www.yuemei.com/images/weibo/noavatar1_50_50.jpg" alt=""></a>
-            <a href="javascript:;" onclick="showAlertLogin()" class="my-order"><i class="icon"></i><div><p>我的订单</p></div></a>
-            <a href="javascript:;"> <span class="icon"></span><p>我的消息</p></a>
-            <a href="javascript:;" onclick="showAlertLogin()" class="hover-list hover-juan"><span class="icon"></span><p>我的优惠券</p></a>
-            <a href="javascript:;" _ymaname="chat_hospital" _ymapos="tao_list_right" class="hover-list hover-service chat-button _yma"><span class="icon"></span><p>在线客服</p></a>
-            <a href="javascript:;" class="hover-list hover-phone"><span class="icon"></span><p>悦美客服 400-056-7118</p></a>
-            <a href="https://www.yuemei.com/app/kuaiwen.html" class="hover-list hover-app"><span class="icon"></span><p>下载APP</p></a>
-        </div>
-        <div class="go-top">
-            <div class="icon"></div>
-        </div>
-    </div>
+  <!-- menu right -->
+  <div class="right-fixed-nav">
+      <div class="data-cont">
+          <div class="data-head"><img src="https://www.yuemei.com/images/weibo/noavatar1_50_50.jpg" alt=""></div>
+          <div lass="my-order"><i class="icon"></i><div><p>我的订单</p></div></div>
+          <div> <span class="icon"></span><p>我的消息</p></div>
+          <div class="hover-list hover-juan"><span class="login_icon icon"></span><p>我的优惠券</p></div>
+          <div _ymaname="chat_hospital" _ymapos="tao_list_right" class="hover-list hover-service chat-button _yma"><span class="icon"></span><p>在线客服</p></div>
+          <div class="hover-list hover-phone"><span class="icon"></span><p>悦美客服 400-056-7118</p></div>
+          <div class="hover-list hover-app"><span class="icon"></span><p>下载APP</p></div>
+      </div>
+      <div class="go-top">
+          <div class="icon"></div>
+      </div>
+  </div>
 
-    <!-- menu scroll -->
-    <div id="menu-scroll" style="display: none;">
-        <div class="menu-scroll-top">
-            <div class="fixed-main">
-                <div class="logo">
-                    <a href="#" ></a>
-                </div>
-                <div class="form_search">
-                    <form>
-                        <button>Search</button>
+  <!-- menu scroll -->
+  <div id="menu-scroll">
+      <div class="menu-scroll-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3 logo padding0">
+                      <a href="#" ></a>
+                  </div>
+                  <div class="col-md-6 form_search">
+                      <form>
+                          <button>Search</button>
 
-                        <input id="searchWd" class="search" data-type="tao" type="text" msg="" value="">
-                    </form>
-                </div>
-                <div class="app-link" >App Link</div>
-            </div>
-        </div>
-    </div>
+                          <input id="searchWd" class="search" data-type="tao" type="text" msg="" value="">
+                      </form>
+                  </div>
+                  <div class="col-md-3 app-link padding0">App Link</div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-    <!-- end menu scroll -->
-    <div class="container padding0">
+  <!-- end menu scroll -->
+  <div class="container padding0">
       <div class="row header-main">
             <div class="col-md-4">
               <a class=logo></a>

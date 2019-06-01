@@ -1009,10 +1009,6 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     height: 51px;
 }
 
-.logo{
-    width: 20%;
-    float: left;
-}
 .logo a{
     display: block;
     float: left;
@@ -1024,7 +1020,6 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 .form_search {
-    width: 50%;
     display: inline-block;
 }
 
@@ -1053,7 +1048,6 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     margin-top: 7px;
 }
 .app-link{
-    width: 30%;
     float: right;
     font-size: 18px;
     line-height: 39px;
@@ -1138,6 +1132,8 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     }
 }
 
+/*<-- Menu right -->*/
+
 .right-fixed-nav{ position: fixed; z-index: 300; top: 0; right: 0; width: 35px; height: 100%; background: #000; }
 .right-fixed-nav .data-head{ margin: 0 auto; }
 .right-fixed-nav .data-head, .right-fixed-nav .data-head img{ display: block; width: 25px; height: 25px; border-radius: 50%; }
@@ -1164,3 +1160,60 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .right-fixed-nav .go-top{ position: absolute; right: 0; bottom: 0; display: block; width: 35px; height: 39px; cursor: pointer; }
 .right-fixed-nav .go-top:hover{ background: #ff5370; }
 .right-fixed-nav .go-top .icon{ position: absolute; top: 50%; left: 50%; display: block; width: 22px; height: 18px; margin: -9px 0 0 -11px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -50px; }
+
+/*<-- Popup menu -->*/
+
+.nav-tabs {
+    padding-bottom: 8px;
+    border-bottom: 1px #ff5370 solid;
+}
+
+.nav-tabs li a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: #ff5370;
+}
+
+.modal-dialog{
+    width: 360px;
+}
+
+.login-input-box input[type="text"]{
+    width: 200px;
+    border: 1px #ff5370 solid;
+    height: 40px;
+    padding: 9px 5px;
+    margin-top: 13px;
+}
+
+.login-input-box input[type="button"]{
+    height: 40px;
+    background: #eee;
+    padding: 5px;
+    top: -1px;
+    position: relative;
+    width: 120px;
+    border: 1px #000 solid;
+}
+
+.sms-input{
+    height: 40px;
+    border: 1px #ff5370 solid;
+    height: 40px;
+    padding: 9px 5px;
+    margin-top: 13px;
+    width: 324px;
+}
+
+.tel-login-btn{
+    height: 40px;
+    border: none;
+    padding: 5px;
+    position: relative;
+    width: 324px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background: #ff5370;
+    color: #fff;
+}
+

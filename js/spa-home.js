@@ -179,4 +179,9 @@ jQuery(document).ready(function($){
     $(window).scroll(function() {
         menuScroll();
     })
+
+	//popup
+    $('.login_icon').on('click', function () {
+        $('.modal').modal('show')
+    })
 });
