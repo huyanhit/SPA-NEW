@@ -996,10 +996,9 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 #menu-scroll{
-    display: none;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 200;
     background: #fff;
     top: -120px;
     animation: slidedown 1s;
@@ -1010,22 +1009,17 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     height: 51px;
 }
 
-.logo{
-    width: 20%;
-    float: left;
-}
 .logo a{
     display: block;
     float: left;
     width: 100%;
     height: 39px;
-    background: url(https://www.yuemei.com/front/common/images/yuemei-logo.png?ver=20180308)
+    background: url(../images/yuemei-logo.png)
     no-repeat 0 -376px;
     margin-top: 5px;
 }
 
 .form_search {
-    width: 50%;
     display: inline-block;
 }
 
@@ -1054,7 +1048,6 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     margin-top: 7px;
 }
 .app-link{
-    width: 30%;
     float: right;
     font-size: 18px;
     line-height: 39px;
@@ -1088,25 +1081,36 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     top: 48px;
     z-index: 2000;
     background: #fff;
+    animation: slideup2 0.5s;
 }
-.float-nav-wrap > div{
-    margin: 0 20px;
-}
+
 .float-nav-wrap.active a{
     padding: 16px;
-    animation: slideup2 1s;
 }
+
+.float-nav-wrap.active:before{
+    left: -37%;
+    content: '';
+    position: absolute;
+    background: #fff;
+    top: -50px;
+    border-bottom: 1px #ccc solid;
+    height: 110px;
+    width: 200%;
+}
+
 
 .float-nav-wrap.active .prev, .float-nav-wrap.active .next{
     margin-top: 17px;
 }
 
-@keyframes slideup2{
+
+@keyframes slidedown {
     0% {
-        top:-120px;
+        top: 0;
     }
     100% {
-        top: 0;
+        top:-120px;
     }
 }
 
@@ -1117,4 +1121,168 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     100% {
         top: 0;
     }
+}
+
+@keyframes slideup2 {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 48px;
+    }
+}
+
+/*<-- Menu right -->*/
+
+.right-fixed-nav{ position: fixed; z-index: 300; top: 0; right: 0; width: 35px; height: 100%; background: #000; }
+.right-fixed-nav .data-head{ margin: 0 auto; }
+.right-fixed-nav .data-head, .right-fixed-nav .data-head img{ display: block; width: 25px; height: 25px; border-radius: 50%; }
+.right-fixed-nav .my-order{ position: relative; display: block; height: 126px; margin-top: 12px; padding: 0 5px; }
+.right-fixed-nav .my-order .icon{ position: absolute; top: 18px; left: 50%; display: block; width: 18px; height: 19px; margin-left: -9px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -74px; }
+.right-fixed-nav .my-order div{ position: relative; top: -1px; padding: 19px 0; border-top: 1px solid #444; border-bottom: 1px solid #444; }
+.right-fixed-nav .my-order p{ position: relative;
+    position: relative;
+    width: 30px;
+    padding: 30px 0 18px 0;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: -2px;
+}
+.right-fixed-nav .my-order:hover{ background: #ff5370; }
+.right-fixed-nav .hover-list{ position: relative; display: block; height: 35px; margin-top: 9px; line-height: 35px; }
+.right-fixed-nav .hover-list .icon{ position: absolute; z-index: 1; top: 50%; left: 50%; display: block; width: 20px; height: 20px; margin: -10px 0 0 -10px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat; }
+.right-fixed-nav .hover-list p{ position: absolute; z-index: 0; top: 0; right: -250px; height: 35px; padding: 0 42px 0 7px; font-size: 12px; line-height: 35px; transition: .2s; white-space: nowrap; color: #ff5370; border-radius: 4px 0 0 4px; background: #ff5370; }
+.right-fixed-nav .hospital-zx p{ background: #59abff; }
+.right-fixed-nav .hospital-phone p{ background: #59abff; }
+.right-fixed-nav .doctor-zx p{ background: #fd875b; }
+.right-fixed-nav .doctor-phone p{ background: #fd875b; }
+.right-fixed-nav .hover-list:hover p{ right: 0; color: #fff; }
+.right-fixed-nav .hover-news .icon{ background-position: -449px -28px; }
+.right-fixed-nav .hover-juan .icon{ background-position: -398px -103px; }
+.right-fixed-nav .hover-service .icon{ background-position: -477px 0; }
+.right-fixed-nav .hover-online-zx .icon{ background-position: -477px 0; }
+.right-fixed-nav .hover-phone .icon{ background-position: -449px 1px; }
+.right-fixed-nav .hover-app .icon{ background-position: -424px -28px; }
+.right-fixed-nav .data-cont{ position: absolute; top: 50%; width: 35px; margin-top: -190px; }
+.right-fixed-nav .go-top{ position: absolute; right: 0; bottom: 0; display: block; width: 35px; height: 39px; cursor: pointer; }
+.right-fixed-nav .go-top:hover{ background: #ff5370; }
+.right-fixed-nav .go-top .icon{ position: absolute; top: 50%; left: 50%; display: block; width: 22px; height: 18px; margin: -9px 0 0 -11px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -50px; }
+
+/*<-- Popup menu -->*/
+
+.nav-tabs {
+    padding-bottom: 8px;
+    border-bottom: 1px #000 solid;
+}
+
+.nav-tabs li a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: #ff5370;
+    width: 50%;
+}
+.nav-tabs li{
+    width: 50%;
+    position: relative;
+}
+.nav-tabs li a.active:before{
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    background: #ff5370;
+    top: 30px;
+}
+
+.modal-dialog{
+    width: 360px;
+}
+
+.login-input-box input[type="text"]{
+    width: 200px;
+    border: 1px #ff5370 solid;
+    height: 40px;
+    padding: 9px 5px;
+    margin-top: 13px;
+}
+
+.login-input-box input[type="button"]{
+    height: 40px;
+    background: #eee;
+    padding: 5px;
+    top: -1px;
+    position: relative;
+    width: 120px;
+    border: 1px #000 solid;
+}
+
+#sms-ma,#account,#account-pwd1 {
+    height: 40px;
+    border: 1px #ff5370 solid;
+    height: 40px;
+    padding: 9px 5px;
+    margin-top: 13px;
+    width: 324px;
+}
+
+.sms-bot{
+    font-size: 12px;
+    padding-top: 10px;
+    color: #ccc;
+}
+
+.tel-login-btn, .login-btn{
+    height: 40px;
+    border: none;
+    padding: 5px;
+    position: relative;
+    width: 324px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background: #ff5370;
+    color: #fff;
+}
+
+.remember-ls {
+    float: left;
+}
+
+.forget {
+    float: right;
+}
+
+.remember-box{
+    padding-top:  10px;
+}
+
+.other-login{
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    color: #ccc;
+}
+.other-lab{
+    text-align: center;
+    padding: 15px;
+}
+.other-lab a{
+    display: inline-block;width: 37px;
+    height: 37px;
+    margin: 0 22px;
+    background: url(../images/alert-login.png) no-repeat;
+}
+.other-lab a.sina{
+    background-position: 0 -31px;
+}
+.other-lab a.qq{
+    background-position: -47px -77px;
+}
+.other-lab a.weixin{
+    background-position: -96px -31px;
+}
+.register-test{
+    text-align: center ;
 }

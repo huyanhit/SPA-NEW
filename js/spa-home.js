@@ -150,23 +150,56 @@ jQuery(document).ready(function($){
     });
 
 	//huy js
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $("#menu-scroll").addClass("active");
-        }else{
-            $("#menu-scroll").removeClass("active");
-        }
-    })
-
     var offset = $(".float-nav-wrap").offset();
-    $(window).scroll(function() {
+
+    function menuScrollBottom() {
         if ($(this).scrollTop() >  offset.top) {
             $(".float-nav-wrap").addClass("active");
         }
         else if($(this).scrollTop() <  offset.top){
             $(".float-nav-wrap").removeClass("active");
         }
+    }
+
+    menuScrollBottom();
+    $(window).scroll(function() {
+        menuScrollBottom();
+    });
+
+	function menuScroll() {
+        if ($(this).scrollTop() > 100) {
+            $("#menu-scroll").attr("style", "display: block");
+            $("#menu-scroll").addClass("active");
+        }else{
+            $("#menu-scroll").removeClass("active");
+        }
+    }
+
+    menuScroll();
+    $(window).scroll(function() {
+        menuScroll();
     })
 
+	//popup
+    $('.message_click').on('click', function () {
+        $('.modal').modal('show')
+    });
+
+    $('.coupon_click').on('click', function () {
+        $('.modal').modal('show')
+    });
+
+    $('.data-head').on('click', function () {
+        $('.modal').modal('show')
+    });
+
+    $('.my-order').on('click', function () {
+        $('.modal').modal('show')
+    });
+
+    //scroll top
+	$(".go-top").on("click",function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+	});
 });
