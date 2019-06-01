@@ -189,6 +189,14 @@ jQuery(document).ready(function($){
         $('.modal').modal('show')
     });
 
+    $('.data-head').on('click', function () {
+        $('.modal').modal('show')
+    });
+
+    $('.my-order').on('click', function () {
+        $('.modal').modal('show')
+    });
+
     //scroll top
 	$(".go-top").on("click",function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
