@@ -1259,6 +1259,10 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     .footer-app-wrap, .footer-wrap, .footer-app-wrap, .banner-scroll{display: none !important;}
 }
 
+@media only screen and (min-width: 1024px) {
+    .mobile-header, #search, .icon-link, .hot-huodong{display: none !important;}
+}
+
 /*Mobile UI*/
 .mobile-header{
     position: relative;
