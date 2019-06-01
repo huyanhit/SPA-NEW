@@ -181,7 +181,17 @@ jQuery(document).ready(function($){
     })
 
 	//popup
-    $('.login_icon').on('click', function () {
+    $('.message_click').on('click', function () {
         $('.modal').modal('show')
-    })
+    });
+
+    $('.coupon_click').on('click', function () {
+        $('.modal').modal('show')
+    });
+
+    //scroll top
+	$(".go-top").on("click",function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+	});
 });

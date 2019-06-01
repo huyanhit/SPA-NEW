@@ -29,12 +29,12 @@
               </div>
               <div class="modal-body">
                   <ul class="nav nav-tabs">
-                      <li class="active"><a data-toggle="tab" href="#registration">SMS Registration</a></li>
+                      <li class="active"><a data-toggle="tab" href="#registration" class="active">SMS Registration</a></li>
                       <li><a data-toggle="tab" href="#login">Login </a></li>
                   </ul>
                   <div class="tab-content">
                       <div id="registration" class="tab-pane active">
-                          <div class="nav-cont">
+                          <form class="nav-cont">
                               <div class="login-input-box">
                                     <input type="text" id="sms-tel" class="sms-input samll-input input-error" init="" value="Phone Number">
                                     <input type="button" class="get-tel-code down-time" value="SMS code" disabled="disabled">
@@ -42,11 +42,30 @@
                               <input type="text" id="sms-ma" class="sms-input input-error" value="">
                               <input type="button" class="tel-login-btn" value="log in">
                               <div class="sms-bot">Unregistered will automatically create a account</div>
-                          </div>
+                          </form>
                       </div>
                       <div id="login" class="tab-pane">
-                          <h3>Login</h3>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <form class="nav-cont">
+                              <input type="text" id="account" class="login-input input-error"  value="Username">
+                              <input type="password" id="account-pwd1" class="login-input" value="Password">
+                              <input type="button" class="login-btn" value="log in">
+                              <div class="remember-box">
+                                  <div class="remember-ls check-me"><i></i>
+                                      <span>remember me</span>
+                                      <input type="checkbox" checked="checked">
+                                  </div>
+                                  <a href="https://user.yuemei.com/user/getpwd" class="forget">forget password?</a>
+                              </div>
+                              <div class="other-login">Log in using other methods</div>
+                              <div class="other-lab">
+                                  <a href="#" class="sina" title="Weibo">
+                                      <span class="oi oi-person"></span>
+                                  </a>
+                                  <a href="#" class="qq" title="QQ"></a>
+                                  <a href="#" class="weixin" title="WeChat"></a>
+                              </div>
+                              <div class="register-test">Still not a US account? <a href="https://user.yuemei.com/user/register">Sign up now</a></div>
+                          </form>
                       </div>
                   </div>
               </div>
@@ -67,7 +86,7 @@
                 <a class="nav-link space-line">|</a>
                 </li>
                 <li class="nav-item item-download">
-                  <a class="nav-link download-app" href="#"><span style="margin-left: 25px;">Download App</span></a>
+                  <a class="nav-link download-app" href="#"><span>Download App</span></a>
                   <em class="download"></em>
                 </li>
               </ul>
@@ -99,12 +118,12 @@
   <div class="right-fixed-nav">
       <div class="data-cont">
           <div class="data-head"><img src="https://www.yuemei.com/images/weibo/noavatar1_50_50.jpg" alt=""></div>
-          <div lass="my-order"><i class="icon"></i><div><p>我的订单</p></div></div>
-          <div> <span class="icon"></span><p>我的消息</p></div>
-          <div class="hover-list hover-juan"><span class="login_icon icon"></span><p>我的优惠券</p></div>
-          <div _ymaname="chat_hospital" _ymapos="tao_list_right" class="hover-list hover-service chat-button _yma"><span class="icon"></span><p>在线客服</p></div>
-          <div class="hover-list hover-phone"><span class="icon"></span><p>悦美客服 400-056-7118</p></div>
-          <div class="hover-list hover-app"><span class="icon"></span><p>下载APP</p></div>
+          <div class="my-order"><i class="icon"></i><div><p>Đơn hàng</p></div></div>
+          <div class="hover-list hover-news"><span class="message_click icon"></span><p>Tin nhắn</p></div>
+          <div class="hover-list hover-juan"><span class="coupon_click icon"></span><p>Mã giảm giá</p></div>
+          <div _ymaname="chat_hospital" _ymapos="tao_list_right" class="hover-list hover-service chat-button _yma"><span class="icon"></span><p>Dịch vụ trực tuyến</p></div>
+          <div class="hover-list hover-phone"><a href="#" ><span class="icon"></span><p>Điện thoại 000000000</p></a></div>
+          <div class="hover-list hover-app"><a href="#" ><span class="icon"></span><p>Tải APP</p> </a></div>
       </div>
       <div class="go-top">
           <div class="icon"></div>
