@@ -996,7 +996,6 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 #menu-scroll{
-    display: none;
     position: fixed;
     width: 100%;
     z-index: 200;
@@ -1088,17 +1087,38 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     top: 48px;
     z-index: 2000;
     background: #fff;
+    animation: slideup2 0.5s;
 }
 
 .float-nav-wrap.active a{
     padding: 16px;
-    animation: slideup2 1s;
 }
+
+.float-nav-wrap.active:before{
+    left: -37%;
+    content: '';
+    position: absolute;
+    background: #fff;
+    top: -50px;
+    border-bottom: 1px #ccc solid;
+    height: 110px;
+    width: 200%;
+}
+
 
 .float-nav-wrap.active .prev, .float-nav-wrap.active .next{
     margin-top: 17px;
 }
 
+
+@keyframes slidedown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top:-120px;
+    }
+}
 
 @keyframes slideup {
     0% {
@@ -1106,6 +1126,15 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     }
     100% {
         top: 0;
+    }
+}
+
+@keyframes slideup2 {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 48px;
     }
 }
 

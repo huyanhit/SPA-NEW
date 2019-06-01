@@ -150,23 +150,33 @@ jQuery(document).ready(function($){
     });
 
 	//huy js
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $("#menu-scroll").addClass("active");
-        }else{
-            $("#menu-scroll").removeClass("active");
-        }
-    })
-
     var offset = $(".float-nav-wrap").offset();
-    $(window).scroll(function() {
+
+    function menuScrollBottom() {
         if ($(this).scrollTop() >  offset.top) {
             $(".float-nav-wrap").addClass("active");
         }
         else if($(this).scrollTop() <  offset.top){
             $(".float-nav-wrap").removeClass("active");
         }
-    })
+    }
 
+    menuScrollBottom();
+    $(window).scroll(function() {
+        menuScrollBottom();
+    });
+
+	function menuScroll() {
+        if ($(this).scrollTop() > 100) {
+            $("#menu-scroll").attr("style", "display: block");
+            $("#menu-scroll").addClass("active");
+        }else{
+            $("#menu-scroll").removeClass("active");
+        }
+    }
+
+    menuScroll();
+    $(window).scroll(function() {
+        menuScroll();
+    })
 });
