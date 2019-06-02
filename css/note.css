@@ -1,3 +1,7 @@
-.tile-note{
-	color: #fff !important;1111
+
+.menu-spa-hide{
+    display: none;
+}
+.note-menu:hover .menu-spa-hide{
+	display: block;
 }
