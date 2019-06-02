@@ -1348,7 +1348,7 @@ margin-top: 17px;
 }
 
 @media only screen and (min-width: 1025px) {
-    .mobile-header, #search, .icon-link, .hot-huodong {display: none !important;}
+    .mobile-header, #search, .icon-link, .hot-huodong, .open-app {display: none !important;}
     .hosTao .tao-wrap a {
         width: 16.66%;
     }
