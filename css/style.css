@@ -668,9 +668,11 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .list-item .img-top .left {
     left: 0;
+    position: relative;
 }
 .list-item .img-top .right {
     right: 0;
+    position: relative;
 }
 .list-item .img-top .left, .list-item .img-top .right {
     overflow: hidden;
@@ -763,6 +765,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .list-item .bought .right {
     margin-right: 10px;
+    position: relative;
 }
 .list-item .cover-link {
     position: absolute;
@@ -1070,6 +1073,10 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     margin-top: 10px;
 }
 
+.float-nav-wrap .item {
+    display: block;
+}
+
 .float-nav-wrap.active{
     position: fixed;
     top: 50px;
@@ -1273,7 +1280,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 /*Hiden element on mobile*/
 @media only screen and (max-width: 1025px) {
     .header-main, #menu-scroll, .header-main, .menu-left, .spa-main, .head-wrap,
-    .floor-tit, .buy-floor-wrap, .right-fixed-nav,
+    .floor-tit, .buy-floor-wrap, .right-fixed-nav, .copy-right-wrap,
     .footer-app-wrap, .footer-wrap, .footer-app-wrap, .banner-scroll{display: none !important;}
 
     .float-nav-wrap .item {
@@ -1344,7 +1351,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 @media only screen and (min-width: 1025px) {
-    .mobile-header, #search, .icon-link, .hot-huodong{display: none !important;}
+    .mobile-header, #search, .icon-link, .hot-huodong {display: none !important;}
     .hosTao .tao-wrap a {
         width: 16.66%;
     }
@@ -1538,4 +1545,45 @@ button:focus {outline:0;}
     font-size: 12px;
     color: #999;
     padding-top: 6px;
+}
+
+/*//footer*/
+.open-app {
+    padding: 23px 0 43px 0;
+    text-align: center;
+    background: #f6f6f6;
+}
+.open-app .yuemei {
+    display: inline-block;
+    height: 57px;
+    padding-left: 70px;
+    text-align: left;
+    color: #333;
+    background: url(../images/ym-norm-logo.png) no-repeat 0 0;
+    background-size: 57px auto;
+}
+.open-app .yuemei div{
+    padding-top: 5px;
+    font-size: 18px;
+    color: #2E2E2E;
+}
+.open-app .yuemei p{
+    padding-top: 4px;
+    font-size: 13px;
+    color: #2E2E2E;
+}
+.open-app .app-text {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 16px;
+}
+.open-app .app-text .s_app_hide{
+    text-align: center;
+    display: inline-block;
+    width: 243px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #fd536e;
+    border-radius: 40px;
+    color: #fd536e;
 }
