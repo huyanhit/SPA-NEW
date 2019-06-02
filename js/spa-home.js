@@ -211,10 +211,10 @@ jQuery(document).ready(function($){
         dots:false,
         responsive:{
             0:{
-                items:4
+                items:2
             },
             600:{
-                items:6
+                items:4
             },
             1000:{
                 items:6
