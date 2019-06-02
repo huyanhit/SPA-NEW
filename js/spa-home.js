@@ -211,14 +211,37 @@ jQuery(document).ready(function($){
         dots:false,
         responsive:{
             0:{
-                items:4
+                items:3
             },
-            600:{
-                items:6
+            992:{
+                items:5
             },
-            1000:{
-                items:6
+            1025:{
+                items:7
             }
         }
+    });
+
+
+    var offsetAdv = $(".banner-scroll").offset();
+    var offsetFooter = $(".footer-app-wrap").offset();
+    function menuScrollBannerAdv() {
+        if ($(this).scrollTop() >  offsetAdv.top) {
+            $(".banner-scroll").addClass("active");
+        }
+        else if($(this).scrollTop() <  offsetAdv.top){
+            $(".banner-scroll").removeClass("active");
+        }
+
+        if($(this).scrollTop()+500 > offsetFooter.top){
+            $(".banner-scroll").addClass("pause");
+        }else{
+            $(".banner-scroll").removeClass("pause");
+        }
+    }
+
+    menuScrollBannerAdv();
+    $(window).scroll(function() {
+        menuScrollBannerAdv();
     })
 });

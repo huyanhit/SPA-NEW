@@ -78,6 +78,10 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     background: url(../images/phoneIcon.gif) no-repeat ;
 }
 
+.head-wrap .download-app span{
+    padding-left: 25px;
+}
+
 .head-wrap .item-download{
 	position: relative;
 	z-index: 3;
@@ -277,7 +281,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .menu-left{
     background-color: #fff;
-    border: 1px solid #ff5370;
+    border: 2px solid #ff5370;
 }
 .menu-left .slide-box{
     padding: 0;
@@ -359,8 +363,9 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     z-index: 10;
 }
 .menu-left  .part-slide-show {
-    left: 280px;
+    left: 94%;
     margin-left: 0;
+    z-index: 200;
 }
 .part-slide-show .slide-cont {
     position: relative;
@@ -371,6 +376,10 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     transition: all .2s linear 0s;
     background: #fff;
     overflow: hidden;
+    border: 1px #ff5370 solid;
+    border-radius: 0;
+    background: #fff;
+    z-index: 2000;
 }
 .part-slide-show .slide-cont ul {
     width: 800px;
@@ -425,10 +434,14 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
+
+.navbar-expand-lg .navbar-collapse{
+    margin-left: -25px;
+}
+
 .banner-wrap {
     position: relative;
     z-index: 0;
-    margin: 0 auto;
     height: 405px;
 }
 .banner-wrap .banner-slide {
@@ -603,33 +616,36 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 
 /** service spa */
 .spa-share{
-  
     z-index: 10;
     top: 0px;
     margin-top: 0;
 }
+
+.spa-share img{
+    width: 100%;
+}
+
 .fixBox, .new_down {
     position: relative;
     z-index: 10;
 }
 .float-nav-wrap{
-    max-width: 1200px;
+    max-width: 1170px
 }
 .float-nav-wrap .item {
     text-align: center;
     text-transform: capitalize;
     font-size: 20px;
-    height: 50px;
-    display: table-cell;
+    display: inline-block;
     width: 100%;
-    vertical-align: middle;
+    margin-top: 10px
 }
 
 .float-nav-wrap .owl-item a{
     display: inline-block;
     line-height: 25px;
     white-space: nowrap;
-    width: 160px;
+    width: 100%;
     overflow: hidden;
     text-overflow:ellipsis;
 }
@@ -651,19 +667,17 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .list-item .img-top {
     position: relative;
     overflow: hidden;
-    width: 380px;
-    height: 190px;
     border-radius: 4px;
 }
 .list-item .img-top .left {
     left: 0;
+    position: relative;
 }
 .list-item .img-top .right {
     right: 0;
+    position: relative;
 }
 .list-item .img-top .left, .list-item .img-top .right {
-    position: absolute;
-    top: 0;
     overflow: hidden;
     width: 50%;
     height: 100%;
@@ -708,10 +722,16 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     height: 30px;
     border-radius: 50%;
 }
+.list-item .img-text{
+    margin-top: 8px;
+    line-height: 20px;
+}
+
 .list-item .user-name {
     padding-left: 6px;
     line-height: 30px;
     vertical-align: middle;
+    font-weight: 600;
 }
 .list-item .darenIcon {
     vertical-align: middle;
@@ -730,9 +750,8 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     z-index: 3;
     display: block;
     overflow: hidden;
-    width: 543px;
     height: 38px;
-    margin: 32px 0 16px;
+    margin: 10px 0px 16px;
     font-size: 13px;
     line-height: 38px;
     color: #666;
@@ -749,6 +768,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .list-item .bought .right {
     margin-right: 10px;
+    position: relative;
 }
 .list-item .cover-link {
     position: absolute;
@@ -763,8 +783,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     filter: alpha(opacity=0);
 }
 .list-item .img-bottom {
-    width: 543px;
-    padding-left: 30px;
+    padding-left: 15px;
 }
 .list-item .img-labs span.c-999 {
     display: inline-block;
@@ -818,21 +837,19 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .hosTao .tao-wrap a {
     float: left;
-    width: 138px;
-    margin-right: 25px;
+    width: 33.33%;
 }
 .hosTao .tao-wrap img {
     display: block;
-    width: 138px;
-    height: 138px;
+    width: 100%;
+    padding: 0 15px;
     border-radius: 4px;
 }
 .hosTao .tao-wrap .tao-name {
     display: block;
     overflow: hidden;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 2px;
+    padding: 7px 15px 2px 15px;
     font-size: 15px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -842,13 +859,15 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     font-size: 26px;
     color: #ff5a5f;
     display: inline-block;
-    text-indent: -3px;
+    margin-left: 5px;
+    margin-top: -5px;
+    margin-bottom: 10px;
 }
 
 /** footer */
 .footer-app-wrap {
     clear: both;
-    margin-top: 86px;
+    margin-top: 25px;
     padding: 9px 0;
     background: #000;
 }
@@ -1053,59 +1072,75 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     top: 0;
 }
 
+.float-nav-wrap{
+    margin-top: 10px;
+}
+
 .float-nav-wrap.active{
     position: fixed;
-    top: 48px;
+    top: 50px;
     z-index: 2000;
     background: #fff;
     animation: slideup2 0.5s;
+    margin-top: 0;
 }
-
+.float-nav-wrap.active .item{
+    margin-top: 0px;
+}
 .float-nav-wrap.active a{
-    padding: 16px;
+padding: 16px;
 }
 
 .float-nav-wrap.active:before{
-    left: -37%;
-    content: '';
-    position: absolute;
-    background: #fff;
-    top: -50px;
-    border-bottom: 1px #ccc solid;
-    height: 110px;
-    width: 200%;
+left: -37%;
+content: '';
+position: fixed;
+background: #fff;
+top: 0px;
+border-bottom: 1px #ccc solid;
+height: 110px;
+width: 200%;
 }
 
 
 .float-nav-wrap.active .prev, .float-nav-wrap.active .next{
-    margin-top: 17px;
+margin-top: 17px;
 }
 
 
 @keyframes slidedown {
-    0% {
-        top: 0;
-    }
-    100% {
-        top:-120px;
-    }
+0% {
+    top: 0;
+}
+100% {
+    top:-120px;
+}
 }
 
 @keyframes slideup {
-    0% {
-        top:-120px;
-    }
-    100% {
-        top: 0;
-    }
+0% {
+    top:-120px;
+}
+100% {
+    top: 0;
+}
 }
 
 @keyframes slideup2 {
+0% {
+    top: 0px;
+}
+100% {
+    top: 48px;
+}
+}
+
+@keyframes slideup3 {
     0% {
         top: 0px;
     }
     100% {
-        top: 48px;
+        top: 110px;
     }
 }
 
@@ -1163,15 +1198,16 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 .modal .modal-dialog{
-    width: 360px;
+    width: 415px;
+    margin-top: 200px;
 }
 
 .modal .login-input-box input[type="text"]{
-    width: 200px;
+    width: 245px;
     border: 1px #ff5370 solid;
     height: 40px;
     padding: 9px 5px;
-    margin-top: 13px;
+    margin-top: 25px;
 }
 
 .modal .login-input-box input[type="button"]{
@@ -1182,21 +1218,24 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     position: relative;
     width: 120px;
     border: 1px #000 solid;
+
+    margin-left: 11px;
 }
 
 .modal #sms-ma,#account,#account-pwd1 {
     height: 40px;
     border: 1px #ff5370 solid;
     height: 40px;
-    padding: 9px 5px;
-    margin-top: 13px;
-    width: 324px;
+    padding: 7px 5px;
+    margin-top: 20px;
+    width: 380px;
 }
 
 .modal .sms-bot{
     font-size: 12px;
     padding-top: 10px;
     color: #ccc;
+    margin-bottom: 20px;
 }
 
 .modal .tel-login-btn, .login-btn{
@@ -1204,8 +1243,8 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     border: none;
     padding: 5px;
     position: relative;
-    width: 324px;
-    margin-top: 10px;
+    width: 380px;
+    margin-top: 20px;
     border-radius: 4px;
     background: #ff5370;
     color: #fff;
@@ -1253,14 +1292,83 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 /*Hiden element on mobile*/
-@media only screen and (max-width: 1024px) {
-    .header-main, #menu-scroll, .header-main, .menu-left, .spa-main,
-    .floor-tit, .buy-floor-wrap, .right-fixed-nav,
+@media only screen and (max-width: 1025px) {
+    .header-main, #menu-scroll, .header-main, .menu-left, .spa-main, .head-wrap,
+    .floor-tit, .buy-floor-wrap, .right-fixed-nav, .copy-right-wrap,
     .footer-app-wrap, .footer-wrap, .footer-app-wrap, .banner-scroll{display: none !important;}
+
+    .float-nav-wrap .item {
+        font-size: 14px;
+    }
+
+    .float-nav-wrap .owl-item .item a {
+        width: 110px;
+    }
+
+    .float-nav-wrap.active {
+        top: 0 !important;
+    }
+
+    .list-item .img-bottom{
+        margin-top: 15px;
+    }
+
+    .list-item .img-text{
+        font-size: 14px;
+        text-align: justify;
+        margin-top: 4px;
+    }
+
+
+    .list-item:after{
+        content: "";
+        height: 5px;
+        width: 100%;
+        background: #eee;
+        margin-top: 30px;
+    }
+
+    .hosTao .tao-wrap {
+        margin: 0;
+
+    }
+
+    .hosTao .tao-wrap img {
+        padding: 0px 7px;
+    }
+
+    .spa-share{
+        display:  none;
+    }
+
+    .float-nav-wrap.active {
+        width: 100%;
+        left: 0;
+    }
+    .float-nav-wrap.active {
+        animation: slideup3 0.5s;
+        border-bottom: 1px #ccc solid;
+    }
+
+    .float-nav-wrap.active:before {
+        width: auto;
+    }
+    .float-nav-wrap.active .owl-nav{
+        display: none;
+    }
+    .hosTao-head{
+        width: 100%;
+    }
+    .hosTao .checkHos {
+        margin-right: 15px;
+    }
 }
 
-@media only screen and (min-width: 1024px) {
-    .mobile-header, #search, .icon-link, .hot-huodong{display: none !important;}
+@media only screen and (min-width: 1025px) {
+    .mobile-header, #search, .icon-link, .hot-huodong, .open-app {display: none !important;}
+    .hosTao .tao-wrap a {
+        width: 16.66%;
+    }
 }
 
 /*Mobile UI*/
@@ -1388,6 +1496,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     position: absolute;
     top: 17px;
     width: 100%;
+    left: 0;
 }
 
 .owl-carousel .owl-nav span{
@@ -1408,11 +1517,12 @@ button:focus {outline:0;}
     width: 25px;
     height: 25px;
     top: -8px;
-    left: -30px;
+    left: 0px;
 }
 
 .owl-carousel{
     padding:  0 30px;
+    height: 60px;
 }
 .owl-carousel .owl-next {
     position: absolute;
@@ -1421,9 +1531,104 @@ button:focus {outline:0;}
     width: 25px;
     height: 25px;
     top: -8px;
-    right: 30px;
+    right: 0px;
 }
 
 .float-nav-wrap.active .owl-carousel button{
     top: 0 !important;
+}
+
+.hosBanner{
+    text-align: center;
+}
+.hosBanner a{
+    width: 100%;
+}
+.hosBanner img{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hosBanner .tit1{
+    font-size: 16px;
+    min-height: 15px;
+    line-height: 18px;
+}
+
+.hosBanner .tit2{
+    font-size: 12px;
+    color: #999;
+    padding-top: 6px;
+}
+
+/*//footer*/
+.open-app {
+    padding: 23px 0 43px 0;
+    text-align: center;
+    background: #f6f6f6;
+}
+.open-app .yuemei {
+    display: inline-block;
+    height: 57px;
+    padding-left: 70px;
+    text-align: left;
+    color: #333;
+    background: url(../images/ym-norm-logo.png) no-repeat 0 0;
+    background-size: 57px auto;
+}
+.open-app .yuemei div{
+    padding-top: 5px;
+    font-size: 18px;
+    color: #2E2E2E;
+}
+.open-app .yuemei p{
+    padding-top: 4px;
+    font-size: 13px;
+    color: #2E2E2E;
+}
+.open-app .app-text {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 16px;
+}
+.open-app .app-text .s_app_hide{
+    text-align: center;
+    display: inline-block;
+    width: 243px;
+    height: 44px;
+    line-height: 44px;
+    border: 1px solid #fd536e;
+    border-radius: 40px;
+    color: #fd536e;
+}
+.modal-open{
+    padding-right: 0px !important;
+    overflow: unset !important;
+}
+
+.modal-open modal {
+    padding-right: 0px!important;
+}
+
+.banner-scroll.active, .banner-scroll.pause{
+    position: relative;
+}
+.banner-scroll.active a{
+    position: fixed;
+    top: 110px;
+    max-width: 170px;
+    animation: slideup3 0.3s;
+}
+.banner-scroll{
+    z-index: 1;
+}
+.banner-scroll.active{
+    position: relative;
+}
+.banner-scroll.pause a{
+    position: absolute;
+    bottom: 30px;
+    max-width: 170px;
+    animation: slideup3 0.5s;
+    top: auto;
 }
