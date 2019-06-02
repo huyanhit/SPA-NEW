@@ -632,17 +632,16 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     text-align: center;
     text-transform: capitalize;
     font-size: 20px;
-    height: 50px;
-    display: table-cell;
+    display: inline-block;
     width: 100%;
-    vertical-align: middle;
+    margin-top: 10px
 }
 
 .float-nav-wrap .owl-item a{
     display: inline-block;
     line-height: 25px;
     white-space: nowrap;
-    width: 160px;
+    width: 100%;
     overflow: hidden;
     text-overflow:ellipsis;
 }
@@ -1073,10 +1072,6 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     margin-top: 10px;
 }
 
-.float-nav-wrap .item {
-    display: block;
-}
-
 .float-nav-wrap.active{
     position: fixed;
     top: 50px;
@@ -1085,53 +1080,55 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     animation: slideup2 0.5s;
     margin-top: 0;
 }
-
+.float-nav-wrap.active .item{
+    margin-top: 0px;
+}
 .float-nav-wrap.active a{
-    padding: 16px;
+padding: 16px;
 }
 
 .float-nav-wrap.active:before{
-    left: -37%;
-    content: '';
-    position: fixed;
-    background: #fff;
-    top: 0px;
-    border-bottom: 1px #ccc solid;
-    height: 110px;
-    width: 200%;
+left: -37%;
+content: '';
+position: fixed;
+background: #fff;
+top: 0px;
+border-bottom: 1px #ccc solid;
+height: 110px;
+width: 200%;
 }
 
 
 .float-nav-wrap.active .prev, .float-nav-wrap.active .next{
-    margin-top: 17px;
+margin-top: 17px;
 }
 
 
 @keyframes slidedown {
-    0% {
-        top: 0;
-    }
-    100% {
-        top:-120px;
-    }
+0% {
+    top: 0;
+}
+100% {
+    top:-120px;
+}
 }
 
 @keyframes slideup {
-    0% {
-        top:-120px;
-    }
-    100% {
-        top: 0;
-    }
+0% {
+    top:-120px;
+}
+100% {
+    top: 0;
+}
 }
 
 @keyframes slideup2 {
-    0% {
-        top: 0px;
-    }
-    100% {
-        top: 48px;
-    }
+0% {
+    top: 0px;
+}
+100% {
+    top: 48px;
+}
 }
 
 /*<-- Menu right -->*/
