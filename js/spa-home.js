@@ -211,13 +211,13 @@ jQuery(document).ready(function($){
         dots:false,
         responsive:{
             0:{
-                items:2
+                items:3
             },
-            600:{
-                items:4
+            992:{
+                items:5
             },
-            1000:{
-                items:6
+            1025:{
+                items:7
             }
         }
     })
