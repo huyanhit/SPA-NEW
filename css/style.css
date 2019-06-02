@@ -78,6 +78,10 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     background: url(../images/phoneIcon.gif) no-repeat ;
 }
 
+.head-wrap .download-app span{
+    padding-left: 25px;
+}
+
 .head-wrap .item-download{
 	position: relative;
 	z-index: 3;
@@ -863,7 +867,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 /** footer */
 .footer-app-wrap {
     clear: both;
-    margin-top: 86px;
+    margin-top: 25px;
     padding: 9px 0;
     background: #000;
 }
@@ -1131,6 +1135,15 @@ margin-top: 17px;
 }
 }
 
+@keyframes slideup3 {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 110px;
+    }
+}
+
 /*<-- Menu right -->*/
 .right-fixed-nav{ position: fixed; z-index: 300; top: 0; right: 0; width: 35px; height: 100%; background: #000; }
 .right-fixed-nav .data-head{ margin: 0 auto; }
@@ -1185,15 +1198,16 @@ margin-top: 17px;
 }
 
 .modal .modal-dialog{
-    width: 360px;
+    width: 415px;
+    margin-top: 200px;
 }
 
 .modal .login-input-box input[type="text"]{
-    width: 200px;
+    width: 245px;
     border: 1px #ff5370 solid;
     height: 40px;
     padding: 9px 5px;
-    margin-top: 13px;
+    margin-top: 25px;
 }
 
 .modal .login-input-box input[type="button"]{
@@ -1204,21 +1218,24 @@ margin-top: 17px;
     position: relative;
     width: 120px;
     border: 1px #000 solid;
+
+    margin-left: 11px;
 }
 
 .modal #sms-ma,#account,#account-pwd1 {
     height: 40px;
     border: 1px #ff5370 solid;
     height: 40px;
-    padding: 9px 5px;
-    margin-top: 13px;
-    width: 324px;
+    padding: 7px 5px;
+    margin-top: 20px;
+    width: 380px;
 }
 
 .modal .sms-bot{
     font-size: 12px;
     padding-top: 10px;
     color: #ccc;
+    margin-bottom: 20px;
 }
 
 .modal .tel-login-btn, .login-btn{
@@ -1226,8 +1243,8 @@ margin-top: 17px;
     border: none;
     padding: 5px;
     position: relative;
-    width: 324px;
-    margin-top: 10px;
+    width: 380px;
+    margin-top: 20px;
     border-radius: 4px;
     background: #ff5370;
     color: #fff;
@@ -1583,4 +1600,35 @@ button:focus {outline:0;}
     border: 1px solid #fd536e;
     border-radius: 40px;
     color: #fd536e;
+}
+.modal-open{
+    padding-right: 0px !important;
+    overflow: unset !important;
+}
+
+.modal-open modal {
+    padding-right: 0px!important;
+}
+
+.banner-scroll.active, .banner-scroll.pause{
+    position: relative;
+}
+.banner-scroll.active a{
+    position: fixed;
+    top: 110px;
+    max-width: 170px;
+    animation: slideup3 0.3s;
+}
+.banner-scroll{
+    z-index: 1;
+}
+.banner-scroll.active{
+    position: relative;
+}
+.banner-scroll.pause a{
+    position: absolute;
+    bottom: 30px;
+    max-width: 170px;
+    animation: slideup3 0.5s;
+    top: auto;
 }

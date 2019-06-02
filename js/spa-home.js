@@ -220,5 +220,28 @@ jQuery(document).ready(function($){
                 items:7
             }
         }
+    });
+
+
+    var offsetAdv = $(".banner-scroll").offset();
+    var offsetFooter = $(".footer-app-wrap").offset();
+    function menuScrollBannerAdv() {
+        if ($(this).scrollTop() >  offsetAdv.top) {
+            $(".banner-scroll").addClass("active");
+        }
+        else if($(this).scrollTop() <  offsetAdv.top){
+            $(".banner-scroll").removeClass("active");
+        }
+
+        if($(this).scrollTop()+500 > offsetFooter.top){
+            $(".banner-scroll").addClass("pause");
+        }else{
+            $(".banner-scroll").removeClass("pause");
+        }
+    }
+
+    menuScrollBannerAdv();
+    $(window).scroll(function() {
+        menuScrollBannerAdv();
     })
 });
