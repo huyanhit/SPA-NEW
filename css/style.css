@@ -626,7 +626,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     z-index: 10;
 }
 .float-nav-wrap{
-    max-width: 1200px;
+    max-width: 1170px
 }
 .float-nav-wrap .item {
     text-align: center;
@@ -831,7 +831,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .hosTao .tao-wrap a {
     float: left;
-    width: 25%;
+    width: 33.33%;
 }
 .hosTao .tao-wrap img {
     display: block;
@@ -1072,7 +1072,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 
 .float-nav-wrap.active{
     position: fixed;
-    top: 48px;
+    top: 50px;
     z-index: 2000;
     background: #fff;
     animation: slideup2 0.5s;
@@ -1086,9 +1086,9 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .float-nav-wrap.active:before{
     left: -37%;
     content: '';
-    position: absolute;
+    position: fixed;
     background: #fff;
-    top: -50px;
+    top: 0px;
     border-bottom: 1px #ccc solid;
     height: 110px;
     width: 200%;
@@ -1272,17 +1272,9 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 
 /*Hiden element on mobile*/
 @media only screen and (max-width: 1025px) {
-    .header-main, #menu-scroll, .header-main, .menu-left, .spa-main,
+    .header-main, #menu-scroll, .header-main, .menu-left, .spa-main, .head-wrap,
     .floor-tit, .buy-floor-wrap, .right-fixed-nav,
     .footer-app-wrap, .footer-wrap, .footer-app-wrap, .banner-scroll{display: none !important;}
-
-    .float-nav-wrap  button.owl-prev{
-        left: -28px;
-    }
-
-    .float-nav-wrap  button.owl-next{
-        right: 32px ;
-    }
 
     .float-nav-wrap .item {
         font-size: 14px;
@@ -1293,7 +1285,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     }
 
     .float-nav-wrap.active {
-        position: static !important;
+        top: 0 !important;
     }
 
     .list-item .img-bottom{
@@ -1306,14 +1298,55 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
         margin-top: 4px;
     }
 
-    .list-item {
-        border-bottom: 1px #ccc solid;
-        padding-bottom: 20px;
+
+    .list-item:after{
+        content: "";
+        height: 5px;
+        width: 100%;
+        background: #eee;
+        margin-top: 30px;
+    }
+
+    .hosTao .tao-wrap {
+        margin: 0;
+
+    }
+
+    .hosTao .tao-wrap img {
+        padding: 0px 7px;
+    }
+
+    .spa-share{
+        display:  none;
+    }
+
+    .float-nav-wrap.active {
+        width: 100%;
+        left: 0;
+    }
+    .float-nav-wrap.active {
+        animation: slideup3 0.5s;
+    }
+
+    .float-nav-wrap.active:before {
+        width: auto;
+    }
+    .float-nav-wrap.active .owl-nav{
+        display: none;
+    }
+    .hosTao-head{
+        width: 100%;
+    }
+    .hosTao .checkHos {
+        margin-right: 15px;
     }
 }
 
 @media only screen and (min-width: 1025px) {
     .mobile-header, #search, .icon-link, .hot-huodong{display: none !important;}
+    .hosTao .tao-wrap a {
+        width: 16.66%;
+    }
 }
 
 /*Mobile UI*/
@@ -1441,6 +1474,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     position: absolute;
     top: 17px;
     width: 100%;
+    left: 0;
 }
 
 .owl-carousel .owl-nav span{
@@ -1461,7 +1495,7 @@ button:focus {outline:0;}
     width: 25px;
     height: 25px;
     top: -8px;
-    left: -30px;
+    left: 0px;
 }
 
 .owl-carousel{
@@ -1475,9 +1509,32 @@ button:focus {outline:0;}
     width: 25px;
     height: 25px;
     top: -8px;
-    right: 30px;
+    right: 0px;
 }
 
 .float-nav-wrap.active .owl-carousel button{
     top: 0 !important;
+}
+
+.hosBanner{
+    text-align: center;
+}
+.hosBanner a{
+    width: 100%;
+}
+.hosBanner img{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hosBanner .tit1{
+    font-size: 16px;
+    min-height: 15px;
+    line-height: 18px;
+}
+
+.hosBanner .tit2{
+    font-size: 12px;
+    color: #999;
+    padding-top: 6px;
 }
