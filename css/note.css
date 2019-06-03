@@ -1,3 +1,60 @@
-.tile-note{
-	color: #fff !important;1111
+
+.show-slide .menu-left{
+   /* display: none; */
+}
+
+.diary-banner .banner-parts {
+    background: #fff;
+}
+.diary-banner .banner-parts dl {
+    position: relative;
+    overflow: hidden;
+    padding-left: 72px;
+    border-bottom: 1px dashed #e1e1e1;
+}
+.diary-banner .banner-parts dl dt {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 72px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+}
+.diary-banner .banner-parts dl dd {
+    width: 194px;
+    padding-bottom: 12px;
+}
+.diary-banner .banner-parts dl span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    margin-top: -10px;
+}
+.diary-banner .banner-parts dl dd .parts-list {
+    overflow: hidden;
+    width: 177px;
+    padding: 0 0 10px 16px;
+    margin-top: -4px;
+    border-left: 1px solid #efefef;
+}
+.diary-banner .banner-parts dl dd a {
+    display: block;
+    width: 30%;
+    padding-right: 3.33%;
+    margin-top: 23px;
+    height: 14px;
+    line-height: 14px;
+    float: left;
+    font-size: 12px;
+    color: #333;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
