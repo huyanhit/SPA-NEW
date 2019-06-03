@@ -221,8 +221,8 @@ jQuery(document).ready(function($){
 
 
     var offsetAdv = $(".banner-scroll").offset();
-    var offsetFooter = $(".footer-app-wrap").offset();
     function menuScrollBannerAdv() {
+        var offsetFooter = $(".footer-app-wrap").offset();
         if ($(this).scrollTop() >  offsetAdv.top) {
             $(".banner-scroll").addClass("active");
         }
@@ -230,7 +230,7 @@ jQuery(document).ready(function($){
             $(".banner-scroll").removeClass("active");
         }
 
-        if($(this).scrollTop()+500 > offsetFooter.top){
+        if($(this).scrollTop() > offsetFooter.top - 510){
             $(".banner-scroll").addClass("pause");
         }else{
             $(".banner-scroll").removeClass("pause");
