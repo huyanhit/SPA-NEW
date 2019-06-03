@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
 	}
 	  function homeBannerSlide() {
         var bannerTime;
-        var speed = 5000;
+        var speed = 50000;
         var bannerIndex = 0;
         var $slideLi = $(".banner-slide li");
         var slideLength = $slideLi.length;

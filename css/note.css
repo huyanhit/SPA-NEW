@@ -1,4 +1,44 @@
 
+.menu-hospital .menu-left{
+    display: none;
+}
+
+.menu-hospital .menu-left .part-slide-show {
+    left: 100%;
+    top: 39px;
+    margin-left: -1px;
+}
+
+.menu-hospital ul.list-parent > li:hover .menu-left{
+    display: block;
+}
+
+.menu-hospital .list-parent{
+    list-style:  none;
+    position: relative;
+}
+
+.menu-hospital ul.list-parent > li.item{
+    display: inline-block;
+    width: 10%;
+    line-height: 38px;
+    color: #666;
+}
+
+.menu-hospital .slide-box > li span {
+    position: absolute;
+}
+
+.menu-hospital ul.list-parent > li:first-child{
+    width: 25%;
+    position: absolute;
+    z-index: 1000;
+}
+
+.menu-hospital ul.list-parent > li:nth-child(2){
+    margin-left: 25%;
+}
+
 .show-slide .menu-left{
    /* display: none; */
 }
@@ -53,6 +93,50 @@
     float: left;
     font-size: 12px;
     color: #333;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.banner-slide .img-box {
+
+}
+.img-box .img-text {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    padding: 10px 200px 0 30px;
+    width: 100%;
+    height: 60px;
+}
+.img-box .img-text .text-bj {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    filter: Alpha(opacity=50);
+    opacity: 0.5;
+}
+.img-box .img-text .text-tit {
+    height: 26px;
+    line-height: 26px;
+    font-size: 24px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.img-box .img-text .text-cont {
+    margin-top: 10px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.text-hidden {
     word-break: keep-all;
     white-space: nowrap;
     text-overflow: ellipsis;
