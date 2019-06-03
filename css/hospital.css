@@ -1,5 +1,16 @@
-
-
+.menu-hospital{
+    position: relative;
+}
+.menu-hospital:before{
+    content: "";
+    background: #ff5370;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    top: 39px;
+    z-index: 3000;
+    display: block;
+}
 .menu-hospital .menu-left{
     display: none;
 }
@@ -19,12 +30,22 @@
     position: relative;
 }
 
-.menu-hospital ul.list-parent > li.item{
+.menu-hospital ul.list-parent > li.nav-item{
     display: inline-block;
-    width: 10%;
-    line-height: 38px;
+    line-height: 20px;
     color: #666;
+    white-space: nowrap;
 }
+
+.menu-hospital li.nav-item > a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #666;
+    position: relative;
+    margin-right: 15px;
+}
+
 
 .menu-hospital .slide-box > li span {
     position: absolute;
