@@ -149,6 +149,13 @@ jQuery(document).ready(function($){
         $(".tab-cont-wrap").eq(nIn).addClass("now").siblings(".tab-cont-wrap").removeClass("now");
     });
 
+    // sang
+    $('.note-menu').mouseenter(function(){
+     //   $('.menu-left').css("display","block");
+    }).mouseleave(function(){
+      //  $('.menu-left').css("display","none");       
+    });
+
 	//huy js
     var offset = $(".float-nav-wrap").offset();
 
