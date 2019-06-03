@@ -1,0 +1,41 @@
+
+
+.menu-hospital .menu-left{
+    display: none;
+}
+
+.menu-hospital .menu-left .part-slide-show {
+    left: 100%;
+    top: 39px;
+    margin-left: -1px;
+}
+
+.menu-hospital ul.list-parent > li:hover .menu-left{
+    display: block;
+}
+
+.menu-hospital .list-parent{
+    list-style:  none;
+    position: relative;
+}
+
+.menu-hospital ul.list-parent > li.item{
+    display: inline-block;
+    width: 10%;
+    line-height: 38px;
+    color: #666;
+}
+
+.menu-hospital .slide-box > li span {
+    position: absolute;
+}
+
+.menu-hospital ul.list-parent > li:first-child{
+    width: 25%;
+    position: absolute;
+    z-index: 1000;
+}
+
+.menu-hospital ul.list-parent > li:nth-child(2){
+    margin-left: 25%;
+}
