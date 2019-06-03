@@ -216,9 +216,6 @@ jQuery(document).ready(function($){
             992:{
                 items:5
             },
-            1025:{
-                items:7
-            }
         }
     });
 
