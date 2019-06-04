@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/owl.carousel.css"  >
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css"  >
     <link rel="stylesheet" href="./css/hospital.css"  >
+    <script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
 </head>
 <body>
     <!-- Popup -->
@@ -609,17 +612,23 @@
                             </div>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Nhật ký
+                            <a class="nav-link" href="#">Trang chủ
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Dự án</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Amoy
+                            </a>
+                            <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                                <a class="dropdown-item" href="#">Shaping</a>
+                                <a class="dropdown-item" href="#">Yue US</a>
+                                <a class="dropdown-item" href="#">Protection</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bác Sĩ/ Bệnh Viện</a>
+                            <a class="nav-link" href="#">Featured diary</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cộng đồng
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" >Cộng đồng
                             </a>
                             <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
                                 <a class="dropdown-item" href="#">Action</a>
@@ -627,7 +636,407 @@
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bác Sĩ/ Bệnh Viện</a>
+                        </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="position clearfix">
+                        <div class="link-index left">
+                            <a href="https://www.yuemei.com/">Trang chủ</a>
+                        </div>
+                        <div class="scroll left">
+                            <span class="arrow">&gt;</span><a class="current" href="javascript:void(0)">Bệnh viện</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tab-link-page -->
+    <div class="tab-link-page">
+        <div class="container">
+            <h3 class="title-tap"></h3>
+            <div id="exTab1">
+                <ul class="nav nav-pills">
+                    <li class="active">
+                        <i class="fas fa-atom"> </i>
+                        <a href="#1a" data-toggle="tab">Service recommendation</a>
+                    </li>
+                    <li class="">
+                        <i class="fas fa-spa"> </i>
+                        <a href="#2a" data-toggle="tab">find a doctor</a>
+                    </li>
+                    <li class="">
+                        <i class="fas fa-brain"> </i>
+                        <a href="#3a" data-toggle="tab">find a hospital</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="1a">
+                        <div class="item">
+                            <span class="title">area</span>
+                            <dl class="left item-links">
+                                <dt class="left all"><a href="https://hospital.yuemei.com/" class="now"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unlimited</font></font></a></dt>
+                                <dd class="left eachLink leftA">
+                                    <div class="clearfix">
+                                        <span><a href="https://hospital.yuemei.com/beijing/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Beijing </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/shanghai/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shanghai </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/guangdong/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Guangdong Guangdong </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/sichuan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sichuan </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/jiangsu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jiangsu </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/zhejiang/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zhejiang </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/chongqing/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chongqing </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/hubei/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hubei </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/henan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Henan </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/shan_xi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shaanxi </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/hunan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hunan </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/gansu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gansu </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/qinghai/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qinghai </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/xinjiang/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xinjiang </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/hainan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hainan </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/ningxia/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ningxia </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/yunnan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yunnan </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/guizhou/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Guizhou </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/guangxi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Guangxi </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/jilin/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jilin </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/heilongjiang/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Heilongjiang </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/tianjin/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tianjin </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/hebei/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hebei </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/shanxi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shanxi </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/neimeng/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inner Mongolia </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/shandong/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shandong </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/anhui/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anhui </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/fujian/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fujian </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/jiangxi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jiangxi </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/liaoning/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Liaoning</font></font></a></span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div accesskey=""  class="item">
+                            <span>Part</span>
+                            <dl class="left item-links">
+                                <dt class="left all"><a href="https://hospital.yuemei.com/" class="now"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unlimited</font></font></a></dt>
+                                <dd class="left eachLink leftA">
+                                    <div class="clearfix showTab">
+                                        <span class="now"><a href="javascript:void();"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Popular</font></font></a><i></i></span>                                                            <span class=""><a href="https://hospital.yuemei.com/eye/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eye </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/nose/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nose </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/face/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">facial contour </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/fnbeauty/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">skin beauty </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/chest/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chest </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/body/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">weight loss shaping </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/zitizhifang/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">autologous fat </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/facialwrinkles/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">facial wrinkle </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/lipaug/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lip surgery </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/shuiguangzhen/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">water light needle </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/xizhi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">liposuction </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/tooth/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tooth </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/hair/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hair transplantation </font></font></a></span>
+                                        <span class=""><a href="https://hospital.yuemei.com/check/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">detection </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/injectionbeauty/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">injection beauty </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/privateplastic/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">private plastic </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/myopiceye/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">myopia</font></font></a></span>
+                                    </div>
+                                    <!--每个部位对应的链接内容-->
+                                    <div class="greyBg mTop7 showForPart" style="display: block;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/eyewrinkle/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go to the crow's feet </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/nasalabial/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to go to the law, the pattern, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/breastaug/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">breast, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/thighfat/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin thigh, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/abdominal/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin waist, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/buttfat/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin buttocks, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/doublelid/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">double eyelids, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/medial/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">open eyes, the eye </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/eyebag/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bags, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/darkcircle/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dark circles, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/faceslimm/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin face </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/chinimplan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pads, the chin </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/cheekaug/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, the cheeks, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/rhino/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nose, the nose, the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/skinwhiten/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">whitening and the skin.</font></font></a></span>
+                                        </div>
+                                    </div>                                                 <div class="greyBg mTop7 showForPart" style="display: none;">
+                                    <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                    <div class="classCont centA">
+                                        <span><a href="https://hospital.yuemei.com/doublelid/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Double eyelids </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/medial/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">open the eyes </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/eyebag/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to the eye bags </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/darkcircle/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to the dark circles, the </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/eyelid/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eyes, the </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/eyelidfailure/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eye, the plastic surgery, the repair, the </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/eyecorrect/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eye shape, the correction </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/sunkenlid/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, the eye socket </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/silkworm/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, the silkworm, the </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/bnstlg/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">filling, the tears, the </font></font></a></span>
+                                        <span><a href="https://hospital.yuemei.com/yznqh/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eye, the young</font></font></a></span>
+                                    </div>
+                                </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/rhino/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rhinoplasty </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/bizonghe/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">combined </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/nosejobfail/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">rhinoplasty failure repair </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/hypertrop/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nose / nose / nostril correction </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/columella/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nasal column prolonged </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/nasalcorrect/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nasal correction </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/dbjd1/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pad nasal base </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/dianbijian/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pad nose tip</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/faceslimm/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thin face </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/chinimplan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pad chin </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/fullface/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">full / multi-part fill </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/tempora/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feng Yang points </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/doublechin/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to double chin </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/foreheadau/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feng Futou </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/risorius/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feng apple muscle </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/browenlarg/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">long eyebrow </font></font></a></span>
+                                            <font style="vertical-align: inherit;"><span><a href="https://hospital.yuemei.com/qgqgzx/"><font style="vertical-align: inherit;">bow </font></a></span></font><span><a href="https://hospital.yuemei.com/cheekaug/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feng Qi cheeks </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/eyesocle/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feng silkworm </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/earlobe/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ear lobe </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/dimple/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dimples </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/earcorrect/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ear shape correction </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/ostectomy/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bone </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/facialinjections/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">injection injection </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/sxezx/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">upper and lower jaw plastic </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/qgqgzx/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">humeral arch bow plastic surgery</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/makeup/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Semi-permanent makeup </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/acnescarring/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">acne / acne pit / acne </font></font></a></span>
+                                            <font style="vertical-align: inherit;"><span><a href="https://hospital.yuemei.com/scartreat/"><font style="vertical-align: inherit;">marks </font></a></span></font><span><a href="https://hospital.yuemei.com/dispelfrekle/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sputum </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/scartreat/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to scars </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/nevus/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to 痣</font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/skinwhiten/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">whitening skin </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/birthmark/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to pigment / birthmark </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/hircismus/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to body odor </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/badtattoo/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wash tattoo / tattoo </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/bsbs1/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hydrating </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/qstm1/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">body / multi-part hair removal </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/mianbutuomao/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">facial hair removal </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/qtfzwt/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">other skin problems </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/sttmao/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">body hair removal</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/breastaug/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Breast augmentation </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/supebrea/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to the secondary </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/nippleredu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nipple / areola shaping </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/xxmeh1/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">chest landscaping </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/lxiongxx/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">breast augmentation repair</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/thighfat/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thin thighs </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/uparmlipo/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin arms </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/abdominal/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin waist abdomen </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/buttfat/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin hips </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/calfshape/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin legs </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/thinback/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin back </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/hipaugment/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hip buttocks </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/partloseweight/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin body / multi-part </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/sjbang/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">thin shoulder </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/xzsbxf/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">liposuction failure repair </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/qtmetsx/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">other body shaping</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/zitimbtc/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Autologous fat facial filling </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/ztzfmbds/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">autologous fat body sculpture </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/ztzfsbxf/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">autologous fat failure repair</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/facefirming/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wrinkle anti-aging </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/eyewrinkle/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">crow's feet </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/horiforewr/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to raise the head </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/nasalabial/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lines </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/glabellar/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to </font></font></a></span>
+                                            <font style="vertical-align: inherit;"><span><a href="https://hospital.yuemei.com/nasalabial/"><font style="vertical-align: inherit;">go to the law line </font></a></span><span><a href="https://hospital.yuemei.com/glabellar/"><font style="vertical-align: inherit;">to go to the Sichuan word pattern </font></a></span></font><span><a href="https://hospital.yuemei.com/stremark/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to stretch marks to </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/lacrimal/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fill the tears of the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/eyefirming/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eye to rejuvenate the </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/neckwrin/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">neck to </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/qtzwwt/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wrinkle other wrinkles</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/philtrum/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shorten </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/fengchunzhu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the lip/lip </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/chunxingmeihua/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lip lip balm in the person </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/qlyxiao/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to dew</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/shuiguangzh/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Water needle</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/chuantongxizhi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Liposuction </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/shuidongli/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hydrodynamic liposuction </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/furuxizhi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">liposuction to vice milk </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/xizhisxb/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">liposuction to double chin </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/xizhisl/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">liposuction face-lifting </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/xizhisxt/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">liposuction skinny legs</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/implish/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Implant </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/orthodontics/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">orthodontic </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/ceramicteeth/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">porcelain teeth </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/teethscaling/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">scaling </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/ycmeb1/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">teeth whitening </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/ycttm/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">veneers </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/yczll/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dental treatment</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/hairtrans/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Treatment of hair loss </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/mbmfhongzhi/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">facial hair planting </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/stmfzz/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">body hair planting</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/bodytest/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Check test </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/observation/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">procedure earlier diagnosis</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/boniaosuan/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hyaluronic acid </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/roudusu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">botulinum toxin </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/qttianj/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">other filler </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/zsxiufu/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">injection repair</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/women/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Female private </font></font></a></span>
+                                            <span><a href="https://hospital.yuemei.com/man/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">male privacy</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <div class="greyBg mTop7 showForPart" style="display: none;">
+                                        <span class="classify left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">project</font></font><i></i></span>
+                                        <div class="classCont centA">
+                                            <span><a href="https://hospital.yuemei.com/shortsight/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Myopia correction</font></font></a></span>
+                                        </div>
+                                    </div>
+                                    <!--//每个部位对应的链接内容-->
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <span class="title">theme</span>
+                            <dl class="left item-links">
+
+                                <dt class="left all"><a href="https://tao.yuemei.com/" class="now"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Unlimited</font></font></a></dt>
+                                <dd class="left eachLink leftA pos_rel showAll">
+                                    <i class="showAll-icon"></i>
+                                    <div class="clearfix">
+                                        <span><a href="https://tao.yuemei.com/kinglaser.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">King's style laser </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/fleck.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">to freckles </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/magicpeach.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">wonderful peach prosthesis </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/laser360.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">brilliant 360 laser </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/qlaser.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Q laser spotting </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/sculptra.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Shu Yan hyaluronic acid Feideng </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/israelalma.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">laser </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/kingnenfu.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">king style skin rejuvenation </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/lightsheer.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">moonlight vacuum hair removal </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/jksilicagel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">imported silica gel </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/almalaserstwo.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Felton second </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/getakas.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">high tex </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/cafespots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">treatment coffee spot </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/freezing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ice point hair removal </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/meg.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maige prosthesis </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/bluerf.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">deep blue RF </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/eme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yimei Hyaluronic acid felton </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/almafreezing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ice point hair removal </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/waltz.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">freezing point waltz hair removal </font></font></a></span>
+                                        <span><a href="https://tao.yuemei.com/co3laser.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">carbon dioxide laser</font></font></a></span>
+
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <span class="title">More</span>
+                            <div class="left pos-re">
+                                <div class="showMore money">
+                                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="goog-text-highlight">price range</font></font></span>
+                                    <div>
+                                        <a href=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Not limited to </font></font></a>
+                                        <a href="https://tao.yuemei.com/t1.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">100 yuan below </font></font></a>
+                                        <a href="https://tao.yuemei.com/t2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">100-1000 yuan </font></font></a>
+                                        <a href="https://tao.yuemei.com/t3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1000-3000 yuan </font></font></a>
+                                        <a href="https://tao.yuemei.com/t4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3000-5000 yuan </font></font></a>
+                                        <a href="https://tao.yuemei.com/t5.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5000-10000 yuan </font></font></a>
+                                        <a href="https://tao.yuemei.com/t6.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1-2 million </font></font></a>
+                                        <a href="https://tao.yuemei.com/t7.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yuan more than 20,000 yuan</font></font></a>
+                                    </div>
+                                </div>
+                                <div class="showMore hos">
+                                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hospital qualification</font></font></span>
+                                    <div>
+                                        <a href=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Not limited to </font></font></a>
+                                        <a href="https://tao.yuemei.com/public.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">public </font></font></a>
+                                        <a href="https://tao.yuemei.com/private.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">private</font></font></a>
+                                    </div>
+                                </div>
+                                <div class="showMore hosHb">
+                                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Offer</font></font></span>
+                                    <div>
+                                        <a href=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Unlimited </font></font></a>
+                                        <a href="https://tao.yuemei.com/deposit.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">red envelope</font></font></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="2a">
+                        <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+                    </div>
+                    <div class="tab-pane " id="3a">
+                        <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -753,10 +1162,5 @@
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/fontawesome.min.js"></script>
-<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="./js/spa-home.js" charset="utf-8"></script>
+
 </html>

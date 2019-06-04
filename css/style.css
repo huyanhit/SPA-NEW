@@ -168,6 +168,11 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .header-main .search-box {
     position: relative;
     height: 36px;
+    margin-top: 15px;
+}
+
+.brand-right{
+    margin-top: 3px;
 }
 .header-main .search-home{
 	color: #ccc;
@@ -437,7 +442,10 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     color: #ff6980;
 }
 .dropdown:hover>.dropdown-menu {
-  display: block;
+   display: block;
+   top: 34px;
+   z-index: 3000;
+   border-radius: 0;
 }
 
 .banner-wrap {
