@@ -1,3 +1,6 @@
+.padding-left-0{
+    padding-left: 0;
+}
 .menu-hospital{
     position: relative;
 }
@@ -94,28 +97,26 @@
 .breadcrumb .left span{
     padding-right: 10px;
 }
-.tab-link-page #exTab1 ul {
+.tab-link-page ul {
     border: 1px #ccc solid;
 }
-.tab-link-page #exTab1 ul li{
+.tab-link-page ul li{
     text-align: center;
     padding: 5px 15px;
     border-right: 1px #ccc solid;
     position: relative;
 }
-.tab-link-page #exTab1 ul li a{
+.tab-link-page  ul li a{
     text-decoration: none;
-    padding-left: 5px;
     text-transform: uppercase;
     color: #666;
 }
 
-.tab-link-page #exTab1 ul li:hover a, .tab-link-page #exTab1 ul li:hover i{
+.tab-link-page  ul li:hover a, .tab-link-page  ul li:hover i{
     color: #ff5370;
 }
 
-
-.tab-link-page #exTab1 ul li.active:before {
+.tab-link-page  ul li.active:before {
     content: "";
     background: #ffffff;
     height: 2px;
@@ -134,6 +135,7 @@
     line-height: 30px;
     width: 100%;
     position: relative;
+    margin-bottom: -7px;
 }
 .tab-link-page .tab-content .item  .pos-re{
     position: absolute;
@@ -170,7 +172,15 @@
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
-    counter-reset: #666;
+    display: inline-block;
+    border-top: 1px #ccc solid;
+    padding-bottom: 15px;
+}
+.tab-link-page .tab-content a.taoItem{
+    padding: 15px 0;
+}
+.tab-link-page .tab-content a:first-child{
+    border-top: none;
 }
 
 .tab-link-page .tab-content .now, .tab-link-page .tab-content a:hover{
@@ -210,7 +220,6 @@
 .tab-link-page .tab-list{
     padding: 10px;
     border: 1px #ccc solid;
-    display: inline-block;
     width: 100%;
 }
 .tab-link-page .tab-list .listIimg{
@@ -229,3 +238,169 @@
     float: right;
     width: 20%;
 }
+
+.tab-link-page .title-tap{
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.content-page{
+    margin-top: 15px;
+}
+
+.taoItem .listInfo .bot-lab p{    font-size: 0;
+    line-height: 20px;
+    display: block;
+    float: left;
+    height: 22px;
+    padding: 1px 1px 1px 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.taoItem .listInfo .bot-lab .lab-return{ color: #ffbc46; background: #ffbc46; }
+.taoItem .listInfo .bot-lab .lab-money{ color: #ff7e94; background: #ff7e94; }
+.taoItem .listInfo .bot-lab .lab-installment{ color: #89c1ff; background: #89c1ff; }
+.taoItem .listInfo .bot-lab .lab-app{ color: #91ded6; background: #91ded6; }
+.taoItem .listInfo .bot-lab p > span{ display: inline-block; width: 20px; height: 16px; vertical-align: top; background: url('../images/tao-list-lab.png') no-repeat; }
+.taoItem .listInfo .bot-lab p > i{ font-size: 12px; display: inline-block; padding: 0 4px; vertical-align: top; background: #fff; }
+.taoItem .listInfo .bot-lab p b{ font-family: 'Verdana'; font-weight: normal; vertical-align: top; }
+.taoItem .listInfo .bot-lab .lab-return > span{ background-position: 4px 2px; }
+.taoItem .listInfo .bot-lab .lab-money > span{ background-position: -18px 2px; }
+.taoItem .listInfo .bot-lab .lab-installment > span{ background-position: -38px 2px; }
+.taoItem .listInfo .bot-lab .lab-app > span{ background-position: -60px 2px; }
+
+.taoItem .listInfo .listInfo-item2{
+    line-height: 18px;
+    font-size: 16px;
+}
+.taoItem .listInfo .listInfo-item2:hover{ color: #ff5370; }
+.taoItem .listInfo .listInfo-item3{ font-size: 14px; line-height: 16px; margin: 2px 0 11px; color: #666; }
+.taoItem .listInfo .listInfo-item4{ font-size: 12px; line-height: 14px; padding-top: 3px; color: #999; }
+
+.taoItem .contrast{ position: relative; width: 200px;  margin-top: 29px; border-left: 1px solid #f3f3f3; }
+.taoItem .contrast .ymPrice{ font-size: 12px; color: #999; text-indent: -12px; }
+.taoItem .contrast .ymPrice .sale-img{
+    top: -28px;
+    position: absolute;
+}
+.taoItem .contrast .ymPrice b{ font-weight: normal; padding-left: 5px; }
+.taoItem .contrast .ymPrice .teyao-money{ padding: 0 2px; }
+.taoItem .contrast .teyao-text{ font-size: 12px; color: #999; }
+.taoItem .contrast p{ margin-left: 10px; }
+.taoItem .contrast .ymPrice em{
+    font-family: Verdana;
+    font-size: 26px;
+    color: #ff5370;
+    letter-spacing: -2px;
+}
+.taoItem .contrast .ymPrice i.cpink {
+    padding-left: 10px;
+    color: #ff5370;
+}
+
+.prevnextpage{ line-height: 24px; min-width: 80px; height: 24px; margin-top: 3px; padding: 0 6px; text-align: center; }
+.prevnextpage em{ font-family: 'Verdana'; font-size: 12px; color: #666; }
+.prevnextpage em{
+    width: 10px;
+    position: relative;
+    top: -1px;
+    padding: 10px;
+}
+.tab-link-page ul li.navlink{
+    position: absolute;
+    right: 10px;
+    top: -1px;
+    border: none;
+}
+.why img{
+    width: 100%;
+}
+
+.sideTit{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 45px;
+    margin-bottom: 9px;
+    padding-left: 11px;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+}
+.sales{
+    margin-bottom: 15px;
+    border: 1px solid #e7e7e7;
+    margin-top: 15px;
+    clear: both;
+}
+.sales .babyImg img{
+    padding-left: 8px;
+    width: 100%;
+}
+
+.sales .babyImg{
+    width: 40%;
+    position: relative;
+    display: inline-block;
+}
+
+a.rank-item {
+    display: inline-block;
+    border-bottom: 1px #ccc solid;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rank-item .babyImg i {
+    line-height: 16px;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 0 8px 0;
+    background: #ff6980;
+}
+.sales .babyInfo{
+    float: right;
+    width: 60%;
+    padding: 10px;
+    padding-top: 0;
+    color: #666;
+}
+.sales .babyInfo p{
+    font-size: 14px;
+    line-height: 14px;
+    height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.sales .babyInfo i.pink{
+    color: #ff6980;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.zhuanzhen{ margin-bottom: 24px; border: 1px solid #efefef; }
+.zhuanzhen{  padding: 21px 18px 0; }
+.zhuanzhen p{ padding-bottom: 15px; font-size: 14px; line-height: 20px; text-align: center; }
+.zhuanzhen a{
+    display: block;
+    max-width: 160px;
+    height: 38px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff !important;
+    border-radius: 2px;
+    background: #ffb93f;
+    position: relative;
+    bottom: -17px;
+}
+
+.zhuanzhen a:hover{ text-decoration: none; background: #ffa127; }
+
