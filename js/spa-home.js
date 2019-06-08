@@ -160,17 +160,19 @@ jQuery(document).ready(function($){
     var offset = $(".float-nav-wrap").offset();
 
     function menuScrollBottom() {
-        if ($(this).scrollTop() >  offset.top) {
-            $(".float-nav-wrap").addClass("active");
-        }
-        else if($(this).scrollTop() <  offset.top){
-            $(".float-nav-wrap").removeClass("active");
+        if($(".float-nav-wrap").length){
+            if ($(this).scrollTop() >  offset.top) {
+                $(".float-nav-wrap").addClass("active");
+            }
+            else if($(this).scrollTop() <  offset.top){
+                $(".float-nav-wrap").removeClass("active");
+            }
         }
     }
 
     menuScrollBottom();
     $(window).scroll(function() {
-        menuScrollBottom();
+            menuScrollBottom();
     });
 
 	function menuScroll() {

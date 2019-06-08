@@ -1662,7 +1662,7 @@ button:focus {outline:0;}
 .banner-scroll.active, .banner-scroll.pause{
     position: relative;
 }
-.banner-scroll.active a{
+.banner-scroll.active .spa-share{
     position: fixed;
     top: 110px;
     max-width: 170px;
@@ -1674,7 +1674,7 @@ button:focus {outline:0;}
 .banner-scroll.active{
     position: relative;
 }
-.banner-scroll.pause a{
+.banner-scroll.pause .spa-share{
     position: absolute;
     bottom: 30px;
     max-width: 170px;
