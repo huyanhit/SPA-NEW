@@ -646,3 +646,112 @@ a.rank-item {
     top: auto;
     background: #fff;
 }
+
+.cardImg img{
+    width: 100%;
+}
+.theS .teyao{
+    position: absolute;
+    right: 15px;
+    background: #fbadb3;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    top: 5px;
+    padding-right: 5px;
+    color: #fff;
+    z-index: 10;
+}
+.theS .doc-baby .sale66_icon3{
+    background: #ff5370;
+    padding: 0 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.cardInfo .item1 .ft20{
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.theS{
+    overflow: hidden;
+    border: 1px #eee solid;
+    border-radius: 5px;
+}
+.cardInfo{
+    color: #666;
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+}
+.cardInfo:hover{
+    top: -118px;
+    transition: transform 1s, top 1s;
+}
+.cardInfo:hover:before{
+    top: -230px;
+    display: block;
+    left: -15px;
+    position: absolute;
+    transition: height 1s, top 1s;
+    height: 500px;
+}
+
+.cardInfo:before{
+    content: "";
+    border-top: 30px rgba(255, 255, 255, 0) solid;
+    border-left: 300px #ffffffc7 solid;
+    border-bottom: 0px rgba(255, 255, 255, 0) solid;
+    border-right: 0 #fff0 solid;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    display: block;
+    left: -15px;
+    z-index: -1;
+}
+.cardInfo .item2{
+    margin-top: 5px;
+    color: #999999;
+}
+.cardInfo .item3{
+    color: #999999;
+    display: inline-block;
+    border-bottom: 1px #ccc dotted;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.cardInfo .item3 b{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: normal;
+    padding-right: 3px;
+    padding-left: 10px;
+    color: #ff5370;
+}
+.cardInfo .item3 .right{
+    color: #333333;
+}
+.cardInfo .item3 .right i{
+    font-family: Arial;
+    font-size: 15px;
+    padding-right: 6px;
+}
+
+.cardInfo .doc-baby{ height: 40px; margin-top: 11px; padding-bottom: 14px; }
+.cardInfo .doc-baby p{ font-size: 13px; line-height: 21px; overflow: hidden; max-height: 40px; margin-top: -2px; color: #999; }
+.cardInfo .doc-baby a{ position: relative; display: block; overflow: hidden; margin-bottom: 5px; }
+.cardInfo .doc-baby a:hover, .cardInfo .doc-baby a:hover .right{ color: #ff5370; }
+.cardInfo .doc-baby .left{ overflow: hidden; max-width: 180px; height: 16px; white-space: nowrap; text-overflow: ellipsis; }
+.cardInfo .doc-baby .right{ position: absolute; right: 0; color: #999; }
+.cardInfo .checkMore{  margin-top: 10px; float: right; color: #999; }
+.cardInfo .checkMore b{ font-family: Arial; font-size: 14px; font-weight: normal; padding: 0 2px; color: #ff5370; }
+.cardInfo .goIndex{ top: 100%; left: 50%; overflow: hidden; width: 100px; height: 30px; margin: -50px 0 0 -50px; padding: 0; background: none; }
+.cardInfo .goIndex a{ font-size: 14px; line-height: 28px; display: none; width: 98px; margin: 0 auto; text-align: center; color: #666; border: 1px solid #e8e8e8; border-radius: 3px; }
+.docCards li:hover .cardInfo .goIndex a{ display: block; }
