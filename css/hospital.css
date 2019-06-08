@@ -1,6 +1,9 @@
 .padding-left-0{
     padding-left: 0;
 }
+.text-center{
+    text-align: center;
+}
 .menu-hospital{
     position: relative;
 }
@@ -112,7 +115,12 @@
     color: #666;
 }
 
-.tab-link-page  ul li:hover a, .tab-link-page  ul li:hover i{
+.tab-link-page  ul .navlink a:hover {
+    color: #ff5370;
+}
+
+
+.tab-link-page  ul li:hover >a, .tab-link-page  ul li:hover >i{
     color: #ff5370;
 }
 
@@ -147,17 +155,17 @@
     padding-right: 15px;
 }
 
-.tab-link-page .tab-content dl{
+.tab-link-page .tab-content .item dl{
     display: inline-block;
     width: calc(100% - 60px);
 }
 
-.tab-link-page .tab-content dd{
+.tab-link-page .tab-content .item dd{
     display: inline-block;
     width: calc(100% - 100px);
 }
 
-.tab-link-page .tab-content dt{
+.tab-link-page .tab-content .item dt{
     float: left;
     width: 100px;
     padding-right: 15px;
@@ -172,18 +180,24 @@
     font-size: 14px;
     font-weight: 400;
     text-decoration: none;
-    display: inline-block;
-    border-top: 1px #ccc solid;
-    padding-bottom: 15px;
-}
-.tab-link-page .tab-content a.taoItem{
-    padding: 15px 0;
-}
-.tab-link-page .tab-content a:first-child{
-    border-top: none;
 }
 
-.tab-link-page .tab-content .now, .tab-link-page .tab-content a:hover{
+.tab-link-page .tab-content .taoItem{
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    border-top: 1px #ccc solid;
+}
+.tab-link-page .tab-content  .item-links a.taoItem{
+    padding: 15px 0;
+}
+.tab-link-page .tab-content .tab-list> a:last-child{
+    border-bottom: none !important;
+}
+
+.tab-link-page .tab-content .now, .tab-link-page .tab-content .item-links a:hover{
     color: #ff5370;
 }
 
@@ -218,7 +232,7 @@
 .showMore > div{ display: block; padding-bottom: 10px; }
 
 .tab-link-page .tab-list{
-    padding: 10px;
+    padding: 15px;
     border: 1px #ccc solid;
     width: 100%;
 }
@@ -244,6 +258,12 @@
     text-transform: uppercase;
     margin-bottom: 15px;
     font-size: 24px;
+}
+
+.tab-link-page .tab-content a.taoItem {
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px #ccc solid;
 }
 
 .content-page{
@@ -404,3 +424,181 @@ a.rank-item {
 
 .zhuanzhen a:hover{ text-decoration: none; background: #ffa127; }
 
+.hosList .hos-img{
+    width: 13%;
+    display: inline-block;
+    float: left;
+}
+.hosList{
+    border-bottom: 1px #ccc solid;
+    padding: 10px 0px;
+    padding-bottom: 0;
+}
+.hosList .hos-related{
+    padding-left: 10px;
+    width: 52%;
+    float: left;
+}
+
+.hosList .hos-img img{
+    width: 100%;
+}
+.tab-link-page .tab-content dt {
+
+}
+
+.hosList .hos-related .item1 a {
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+.hosList .hos-related .item1{
+    position: relative;
+    top: -3px;
+}
+
+.hosList .hos-related .item2 .inline{
+    position: relative;
+    top: -3px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hosList .hos-related .item2{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+}
+
+.hosList .hos-related .item2 .inline b{
+    color: #666;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.hosList .hos-related .hos-atr{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fbc27b; cursor: pointer;
+    width: 185px;
+    float: right;
+    display: inline-block;
+    height: 50px;
+}
+.hosList .hos-related .hos-atr > span{
+    position: absolute;
+    right: 0;
+    top: -23px;
+    border: 1px #febd7b solid;
+    padding: 0 5px;
+    line-height: 18px;
+    width: 100%;
+}
+
+.hosList .hos-related .hos-atr .hide-more{
+    display: none;
+}
+
+.hosList .hos-related .hos-atr:hover .hide-more{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-top: 1px #ffbd77 solid;
+}
+
+.hosList  .hide-more span{
+    display: block;
+}
+
+.hosList .hos-related .item3{
+    text-decoration: none;
+    font-weight: 400;
+    color: #666;
+    border: 1px #ccc solid;
+    padding: 0 5px;
+    font-size: 14px;
+    padding-bottom: 2px;
+    margin-top: 8px;
+    display: inline-block;
+}
+.hosList .hos-case{
+    width: 35%;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+.hosList .hos-case .left{
+    width: 40%;
+}
+
+.hosList .hos-case .levNum{
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+}
+
+.hosList .hos-case .levNum em{
+    font-size: 22px;
+    color: #ff5370;
+}
+.hosList .hos-case .left a{
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+    color: #999;
+}
+.hosList .hos-case .right{
+    width: 60%;
+}
+
+.hosList .hos-case .right i{
+    color: #666;
+}
+.hosList .hos-case .right span{
+    display: block;
+    font-weight: 400;
+    line-height: 23px;
+    display: block;
+    color: #999;
+}
+
+.doc-serv{ padding-top: 15px; }
+.doc-serv span{ float: left; color: #999; }
+.doc-serv .item1{ overflow: hidden; width: 516px; height: 30px; white-space: nowrap; text-overflow: ellipsis; color: #666; }
+.doc-serv > a .item1{
+    padding-right: 60px;
+    position: relative;
+}
+.doc-serv .item2{ width: 101px; }
+.doc-serv .item3{ width: 126px; }
+.doc-serv .item4{ width: 160px; }
+.hos-serv .item1{ width: 500px; color: #666; }
+.hos-serv .item2{ width: 85px; }
+.hos-serv .item3{ width: 85px; }
+.hos-serv .item4{ width: 88px; }
+.hos-serv .item5{ width: 85px; }
+.hos-serv .item4 i.fs-12{ margin-left: -4px; }
+.doc-serv p{ line-height: 30px; overflow: hidden; color: #999; background: #f9f9f9; }
+.doc-serv.hos-serv p .item1{ width: 500px; border-color: #6fb1e8; }
+.doc-serv p .item1{ width: 532px; text-indent: 15px; color: #666; border-left: 4px solid #36ccca; }
+.doc-serv > a{ line-height: 42px; display: block; overflow: hidden; border-bottom: 1px dashed #f3f3f3; }
+.doc-serv > a span em{ font-size: 14px; position: relative; top: 1px; padding-right: 5px; color: #ff5370; }
+.doc-serv > a:hover{ background: #fcfcfc; }
+.doc-serv > a:hover .item1{ color: #ff5370; }
+.doc-serv .checkMore{ line-height: 42px; text-align: right; }
+.doc-serv .checkMore a{ color: #666; }
+.doc-serv .checkMore a:hover{ color: #ff5370; }
+.doc-serv > a .item1 i{
+    position: absolute;
+    right: 0px;
+    top: -4px;
+}
