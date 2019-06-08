@@ -230,7 +230,8 @@ jQuery(document).ready(function($){
 
 
     var offsetAdv = $(".banner-scroll").offset();
-    function menuScrollBannerAdv() {
+    var bannerHeight =  $(".banner-scroll .spa-share").height();
+    function menuScrollBannerAdv(top) {
         var offsetFooter = $(".footer-app-wrap").offset();
         if ($(this).scrollTop() >  offsetAdv.top) {
             $(".banner-scroll").addClass("active");
@@ -238,16 +239,16 @@ jQuery(document).ready(function($){
         else if($(this).scrollTop() <  offsetAdv.top){
             $(".banner-scroll").removeClass("active");
         }
-
-        if($(this).scrollTop() > offsetFooter.top - 510){
+        console.log(bannerHeight);
+        if($(this).scrollTop() + top > offsetFooter.top - bannerHeight){
             $(".banner-scroll").addClass("pause");
         }else{
             $(".banner-scroll").removeClass("pause");
         }
     }
 
-    menuScrollBannerAdv();
+    menuScrollBannerAdv(110);
     $(window).scroll(function() {
-        menuScrollBannerAdv();
+        menuScrollBannerAdv(110);
     })
 });

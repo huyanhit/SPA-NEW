@@ -14,7 +14,7 @@
     width: 100%;
     position: relative;
     top: 39px;
-    z-index: 3000;
+    z-index: 100;
     display: block;
 }
 .menu-hospital .menu-left{
@@ -434,6 +434,9 @@ a.rank-item {
     padding: 10px 0px;
     padding-bottom: 0;
 }
+.hosList:last-child{
+    border-bottom: none !important;
+}
 .hosList .hos-related{
     padding-left: 10px;
     width: 52%;
@@ -640,4 +643,6 @@ a.rank-item {
     position: absolute;
     bottom: -30px;
     top: auto;
+    background: #fff;
+    left: 8px;
 }
