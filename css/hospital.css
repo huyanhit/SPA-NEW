@@ -577,23 +577,23 @@ a.rank-item {
 
 .doc-serv{ padding-top: 15px; }
 .doc-serv span{ float: left; color: #999; }
-.doc-serv .item1{ overflow: hidden; width: 516px; height: 30px; white-space: nowrap; text-overflow: ellipsis; color: #666; }
+.doc-serv .item1{ overflow: hidden; height: 30px; white-space: nowrap; text-overflow: ellipsis; color: #666; }
 .doc-serv > a .item1{
     padding-right: 60px;
     position: relative;
 }
-.doc-serv .item2{ width: 101px; }
-.doc-serv .item3{ width: 126px; }
-.doc-serv .item4{ width: 160px; }
-.hos-serv .item1{ width: 500px; color: #666; }
-.hos-serv .item2{ width: 85px; }
-.hos-serv .item3{ width: 85px; }
-.hos-serv .item4{ width: 88px; }
-.hos-serv .item5{ width: 85px; }
+.hos-serv .item1{
+    width: 60%;
+    color: #666;
+}
+.hos-serv .item2{ width: 10%; }
+.hos-serv .item3{ width: 10%; }
+.hos-serv .item4{ width: 10%; }
+.hos-serv .item5{ width: 10% }
 .hos-serv .item4 i.fs-12{ margin-left: -4px; }
 .doc-serv p{ line-height: 30px; overflow: hidden; color: #999; background: #f9f9f9; }
-.doc-serv.hos-serv p .item1{ width: 500px; border-color: #6fb1e8; }
-.doc-serv p .item1{ width: 532px; text-indent: 15px; color: #666; border-left: 4px solid #36ccca; }
+.doc-serv.hos-serv p .item1{ width: 60%; border-color: #6fb1e8; }
+.doc-serv p .item1{ text-indent: 15px; color: #666; border-left: 4px solid #36ccca; }
 .doc-serv > a{ line-height: 42px; display: block; overflow: hidden; border-bottom: 1px dashed #f3f3f3; }
 .doc-serv > a span em{ font-size: 14px; position: relative; top: 1px; padding-right: 5px; color: #ff5370; }
 .doc-serv > a:hover{ background: #fcfcfc; }
@@ -675,7 +675,7 @@ a.rank-item {
     text-transform: uppercase;
 }
 .group-theS {
-    margin-bottom: 30px;
+    margin: 15px -15px;
 }
 .theS{
     overflow: hidden;
