@@ -664,7 +664,7 @@ a.rank-item {
 }
 .theS .doc-baby .sale66_icon3{
     background: #ff5370;
-    padding: 0 4px;
+    padding: 0 2px;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -688,6 +688,7 @@ a.rank-item {
     position: relative;
     z-index: 1;
     top: 0;
+    transition: transform 1s, top 1s;
 }
 .cardInfo:hover{
     top: -118px;
@@ -698,8 +699,8 @@ a.rank-item {
     display: block;
     left: -15px;
     position: absolute;
-    transition: height 1s, top 1s;
-    height: 500px;
+    transition: height 1s, top 2s;
+    height: 1000px;
 }
 
 .cardInfo:before{
@@ -713,7 +714,9 @@ a.rank-item {
     top: -30px;
     display: block;
     left: -15px;
+    height: 15px;
     z-index: -1;
+    transition: height 2s, top 1s;
 }
 .cardInfo .item2{
     margin-top: 5px;
