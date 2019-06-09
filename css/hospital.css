@@ -101,12 +101,12 @@
     padding-right: 10px;
 }
 .tab-link-page ul {
-    border: 1px #ccc solid;
+    border: 1px #efefef solid;
 }
 .tab-link-page ul li{
     text-align: center;
     padding: 5px 15px;
-    border-right: 1px #ccc solid;
+    border-right: 1px #efefef solid;
     position: relative;
 }
 .tab-link-page  ul li a{
@@ -136,7 +136,7 @@
 }
 .tab-link-page .tab-content .item {
     display: inline-block;
-    border: 1px #ccc solid;
+    border: 1px #efefef solid;
     padding: 10px 15px;
     text-transform: uppercase;
     font-size: 14px;
@@ -188,7 +188,7 @@
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
-    border-top: 1px #ccc solid;
+    border-top: 1px #efefef solid;
 }
 .tab-link-page .tab-content  .item-links a.taoItem{
     padding: 15px 0;
@@ -233,7 +233,7 @@
 
 .tab-link-page .tab-list{
     padding: 15px;
-    border: 1px #ccc solid;
+    border: 1px #efefef solid;
     width: 100%;
 }
 .tab-link-page .tab-list .listIimg{
@@ -263,7 +263,7 @@
 .tab-link-page .tab-content a.taoItem {
     padding: 10px 0;
     display: block;
-    border-bottom: 1px #ccc solid;
+    border-bottom: 1px #efefef solid;
 }
 
 .content-page{
@@ -366,7 +366,7 @@
 
 a.rank-item {
     display: inline-block;
-    border-bottom: 1px #ccc solid;
+    border-bottom: 1px #efefef solid;
     margin-top: 10px;
     padding-bottom: 10px;
 }
@@ -430,7 +430,7 @@ a.rank-item {
     float: left;
 }
 .hosList{
-    border-bottom: 1px #ccc solid;
+    border-bottom: 1px #efefef solid;
     padding: 10px 0px;
     padding-bottom: 0;
 }
@@ -514,7 +514,7 @@ a.rank-item {
     width: 100%;
     background-color: white;
     display: block;
-    border: 1px #ccc solid;
+    border: 1px #efefef solid;
     padding: 10px;
     border-top: 1px #ffbd77 solid;
 }
@@ -527,7 +527,7 @@ a.rank-item {
     text-decoration: none;
     font-weight: 400;
     color: #666;
-    border: 1px #ccc solid;
+    border: 1px #efefef solid;
     padding: 0 5px;
     font-size: 14px;
     padding-bottom: 2px;
@@ -732,7 +732,7 @@ a.rank-item {
 .cardInfo .item3{
     color: #999999;
     display: inline-block;
-    border-bottom: 1px #ccc dotted;
+    border-bottom: 1px #efefef dotted;
     padding-bottom: 10px;
     width: 100%;
 }
