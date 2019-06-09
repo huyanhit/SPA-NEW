@@ -779,3 +779,7 @@ a.rank-item {
     padding: 3px 10px;
 }
 .docCards li:hover .cardInfo .goIndex a{ display: block; }
+
+.modal-backdrop.in {
+    opacity: .5;
+}
