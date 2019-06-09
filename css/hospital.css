@@ -151,13 +151,13 @@
 }
 .tab-link-page .tab-content .title{
     float: left;
-    width: 60px;
+    width: 100px;;
     padding-right: 15px;
 }
 
 .tab-link-page .tab-content .item dl{
     display: inline-block;
-    width: calc(100% - 60px);
+    width: calc(100% - 100px);
 }
 
 .tab-link-page .tab-content .item dd{
@@ -789,4 +789,16 @@ a.rank-item {
 
 .modal-backdrop.in {
     opacity: .5;
+}
+
+@media only screen and (max-width: 1025px){
+    .modal, .head-wrap, .right-fixed-nav,.header-main ,
+    .menu-hospital, .breadcrumb, .ct-right-bar,
+    .tab-link-page .title-tap{display:  none !important;}
+}
+
+@media only screen and (min-width: 1025px){
+    .tab-link-page .backIndex, .tab-link-page .menu{
+        display: none !important;
+    }
 }
