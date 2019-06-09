@@ -669,6 +669,10 @@ a.rank-item {
     text-transform: uppercase;
     font-size: 12px;
 }
+.cardInfo .item1 {
+    position: relative;
+    top: -30px;
+}
 .cardInfo .item1 .ft20{
     font-size: 21px;
     font-weight: 600;
@@ -693,7 +697,7 @@ a.rank-item {
     transition: transform 1s, top 1s;
 }
 .cardInfo:hover{
-    top: -118px;
+    top: -95px;
     transition: transform 1s, top 1s;
 }
 .cardInfo:hover:before{
@@ -713,15 +717,15 @@ a.rank-item {
     border-right: 0 #fff0 solid;
     width: 100%;
     position: absolute;
-    top: -30px;
+    top: -50px;
     display: block;
     left: 0px;
-    height: 15px;
+    height: 70px;
     z-index: -1;
     transition: height 2s, top 1s;
 }
 .cardInfo .item2{
-    margin-top: 5px;
+    margin-top: -20px;
     color: #999999;
 }
 .cardInfo .item3{
@@ -742,6 +746,8 @@ a.rank-item {
 }
 .cardInfo .item3 .right{
     color: #333333;
+    width: 100%;
+    text-align: right;
 }
 .cardInfo .item3 .right i{
     font-family: Arial;
