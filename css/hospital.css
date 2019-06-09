@@ -491,11 +491,12 @@ a.rank-item {
     float: right;
     display: inline-block;
     height: 50px;
+    top: -20px;
+    z-index: 20;
 }
 .hosList .hos-related .hos-atr > span{
     position: absolute;
     right: 0;
-    top: -23px;
     border: 1px #febd7b solid;
     padding: 0 5px;
     line-height: 18px;
@@ -509,7 +510,7 @@ a.rank-item {
 .hosList .hos-related .hos-atr:hover .hide-more{
     position: absolute;
     right: 0;
-    top: -5px;
+    top: 20px;
     width: 100%;
     background-color: white;
     display: block;
