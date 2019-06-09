@@ -491,7 +491,7 @@ a.rank-item {
     float: right;
     display: inline-block;
     height: 50px;
-    top: -20px;
+    top: -23px;
     z-index: 20;
 }
 .hosList .hos-related .hos-atr > span{
@@ -605,7 +605,7 @@ a.rank-item {
 .doc-serv > a .item1 i{
     position: absolute;
     right: 0px;
-    top: -4px;
+    top: -2px;
 }
 
 .navpage{ height: 30px; margin-top: 25px; font-family: 'Microsoft Yahei'; font-size: 0; text-align: center; }
