@@ -795,10 +795,86 @@ a.rank-item {
     .modal, .head-wrap, .right-fixed-nav,.header-main ,
     .menu-hospital, .breadcrumb, .ct-right-bar,
     .tab-link-page .title-tap{display:  none !important;}
+
+    .tab-link-page ul li {
+        display: inline-block;
+        padding: 5px;
+        font-size: 14px;
+        border: none;
+        margin-right: -15px;
+    }
+    .tab-link-page ul li i{
+        display: none;
+    }
+    .tab-link-page ul li a{
+        color: #fff;
+        background: #eb435d;
+        padding: 5px 10px;
+    }
+    .tab-link-page .backIndex{
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        text-transform: uppercase;
+        padding: 5px 0px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .tab-link-page .backIndex a{
+        color: #fff;
+    }
+
+    .tab-link-page .menu {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        text-transform: uppercase;
+        padding: 5px 0px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .mobile-menu{
+        background: #ff6980;
+        height: 55px;
+        margin: -15px;
+        color: #fff;
+    }
+    .menu .fadein{
+        display:  none
+    }
+
+    .nav-pills{
+        text-align: center;
+        display: block;
+    }
+
+    .tab-link-page ul {
+        border: none;
+        margin-top: -35px;
+        height: 35px;
+    }
+    .tab-link-page ul li.active:before {
+        display: none;
+    }
+    .tab-link-page ul li:hover >a,
+    .tab-link-page ul li:hover >i {
+        color: #ff5370;
+    }
+
+    .tab-link-page ul li.active a{
+        background: #fff;
+        color: #ff6980;
+    }
+
+    .tab-link-page ul li.active:hover a{
+        background: #fff;
+        color: #ff6980;
+    }
 }
 
 @media only screen and (min-width: 1025px){
-    .tab-link-page .backIndex, .tab-link-page .menu{
+    .tab-link-page .mobile-menu{
         display: none !important;
     }
 }
