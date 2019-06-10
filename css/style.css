@@ -64,6 +64,11 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .head-wrap .nav-link{
 	padding: 0
 }
+
+.head-wrap .nav-item:last-child .nav-link{
+    padding-right: 0 !important;
+}
+
 .head-wrap a i{
 	margin-right: 10px
 }
@@ -163,6 +168,11 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .header-main .search-box {
     position: relative;
     height: 36px;
+    margin-top: 15px;
+}
+
+.brand-right{
+    margin-top: 3px;
 }
 .header-main .search-home{
 	color: #ccc;
@@ -198,7 +208,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .header-main .slide-list {
     display: block;
     height: 56px;
-    padding: 0 20px;
+    padding: 0;
     float: right;
 }
 .header-main  .slide-list .slide-img {
@@ -432,11 +442,10 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     color: #ff6980;
 }
 .dropdown:hover>.dropdown-menu {
-  display: block;
-}
-
-.navbar-expand-lg .navbar-collapse{
-    margin-left: -25px;
+   display: block;
+   top: 34px;
+   z-index: 3000;
+   border-radius: 0;
 }
 
 .banner-wrap {
@@ -618,7 +627,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .spa-share{
     z-index: 10;
     top: 0px;
-    margin-top: 0;
+    margin-top: 15px;
 }
 
 .spa-share img{
@@ -933,7 +942,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .footer-wrap .wrap-main {
     overflow: hidden;
-    padding: 60px 0 50px 0;
+    padding: 60px 15px 50px 15px;
 }
 .footer-wrap .wrap-main .data-txt {
     margin-top: 10px;
@@ -1078,33 +1087,35 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 
 .float-nav-wrap.active{
     position: fixed;
-    top: 50px;
+    top: 0;
     z-index: 2000;
     background: #fff;
     animation: slideup2 0.5s;
-    margin-top: 0;
+    margin-top: 50px;
+    height: 60px;
 }
 .float-nav-wrap.active .item{
     margin-top: 0px;
 }
 .float-nav-wrap.active a{
-padding: 16px;
+    padding: 16px;
 }
 
 .float-nav-wrap.active:before{
-left: -37%;
-content: '';
-position: fixed;
-background: #fff;
-top: 0px;
-border-bottom: 1px #ccc solid;
-height: 110px;
-width: 200%;
+    left: -37%;
+    content: '';
+    position: fixed;
+    background: #fff;
+    top: 0px;
+    border-bottom: 1px #ccc solid;
+    height: 110px;
+    width: 200%;
+    animation:  slideup 0.5s;
 }
 
 
 .float-nav-wrap.active .prev, .float-nav-wrap.active .next{
-margin-top: 17px;
+    margin-top: 17px;
 }
 
 
@@ -1127,12 +1138,12 @@ margin-top: 17px;
 }
 
 @keyframes slideup2 {
-0% {
-    top: 0px;
-}
-100% {
-    top: 48px;
-}
+    0% {
+        top: -110px;
+    }
+    100% {
+        top: 0px;
+    }
 }
 
 @keyframes slideup3 {
@@ -1179,63 +1190,83 @@ margin-top: 17px;
 }
 
 .modal .nav-tabs li a{
-    padding-right: 15px;
     text-decoration: none;
     color: #ff5370;
-    width: 50%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
 }
 .modal .nav-tabs li{
     width: 50%;
     position: relative;
 }
+
+.modal-title{
+    margin-bottom: 0;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #666
+}
 .modal .nav-tabs li a.active:before{
     content: "";
-    height: 3px;
+    height: 2px;
     position: absolute;
     width: 100%;
     background: #ff5370;
-    top: 30px;
+    top: 31px;
+    left: 0;
 }
 
 .modal .modal-dialog{
-    width: 415px;
-    margin-top: 200px;
+    width: 370px;
+    margin-top: 150px;
 }
-
+.modal .login-input-box input{
+    padding-top: 3px;
+}
 .modal .login-input-box input[type="text"]{
-    width: 245px;
-    border: 1px #ff5370 solid;
-    height: 40px;
-    padding: 9px 5px;
-    margin-top: 25px;
+    width: 200px;
+    border: 1px #CCC solid;
+    height: 37px;
+    padding: 5px 5px;
+    margin-top: 30px;
+    color: #999;
 }
 
 .modal .login-input-box input[type="button"]{
-    height: 40px;
-    background: #eee;
+    height: 37px;
+    background: #ddd;
     padding: 5px;
-    top: -1px;
+    top: 0px;
     position: relative;
     width: 120px;
-    border: 1px #000 solid;
-
+    border: 1px #ccc solid;
     margin-left: 11px;
 }
 
-.modal #sms-ma,#account,#account-pwd1 {
-    height: 40px;
-    border: 1px #ff5370 solid;
-    height: 40px;
+.modal #sms-ma,#account-pwd1 {
+     border: 1px #CCC solid;
+     height: 37px;
+     padding: 7px 5px;
+     margin-top: 18px;
+     width: 335px;
+     color: #999;
+ }
+
+#account{
+    border: 1px #CCC solid;
+    height: 37px;
     padding: 7px 5px;
-    margin-top: 20px;
-    width: 380px;
+    margin-top: 30px;
+    width: 335px;
+    color: #999;
 }
 
 .modal .sms-bot{
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 10px;
-    color: #ccc;
-    margin-bottom: 20px;
+    color: #999;
+    margin-bottom: 10px;
 }
 
 .modal .tel-login-btn, .login-btn{
@@ -1243,8 +1274,8 @@ margin-top: 17px;
     border: none;
     padding: 5px;
     position: relative;
-    width: 380px;
-    margin-top: 20px;
+    width: 335px;
+    margin-top: 30px;
     border-radius: 4px;
     background: #ff5370;
     color: #fff;
@@ -1266,7 +1297,8 @@ margin-top: 17px;
     clear: both;
     text-align: center;
     padding-top: 10px;
-    color: #ccc;
+    color: #999;
+    font-size: 16px;
 }
 .modal .other-lab{
     text-align: center;
@@ -1276,19 +1308,38 @@ margin-top: 17px;
     display: inline-block;width: 37px;
     height: 37px;
     margin: 0 22px;
-    background: url(../images/alert-login.png) no-repeat;
 }
-.modal .other-lab a.sina{
-    background-position: 0 -31px;
+.modal .other-lab a i{
+    font-size: 35px;
 }
-.modal .other-lab a.qq{
-    background-position: -47px -77px;
+.modal .other-lab a .fa-facebook{
+    color: #1a91ff;
 }
-.modal .other-lab a.weixin{
-    background-position: -96px -31px;
+.modal .other-lab a .fa-google{
+    color: #ff232a;
 }
+.modal .other-lab a .fa-twitter{
+    color: #5034ff;
+}
+
 .modal .register-test{
     text-align: center ;
+}
+
+.modal-content{
+    border-radius: 5px;
+}
+
+.modal .remember-ls {
+    color: #999;
+    margin-right: 8px;
+}
+
+.modal .remember-ls input[type="checkbox"]{
+    float: left;
+    position: relative;
+    top: 7px;
+    margin-right: 6px;
 }
 
 /*Hiden element on mobile*/
@@ -1344,6 +1395,7 @@ margin-top: 17px;
     .float-nav-wrap.active {
         width: 100%;
         left: 0;
+        margin-top: 0px;
     }
     .float-nav-wrap.active {
         animation: slideup3 0.5s;
@@ -1369,6 +1421,7 @@ margin-top: 17px;
     .hosTao .tao-wrap a {
         width: 16.66%;
     }
+
 }
 
 /*Mobile UI*/
@@ -1613,7 +1666,7 @@ button:focus {outline:0;}
 .banner-scroll.active, .banner-scroll.pause{
     position: relative;
 }
-.banner-scroll.active a{
+.banner-scroll.active .spa-share{
     position: fixed;
     top: 110px;
     max-width: 170px;
@@ -1625,7 +1678,7 @@ button:focus {outline:0;}
 .banner-scroll.active{
     position: relative;
 }
-.banner-scroll.pause a{
+.banner-scroll.pause .spa-share{
     position: absolute;
     bottom: 30px;
     max-width: 170px;

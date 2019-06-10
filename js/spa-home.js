@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
 	}
 	  function homeBannerSlide() {
         var bannerTime;
-        var speed = 5000;
+        var speed = 50000;
         var bannerIndex = 0;
         var $slideLi = $(".banner-slide li");
         var slideLength = $slideLi.length;
@@ -160,17 +160,19 @@ jQuery(document).ready(function($){
     var offset = $(".float-nav-wrap").offset();
 
     function menuScrollBottom() {
-        if ($(this).scrollTop() >  offset.top) {
-            $(".float-nav-wrap").addClass("active");
-        }
-        else if($(this).scrollTop() <  offset.top){
-            $(".float-nav-wrap").removeClass("active");
+        if($(".float-nav-wrap").length){
+            if ($(this).scrollTop() >  offset.top) {
+                $(".float-nav-wrap").addClass("active");
+            }
+            else if($(this).scrollTop() <  offset.top){
+                $(".float-nav-wrap").removeClass("active");
+            }
         }
     }
 
     menuScrollBottom();
     $(window).scroll(function() {
-        menuScrollBottom();
+            menuScrollBottom();
     });
 
 	function menuScroll() {
@@ -223,32 +225,44 @@ jQuery(document).ready(function($){
             992:{
                 items:5
             },
-            1025:{
-                items:7
-            }
         }
     });
 
 
     var offsetAdv = $(".banner-scroll").offset();
-    var offsetFooter = $(".footer-app-wrap").offset();
-    function menuScrollBannerAdv() {
+    var bannerHeight =  $(".banner-scroll .spa-share").height();
+    function menuScrollBannerAdv(top) {
+        var offsetFooter = $(".footer-app-wrap").offset();
         if ($(this).scrollTop() >  offsetAdv.top) {
             $(".banner-scroll").addClass("active");
         }
         else if($(this).scrollTop() <  offsetAdv.top){
             $(".banner-scroll").removeClass("active");
         }
-
-        if($(this).scrollTop()+500 > offsetFooter.top){
+        console.log(bannerHeight);
+        if($(this).scrollTop() + top > offsetFooter.top - bannerHeight){
             $(".banner-scroll").addClass("pause");
         }else{
             $(".banner-scroll").removeClass("pause");
         }
     }
 
-    menuScrollBannerAdv();
+    menuScrollBannerAdv(110);
     $(window).scroll(function() {
-        menuScrollBannerAdv();
+        menuScrollBannerAdv(110);
     })
+
+    if($(".mobile-menu .menu").length){
+        $(".mobile-menu .menu").click(function () {
+            $(this).toggleClass("active");
+        })
+    }
+
+    function menuScroll() {
+        if ($(this).scrollTop() > 100) {
+            $(".fixed-top").addClass("active");
+        }else{
+            $(".fixed-top").removeClass("active");
+        }
+    }
 });
