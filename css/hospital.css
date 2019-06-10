@@ -791,27 +791,42 @@ a.rank-item {
     opacity: .5;
 }
 
-@media only screen and (max-width: 1025px){
-    .modal, .head-wrap, .right-fixed-nav,.header-main ,
+@media only screen and (max-width: 1025px) {
+    .modal, .head-wrap, .right-fixed-nav, .header-main,
     .menu-hospital, .breadcrumb, .ct-right-bar,
-    .tab-link-page .title-tap{display:  none !important;}
+    .tab-link-page .title-tap {
+        display: none !important;
+    }
 
-    .tab-link-page ul li {
+    .tab-link-page #parent-tab > ul li {
         display: inline-block;
         padding: 5px;
         font-size: 14px;
         border: none;
         margin-right: -15px;
     }
-    .tab-link-page ul li i{
+
+    .nav-pills li:first-child a {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .nav-pills li:last-child a {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .tab-link-page #parent-tab > ul li i {
         display: none;
     }
-    .tab-link-page ul li a{
+
+    .tab-link-page #parent-tab > ul li a {
         color: #fff;
         background: #eb435d;
         padding: 5px 10px;
     }
-    .tab-link-page .backIndex{
+
+    .tab-link-page .backIndex {
         position: absolute;
         left: 10px;
         top: 5px;
@@ -821,8 +836,9 @@ a.rank-item {
         text-decoration: none;
     }
 
-    .tab-link-page .backIndex a{
+    .tab-link-page .backIndex a {
         color: #fff;
+        text-decoration: none;
     }
 
     .tab-link-page .menu {
@@ -834,47 +850,220 @@ a.rank-item {
         font-size: 14px;
         text-decoration: none;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         background: #ff6980;
         height: 55px;
         margin: -15px;
         color: #fff;
     }
-    .menu .fadein{
-        display:  none
+
+    .menu .fadein {
+        display: none
     }
 
-    .nav-pills{
+    .menu.active .fadein {
+        display: block;
+        position: absolute;
+        width: 120px;
+        right: 0;
+        background: rgba(0, 0, 0, .75);
+        z-index: 100;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .menu.active .fadein a {
+        display: block;
+        color: #fff;
+        padding: 10px 0;
+        border-top: 1px #666 solid;
+        text-transform: initial;
+    }
+
+    .menu.active .fadein a:first-child {
+        border-top: none;
+    }
+
+    .menu.active .fadein a i {
+        padding-right: 5px;
+        width: 20px;
+    }
+
+    .menu.active .fadein a:hover, .menu.active .fadein a:hover i {
+        color: #ff6980;
+    }
+
+    .nav-pills {
         text-align: center;
         display: block;
     }
 
-    .tab-link-page ul {
+    .tab-link-page #parent-tab > ul {
         border: none;
         margin-top: -35px;
         height: 35px;
     }
-    .tab-link-page ul li.active:before {
+
+    .tab-link-page #parent-tab > ul li.active:before {
         display: none;
     }
-    .tab-link-page ul li:hover >a,
-    .tab-link-page ul li:hover >i {
+
+    .tab-link-page #parent-tab > ul li:hover > a,
+    .tab-link-page #parent-tab > ul li:hover > i {
         color: #ff5370;
     }
 
-    .tab-link-page ul li.active a{
+    .tab-link-page #parent-tab > ul li.active a {
         background: #fff;
         color: #ff6980;
     }
 
-    .tab-link-page ul li.active:hover a{
+    .tab-link-page #parent-tab > ul li.active:hover a {
         background: #fff;
         color: #ff6980;
+    }
+
+    .tab-link-page #parent-tab .tab-pane .item {
+        display: none;
+    }
+
+    .tab-link-page ul {
+        border: none;
+    }
+
+    .tab-link-page ul li {
+        border: none;
+    }
+
+    .item-mobile ul li {
+        display: inline-block;
+        border-right: 1px #ccc solid;
+        line-height: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .item-mobile ul li:last-child {
+        border: none;
+    }
+
+    .item-mobile ul li i {
+        margin-left: 5px;
+    }
+
+    .item-mobile {
+        margin: 0 -15px;
+    }
+
+    .item-mobile .tab-content span {
+        display: block;
+        padding: 6px 15px;
+        border-top: 1px #ccc solid;
+        position: relative;
+        color: #ccc;
+        text-transform: uppercase;
+    }
+
+    .item-mobile .tab-content span.active:before,
+    .item-mobile .tab-content span:hover:before {
+        left: 0;
+        content: "";
+        height: 31px;
+        width: 2px;
+        background: #ff6980;
+        position: absolute;
+        top: 2px;
+    }
+
+    .item-mobile .tab-content span:after {
+        content: "\f054";
+        font-family: "Font Awesome 5 free";
+        font-weight: 900;
+        float: right;
+
+    }
+
+    .item-mobile .tab-content span:hover,
+    .item-mobile .tab-content span:hover a {
+        color: #ff6980;
+    }
+
+    .item-mobile .tab-content span:hover:after {
+        content: "\f00c";
+    }
+
+    .tab-content .properties{
+        padding: 8px 15px;
+        border-bottom: 1px #ccc solid;
+        border-top: 1px #ccc solid;
+    }
+    .tab-content .button-link{
+        padding:  15px;
+        margin-bottom: 10px;
+    }
+    .tab-content .button-link a{
+        border: 1px #ccc solid;
+        border-radius: 3px;
+        padding: 2px 10px;
+        margin-right: 18px;
+        text-transform: capitalize;
+    }
+    .content-page .nav-pills{
+        display: none;
+    }
+    .fixed-top {
+        display: none;
+    }
+    .fixed-top.active{
+        display: block;
+        position: fixed;
+        top: 0;
+        padding: 10px;
+        background: #fff;
+        border-bottom: 1px #ccc solid;
+    }
+    .fixed-top .red-logo {
+        width: 18%;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .fixed-top .logo-text {
+        display: inline-block;
+        vertical-align: middle;
+        width: 53%;
+    }
+    .fixed-top .logo-text .tit {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+    }
+    .fixed-top .sec-tit{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 5px;
+    }
+    .fixed-top a{
+        width: 25%;
+        border-radius: 10px;
+        padding: 10px 5px;
+        color: #fff;
+        text-decoration: none;
+        background: #ff83a6;
+        white-space: nowrap;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+    }
+    .hosList, .taoItem{
+        display: none !important;
     }
 }
 
 @media only screen and (min-width: 1025px){
-    .tab-link-page .mobile-menu{
+    .tab-link-page .mobile-menu, .tab-link-page .item-mobile{
         display: none !important;
     }
 }

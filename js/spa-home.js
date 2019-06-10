@@ -251,4 +251,18 @@ jQuery(document).ready(function($){
     $(window).scroll(function() {
         menuScrollBannerAdv(110);
     })
+
+    if($(".mobile-menu .menu").length){
+        $(".mobile-menu .menu").click(function () {
+            $(this).toggleClass("active");
+        })
+    }
+
+    function menuScroll() {
+        if ($(this).scrollTop() > 100) {
+            $(".fixed-top").addClass("active");
+        }else{
+            $(".fixed-top").removeClass("active");
+        }
+    }
 });
