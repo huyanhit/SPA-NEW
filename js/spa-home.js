@@ -265,4 +265,9 @@ jQuery(document).ready(function($){
             $(".fixed-top").removeClass("active");
         }
     }
+
+    $(".child-tab").on("click","li.active",function(){
+        $(".child-tab .tab-pane.active").slideToggle(200);
+        $(".child-tab .tab-pane").removeAttr("style");
+    });
 });
