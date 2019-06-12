@@ -172,10 +172,10 @@ jQuery(document).ready(function($){
 
     menuScrollBottom();
     $(window).scroll(function() {
-            menuScrollBottom();
+        menuScrollBottom();
     });
 
-	function menuScroll() {
+	function menuScrolls() {
         if ($(this).scrollTop() > 100) {
             $("#menu-scroll").attr("style", "display: block");
             $("#menu-scroll").addClass("active");
@@ -184,10 +184,10 @@ jQuery(document).ready(function($){
         }
     }
 
-    menuScroll();
+    menuScrolls();
     $(window).scroll(function() {
-        menuScroll();
-    })
+        menuScrolls();
+    });
 
 	//popup
     $('.message_click').on('click', function () {
