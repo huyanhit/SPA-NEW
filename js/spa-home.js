@@ -241,7 +241,6 @@ jQuery(document).ready(function($){
         else if($(this).scrollTop() <  offsetAdv.top){
             $(".banner-scroll").removeClass("active");
         }
-        console.log(bannerHeight);
         if($(this).scrollTop() + top > offsetFooter.top - bannerHeight){
             $(".banner-scroll").addClass("pause");
         }else{
