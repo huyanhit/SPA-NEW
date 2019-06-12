@@ -1070,7 +1070,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 
 .menu-scroll-carousel{
-    border: 1px #ccc solid;
+    border: 1px #dfdfdf solid;
     padding: 20px 0;
     text-align: center;
 }
@@ -1107,7 +1107,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     position: fixed;
     background: #fff;
     top: 0px;
-    border-bottom: 1px #ccc solid;
+    border-bottom: 1px #dfdfdf solid;
     height: 110px;
     width: 200%;
     animation:  slideup 0.5s;
@@ -1207,13 +1207,13 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     text-transform: uppercase;
     color: #666
 }
-.modal .nav-tabs li a.active:before{
+.modal .nav-tabs li.active a:before{
     content: "";
     height: 2px;
     position: absolute;
     width: 100%;
     background: #ff5370;
-    top: 31px;
+    top: 30px;
     left: 0;
 }
 
@@ -1226,7 +1226,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 }
 .modal .login-input-box input[type="text"]{
     width: 200px;
-    border: 1px #CCC solid;
+    border: 1px #dfdfdf solid;
     height: 37px;
     padding: 5px 5px;
     margin-top: 30px;
@@ -1235,17 +1235,17 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 
 .modal .login-input-box input[type="button"]{
     height: 37px;
-    background: #ddd;
+    background: #f4f4f4;
     padding: 5px;
     top: 0px;
     position: relative;
     width: 120px;
-    border: 1px #ccc solid;
+    border: 1px #dfdfdf solid;
     margin-left: 11px;
 }
 
 .modal #sms-ma,#account-pwd1 {
-     border: 1px #CCC solid;
+     border: 1px #dfdfdf solid;
      height: 37px;
      padding: 7px 5px;
      margin-top: 18px;
@@ -1254,7 +1254,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
  }
 
 #account{
-    border: 1px #CCC solid;
+    border: 1px #dfdfdf solid;
     height: 37px;
     padding: 7px 5px;
     margin-top: 30px;
@@ -1279,6 +1279,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     border-radius: 4px;
     background: #ff5370;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .modal .remember-ls {
@@ -1291,6 +1292,13 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 
 .modal .remember-box{
     padding-top:  10px;
+}
+
+.modal a{
+    color: #ff5370;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 2px;
 }
 
 .modal .other-login{
@@ -1399,7 +1407,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     }
     .float-nav-wrap.active {
         animation: slideup3 0.5s;
-        border-bottom: 1px #ccc solid;
+        border-bottom: 1px #dfdfdf solid;
     }
 
     .float-nav-wrap.active:before {

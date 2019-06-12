@@ -272,20 +272,24 @@
 }
 
 .taoItem .listInfo .bot-lab p{    font-size: 0;
-    line-height: 20px;
-    display: block;
     float: left;
-    height: 22px;
-    padding: 1px 1px 1px 0;
-    margin-top: 10px;
+    margin-top: 13px;
     margin-right: 10px;
+    border: 1px #82d7fe  solid;
+    background: none;
+    border-left: 15px #82d7fe  solid;
 }
-.taoItem .listInfo .bot-lab .lab-return{ color: #ffbc46; background: #ffbc46; }
-.taoItem .listInfo .bot-lab .lab-money{ color: #ff7e94; background: #ff7e94; }
-.taoItem .listInfo .bot-lab .lab-installment{ color: #89c1ff; background: #89c1ff; }
+.taoItem .listInfo .bot-lab .lab-return{border: 1px #fa6a60 solid; border-left: 15px #f3534d solid;  }
+.taoItem .listInfo .bot-lab .lab-money{ }
+.taoItem .listInfo .bot-lab .lab-installment{ }
 .taoItem .listInfo .bot-lab .lab-app{ color: #91ded6; background: #91ded6; }
-.taoItem .listInfo .bot-lab p > span{ display: inline-block; width: 20px; height: 16px; vertical-align: top; }
-.taoItem .listInfo .bot-lab p > i{ font-size: 12px; display: inline-block; padding: 0 4px; vertical-align: top; background: #fff; }
+.taoItem .listInfo .bot-lab p > span{ display: none }
+.taoItem .listInfo .bot-lab p > i{
+    font-size: 12px;
+    padding: 0px 4px;
+    vertical-align: middle;
+    background: #fff;
+}
 .taoItem .listInfo .bot-lab p b{ font-family: 'Verdana'; font-weight: normal; vertical-align: top; }
 .taoItem .listInfo .bot-lab .lab-return > span{ background-position: 4px 2px; }
 .taoItem .listInfo .bot-lab .lab-money > span{ background-position: -18px 2px; }
@@ -762,7 +766,7 @@ a.rank-item {
 .cardInfo .doc-baby p{ font-size: 13px; line-height: 21px; overflow: hidden; max-height: 40px; margin-top: -2px; color: #999; }
 .cardInfo .doc-baby a{ position: relative; display: block; overflow: hidden; margin-bottom: 5px; }
 .cardInfo .doc-baby a:hover, .cardInfo .doc-baby a:hover .right{ color: #ff5370; }
-.cardInfo .doc-baby .left{ overflow: hidden; max-width: 180px; white-space: nowrap; text-overflow: ellipsis; }
+.cardInfo .doc-baby .left{ overflow: hidden; max-width: 70%; white-space: nowrap; text-overflow: ellipsis; }
 .cardInfo .doc-baby .right{ position: absolute; right: 0; color: #999; }
 .cardInfo .checkMore{  margin-top: 10px; float: right; color: #999; }
 .cardInfo .checkMore b{ font-family: Arial; font-size: 14px; font-weight: normal; padding: 0 2px; color: #ff5370; }
@@ -793,6 +797,13 @@ a.rank-item {
     opacity: .5;
 }
 
+.tab-link-page i{
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+}
+
+
 @media only screen and (max-width: 1025px) {
     .modal, .head-wrap, .right-fixed-nav, .header-main,
     .menu-hospital, .breadcrumb, .ct-right-bar,
@@ -803,6 +814,7 @@ a.rank-item {
     .tab-link-page{
         display: none;
     }
+
 
     .tab-mobile{
         display: block;
@@ -1100,6 +1112,7 @@ a.rank-item {
 
     .content-page-mobile .theS {
         margin: 15px 0;
+        padding-bottom: 15px;
     }
 
     .content-page-mobile .theS .teyao {
