@@ -51,7 +51,6 @@ jQuery(document).ready(function($){
         autoplay: true,
         margin:10,
         nav:true,
-        autoplayTimeout: 50000, 
         responsive:{
             0:{
                 items:3,
