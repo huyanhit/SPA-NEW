@@ -197,40 +197,195 @@
     height: 17px;
     background: url(../images/zixun.gif) no-repeat -18px -18px;
 }
-.nav-wrap {
+.menu-hospital-detail{
     position: relative;
-    clear: both;
-    height: 37px;
     padding-top: 20px;
-    border-bottom: 1px solid #e8e8e8;
-    background: #fff;
 }
-.nav-wrap li {
-    float: left;
-    min-width: 130px;
+.menu-hospital-detail:before{
+    content: "";
+    background: #e8e8e8;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    top: 49px;
+    z-index: 100;
+    display: block;
+}
+
+.menu-hospital-detail ul.list-parent > li.nav-item{
+    display: inline-block;
+    line-height: 20px;
+    color: #666;
+    white-space: nowrap;
     height: 18px;
-    margin-left: -1px;
     line-height: 18px;
     text-align: center;
     border-left: 1px solid #ddd;
+
 }
-.nav-wrap ul {
-    overflow: hidden;
-    height: 38px;
-}
-.nav-wrap .now {
+.menu-hospital-detail ul.list-parent > li.nav-item.active a{
     border-bottom: 2px solid #ff5370;
+    color: #ff5370;
+    padding-bottom: 37px;
 }
-.nav-wrap a {
+.menu-hospital-detail ul.list-parent > li:first-child {
+   border-left: none;
+}
+.menu-hospital-detail li.nav-item > a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #666;
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
     display: block;
-    min-width: 98px;
     height: 18px;
     margin: 0 auto;
-    padding-bottom: 18px;
     font-size: 16px;
     line-height: 18px;
+    padding: 0 15px;
+}
+.menu-hospital-detail li.nav-item > a:hover{
+    color: #ff5370;
+}
+
+.menu-hospital-detail .slide-box > li span {
+    position: absolute;
+}
+
+.schInHos {
+    position: relative;
+    font-size: 14px;
+    line-height: 32px;
+    border: 2px solid #ffa5b3;
+    display: inline-block;
+}
+.menu-hospital-detail #search-hospital-detail{
+    position: relative;
+    width: 250px;
+    height: 32px;
+    padding: 0 10px;
+    line-height: 32px;
+    color: #999;
+    border: none;
+    background: #fff;
+}
+
+.menu-hospital-detail .subBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 62px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #ffa5b3;
+}
+
+.hospital-section{
+    border: 1px solid #e8e8e8;
+    padding: 19px 40px 25px 40px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+.hospital-section .title {
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 18px;
     color: #333;
 }
-.nav-wrap a:hover, .nav-wrap .now {
-    color: #ff5370;
+.hospital-section .notice {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 23px;
+    color: #666;
+}
+.hospital-section .notice a{
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+.main-tit {
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #333;
+}
+
+.recommend-section {
+    height: 500px;
+}
+.recommend-section .owl-carousel {
+   padding: 30px 0;
+}
+.recommend-list .item .infoImg img {
+    display: block;
+    height: 100%;
+}
+
+.recommend-list .item{
+    border: 1px solid #e8e8e8;
+    position: relative;
+    height: 438px;
+    border: 1px solid #e8e8e8;
+}
+.recommend-list .item  a{
+    text-decoration: none;
+
+}
+.recommend-list .infoImg {
+    display: block;
+    position: relative;
+    height: 288px;
+    overflow: hidden;
+}
+
+.recommend-list .infoTxt {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding: 24px 14px 24px 14px;
+    background: #fff;
+}
+
+.recommend-list .babyInfo .infoTit2 {
+    position: relative;
+    height: 28px;
+    margin-top: -2px;
+    line-height: 28px;
+}
+.recommend-list .babyInfo .infoTit2 span {
+    position: relative;
+    font-family: 'Arial';
+    font-size: 28px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+.recommend-list .babyInfo .infoTit2 .return-money {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    display: inline-block;
+    height: 20px;
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 2px;
+    background: #ffbc46;
+}
+.recommend-list .babyInfo .info-bottom {
+    overflow: hidden;
+    height: 14px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999;
 }

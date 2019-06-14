@@ -172,10 +172,10 @@ jQuery(document).ready(function($){
 
     menuScrollBottom();
     $(window).scroll(function() {
-            menuScrollBottom();
+        menuScrollBottom();
     });
 
-	function menuScroll() {
+	function menuScrolls() {
         if ($(this).scrollTop() > 100) {
             $("#menu-scroll").attr("style", "display: block");
             $("#menu-scroll").addClass("active");
@@ -184,10 +184,10 @@ jQuery(document).ready(function($){
         }
     }
 
-    menuScroll();
+    menuScrolls();
     $(window).scroll(function() {
-        menuScroll();
-    })
+        menuScrolls();
+    });
 
 	//popup
     $('.message_click').on('click', function () {
@@ -241,7 +241,6 @@ jQuery(document).ready(function($){
         else if($(this).scrollTop() <  offsetAdv.top){
             $(".banner-scroll").removeClass("active");
         }
-        console.log(bannerHeight);
         if($(this).scrollTop() + top > offsetFooter.top - bannerHeight){
             $(".banner-scroll").addClass("pause");
         }else{
