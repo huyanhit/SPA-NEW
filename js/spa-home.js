@@ -248,9 +248,17 @@ jQuery(document).ready(function($){
         }
     }
 
-    menuScrollBannerAdv(110);
+    if(("#menu-scroll").length){
+        menuScrollBannerAdv(150);
+    }else{
+        menuScrollBannerAdv(0);
+    }
     $(window).scroll(function() {
-        menuScrollBannerAdv(110);
+        if(("#menu-scroll").length){
+            menuScrollBannerAdv(150);
+        }else{
+            menuScrollBannerAdv(0);
+        }
     })
 
     if($(".mobile-menu .menu").length){
