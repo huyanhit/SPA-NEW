@@ -1378,7 +1378,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .modal .remember-ls input[type="checkbox"]{
     float: left;
     position: relative;
-    top: 7px;
+    top: 4px;
     margin-right: 6px;
 }
 
