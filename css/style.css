@@ -20,6 +20,12 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     padding: 0;
     color: #333;
 }
+.pink {
+    color: #ff5370;
+}
+.fs-12, .ft12 {
+    font-size: 12px;
+}
 .c-999 {
     color: #999;
 }

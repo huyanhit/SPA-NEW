@@ -45,5 +45,27 @@ jQuery(document).ready(function($){
         }
 
     }
-	
+
+    $('.recommend-list').owlCarousel({
+        loop:true,
+        autoplay: true,
+        margin:10,
+        nav:true,
+        autoplayTimeout: 50000, 
+        responsive:{
+            0:{
+                items:3,
+                slideBy: 3
+            },
+            600:{
+                items:3,
+                slideBy: 3
+            },
+            1000:{
+                items:3,
+                slideBy: 3
+            }
+        }
+    })
+    	
 });
