@@ -32,19 +32,21 @@
                     <div class="tab-content">
                         <div id="registration" class="tab-pane active">
                             <form class="nav-cont">
+                                <div class="message_error"></div>
                                 <div class="login-input-box">
-                                    <input type="text" id="sms-tel" class="sms-input samll-input input-error" init="" value="Phone number">
-                                    <input type="button" class="get-tel-code down-time" value="SMS code" disabled="disabled">
+                                    <input type="text" id="sms-tel" class="sms-input" placeholder="Phone number">
+                                    <input type="button" class="get-tel-code down-time" value="SMS code">
                                 </div>
-                                <input type="text" id="sms-ma" class="sms-input input-error" value="SMS">
+                                <input type="text" id="sms-ma" class="sms-input input-error" placeholder="SMS">
                                 <input type="button" class="tel-login-btn" value="log in">
                                 <div class="sms-bot">Unregistered will automatically create a account</div>
                             </form>
                         </div>
                         <div id="login" class="tab-pane">
                             <form class="nav-cont">
-                                <input type="text" id="account" class="login-input input-error"  value="Username">
-                                <input type="password" id="account-pwd1" class="login-input" value="Password">
+                                <div class="message_error_login"></div>
+                                <input type="text" id="account" class="login-input input-error"  placeholder="Username">
+                                <input type="password" id="account-pwd1" class="login-input" placeholder="Password">
                                 <input type="button" class="login-btn" value="log in">
                                 <div class="remember-box">
                                     <div class="remember-ls check-me"><i></i>
