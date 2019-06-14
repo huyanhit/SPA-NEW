@@ -213,20 +213,22 @@ jQuery(document).ready(function($){
 	});
 
 	// carousel
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        responsive:{
-            0:{
-                items:3
-            },
-            992:{
-                items:5
-            },
-        }
-    });
+    if($(".owl-carousel").length) {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                992: {
+                    items: 5
+                },
+            }
+        });
+    }
 
 
     var offsetAdv = $(".banner-scroll").offset();
@@ -264,5 +266,12 @@ jQuery(document).ready(function($){
         }else{
             $(".fixed-top").removeClass("active");
         }
+    }
+
+    if($(".child-tab").length) {
+        $(".child-tab").on("click", "li.active", function () {
+            $(".child-tab .tab-pane.active").slideToggle(200);
+            $(".child-tab .tab-pane").removeAttr("style");
+        });
     }
 });

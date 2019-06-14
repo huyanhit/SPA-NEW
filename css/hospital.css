@@ -266,8 +266,9 @@
     border-bottom: 1px #efefef solid;
 }
 
-.content-page{
+.content-page, .content-page-mobile{
     margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .taoItem .listInfo .bot-lab p{    font-size: 0;
@@ -681,6 +682,7 @@ a.rank-item {
 }
 .group-theS {
     margin: 15px -15px;
+    clear: both;
 }
 .theS{
     overflow: hidden;
@@ -760,7 +762,7 @@ a.rank-item {
 .cardInfo .doc-baby p{ font-size: 13px; line-height: 21px; overflow: hidden; max-height: 40px; margin-top: -2px; color: #999; }
 .cardInfo .doc-baby a{ position: relative; display: block; overflow: hidden; margin-bottom: 5px; }
 .cardInfo .doc-baby a:hover, .cardInfo .doc-baby a:hover .right{ color: #ff5370; }
-.cardInfo .doc-baby .left{ overflow: hidden; max-width: 180px; height: 16px; white-space: nowrap; text-overflow: ellipsis; }
+.cardInfo .doc-baby .left{ overflow: hidden; max-width: 180px; white-space: nowrap; text-overflow: ellipsis; }
 .cardInfo .doc-baby .right{ position: absolute; right: 0; color: #999; }
 .cardInfo .checkMore{  margin-top: 10px; float: right; color: #999; }
 .cardInfo .checkMore b{ font-family: Arial; font-size: 14px; font-weight: normal; padding: 0 2px; color: #ff5370; }
@@ -794,11 +796,19 @@ a.rank-item {
 @media only screen and (max-width: 1025px) {
     .modal, .head-wrap, .right-fixed-nav, .header-main,
     .menu-hospital, .breadcrumb, .ct-right-bar,
-    .tab-link-page .title-tap {
+    .tab-link-page .title-tap, .content-page, .taoItem {
         display: none !important;
     }
 
-    .tab-link-page #parent-tab > ul li {
+    .tab-link-page{
+        display: none;
+    }
+
+    .tab-mobile{
+        display: block;
+    }
+
+    .tab-link-page .parent-tab > ul li {
         display: inline-block;
         padding: 5px;
         font-size: 14px;
@@ -816,11 +826,11 @@ a.rank-item {
         border-bottom-right-radius: 5px;
     }
 
-    .tab-link-page #parent-tab > ul li i {
+    .tab-link-page .parent-tab > ul li i {
         display: none;
     }
 
-    .tab-link-page #parent-tab > ul li a {
+    .tab-link-page .parent-tab > ul li a {
         color: #fff;
         background: #eb435d;
         padding: 5px 10px;
@@ -899,32 +909,32 @@ a.rank-item {
         display: block;
     }
 
-    .tab-link-page #parent-tab > ul {
+    .tab-link-page .parent-tab > ul {
         border: none;
         margin-top: -35px;
         height: 35px;
     }
 
-    .tab-link-page #parent-tab > ul li.active:before {
+    .tab-link-page .parent-tab > ul li.active:before {
         display: none;
     }
 
-    .tab-link-page #parent-tab > ul li:hover > a,
-    .tab-link-page #parent-tab > ul li:hover > i {
+    .tab-link-page .parent-tab > ul li:hover > a,
+    .tab-link-page .parent-tab > ul li:hover > i {
         color: #ff5370;
     }
 
-    .tab-link-page #parent-tab > ul li.active a {
+    .tab-link-page .parent-tab > ul li.active a {
         background: #fff;
         color: #ff6980;
     }
 
-    .tab-link-page #parent-tab > ul li.active:hover a {
+    .tab-link-page .parent-tab > ul li.active:hover a {
         background: #fff;
         color: #ff6980;
     }
 
-    .tab-link-page #parent-tab .tab-pane .item {
+    .tab-link-page .parent-tab .tab-pane .item {
         display: none;
     }
 
@@ -994,29 +1004,34 @@ a.rank-item {
         content: "\f00c";
     }
 
-    .tab-content .properties{
+    .tab-content .properties {
         padding: 8px 15px;
         border-bottom: 1px #ccc solid;
         border-top: 1px #ccc solid;
     }
-    .tab-content .button-link{
-        padding:  15px;
+
+    .tab-content .button-link {
+        padding: 15px;
         margin-bottom: 10px;
     }
-    .tab-content .button-link a{
+
+    .tab-content .button-link a {
         border: 1px #ccc solid;
         border-radius: 3px;
         padding: 2px 10px;
         margin-right: 18px;
         text-transform: capitalize;
     }
-    .content-page .nav-pills{
+
+    .content-page .nav-pills {
         display: none;
     }
+
     .fixed-top {
         display: none;
     }
-    .fixed-top.active{
+
+    .fixed-top.active {
         display: block;
         position: fixed;
         top: 0;
@@ -1024,31 +1039,39 @@ a.rank-item {
         background: #fff;
         border-bottom: 1px #ccc solid;
     }
+
     .fixed-top .red-logo {
         width: 18%;
         vertical-align: middle;
         margin-right: 5px;
+        height: 50px;
+        width: auto;
     }
+
     .fixed-top .logo-text {
         display: inline-block;
         vertical-align: middle;
         width: 53%;
     }
+
     .fixed-top .logo-text .tit {
         text-transform: uppercase;
         font-size: 14px;
         font-weight: bold;
         color: #666;
+        top: 0px;
+        font-weight: bold;
     }
-    .fixed-top .sec-tit{
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 5px;
+
+    .fixed-top .sec-tit {
+        font-size: 11px;
+        line-height: 14px;
+        text-transform: uppercase;
     }
-    .fixed-top a{
-        width: 25%;
-        border-radius: 10px;
-        padding: 10px 5px;
+
+    .fixed-top a {
+        border-radius: 20px;
+        padding: 8px;
         color: #fff;
         text-decoration: none;
         background: #ff83a6;
@@ -1056,14 +1079,186 @@ a.rank-item {
         text-transform: uppercase;
         display: inline-block;
         text-align: center;
+        float: right;
+        margin-top: 5px;
+        max-width: 100px;
     }
-    .hosList, .taoItem{
-        display: none !important;
+
+    .child-tab .tab-pane.active {
+        display: block;
+        background: #fff;
     }
+
+    .child-tab .tab-content {
+        border-bottom: 2px #ccc solid;
+        background: #f7f7f7;
+    }
+
+    .cardInfo::before {
+        border-left: 550px #ffffffc7 solid;
+    }
+
+    .content-page-mobile .theS {
+        margin: 15px 0;
+    }
+
+    .content-page-mobile .theS .teyao {
+        top: 30px;
+    }
+
+    .content-page-mobile .hosList .hos-img {
+        width: 120px;
+        display: inline-block;
+        float: left;
+    }
+
+    .content-page-mobile .hosList .hos-related {
+        float: right;
+        padding: 0;
+        clear: none;
+        width: calc(100% - 135px);
+    }
+
+    .hosList .hos-related .hos-atr > span {
+        display: none;
+    }
+
+    .hospital-item .item-img .img {
+        width: 100%
+    }
+
+    .hospital-item .item-img {
+        width: 30%;
+        float: left;
+        padding-right: 15px;
+    }
+
+    .hospital-item .item-cont .cont-title {
+        font-size: 16px;
+        color: #666;
+        text-transform: uppercase;
+        margin-right: 70px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .hospital-item .item-cont {
+        margin-left: 30%;
+    }
+
+    .item-cont .type-icon {
+        float: right;
+    }
+
+    .type-icon .icon {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 12px;
+        color: #fff;
+        border: 1px solid #fff;
+        background: #96c9ff;
+        border-radius: 50%;
+        z-index: 1;
+        right: -7px;
+    }
+
+    .type-icon .text {
+        display: inline-block;
+        padding: 0px 4px 2px 5px;
+        height: 16px;
+        line-height: 14px;
+        color: #fff;
+        vertical-align: middle;
+        background: #96c9ff;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .type-icon.type-2 .icon {
+        background: #ffa1bc;
+    }
+
+    .type-icon.type-2 .text {
+        background: #ffa1bc;
+    }
+
+    .item-cont .cont-title {
+        color: #666;
+    }
+
+    .item-cont .level-data {
+        color: #999;
+        font-size: 14px;
+    }
+
+    .level-data .fen{
+        color: #ffc107;
+    }
+
+    .item-cont .cont-text {
+        color: #666;
+    }
+
+    .cont-lab .lab-list {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .cont-lab .lab-money{
+        color: #ffa1bc;
+    }
+
+    .item-cont .cont-text {
+        line-height: 20px;
+        padding: 5px 0px;
+        font-size: 14px;
+    }
+
+    .lab-list .lab-icon {
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        vertical-align: middle;
+        background: #ff6980;
+        height: 25px;
+        width: 25px;
+        line-height: 21px;
+        font-size: 14px;
+        text-transform: lowercase;
+        margin-top: 5px;
+        position: relative;
+        top: -4px;
+    }
+
+    .server-data{
+        display: block;
+        text-align: right;
+        color: #96c9ff;
+        font-size: 14px;
+    }
+
+    .hospital-item{
+        border-bottom: 1px #ccc solid;
+        display: inline-block;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        clear: both;
+        width: 100%;
+    }
+    a.hospital-item{
+        text-decoration: none;
+    }
+    .downBtnCont{ width: 100%; padding: 16px 0; font-size: 0; text-align: center; background: #fff; }
+    .downBtn{ display: inline-block; width: 225px; height: 37px; margin: 0 auto; line-height: 37px; color: #fff; border-radius: 5px; background: #ff5c77; }
+    .downBtn span{ padding-left: 18px; font-size: 13px;}
 }
 
 @media only screen and (min-width: 1025px){
-    .tab-link-page .mobile-menu, .tab-link-page .item-mobile{
+    .tab-link-page .mobile-menu, .tab-link-page .item-mobile, .fixed-top, .content-page-mobile, .tab-mobile{
         display: none !important;
     }
 }
