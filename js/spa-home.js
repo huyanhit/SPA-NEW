@@ -248,17 +248,9 @@ jQuery(document).ready(function($){
         }
     }
 
-    if(("#menu-scroll").length){
-        menuScrollBannerAdv(150);
-    }else{
-        menuScrollBannerAdv(0);
-    }
+    menuScrollBannerAdv(110);
     $(window).scroll(function() {
-        if(("#menu-scroll").length){
-            menuScrollBannerAdv(150);
-        }else{
-            menuScrollBannerAdv(0);
-        }
+        menuScrollBannerAdv(110);
     })
 
     if($(".mobile-menu .menu").length){
@@ -281,47 +273,4 @@ jQuery(document).ready(function($){
             $(".child-tab .tab-pane").removeAttr("style");
         });
     }
-
-});
-
-$(document).ready(function() {
-
-    $(".get-tel-code").on("click",function () {
-        $(this).parents(".nav-cont").find(".message_error").empty();
-        $(this).parents(".nav-cont").find("input").removeClass("error");
-        if( $("#sms-tel").val().trim().length == 0){
-            $("#sms-tel").addClass("error");
-            $(".message_error").prepend("<span class='error'><i class=\"fas fa-exclamation-circle\"></i> Phone number not null</span>")
-        }
-    });
-
-    $(".tel-login-btn").click(function () {
-        $(this).parents(".nav-cont").find(".message_error").empty();
-        $(this).parents(".nav-cont").find("input").removeClass("error");
-        if( $("#sms-tel").val().trim().length == 0){
-            $("#sms-tel").addClass("error");
-            $(".message_error").prepend("<span class='error'><i class=\"fas fa-exclamation-circle\"></i> Phone number not null</span>")
-        }
-        if( $("#sms-ma").val().trim().length == 0){
-            $("#sms-ma").addClass("error");
-            $(".message_error").prepend("<span class='error'><i class=\"fas fa-exclamation-circle\"></i> SMS code not null</span>")
-        }
-    });
-
-    $(".login-btn").click(function () {
-        $(this).parents(".nav-cont").find(".message_error_login").empty();
-        $(this).parents(".nav-cont").find("input").removeClass("error");
-
-        var account = $("#account");
-        if( (account.val().trim().length == 0) ){
-            account.addClass("error");
-            $(".message_error_login").prepend("<span class='error'><i class=\"fas fa-exclamation-circle\"></i> Username not null</span>")
-        }
-
-        var accountpw = $("#account-pwd1");
-        if((accountpw.val().trim().length == 0) ){
-            accountpw.addClass("error");
-            $(".message_error_login").prepend("<span class='error'><i class=\"fas fa-exclamation-circle\"></i> Password not null</span>")
-        }
-    });
 });
