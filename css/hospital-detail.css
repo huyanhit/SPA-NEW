@@ -998,6 +998,294 @@
     .desktop{
         display:  none !important;
     }
+    .downIcon2{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 55px;
+        background: url('../images/downIcon2.jpg') no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .downIcon2 .ymicon{
+        display: block;
+        max-width: 70%;
+        height: 60px;
+        margin-left: 10px;
+        padding-top: 8px;
+        padding-left: 47px;
+        font-size: 13px; color: #ff526f;
+        background: url('../images/yuemei_logo3.png')
+        no-repeat 0 8px; background-size: 40px auto;
+    }
+    .downIcon2 .ymicon i{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 21px;
+        line-height: 21px;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+    }
+    .downIcon2 .ymicon .item1{
+        padding: 4px 0 0;
+    }
+    .downIcon2 .txt{
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        width: 74px;
+        height: 25px;
+        margin-top: -12px;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        background: #ff5c77;
+    }
+
+    header {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    header > img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    header .head-content {
+        position: relative;
+    }
+
+    header .head-content .hos-info {
+        padding: 0 10px 0 20px;
+        overflow: hidden;
+    }
+
+    header .head-content .hos-info .hos-name {
+        float: left;
+        width: 3.73333rem;
+        line-height: 0.48rem;
+        height: 0.93333rem;
+        font-size: 0.4rem;
+        color: #FFF;
+        margin-top: 0.34667rem;
+        vertical-align: bottom;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    header .head-content .hos-info .hos-name-item {
+        width: 40%;
+        height: 20px;
+        line-height: 0.93333rem;
+        font-size: 18px;
+        color: #FFF;
+        margin-top: 30px;
+        vertical-align: middle;
+        float: left;
+        word-break: keep-all;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    header .head-content .hos-info .hos-del {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 30px  0;
+        vertical-align: middle;
+    }
+
+    header .head-content .hos-info #following {
+        display: inline-block !important;
+        vertical-align: top;
+    }
+
+    header .head-content .hos-info .info-gz {
+        float: right;
+        height: 35px;
+        width: 80px;
+        line-height: 24px;
+        border: 1px solid #bbb;
+        border-radius: 19px;
+        margin: 20px 10px;
+        font-size: 14px;
+        color: #FFF;
+        vertical-align: middle;
+        padding: 4px;
+    }
+
+    header .head-content .hos-info .info-gz {
+        padding-left: 0.26667rem;
+    }
+
+    header .head-content .hos-info .info-gz img {
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+        position: relative;
+        top: -2px;
+    }
+
+    header .head-content .hos-info .info-more {
+        display: block;
+        position: relative;
+        width: 80px;
+        height: 35px;
+        line-height: 36px;
+        float: right;
+        vertical-align: middle;
+        border: 1px solid #bbb;
+        border-radius: 20px;
+        margin: 20px 0;
+        font-size: 14px;
+        color: #FFF;
+    }
+
+    header .head-content .hos-info .info-more > a {
+        display: inline-block;
+    }
+
+    header .head-content .hos-info .info-more img {
+        width: 30px;
+        height: 20px;
+        padding: 0px;
+        vertical-align: middle;
+    }
+
+    header .head-content .hos-info .info-more .bor-r {
+        margin-bottom: 9px;
+        border-right: 1px solid #bbb;
+        margin-left: 10px;
+        padding-right: 11px;
+        margin-top: 1px;
+    }
+
+    header .head-content .hos-info .info-more .close {
+        width: 15px;
+        height: 15px;
+        margin-left: 10px;
+        padding: 0;
+        color: #fff;
+
+    }
+
+    header .head-content .hos-eval {
+        font-size: 0;
+        margin: 5px 10px;
+        padding-left: 10px;
+    }
+
+
+    header .head-content .hos-eval .public-icon {
+        height: 20px;
+        margin: 0 5px;
+        vertical-align: middle;
+    }
+
+    header .head-content .hos-eval p {
+        display: inline-block;
+        line-height: 14px;
+        font-size: 14px;
+        color: #FFF;
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+
+    header .head-content .hos-eval span {
+        color: #FFF;
+        padding: 0 5px;
+    }
+
+    header .head-content .nav-box {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 0.26667rem;
+    }
+
+    header .head-content .nav-box .top-search {
+        display: none;
+    }
+
+    header .head-content .nav-box p {
+        display: inline-block;
+        width: 100px;
+        height: 36px;
+        line-height: 25px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        margin: 10px 19px;
+        vertical-align: top;
+    }
+
+    header .head-content .nav-box p span {
+        display: inline-block;
+        font-size: 18px;
+        color: #FFF;
+        margin-right: 5px;
+        vertical-align: top;
+        padding-top: 5px;
+    }
+
+    header .head-content .nav-box p img {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 11px;
+        vertical-align: middle;
+        opacity: 1;
+    }
+
+    header .head-content .nav-box .nav-list {
+        display: inline-block;
+        width: 65%;
+        height: 40px;
+        padding-left: 5px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        vertical-align: bottom;
+        margin-top: 5px;
+    }
+
+    header .head-content .nav-box .nav-list a {
+
+        display: inline-block;
+        font-size: 14px;
+        color: #FFF;
+        margin-right: 10px;
+    }
+
+    header .head-content .nav-box .nav-list .select-a {
+        height: 23px;
+        border-bottom: 1px #fff solid;
+        border-radius: 0;
+    }
+
+
+    header .head-content .top-daa .nav-list {
+        width: 81%;
+        margin-top: 0.7rem;
+    }
+
+    header .head-content .top-daa .nav-list a {
+        color: #333;
+        font-size: 0.4rem;
+    }
+
+    header .head-content .top-daa .nav-list .select-a {
+        color: #ff5c77;
+        height: 0.64rem;
+        border-bottom: 0.08rem solid #ff5c77;
+        border-radius: 0.02667rem;
+    }
 }
 
 @media only screen and (min-width: 1025px) {
