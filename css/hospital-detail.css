@@ -447,3 +447,110 @@
     color: #fff;
     outline: none;
 }
+.service-cont .item{
+    border: 1px #ddd solid;
+    margin-top: 30px;
+}
+.service-cont img{
+    width: 100%;
+}
+
+.service-cont .babyInfo a{
+    text-decoration: none;
+}
+
+.service-cont .babyInfo{
+    padding: 10px;
+}
+.service-cont .title{
+    color: #666;
+    margin-bottom: -15px;
+}
+.more-link{
+    text-align: center;
+}
+.more-list{
+    color: #666;
+    text-decoration: none;
+    border: 1px #ccc solid;
+    padding: 5px 20px;
+    border-radius: 20px;
+    height: 38px;
+    display: inline-block;
+}
+
+.service-cont .more-link{
+    margin-top: 30px;
+}
+
+.diary-best .item{
+    margin-top: 10px;
+}
+.diary-best img{
+    width: 100%;
+}
+.diary-best .img-1{
+    float: left;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+
+.diary-best .img-2{
+    float: right;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+
+.diary-best .bottom{
+    padding: 10px;
+    clear: both;
+}
+
+.diary-best a:hover{
+    color: #ff5370;
+    display: inline-block;
+    border: 1px #ff5370 solid;
+}
+
+.diary-best a{
+    border: 1px #ddd solid;
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+}
+
+
+.diary-best .img-1 .icon{
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    left: 0;
+    width: 60px;
+    height: 28px;
+    background: #3e3d3da1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 8px;
+    color: #fff;
+}
+
+
+.diary-best .img-2 .icon{
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    left: 0;
+    width: 60px;
+    height: 28px;
+    background: #dc354599;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 8px;
+    color: #fff;
+}
+
+.diary-best{
+    margin-top: 30px;
+}
