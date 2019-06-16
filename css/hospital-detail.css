@@ -244,7 +244,7 @@
     margin: 0 auto;
     font-size: 16px;
     line-height: 18px;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 .menu-hospital-detail li.nav-item > a:hover{
     color: #ff5370;
@@ -345,7 +345,7 @@
     overflow: hidden;
 }
 
-.recommend-list .infoTxt {
+.recommend-list .infoTxt{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -355,20 +355,20 @@
     background: #fff;
 }
 
-.recommend-list .babyInfo .infoTit2 {
+.recommend-list .babyInfo .infoTit2 , .service-cont .babyInfo .infoTit2{
     position: relative;
     height: 28px;
     margin-top: -2px;
     line-height: 28px;
 }
-.recommend-list .babyInfo .infoTit2 span {
+.recommend-list .babyInfo .infoTit2 span , .service-cont .babyInfo .infoTit2 span {
     position: relative;
     font-family: 'Arial';
     font-size: 28px;
     font-weight: bold;
     vertical-align: bottom;
 }
-.recommend-list .babyInfo .infoTit2 .return-money {
+.recommend-list .babyInfo .infoTit2 .return-money, .service-cont .babyInfo .infoTit2 .return-money{
     position: absolute;
     top: 1px;
     right: 0;
@@ -381,11 +381,365 @@
     border-radius: 2px;
     background: #ffbc46;
 }
-.recommend-list .babyInfo .info-bottom {
+.recommend-list .babyInfo .info-bottom, .service-cont .babyInfo .info-bottom {
     overflow: hidden;
     height: 14px;
     margin-top: 10px;
     font-size: 12px;
     line-height: 14px;
     color: #999;
+}
+
+.recommend-section .owl-dots{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.recommend-section .owl-dots .owl-dot{
+    background: #ccc;
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+
+.recommend-section .owl-dots .owl-dot.active{
+    background: #ff5370;
+    height: 10px;
+    width: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+.recommend-section .owl-nav{
+    top: 245px
+}
+.recommend-section .owl-carousel .owl-prev {
+    position: absolute;
+    font-size: 30px !important;
+    border: none !important;
+    width: 25px;
+    height: 58px;
+    top: 0;
+    left: 0px;
+    background: #6c757da6 !important;
+}
+
+.recommend-section .owl-carousel .owl-next {
+    position: absolute;
+    font-size: 30px !important;
+    border: none !important;
+    width: 25px;
+    height: 58px;
+    top: 0;
+    right: 0;
+    background: #6c757da6 !important;
+}
+
+.recommend-section .owl-carousel .owl-nav span {
+    padding: 0;
+    line-height: 0;
+    position: relative;
+    top: -5px;
+    color: #fff;
+    outline: none;
+}
+.service-cont .item{
+    border: 1px #ddd solid;
+    margin-top: 30px;
+}
+.service-cont img{
+    width: 100%;
+}
+
+.service-cont .babyInfo a{
+    text-decoration: none;
+}
+
+.service-cont .babyInfo{
+    padding: 10px;
+}
+.service-cont .babyInfo a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.service-cont .title{
+    color: #666;
+    margin-bottom: -15px;
+}
+.more-link{
+    text-align: center;
+}
+.more-list{
+    color: #666;
+    text-decoration: none;
+    border: 1px #ccc solid;
+    padding: 5px 20px;
+    border-radius: 20px;
+    height: 38px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.service-cont .more-link{
+    margin-top: 30px;
+}
+
+.diary-best .item{
+    margin-top: 10px;
+}
+.diary-best img{
+    width: 100%;
+}
+.diary-best .img-1{
+    float: left;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+
+.diary-best .img-2{
+    float: right;
+    display: inline-block;
+    width: 50%;
+    position: relative;
+}
+
+.diary-best .bottom{
+    padding: 10px;
+    clear: both;
+}
+
+.diary-best a:hover{
+    color: #ff5370;
+    display: inline-block;
+    border: 1px #ff5370 solid;
+}
+
+.diary-best a{
+    border: 1px #ddd solid;
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+}
+
+
+.diary-best .img-1 .icon{
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    left: 0;
+    width: 60px;
+    height: 28px;
+    background: #3e3d3da1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 8px;
+    color: #fff;
+}
+
+
+.diary-best .img-2 .icon{
+    position: absolute;
+    z-index: 1;
+    bottom: 4px;
+    left: 0;
+    width: 60px;
+    height: 28px;
+    background: #dc354599;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 8px;
+    color: #fff;
+}
+
+.diary-best{
+    margin-top: 30px;
+}
+
+.hb-item{
+    clear: both;
+    margin-top: 20px;
+    background: #fff4eb;
+    padding: 10px;
+}
+
+.hb-item>p b ,.hb-item>p i {
+    font-family: Arial;
+    font-size: 44px;
+    font-weight: bold;
+    color: #ff5000;
+}
+
+.hb-item>p b{
+    font-size: 38px;
+}
+
+.hb-item>p i {
+    font-size: 13px;
+    position: relative;
+    top: -16px;
+}
+.hb-item>p span{
+    font-size: 12px;
+    color: #ff5000;
+    border: 1px #ff5000 solid;
+    padding: 0px 5px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+.getNow{
+    background: #ff5000;
+    color: #fff;
+    text-align: center;
+    border-top: 9px dotted #fff4eb;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.getNow:before{
+    content: "";
+    width: 100%;
+    display: block;
+    background: #fff4eb;
+    height: 8px;
+    position: relative;
+    top: -12px;
+}
+
+.hb-item .c-666{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;color: #666;
+}
+
+.hb-item{
+    font-size: 14px;
+    color: #999;
+}
+
+.magin-top-30{
+    margin-top: 30px;
+}
+
+.btn-voucher{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-voucher .more{
+    color: #ff5000;
+    text-decoration: none;
+    border: 1px #ccc solid;
+    padding: 5px 20px;
+    border-radius: 20px;
+    height: 38px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn-voucher .more:hover{
+    border: 1px #ff5000 solid;
+    background: #ff5000;
+    color: #fff;
+    transition: .2s;
+}
+
+.right-section {
+    margin-bottom: 24px;
+    padding: 24px 0;
+    border: 1px solid #e8e8e8;
+}
+
+.right-tit {
+    height: 16px;
+    padding-left: 17px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #333;
+    border-left: 4px solid #ff6980;
+}
+
+.right-section .introduction-text {
+    margin: 18px 20px 0 20px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #666;
+}
+
+.doctor-cont a{
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
+}
+.doctor-list .doctor-img{
+    width: 35%;
+    float: left;
+}
+
+.doctor-list .doctor-img img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.doctor-list .right {
+    width: 65%;
+    float: right;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.doctor-list>.right .right-name {
+    font-size: 15px;
+    line-height: 17px;
+    color: #333;
+}
+
+.doctor-list>.right .right-lv {
+    margin: 7px 0 10px 0;
+}
+
+.doctor-list>.right .right-lv,
+.doctor-list>.right .right-number {
+    font-size: 12px;
+    line-height: 14px;
+    color: #999;
+}
+
+.right-section .more-doctor {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 0px 40px;
+}
+
+.right-section .more-doctor:hover {
+    color: #ff5370;
+    border-color: #ff6980;
+}
+.doctor-cont{
+    margin-top: 10px;
+}
+.right-section{
+    margin-top: 30px;
+}
+.list-doctor{
+    display: block;
+    text-align: center;
+}
+.list-doctor a{
+    text-decoration: none;
 }

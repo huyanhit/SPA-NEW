@@ -49,8 +49,9 @@ jQuery(document).ready(function($){
     $('.recommend-list').owlCarousel({
         loop:true,
         autoplay: true,
-        margin:10,
-        nav:true,
+        margin: 10,
+        nav: true,
+        dots: true,
         responsive:{
             0:{
                 items:3,
@@ -66,5 +67,9 @@ jQuery(document).ready(function($){
             }
         }
     })
-    	
+
+
+    $(".apoment").click(function () {
+        $('.modal').modal('show')
+    });
 });
