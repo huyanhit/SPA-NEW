@@ -310,6 +310,9 @@
     cursor: pointer;
     text-decoration: none;
 }
+.hospital-section .notice a:hover{
+    color: #ff5370;
+}
 .main-tit {
     height: 20px;
     font-size: 18px;
@@ -513,8 +516,10 @@
     padding: 10px;
     clear: both;
 }
-
-.diary-best a:hover{
+.more-link a{
+    text-decoration: none;
+}
+.more-link a:hover{
     color: #ff5370;
     display: inline-block;
     border: 1px #ff5370 solid;
@@ -674,6 +679,20 @@
     line-height: 24px;
     color: #666;
 }
+.right-section .address-text {
+    padding: 10px 22px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.right-image-banner{
+    border: none;
+}
+
+.right-image-banner img {
+    display: block;
+    max-width: 100%;
+}
 
 .doctor-cont a{
     display: inline-block;
@@ -742,4 +761,235 @@
 }
 .list-doctor a{
     text-decoration: none;
+}
+
+/** pop counselling **/
+.fixed-slide {
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    right: 50%;
+    width: 50px;
+    margin-right: -670px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+}
+.fixed-slide>a {
+    position: relative;
+    z-index: 0;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+.fixed-slide>a:hover {
+    background: #f8f8f8;
+}
+.fixed-slide .slide-right div {
+    display: block;
+    width: 26px;
+    height: 28px;
+    margin: 0 auto;
+    background: url(../images/zixun.gif) no-repeat -14px -94px;
+}
+.fixed-slide .slide-right p {
+    display: block;
+    width: 26px;
+    margin: 0 auto;
+    padding-top: 1px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+}
+.fixed-slide .show-cont {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: 48px;
+    display: none;
+    width: 190px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+}
+.fixed-slide .show-cont .hospital-name {
+    padding: 16px 16px 0 16px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333;
+}
+.fixed-slide .show-cont .call-me-btn, .fixed-slide .show-cont .wx-me-btn {
+    display: block;
+    width: 106px;
+    height: 30px;
+    margin: 13px auto 18px auto;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background: #ff5370;
+}
+.fixed-slide .show-cont .data-list {
+    padding: 15px 16px 13px 16px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333;
+    border-top: 1px solid #e8e8e8;
+}
+.fixed-slide .show-cont .data-list div {
+    font-weight: bold;
+}
+.fixed-slide .go-top {
+    display: none;
+    cursor: pointer;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+    opacity: .8;
+    border-top: 1px solid #e8e8e8;
+    filter: Alpha(opacity=80);
+}
+.fixed-slide .go-top div {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 16px auto;
+    background: url(../images/hospital-v3.png?v=1) no-repeat 0 -128px;
+}
+
+/* anothe diary of user list */
+.qa-cont {
+    overflow: hidden;
+    margin-top: 16px;
+    border-top: 1px solid #e8e8e8;
+}
+.qa-list-link {
+    position: relative;
+    display: block;
+    zoom: 1;
+    padding-top: 34px;
+}
+.qa-list-link:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    content: '';
+}
+.qa-list-link:hover {
+    background: #f8f8f8;
+}
+.qa-list-link>.left {
+    width: 50px;
+    margin-right: 22px;
+    text-align: center;
+}
+.qa-list-link .infoImg, .qa-list-link .infoImg img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.qa-list-link .info-name {
+    display: block;
+    height: 14px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999;
+}
+.qa-list-link .info_cont {
+    float: left;
+    width: 856px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.qa-list-link .info_tit2 {
+    overflow: hidden;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333;
+}
+.qa-list-link .info_tit2 a {
+    color: #333;
+    text-decoration: none;
+}
+.qa-list-link .img_cont {
+    display: block;
+    overflow: hidden;
+    height: 80px;
+}
+.qa-list-link .img_cont span, .qa-list-link .img_cont a {
+    position: relative;
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.qa-list-link .img_cont img {
+    display: block;
+    width: 100%;
+}
+.qa-list-link .qa-labs {
+    overflow: hidden;
+    height: 14px;
+    margin-top: 10px;
+    padding-left: 12px;
+    font-size: 0;
+    line-height: 14px;
+    color: #999;
+    background: url(../images/docPC.png) no-repeat 0 -601px;
+}
+.qa-list-link .qa-labs span {
+    padding-left: 6px;
+    font-size: 12px;
+}
+.qa-list-link .qa-mark {
+    height: 14px;
+    margin-top: 20px;
+    font-size: 0;
+    line-height: 14px;
+}
+.qa-list-link .qa-mark .left {
+    font-size: 12px;
+    color: #999;
+}
+.qa-list-link .qa-mark .right {
+    position: relative;
+    margin-left: 13px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.qa-list-link .qa-mark .right b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 14px;
+    background: url(../images/docPC.png)  no-repeat;
+}
+.qa-list-link .qa-mark .right i {
+    font-family: Verdana;
+    color: #bbb;
+}
+.more-diary{
+    margin:30px 0;
+}
+.user-diary-boottom:hover{
+    background-color: #f8f8f8;
+}
+ .dyn-bottom {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.dyn-bottom>.bottom-right {
+    float: right;
 }

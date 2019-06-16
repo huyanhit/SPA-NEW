@@ -72,4 +72,39 @@ jQuery(document).ready(function($){
     $(".apoment").click(function () {
         $('.modal').modal('show')
     });
+
+
+
+
+    var stthover = 0;
+    $('.slide-right, .show-cont').mouseenter(function(){
+        stthover++;
+        $('.show-cont').show();
+    }).mouseleave(function(){
+        stthover--;
+        if (!stthover) {
+            $('.show-cont').hide();
+        }
+    });  
+
+        var scrollTrigger = 110,
+        backToTop = function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('.go-top').fadeIn();
+            } else {
+                $('.go-top').fadeOut();
+            }
+        };
+        backToTop();
+        $(window).on('scroll', function() {
+            backToTop()
+        })
+
+    $(".go-top").on("click",function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+
 });

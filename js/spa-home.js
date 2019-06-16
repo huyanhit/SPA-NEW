@@ -190,19 +190,7 @@ jQuery(document).ready(function($){
     });
 
 	//popup
-    $('.message_click').on('click', function () {
-        $('.modal').modal('show')
-    });
-
-    $('.coupon_click').on('click', function () {
-        $('.modal').modal('show')
-    });
-
-    $('.data-head').on('click', function () {
-        $('.modal').modal('show')
-    });
-
-    $('.my-order').on('click', function () {
+    $('.message_click, ,coupon_click, .data-head, .my-order').on('click', function () {
         $('.modal').modal('show')
     });
 
