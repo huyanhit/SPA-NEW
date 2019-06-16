@@ -1,11 +1,3 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-input{
-    outline: none;
-}
-
 .left, .flleft {
     float: left;
 }
@@ -1221,7 +1213,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     text-transform: uppercase;
     color: #666
 }
-.modal .nav-tabs li a.active:before{
+.modal .nav-tabs li.active a:before{
     content: "";
     height: 2px;
     position: absolute;
@@ -1243,7 +1235,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     border: 1px #dfdfdf solid;
     height: 37px;
     padding: 5px 5px;
-    margin-top: 15px;
+    margin-top: 30px;
     color: #999;
 }
 
@@ -1266,36 +1258,12 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
      width: 335px;
      color: #999;
  }
-.modal .message_error i{
-    color: #dc3545;
-    font-size: 14px;
-}
-
-.nav-cont input.error{
-    border: 1px #ff5370 solid !important;
-}
-
-.modal .message_error, .modal .message_error_login{
-    position: relative;
-    color: #ff5370;
-    font-size: 14px;
-    top: 5px;
-    min-height: 15px;
-}
-
-.modal .message_error_login{
-    margin-left: 50%;
-}
-
-.modal .message_error span, .modal .message_error_login span{
-    display: block;
-}
 
 #account{
     border: 1px #dfdfdf solid;
     height: 37px;
     padding: 7px 5px;
-    margin-top: 15px;
+    margin-top: 30px;
     width: 335px;
     color: #999;
 }
@@ -1384,7 +1352,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 .modal .remember-ls input[type="checkbox"]{
     float: left;
     position: relative;
-    top: 4px;
+    top: 7px;
     margin-right: 6px;
 }
 
