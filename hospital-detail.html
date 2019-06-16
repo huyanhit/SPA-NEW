@@ -1,913 +1,925 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/owl.carousel.css"  >
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css" >
-  <link rel="stylesheet" href="./css/hospital-detail.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  </head>
-  <body>
-      <!-- Popup -->
-      <div class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title">Login | Quick Registration</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                  </button>
-              </div>
-              <div class="modal-body">
-                  <ul class="nav nav-tabs">
-                      <li class="active"><a data-toggle="tab" href="#registration" class="active">SMS Registration</a></li>
-                      <li><a data-toggle="tab" href="#login">Login</a></li>
-                  </ul>
-                  <div class="tab-content">
-                      <div id="registration" class="tab-pane active">
-                          <form class="nav-cont">
-                              <div class="login-input-box">
-                                  <input type="text" id="sms-tel" class="sms-input samll-input input-error" init="" value="Phone number">
-                                  <input type="button" class="get-tel-code down-time" value="SMS code" disabled="disabled">
-                              </div>
-                              <input type="text" id="sms-ma" class="sms-input input-error" value="SMS">
-                              <input type="button" class="tel-login-btn" value="log in">
-                              <div class="sms-bot">Unregistered will automatically create a account</div>
-                          </form>
-                      </div>
-                      <div id="login" class="tab-pane">
-                          <form class="nav-cont">
-                              <input type="text" id="account" class="login-input input-error"  value="Username">
-                              <input type="password" id="account-pwd1" class="login-input" value="Password">
-                              <input type="button" class="login-btn" value="log in">
-                              <div class="remember-box">
-                                  <div class="remember-ls check-me"><i></i>
-                                      <span>Remember me</span>
-                                      <input type="checkbox" checked="checked">
-                                  </div>
-                                  <a href="https://user.yuemei.com/user/getpwd" class="forget">Forget password?</a>
-                              </div>
-                              <div class="other-login">Log in using other methods</div>
-                              <div class="other-lab">
-                                  <a href="#">
-                                      <i class="fab fa-facebook"></i>
-                                  </a>
-                                  <a href="#" ><i class="fab fa-google"></i></i></a>
-                                  <a href="#" ><i class="fab fa-twitter"></i></a>
-                              </div>
-                              <div class="register-test">Still not a US account? <a href="https://user.yuemei.com/user/register">Sign up now</a></div>
-                          </form>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-      <!-- header wrap hospital -->
-      <div class="chanl-head white">
-          <ul class="flleft">
-              <li><a href="https://www.yuemei.com/" class="logo" target="_blank"><img alt="Mạng lưới Yuemei" src="https://icon.yuemei.com/front/common/images/logo_top.png"></a></li>
-              <li><a href="https://www.yuemei.com/" target="_blank">Trang chủ</a></li>
-              <li><a href="https://www.yuemei.com/parts.html" target="_blank">Dự án</a></li>
-              <li><a href="https://ask.yuemei.com/" target="_blank">Câu hỏi và trả lời</a></li>
-              <li><a href="https://doctor.yuemei.com/" target="_blank">Tìm bác sĩ</a></li>
-              <li><a href="https://hospital.yuemei.com/" target="_blank">Tìm bệnh viện</a></li>
-              <li><a href="https://fan.yuemei.com/" target="_blank">Cộng đồng</a></li>
-              <li><a href="https://note.yuemei.com/" target="_blank">Nhật ký</a></li>            
-          </ul>
-          <!-- search detail -->
-          <div class="hospital-deatail-search" >
-            <div class="search-box">
-                <input class="search" id="searchWd" type="text" >
-                <a href="javascript:;" id="YMsearch" class="search-btn"></a>             
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.css"  >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" href="./css/hospital-detail.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<!-- molile -->
+<!-- molile header -->
+<div>
+    <a class="downIcon2 _yma" _ymaname="h5hospital" href="https://m.yuemei.com/app/ym.php?from=h5hospital">
+            <span class="ymicon">
+            <i class="item1">找靠谱医院</i>
+            <i class="item2">下载APP关注成都铜雀台医学美容医院</i>
+            </span>
+        <span class="txt">点击下载</span>
+    </a>
+</div>
+<!-- end molile -->
+<!-- Popup -->
+<div class="modal desktop" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login | Quick Registration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <ul class="search-list" style="display: none; width: 215px;"> </ul>
-          </div>   
-           <!--end search deatail-->
-          <ul id="notLogin" class="flright noin">
-              <li><a href="https://ymt.yuemei.com/login/" target="_blank" class="hos-in" rel="nofollow">Lối vào bệnh viện </a></li>
-              <li><a href="https://www.yuemei.com/user/d_register/" target="_blank" class="doc-in" rel="nofollow">Đăng ký bác sĩ </a></li>
-              <li><a href="https://user.yuemei.com/user/register/" target="_blank" class="user-in" rel="nofollow">Đăng ký người dùng </a></li>
-              <li><a href="https://user.yuemei.com/user/login/" target="_blank" class="login" rel="nofollow">Đăng nhập</a></li>
-          </ul>
-          <div class="clearfix"></div>
-      </div>  
-      <!-- end header wrap -->
-      <!-- header deatail hospital -->
-      <div class="header-detail-hpt">
-        <div class="container">
-          <div class="header-hpt-main">
-            <div class="row">
-              <div class="col-md-2">
-                  <a class="hospital-img">
-                      <img src="https://ymt.yuemei.com/upload/vip/120_120/15235817649584.jpg" alt="">
-                  </a>
-              </div>
-              <div class="col-md-7 hospital-data">
-                <h1 class="data-name text-hidden">Bệnh viện thẩm mỹ y tế Bắc Kinh Changhong</h1>
-                <div class="hover-data">
-                  <p class="data-lv">Trình độ chuyên môn: Bệnh viện hạng nhất tư nhân (tư nhân)</p>
-                  <p class="data-lv">Điện thoại: 400-890-8655 ext 1412</p>
-                </div>
-                <div class="data-lv">
-                    <span>Hiệu ứng <i class="c-ff8135">5.0</i></span>    
-                    <span> Dịch vụ <i class="c-ff8135">5.0</i></span>
-                    <span> Bác sĩ <i class="c-ff8135">5.0</i></span>                            
-                    <span class="more-icon"></span>
-                </div>
-                <div class="feedback-box">Yuemei.com Mẹo: Nội dung của trang này được xuất bản bởi bệnh viện / bác sĩ <a>phản hồi</a> cho <a> Spa</a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="collection">
-                  <span class="collec-bck"></span>
-                  <p></p>
-                  <div>Bộ Sưu Tập</div>
-                </div>
-                <div class="act-head">
-                    <a class="advisory">Tư Vấn</a>
-                    <a class="apoment"><i></i><span>Đặt lịch Hẹn</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end header deateal hospital -->
-      <!-- nav menu detail hospital -->
-      <div class="menu-hospital-detail">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="list-parent">
-                      <li class="nav-item active">
-                          <a href="https://www.yuemei.com/hospital/3379/" class="now">Trang chủ</a>
-                       </li> 
-                       <li class="nav-item">
-                          <a href="https://www.yuemei.com/hospital/3379/aptitude.html" class="">Trình độ chuyên môn</a>
-                       </li>            
-                      <li class="nav-item">
-                          <a href="https://www.yuemei.com/hospital/3379/tao.html" class="">Dịch vụ <span>(120)</span></a>
-                       </li>
-                      <li class="nav-item">
-                          <a href="https://www.yuemei.com/hospital/3379/evaluation.html" class="">Nhật ký <span>(2649)</span></a>
-                       </li>
-                      <li class="nav-item">
-                          <a href="https://www.yuemei.com/hospital/3379/doctor.html" class="">Bác sĩ <span>(14)</span></a>
-                       </li>
-                      <li class="nav-item">
-                          <a href="https://www.yuemei.com/hospital/3379/environment.html" class="">Album ảnh <span>(58)</span></a>
-                       </li>
-                       <li class="schInHos">
-                          <input id="search-hospital-detail" type="text"  value="Tìm kiếm">
-                          <span class="subBtn" onclick="gosearch()">Tìm</span>
-                       </li>
-                    </ul>
+            <div class="modal-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#registration" class="active">SMS Registration</a></li>
+                    <li><a data-toggle="tab" href="#login">Login</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="registration" class="tab-pane active">
+                        <form class="nav-cont">
+                            <div class="login-input-box">
+                                <input type="text" id="sms-tel" class="sms-input samll-input input-error" init="" value="Phone number">
+                                <input type="button" class="get-tel-code down-time" value="SMS code" disabled="disabled">
+                            </div>
+                            <input type="text" id="sms-ma" class="sms-input input-error" value="SMS">
+                            <input type="button" class="tel-login-btn" value="log in">
+                            <div class="sms-bot">Unregistered will automatically create a account</div>
+                        </form>
+                    </div>
+                    <div id="login" class="tab-pane">
+                        <form class="nav-cont">
+                            <input type="text" id="account" class="login-input input-error"  value="Username">
+                            <input type="password" id="account-pwd1" class="login-input" value="Password">
+                            <input type="button" class="login-btn" value="log in">
+                            <div class="remember-box">
+                                <div class="remember-ls check-me"><i></i>
+                                    <span>Remember me</span>
+                                    <input type="checkbox" checked="checked">
+                                </div>
+                                <a href="https://user.yuemei.com/user/getpwd" class="forget">Forget password?</a>
+                            </div>
+                            <div class="other-login">Log in using other methods</div>
+                            <div class="other-lab">
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" ><i class="fab fa-google"></i></i></a>
+                                <a href="#" ><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="register-test">Still not a US account? <a href="https://user.yuemei.com/user/register">Sign up now</a></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>   
-      <!-- end nav menu detail hospital -->
-      <!-- main detail hospital -->
-      <div class="container">
+    </div>
+</div>
+<!-- header wrap hospital -->
+<div class="chanl-head white desktop">
+    <ul class="flleft">
+        <li><a href="https://www.yuemei.com/" class="logo" target="_blank"><img alt="Mạng lưới Yuemei" src="https://icon.yuemei.com/front/common/images/logo_top.png"></a></li>
+        <li><a href="https://www.yuemei.com/" target="_blank">Trang chủ</a></li>
+        <li><a href="https://www.yuemei.com/parts.html" target="_blank">Dự án</a></li>
+        <li><a href="https://ask.yuemei.com/" target="_blank">Câu hỏi và trả lời</a></li>
+        <li><a href="https://doctor.yuemei.com/" target="_blank">Tìm bác sĩ</a></li>
+        <li><a href="https://hospital.yuemei.com/" target="_blank">Tìm bệnh viện</a></li>
+        <li><a href="https://fan.yuemei.com/" target="_blank">Cộng đồng</a></li>
+        <li><a href="https://note.yuemei.com/" target="_blank">Nhật ký</a></li>
+    </ul>
+    <!-- search detail -->
+    <div class="hospital-deatail-search" >
+        <div class="search-box">
+            <input class="search" id="searchWd" type="text" >
+            <a href="javascript:;" id="YMsearch" class="search-btn"></a>
+        </div>
+        <ul class="search-list" style="display: none; width: 215px;"> </ul>
+    </div>
+    <!--end search deatail-->
+    <ul id="notLogin" class="flright noin">
+        <li><a href="https://ymt.yuemei.com/login/" target="_blank" class="hos-in" rel="nofollow">Lối vào bệnh viện </a></li>
+        <li><a href="https://www.yuemei.com/user/d_register/" target="_blank" class="doc-in" rel="nofollow">Đăng ký bác sĩ </a></li>
+        <li><a href="https://user.yuemei.com/user/register/" target="_blank" class="user-in" rel="nofollow">Đăng ký người dùng </a></li>
+        <li><a href="https://user.yuemei.com/user/login/" target="_blank" class="login" rel="nofollow">Đăng nhập</a></li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+<!-- end header wrap -->
+<!-- header deatail hospital -->
+<div class="header-detail-hpt desktop">
+    <div class="container">
+        <div class="header-hpt-main">
+            <div class="row">
+                <div class="col-md-2">
+                    <a class="hospital-img">
+                        <img src="https://ymt.yuemei.com/upload/vip/120_120/15235817649584.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7 hospital-data">
+                    <h1 class="data-name text-hidden">Bệnh viện thẩm mỹ y tế Bắc Kinh Changhong</h1>
+                    <div class="hover-data">
+                        <p class="data-lv">Trình độ chuyên môn: Bệnh viện hạng nhất tư nhân (tư nhân)</p>
+                        <p class="data-lv">Điện thoại: 400-890-8655 ext 1412</p>
+                    </div>
+                    <div class="data-lv">
+                        <span>Hiệu ứng <i class="c-ff8135">5.0</i></span>
+                        <span> Dịch vụ <i class="c-ff8135">5.0</i></span>
+                        <span> Bác sĩ <i class="c-ff8135">5.0</i></span>
+                        <span class="more-icon"></span>
+                    </div>
+                    <div class="feedback-box">Yuemei.com Mẹo: Nội dung của trang này được xuất bản bởi bệnh viện / bác sĩ <a>phản hồi</a> cho <a> Spa</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="collection">
+                        <span class="collec-bck"></span>
+                        <p></p>
+                        <div>Bộ Sưu Tập</div>
+                    </div>
+                    <div class="act-head">
+                        <a class="advisory">Tư Vấn</a>
+                        <a class="apoment"><i></i><span>Đặt lịch Hẹn</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header deateal hospital -->
+<!-- nav menu detail hospital -->
+<div class="menu-hospital-detail desktop">
+    <div class="container">
         <div class="row">
-          <div class="col-9">
-              <div class="hospital-section">
-                  <div class="title">Thông báo bệnh viện</div>
-                  <div class="notice"><a href="https://www.yuemei.com/p/7340968.html" target="_blank">Gửi đến bệnh viện: tẩy lông bằng bọt siêu nhỏ / băng điểm, chọn thêm một mặt hàng, gấp 1 lần: các mặt hàng phổ biến (tất cả các sản phẩm y tế trong bệnh viện) giảm 1% cho quà tặng khách mới, quà tặng tiêu dùng, quà tặng khách cũ, quà tặng độc quyền Quà tặng riêng, quà tặng tốt, không ngừng</a></div>
-              </div>
-              <div class="main-tit">Đề Xuất</div>
-              <div class="recommend-section" >
+            <div class="col-12">
+                <ul class="list-parent">
+                    <li class="nav-item active">
+                        <a href="https://www.yuemei.com/hospital/3379/" class="now">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.yuemei.com/hospital/3379/aptitude.html" class="">Trình độ chuyên môn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.yuemei.com/hospital/3379/tao.html" class="">Dịch vụ <span>(120)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.yuemei.com/hospital/3379/evaluation.html" class="">Nhật ký <span>(2649)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.yuemei.com/hospital/3379/doctor.html" class="">Bác sĩ <span>(14)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.yuemei.com/hospital/3379/environment.html" class="">Album ảnh <span>(58)</span></a>
+                    </li>
+                    <li class="schInHos">
+                        <input id="search-hospital-detail" type="text"  value="Tìm kiếm">
+                        <span class="subBtn" onclick="gosearch()">Tìm</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end nav menu detail hospital -->
+<!-- main detail hospital -->
+<div class="container desktop">
+    <div class="row">
+        <div class="col-9">
+            <div class="hospital-section">
+                <div class="title">Thông báo bệnh viện</div>
+                <div class="notice"><a href="https://www.yuemei.com/p/7340968.html" target="_blank">Gửi đến bệnh viện: tẩy lông bằng bọt siêu nhỏ / băng điểm, chọn thêm một mặt hàng, gấp 1 lần: các mặt hàng phổ biến (tất cả các sản phẩm y tế trong bệnh viện) giảm 1% cho quà tặng khách mới, quà tặng tiêu dùng, quà tặng khách cũ, quà tặng độc quyền Quà tặng riêng, quà tặng tốt, không ngừng</a></div>
+            </div>
+            <div class="main-tit">Đề Xuất</div>
+            <div class="recommend-section" >
                 <div class="owl-carousel recommend-list owl-theme">
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                        <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                        <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                        <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                        <img src="https://p34.yuemei.com/tao/2019/0613/jt190613155900_429813.jpg" alt="Phẫu thuật nâng mũi 4D">
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613155900_429813.jpg" alt="Phẫu thuật nâng mũi 4D">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                        <img src="https://p34.yuemei.com/tao/2019/0613/jt190613155900_429813.jpg" alt="Phẫu thuật nâng mũi 4D">
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613155900_429813.jpg" alt="Phẫu thuật nâng mũi 4D">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                        <img src="https://p34.yuemei.com/tao/2019/0613/jt190613155900_429813.jpg" alt="Phẫu thuật nâng mũi 4D">
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613155900_429813.jpg" alt="Phẫu thuật nâng mũi 4D">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                      <img src="https://p34.yuemei.com/tao/2019/0613/jt190613170023_7e33d9.jpg" alt="Phẫu thuật thẩm mỹ">          
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613170023_7e33d9.jpg" alt="Phẫu thuật thẩm mỹ">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                      <img src="https://p34.yuemei.com/tao/2019/0613/jt190613170023_7e33d9.jpg" alt="Phẫu thuật thẩm mỹ">          
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613170023_7e33d9.jpg" alt="Phẫu thuật thẩm mỹ">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-                  <div class="item">
-                    <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                      <img src="https://p34.yuemei.com/tao/2019/0613/jt190613170023_7e33d9.jpg" alt="Phẫu thuật thẩm mỹ">          
-                    </a>
-                    <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                        <div class="babyInfo">
-                            <p class="infoTit2">
-                              <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                            </p>
-                            <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                            <div class="info-bottom">
-                              <div class="left">Bổ nhiệm 737</div>  
-                              <div class="right">Xếp hạng 5.0</div>             
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613170023_7e33d9.jpg" alt="Phẫu thuật thẩm mỹ">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                  </div>
-              </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-              <div class="row service-cont">
-                  <div class="col-12">
+            <div class="row service-cont">
+                <div class="col-12">
                     <div class="main-tit title">Mục dịch vụ</div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-                  <div class="col-3">
-                      <div class="item">
-                          <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
-                              <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
-                          </a>
-                          <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
-                              <div class="babyInfo">
-                                  <p class="infoTit2">
-                                      <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
-                                  </p>
-                                  <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
-                                  <div class="info-bottom">
-                                      <div class="left">Bổ nhiệm 737</div>
-                                      <div class="right">Xếp hạng 5.0</div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  </div>
-
-                  <div class="col-12">
-                      <div class="more-link">
-                          <a href="#" class="more-list">Xem thêm các mục dịch vụ</a>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="row diary-best">
-                  <div class="col-4">
-                      <div class="item">
-                          <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
-                              <div class="top">
-                                  <div class="img-1">
-                                      <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
-                                      <div class="icon">trước</div>
-                                  </div>
-                                  <div class="img-2">
-                                      <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
-                                      <div class="icon">sau</div>
-                                  </div>
-                              </div>
-                              <div class="bottom">
-                                   Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
-                              </div>
-                          </a>
-                      </div>
-                  <div class="col-4">
-                      <div class="item">
-                          <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
-                              <div class="top">
-                                  <div class="img-1">
-                                      <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
-                                      <div class="icon">trước</div>
-                                  </div>
-                                  <div class="img-2">
-                                      <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
-                                      <div class="icon">sau</div>
-                                  </div>
-                              </div>
-                              <div class="bottom">
-                                  Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
-                      </div>
-                      </a>
-                  </div>
-                  <div class="col-4">
-                      <div class="item">
-                          <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
-                              <div class="top">
-                                  <div class="img-1">
-                                      <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
-                                      <div class="icon">trước</div>
-                                  </div>
-                                  <div class="img-2">
-                                      <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
-                                      <div class="icon">sau</div>
-                                  </div>
-                              </div>
-                              <div class="bottom">
-                                  Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
-                      </div>
-                      </a>
-                  </div>
-                  <div class="col-4">
-                      <div class="item">
-                          <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
-                              <div class="top">
-                                  <div class="img-1">
-                                      <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
-                                      <div class="icon">trước</div>
-                                  </div>
-                                  <div class="img-2">
-                                      <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
-                                      <div class="icon">sau</div>
-                                  </div>
-                              </div>
-                              <div class="bottom">
-                                  Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
-                      </div>
-                      </a>
-                  </div>
-                  <div class="col-4">
-                      <div class="item">
-                          <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
-                              <div class="top">
-                                  <div class="img-1">
-                                      <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
-                                      <div class="icon">trước</div>
-                                  </div>
-                                  <div class="img-2">
-                                      <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
-                                      <div class="icon">sau</div>
-                                  </div>
-                              </div>
-                              <div class="bottom">
-                                  Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
-                      </div>
-                      </a>
-                  </div>
-                  <div class="col-4">
-                      <div class="item">
-                          <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
-                              <div class="top">
-                                  <div class="img-1">
-                                      <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
-                                      <div class="icon">trước</div>
-                                  </div>
-                                  <div class="img-2">
-                                      <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
-                                      <div class="icon">sau</div>
-                                  </div>
-                              </div>
-                              <div class="bottom">
-                                  Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
-                      </div>
-                      </a>
-                  </div>
-                  <div class="col-12">
-                      <div class="more-link">
-                          <a href="#" class="more-list">Xem nhật ký đặc trưng hơn</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-            <div class="col-3 magin-top-30">
-                <div class="voucher">
-                    <div class="hb-item">
-                        <p>
-                            <i>¥ </i>
-                            <b>300 </b>
-                            <span>Phiếu quà tặng</span>
-                        </p>
-                        <div>
-                            <span class="c-666">hàng sử dụng hàng hóa của bệnh viện </span>
-                            <span>là hơn 2.999 nhân dân tệ. Nó có thể có </span>
-                            <span>hiệu lực trong 30 ngày sau khi thu thập.</span>
-                        </div>
-                    </div>
-                    <div class="getNow">Nhận ngay</div>
                 </div>
-                <div class="voucher">
-                    <div class="hb-item">
-                        <p>
-                            <i>¥ </i>
-                            <b>300 </b>
-                            <span>Phiếu quà tặng</span>
-                        </p>
-                        <div>
-                            <span class="c-666">hàng sử dụng hàng hóa của bệnh viện </span>
-                            <span>là hơn 2.999 nhân dân tệ. Nó có thể có </span>
-                            <span>hiệu lực trong 30 ngày sau khi thu thập.</span>
-                        </div>
-                    </div>
-                    <div class="getNow">Nhận ngay</div>
-                </div>
-                <div class="voucher">
-                    <div class="hb-item">
-                        <p>
-                            <i>¥ </i>
-                            <b>300 </b>
-                            <span>Phiếu quà tặng</span>
-                        </p>
-                        <div>
-                            <span class="c-666">hàng sử dụng hàng hóa của bệnh viện </span>
-                            <span>là hơn 2.999 nhân dân tệ. Nó có thể có </span>
-                            <span>hiệu lực trong 30 ngày sau khi thu thập.</span>
-                        </div>
-                    </div>
-                    <div class="getNow">Nhận ngay</div>
-                </div>
-                <div class="btn-voucher">
-                    <span class="more">Xem thêm phiếu quà tặng ></span>
-                </div>
-                <div class="right-section ">
-                    <div class="right-tit">Bác sĩ</div>
-                    <div class="doctor-cont">
-                        <a target="_blank" href="#" class="doctor-list">
-                            <div class="doctor-img">
-                                <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
-                            </div>
-                            <div class="right">
-                                <div class="right-name">Lôi Gang</div>
-                                <div class="right-lv">Thường trú</div>
-                                <div class="right-number">6446 người đã đặt</div>
-                            </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
                         </a>
-                        <a target="_blank" href="#" class="doctor-list">
-                            <div class="doctor-img">
-                                <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
-                            </div>
-                            <div class="right">
-                                <div class="right-name">Lôi Gang</div>
-                                <div class="right-lv">Thường trú</div>
-                                <div class="right-number">6446 người đã đặt</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="#" class="doctor-list">
-                            <div class="doctor-img">
-                                <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
-                            </div>
-                            <div class="right">
-                                <div class="right-name">Lôi Gang</div>
-                                <div class="right-lv">Thường trú</div>
-                                <div class="right-number">6446 người đã đặt</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="#" class="doctor-list">
-                            <div class="doctor-img">
-                                <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
-                            </div>
-                            <div class="right">
-                                <div class="right-name">Lôi Gang</div>
-                                <div class="right-lv">Thường trú</div>
-                                <div class="right-number">6446 người đã đặt</div>
-                            </div>
-                        </a>
-                        <a target="_blank" href="#" class="doctor-list">
-                            <div class="doctor-img">
-                                <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
-                            </div>
-                            <div class="right">
-                                <div class="right-name">Lôi Gang</div>
-                                <div class="right-lv">Thường trú</div>
-                                <div class="right-number">6446 người đã đặt</div>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <div class="list-doctor">
-                        <a href="https://www.yuemei.com/hospital/11239/doctor.html" class="more-doctor">
-                            <span>Thêm bác sĩ<i></i></span>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="item">
+                        <a href="https://tao.yuemei.com/120706/" class="infoImg" target="_blank">
+                            <img src="https://p34.yuemei.com/tao/2019/0613/jt190613143800_8bdf2a.jpg" alt="全切灵动双眼皮">
+                        </a>
+                        <a href="https://tao.yuemei.com/121579/" class="infoTxt" target="_blank">
+                            <div class="babyInfo">
+                                <p class="infoTit2">
+                                    <span class="pink">¥ 880 </span><i class="fs-12 c-999">/ hỗ trợ (1ml)</i>
+                                </p>
+                                <p class="infoTit1">[Yêu Fulai gốc xác thực] Bắc Kinh Aiouslyai hyaluronic axit 1ml ★ độ trung thực ban đầu ★ chạm khắc không đau / nâng mũi / mặt âm thanh nổi</p>
+                                <div class="info-bottom">
+                                    <div class="left">Bổ nhiệm 737</div>
+                                    <div class="right">Xếp hạng 5.0</div>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
 
-                <!--map right hospital -->
-                <div class="right-section ">
-                    <div class="right-tit">Địa chỉ</div>
-                    <p class="address-text">Số 17, Đông Thứ ba Vành đai Bắc, Quận Triều Dương, Bắc Kinh</p>                    
+                <div class="col-12">
+                    <div class="more-link">
+                        <a href="#" class="more-list">Xem thêm các mục dịch vụ</a>
+                    </div>
                 </div>
-                <!-- end map right -->
-                <!-- banner image right -->
-                <div class="right-section right-image-banner">
-                  <div class="gg-link">
-                       <img src="https://icon.yuemei.com/front//common/images/coupon/share-img_01.jpg?v=2" alt="">
-                  </div>
-                </div>
-                <!-- end banner image -->
             </div>
 
+            <div class="row diary-best">
+                <div class="col-4">
+                    <div class="item">
+                        <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
+                            <div class="top">
+                                <div class="img-1">
+                                    <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
+                                    <div class="icon">trước</div>
+                                </div>
+                                <div class="img-2">
+                                    <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
+                                    <div class="icon">sau</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="item">
+                        <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
+                            <div class="top">
+                                <div class="img-1">
+                                    <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
+                                    <div class="icon">trước</div>
+                                </div>
+                                <div class="img-2">
+                                    <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
+                                    <div class="icon">sau</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="item">
+                        <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
+                            <div class="top">
+                                <div class="img-1">
+                                    <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
+                                    <div class="icon">trước</div>
+                                </div>
+                                <div class="img-2">
+                                    <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
+                                    <div class="icon">sau</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="item">
+                        <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
+                            <div class="top">
+                                <div class="img-1">
+                                    <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
+                                    <div class="icon">trước</div>
+                                </div>
+                                <div class="img-2">
+                                    <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
+                                    <div class="icon">sau</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="item">
+                        <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
+                            <div class="top">
+                                <div class="img-1">
+                                    <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
+                                    <div class="icon">trước</div>
+                                </div>
+                                <div class="img-2">
+                                    <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
+                                    <div class="icon">sau</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="item">
+                        <a class="list-link" target="_blank" href="https://www.yuemei.com/c/1941076.html">
+                            <div class="top">
+                                <div class="img-1">
+                                    <img src="https://p23.yuemei.com/postimg/20171118/300_300/1510974859900.jpg" alt="">
+                                    <div class="icon">trước</div>
+                                </div>
+                                <div class="img-2">
+                                    <img src="https://p31.yuemei.com/postimg/20190101/300_300/190101144344_05fa04.jpg" alt="">
+                                    <div class="icon">sau</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                Khi người phụ nữ già đi, làn da bắt đầu đi xuống, nhưng bây giờ công nghệ y tế đã rất phát triển, hãy để tôi dựa vào vẻ đẹp y tế để giữ cho mình trẻ ...</div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div class="more-link">
+                        <a href="#" class="more-list">Xem nhật ký đặc trưng hơn</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-3 magin-top-30">
+            <div class="voucher">
+                <div class="hb-item">
+                    <p>
+                        <i>¥ </i>
+                        <b>300 </b>
+                        <span>Phiếu quà tặng</span>
+                    </p>
+                    <div>
+                        <span class="c-666">hàng sử dụng hàng hóa của bệnh viện </span>
+                        <span>là hơn 2.999 nhân dân tệ. Nó có thể có </span>
+                        <span>hiệu lực trong 30 ngày sau khi thu thập.</span>
+                    </div>
+                </div>
+                <div class="getNow">Nhận ngay</div>
+            </div>
+            <div class="voucher">
+                <div class="hb-item">
+                    <p>
+                        <i>¥ </i>
+                        <b>300 </b>
+                        <span>Phiếu quà tặng</span>
+                    </p>
+                    <div>
+                        <span class="c-666">hàng sử dụng hàng hóa của bệnh viện </span>
+                        <span>là hơn 2.999 nhân dân tệ. Nó có thể có </span>
+                        <span>hiệu lực trong 30 ngày sau khi thu thập.</span>
+                    </div>
+                </div>
+                <div class="getNow">Nhận ngay</div>
+            </div>
+            <div class="voucher">
+                <div class="hb-item">
+                    <p>
+                        <i>¥ </i>
+                        <b>300 </b>
+                        <span>Phiếu quà tặng</span>
+                    </p>
+                    <div>
+                        <span class="c-666">hàng sử dụng hàng hóa của bệnh viện </span>
+                        <span>là hơn 2.999 nhân dân tệ. Nó có thể có </span>
+                        <span>hiệu lực trong 30 ngày sau khi thu thập.</span>
+                    </div>
+                </div>
+                <div class="getNow">Nhận ngay</div>
+            </div>
+            <div class="btn-voucher">
+                <span class="more">Xem thêm phiếu quà tặng ></span>
+            </div>
+            <div class="right-section ">
+                <div class="right-tit">Bác sĩ</div>
+                <div class="doctor-cont">
+                    <a target="_blank" href="#" class="doctor-list">
+                        <div class="doctor-img">
+                            <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="right-name">Lôi Gang</div>
+                            <div class="right-lv">Thường trú</div>
+                            <div class="right-number">6446 người đã đặt</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="doctor-list">
+                        <div class="doctor-img">
+                            <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="right-name">Lôi Gang</div>
+                            <div class="right-lv">Thường trú</div>
+                            <div class="right-number">6446 người đã đặt</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="doctor-list">
+                        <div class="doctor-img">
+                            <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="right-name">Lôi Gang</div>
+                            <div class="right-lv">Thường trú</div>
+                            <div class="right-number">6446 người đã đặt</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="doctor-list">
+                        <div class="doctor-img">
+                            <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="right-name">Lôi Gang</div>
+                            <div class="right-lv">Thường trú</div>
+                            <div class="right-number">6446 người đã đặt</div>
+                        </div>
+                    </a>
+                    <a target="_blank" href="#" class="doctor-list">
+                        <div class="doctor-img">
+                            <img src="https://p21.yuemei.com/avatar/086/14/29/37_avatar_120_120.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="right-name">Lôi Gang</div>
+                            <div class="right-lv">Thường trú</div>
+                            <div class="right-number">6446 người đã đặt</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-doctor">
+                    <a href="https://www.yuemei.com/hospital/11239/doctor.html" class="more-doctor">
+                        <span>Thêm bác sĩ<i></i></span>
+                    </a>
+                </div>
+            </div>
 
-      <!-- another diary -->
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+            <!--map right hospital -->
+            <div class="right-section ">
+                <div class="right-tit">Địa chỉ</div>
+                <p class="address-text">Số 17, Đông Thứ ba Vành đai Bắc, Quận Triều Dương, Bắc Kinh</p>
+            </div>
+            <!-- end map right -->
+            <!-- banner image right -->
+            <div class="right-section right-image-banner">
+                <div class="gg-link">
+                    <img src="https://icon.yuemei.com/front//common/images/coupon/share-img_01.jpg?v=2" alt="">
+                </div>
+            </div>
+            <!-- end banner image -->
+        </div>
+
+    </div>
+</div>
+
+<!-- another diary -->
+<div class="container desktop">
+    <div class="row">
+        <div class="col-12">
             <div class="main-tit title">Nhật ký User</div>
-          </div>
-          <div class="col-12">
-              <div class="qa-cont">
+        </div>
+        <div class="col-12">
+            <div class="qa-cont">
                 <div class="qa-list-link">
                     <div href="javascript:;" class="left">
                         <div class="infoImg">
@@ -923,8 +935,8 @@
                             <span class="score-txt"> Đánh giá của bác sĩ: <b class="ff-a">5</b> điểm <i>(rất tốt)</i></span>
                         </div>
                         <p class="info_tit2">
-                            <a href="https://www.yuemei.com/c/7373806.html" target="_blank">Trước đây tôi chưa bao giờ chú ý đến những phần riêng tư của mình, cho đến sau khi chồng tôi kết hôn, chồng tôi nói rằng labia minora của tôi không cùng kích cỡ, và nó không nhạy cảm, tôi biết rằng những phần riêng tư của tôi có vấn đề ...      
-                        </a>
+                            <a href="https://www.yuemei.com/c/7373806.html" target="_blank">Trước đây tôi chưa bao giờ chú ý đến những phần riêng tư của mình, cho đến sau khi chồng tôi kết hôn, chồng tôi nói rằng labia minora của tôi không cùng kích cỡ, và nó không nhạy cảm, tôi biết rằng những phần riêng tư của tôi có vấn đề ...
+                            </a>
                         </p>
                         <div class="img_cont">
                             <a href="https://www.yuemei.com/c/7373806.html" target="_blank">
@@ -971,8 +983,8 @@
                             <span class="score-txt"> Đánh giá của bác sĩ: <b class="ff-a">5</b> điểm <i>(rất tốt)</i></span>
                         </div>
                         <p class="info_tit2">
-                            <a href="https://www.yuemei.com/c/7351447.html" target="_blank">&nbsp;Tôi là một cô gái thuộc nhóm labia minora tự nhiên. Tôi tin rằng những cô gái có hoàn cảnh tương tự với tôi sẽ hiểu những rắc rối của tôi. Tôi thường không muốn mặc một chiếc quần jean, luôn luôn có quần ...                            
-                        </a>
+                            <a href="https://www.yuemei.com/c/7351447.html" target="_blank">&nbsp;Tôi là một cô gái thuộc nhóm labia minora tự nhiên. Tôi tin rằng những cô gái có hoàn cảnh tương tự với tôi sẽ hiểu những rắc rối của tôi. Tôi thường không muốn mặc một chiếc quần jean, luôn luôn có quần ...
+                            </a>
                         </p>
                         <div class="img_cont">
                             <a href="https://www.yuemei.com/c/7351447.html" target="_blank">
@@ -1004,7 +1016,7 @@
                                 <span>Dự án <a target="_blank" href="https://tao.yuemei.com/119749/"></a></span>
                                 <span><a target="_blank" href="https://www.yuemei.com/dr/00654589/">Zhang Shouling</a>
                                 </span><span>:</span><span><a target="_blank" href="https://www.yuemei.com/dr/00654589/">Labiaplasta </a></span><span><a target="_blank" href="https://tao.yuemei.com/119749/">
-                                nhỏ </a></span><span><a target="_blank" href="https://www.yuemei.com/dr/00654589/">, âm và labia, </a></span><span><a target="_blank" href="https://tao.yuemei.com/119749/">hiệu chỉnh mỡ                                    
+                                nhỏ </a></span><span><a target="_blank" href="https://www.yuemei.com/dr/00654589/">, âm và labia, </a></span><span><a target="_blank" href="https://tao.yuemei.com/119749/">hiệu chỉnh mỡ
                                 </a></span><span> Giá: ¥ 2800</span>
                             </p>
                             <span class="right reply"><b></b>Trả lời <i>(0)</i></span>
@@ -1012,60 +1024,60 @@
                         </div>
                     </div>
                 </div>
-              </div>
-          </div>
-          <div class="col-12">
-              <div class="more-link">
-                  <a href="#" class="more-list more-diary">Xem thêm nhật ký chia sẻ</a>
-              </div>
-          </div>
+            </div>
         </div>
-      </div>
-      <!-- end anothe diary -->
-      <!-- gift hospital -->
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+        <div class="col-12">
+            <div class="more-link">
+                <a href="#" class="more-list more-diary">Xem thêm nhật ký chia sẻ</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end anothe diary -->
+<!-- gift hospital -->
+<div class="container desktop">
+    <div class="row">
+        <div class="col-12">
             <div class="main-tit title">Nhật ký User</div>
-          </div>
-          <div class="hospital-section user-diary-boottom">
-              <div class="notice"><a href="https://www.yuemei.com/p/7340968.html" target="_blank">Gửi đến bệnh viện: tẩy lông bằng bọt siêu nhỏ / băng điểm, chọn thêm một mặt hàng, gấp 1 lần: các mặt hàng phổ biến (tất cả các sản phẩm y tế trong bệnh viện) giảm 1% cho quà tặng khách mới, quà tặng tiêu dùng, quà tặng khách cũ, quà tặng độc quyền Quà tặng riêng, quà tặng tốt, không ngừng</a></div>
-              <div class="dyn-bottom">
-                  <span>2019-06-09</span>
-                  <div class="bottom-right">
+        </div>
+        <div class="hospital-section user-diary-boottom">
+            <div class="notice"><a href="https://www.yuemei.com/p/7340968.html" target="_blank">Gửi đến bệnh viện: tẩy lông bằng bọt siêu nhỏ / băng điểm, chọn thêm một mặt hàng, gấp 1 lần: các mặt hàng phổ biến (tất cả các sản phẩm y tế trong bệnh viện) giảm 1% cho quà tặng khách mới, quà tặng tiêu dùng, quà tặng khách cũ, quà tặng độc quyền Quà tặng riêng, quà tặng tốt, không ngừng</a></div>
+            <div class="dyn-bottom">
+                <span>2019-06-09</span>
+                <div class="bottom-right">
                       <span>
                           <b style="background: url(https://icon.yuemei.com/front/hospital/images/look.png) no-repeat center;"></b>
                           <i>浏览&nbsp;(500)</i>
                       </span>
-                      <span>
+                    <span>
                           <b style="background: url(https://icon.yuemei.com/front/hospital/images/reply.png) no-repeat center;"></b>
                           <i>回复&nbsp;(0)</i>
                       </span>
-                      <span>
+                    <span>
                           <b style="background: url(https://icon.yuemei.com/front/hospital/images/zan.png) no-repeat center;"></b>
                           <i>赞&nbsp;(0)</i>
                       </span>
-                  </div>
-              </div>
-          </div>
-          <div class="col-12">
-              <div class="more-link">
-                  <a href="#" class="more-list more-diary">Xem thêm cập nhật bệnh viện</a>
-              </div>
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- end gift hospital -->
-      <!-- pop up online counseling -->
-      <div class="fixed-slide">
-       <a href="javascript:;" class="slide-right">
+        <div class="col-12">
+            <div class="more-link">
+                <a href="#" class="more-list more-diary">Xem thêm cập nhật bệnh viện</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end gift hospital -->
+<!-- pop up online counseling -->
+<div class="fixed-slide desktop">
+    <a href="javascript:;" class="slide-right">
         <div></div>
         <p>Tư vấn trực tuyến</p>
-       </a>
-       <div class="go-top">
+    </a>
+    <div class="go-top">
         <div></div>
-       </div>
-       <div class="show-cont" style="display: none; opacity: 1;">
+    </div>
+    <div class="show-cont" style="display: none; opacity: 1;">
         <div class="hospital-name">Bệnh viện thẩm mỹ y tế Bắc Kinh Changhong</div>
         <a href="javascript:;"  class="call-me-btn _yma chat-button"><span><i></i>Liên lạc với tôi</span></a>
         <div class="data-list">
@@ -1076,98 +1088,98 @@
             <div>Thông tin liên lạc</div>
             <p>Điện thoại: 400-890-8655 đến 1412</p>
         </div>
-        </div>
-       </div>
-        
-      <!-- end online counseling -->
-      <!-- end main -->
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   
-    <script type="text/javascript" src="./js/hospital-detail.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
-      <!-- footer -->
-    <div class="footer-app-wrap">
-      <div class="container wrap-main app-main">       
-          <div class="left">
-              <a href="https://www.yuemei.com/app/kuaiwen.html" target="_blank" class="app-logo left">
-                  <img src="https://icon.yuemei.com/front/common/images/yuemei-icon.png" alt="">
-              </a>
-              <span class="left down-txt">注册最高领<i class="money">2000</i>元整形优惠券&gt;</span>
-          </div>
-          <div class="right code-box">
-              <a href="javascript:;" class="code-btn">扫码下载</a>
-              <div class="show-code" style="display: none;">
-                  <img src="https://icon.yuemei.com/front/common/images/yuemei-code-img.jpg" alt="">
-                  <p>手机扫一扫下载悦美</p>
-                  <div class="show-jiao"></div>
-              </div>
-          </div>
-          <div class="clearfix"></div>       
-      </div>
     </div>
-    <!-- footer absolute -->
-    <div class="footer-wrap">
-      <div class="container wrap-main ">  
-        <div class="row">
-        <div class="col-md-2">
-            <div class="data-tit">Về chúng tôi</div>
-            <div class="data-txt"><a href="https://www.yuemei.com/aboutus.html">Về Yuemei</a></div>
-            <div class="data-txt"><a rel="nofollow" href="https://www.lagou.com/gongsi/j21682.html" target="_blank">Tham gia với chúng tôi</a></div>
-            <div class="data-txt"><a href="https://www.yuemei.com/contactus.html">Liên lạc với chúng tôi</a></div>
-            <div class="data-txt"><a href="https://www.yuemei.com/disclaimer.html">Tuyên bố bản quyền</a></div>
-            <div class="data-txt"><a href="https://www.yuemei.com/help.html">Trung tâm trợ giúp</a></div>
-            <div class="data-txt"><a href="https://www.yuemei.com/feedback/">Báo cáo phản hồi</a></div>
-        </div> 
-        <div class="col-md-2">
-            <div class="data-tit">Truy cập nhanh</div>
-            <div class="data-txt"><a href="https://tao.yuemei.com/">Phẫu thuật thẩm mỹ Amoy</a></div>
-            <div class="data-txt"><a href="https://fan.yuemei.com/">Cộng đồng</a></div>
-            <div class="data-txt"><a href="https://note.yuemei.com/">Nhật ký nổi bật</a></div>
-            <div class="data-txt"><a href="https://doctor.yuemei.com/">Bác sĩ</a> / <a href="https://hospital.yuemei.com/">bệnh viện</a></div>
-            <div class="data-txt"><a href="https://www.yuemei.com/parts.html">Dự án</a></div>
-            <div class="data-txt"><a href="https://tao.yuemei.com/tao_zt/">Vẻ đẹp y tế</a></div>
-            <div class="data-txt"><a href="https://news.yuemei.com/">Thông tin nhựa</a></div>
-        </div> 
-        <div class="col-md-2">
-            <div class="data-tit">Đối tác chiến lược</div>
-            <div class="data-txt">Thượng Hải Jiuyuan</div>
-            <div class="data-txt">Bệnh viện phẫu thuật thẩm mỹ Xijing</div>
-            <div class="data-txt">Bệnh viện phẫu thuật thẩm mỹ miền Nam</div>
-            <div class="data-txt">Bệnh viện Đại học Y Liên minh Bắc Kinh</div>
-            <div class="data-txt">Hiệp hội bác sĩ y khoa trung quốc</div>
-            <div class="data-txt">Hiệp hội y tế Trung Quốc toàn chi nhánh</div>
-            <div class="data-txt">Bệnh viện Tây Nam</div>
-        </div> 
-        <div class="col-md-6">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="data-tit">Điện Thoại</div>
-              <div class="phone-number">400-056-7118</div>
-              <div class="work-time">Time：9:00-21:00</div>
-            </div>
-             <div class="col-md-4">
-              <div class="data-tit">Ứng Dụng</div>
-               <div class="data-txt">Link ứng dung</div>
-            </div>
-             <div class="col-md-4">
-              <div class="left wei-xin-box">
-                  <img src="https://icon.yuemei.com/front/common/images/weixin-img.jpg" alt="">
-                  <div class="wei-xin-txt">APP IOS</div>
-              </div>
-               <div class="left wei-xin-box">
-                  <img src="https://icon.yuemei.com/front/common/images/huajiao-code-img.jpg?v=1123" alt="">
-                  <div class="wei-xin-txt">APP Adroid</div>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-          </div>
+</div>
+
+<!-- end online counseling -->
+<!-- end main -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="./js/hospital-detail.js" charset="utf-8"></script>
+<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+<!-- footer -->
+<div class="footer-app-wrap">
+    <div class="container wrap-main app-main">
+        <div class="left">
+            <a href="https://www.yuemei.com/app/kuaiwen.html" target="_blank" class="app-logo left">
+                <img src="https://icon.yuemei.com/front/common/images/yuemei-icon.png" alt="">
+            </a>
+            <span class="left down-txt">注册最高领<i class="money">2000</i>元整形优惠券&gt;</span>
         </div>
-        </div>  
-      </div>
-    </div>  
-  </body>
+        <div class="right code-box">
+            <a href="javascript:;" class="code-btn">扫码下载</a>
+            <div class="show-code" style="display: none;">
+                <img src="https://icon.yuemei.com/front/common/images/yuemei-code-img.jpg" alt="">
+                <p>手机扫一扫下载悦美</p>
+                <div class="show-jiao"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!-- footer absolute -->
+<div class="footer-wrap">
+    <div class="container wrap-main ">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="data-tit">Về chúng tôi</div>
+                <div class="data-txt"><a href="https://www.yuemei.com/aboutus.html">Về Yuemei</a></div>
+                <div class="data-txt"><a rel="nofollow" href="https://www.lagou.com/gongsi/j21682.html" target="_blank">Tham gia với chúng tôi</a></div>
+                <div class="data-txt"><a href="https://www.yuemei.com/contactus.html">Liên lạc với chúng tôi</a></div>
+                <div class="data-txt"><a href="https://www.yuemei.com/disclaimer.html">Tuyên bố bản quyền</a></div>
+                <div class="data-txt"><a href="https://www.yuemei.com/help.html">Trung tâm trợ giúp</a></div>
+                <div class="data-txt"><a href="https://www.yuemei.com/feedback/">Báo cáo phản hồi</a></div>
+            </div>
+            <div class="col-md-2">
+                <div class="data-tit">Truy cập nhanh</div>
+                <div class="data-txt"><a href="https://tao.yuemei.com/">Phẫu thuật thẩm mỹ Amoy</a></div>
+                <div class="data-txt"><a href="https://fan.yuemei.com/">Cộng đồng</a></div>
+                <div class="data-txt"><a href="https://note.yuemei.com/">Nhật ký nổi bật</a></div>
+                <div class="data-txt"><a href="https://doctor.yuemei.com/">Bác sĩ</a> / <a href="https://hospital.yuemei.com/">bệnh viện</a></div>
+                <div class="data-txt"><a href="https://www.yuemei.com/parts.html">Dự án</a></div>
+                <div class="data-txt"><a href="https://tao.yuemei.com/tao_zt/">Vẻ đẹp y tế</a></div>
+                <div class="data-txt"><a href="https://news.yuemei.com/">Thông tin nhựa</a></div>
+            </div>
+            <div class="col-md-2">
+                <div class="data-tit">Đối tác chiến lược</div>
+                <div class="data-txt">Thượng Hải Jiuyuan</div>
+                <div class="data-txt">Bệnh viện phẫu thuật thẩm mỹ Xijing</div>
+                <div class="data-txt">Bệnh viện phẫu thuật thẩm mỹ miền Nam</div>
+                <div class="data-txt">Bệnh viện Đại học Y Liên minh Bắc Kinh</div>
+                <div class="data-txt">Hiệp hội bác sĩ y khoa trung quốc</div>
+                <div class="data-txt">Hiệp hội y tế Trung Quốc toàn chi nhánh</div>
+                <div class="data-txt">Bệnh viện Tây Nam</div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="data-tit">Điện Thoại</div>
+                        <div class="phone-number">400-056-7118</div>
+                        <div class="work-time">Time：9:00-21:00</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="data-tit">Ứng Dụng</div>
+                        <div class="data-txt">Link ứng dung</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="left wei-xin-box">
+                            <img src="https://icon.yuemei.com/front/common/images/weixin-img.jpg" alt="">
+                            <div class="wei-xin-txt">APP IOS</div>
+                        </div>
+                        <div class="left wei-xin-box">
+                            <img src="https://icon.yuemei.com/front/common/images/huajiao-code-img.jpg?v=1123" alt="">
+                            <div class="wei-xin-txt">APP Adroid</div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

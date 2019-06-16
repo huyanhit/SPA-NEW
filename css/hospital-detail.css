@@ -993,3 +993,15 @@
 .dyn-bottom>.bottom-right {
     float: right;
 }
+
+@media only screen and (max-width: 1025px) {
+    .desktop{
+        display:  none !important;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .mobile{
+        display:  none !important;
+    }
+}

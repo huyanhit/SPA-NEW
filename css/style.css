@@ -1415,7 +1415,6 @@ a{
         margin-top: 0px;
     }
     .float-nav-wrap.active {
-        animation: slideup3 0.5s;
         border-bottom: 1px #dfdfdf solid;
     }
 
