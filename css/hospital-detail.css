@@ -1,3 +1,4 @@
+
 .chanl-head {
     position: relative;
     z-index: 2;
@@ -995,10 +996,15 @@
 }
 
 @media only screen and (max-width: 1025px) {
-    .desktop{
-        display:  none !important;
+    a{
+        text-decoration: none;
     }
-    .downIcon2{
+
+    .desktop {
+        display: none !important;
+    }
+
+    .downIcon2 {
         position: relative;
         display: block;
         width: 100%;
@@ -1006,30 +1012,36 @@
         background: url('../images/downIcon2.jpg') no-repeat 0 0;
         background-size: 100% auto;
     }
-    .downIcon2 .ymicon{
+
+    .downIcon2 .ymicon {
         display: block;
         max-width: 70%;
         height: 60px;
         margin-left: 10px;
         padding-top: 8px;
         padding-left: 47px;
-        font-size: 13px; color: #ff526f;
-        background: url('../images/yuemei_logo3.png')
-        no-repeat 0 8px; background-size: 40px auto;
+        font-size: 13px;
+        color: #ff526f;
+        background: url('../images/yuemei_logo3.png') no-repeat 0 8px;
+        background-size: 40px auto;
     }
-    .downIcon2 .ymicon i{
+
+    .downIcon2 .ymicon i {
         display: block;
         overflow: hidden;
         width: 100%;
         height: 21px;
         line-height: 21px;
         white-space: nowrap;
-        text-overflow:ellipsis;
+        text-overflow: ellipsis;
     }
-    .downIcon2 .ymicon .item1{
-        padding: 4px 0 0;
+
+    .downIcon2 .ymicon .item1,  .downIcon2 .ymicon .item2 {
+        padding: 0 5px;
+        display: block;
     }
-    .downIcon2 .txt{
+
+    .downIcon2 .txt {
         position: absolute;
         top: 50%;
         right: 12px;
@@ -1099,7 +1111,7 @@
         display: inline-block;
         width: 15px;
         height: 15px;
-        margin: 30px  0;
+        margin: 30px 0;
         vertical-align: middle;
     }
 
@@ -1183,7 +1195,6 @@
         margin: 5px 10px;
         padding-left: 10px;
     }
-
 
     header .head-content .hos-eval .public-icon {
         height: 20px;
@@ -1269,7 +1280,6 @@
         border-radius: 0;
     }
 
-
     header .head-content .top-daa .nav-list {
         width: 81%;
         margin-top: 0.7rem;
@@ -1285,6 +1295,301 @@
         height: 0.64rem;
         border-bottom: 0.08rem solid #ff5c77;
         border-radius: 0.02667rem;
+    }
+
+    .tab-mobile-detail ul {
+        margin-top: 15px;
+        border-bottom: 1px #ccc solid;
+        margin-bottom: 10px;
+    }
+
+    .tab-mobile-detail ul li a {
+        background: #eee;
+        color: #666;
+        border-radius: 20px;
+        padding: 5px 16px;
+        margin: 0 4px;
+        line-height: 14px;
+        height: 25px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .tab-mobile-detail ul {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+
+    .tab-mobile-detail ul li {
+        display: inline-block;
+    }
+
+    .product-item .product-img {
+        width: 30%;
+        float: left;
+    }
+
+    .product-item .product-img img {
+        width: 100%;
+    }
+
+    .tao-list {
+        padding: 0 15px;
+    }
+
+    .product-top-detail {
+        width: 70%;
+        padding-left: 15px;
+        float: right;
+        line-height: 20px;
+    }
+
+    .detail-title {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .product-top-detail p span {
+        font-size: 14px;
+        color: #999;
+
+    }
+
+    .detail-price .small-red, .detail-price .red {
+        color: #ff5c77;
+    }
+
+    .tab-content .tab-pane a {
+        clear: both;
+        padding: 10px 5px;
+        display: block;
+    }
+
+    #parent-tab .tab-content {
+        margin-top: -15px;
+    }
+
+    .more-btn-box {
+        display: block;
+        width: 100%;
+        clear: both;
+        text-align: center;
+        margin-top: 30px;
+        border-bottom: 10px #f6f6f6 solid;
+        padding-bottom: 30px;
+    }
+
+    #parent-tab .tab-content > .active {
+        display: inline-block;
+    }
+
+    .more-btn-box .more-btn {
+        border: none;
+        border-radius: 20px;
+        padding: 5px 20px;
+        color: #ff5c77;
+        background: #FDF1F3;
+        text-decoration: none;
+    }
+
+    .more-btn-box .more-btn i {
+        padding: 0 5px;
+        position: relative;
+        top: 2px;
+    }
+    .share-item .art-info > img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        float: left;
+    }
+    .share-item .name-box .user-name{
+        margin-left: 60px;
+        font-size: 14px;
+        color: #666;
+        padding-top: 2px
+    }
+
+    .share-item .name-box .update-time{
+        margin-left: 60px;
+        font-size: 13px;
+        color: #999;
+    }
+    .share-item  .art-info{
+        padding: 10px;
+        border-bottom: 1px #ccc dotted;
+    }
+    .img-box{
+        clear: both;
+        margin: 0 -5px;
+    }
+    .img-box > p{
+        width: 50%;
+        float: left;
+        padding: 5px;
+        position: relative;
+    }
+    .img-box > p img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .before, .after{
+        position: absolute;
+        z-index: 1000;
+        bottom: 5px;
+        right: 5px;
+        padding: 0 10px;
+        font-size: 14px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 60px;
+        text-align: center;
+        color: #fff;
+    }
+    .before{
+        background: #201e1ead;
+    }
+    .after{
+        background: #ff1d42c2;
+    }
+    .art-detail{
+        font-size: 14px;
+        color: #666;
+    }
+    .tags{
+        font-size: 13px;
+        color: #ff5c77;
+        margin-top: 5px;
+    }
+    .bottom-active p, .like{
+        display: inline-block;
+        font-size: 13px;
+        color: #999;
+        margin-right: 15px;
+    }
+    .like{
+        float: right;
+        margin-right: 0;
+    }
+    .active-item{
+        padding: 10px;
+    }
+    .hos-img-box{
+        margin: -2px;
+        margin-top: 5px;
+    }
+    .hos-img-box img{
+        width: 25%;
+        float: left;
+        padding: 2px;
+    }
+    .bottom-active{
+        clear: both;
+    }
+    .update-time{
+        font-size: 14px;
+        color: #999;
+
+    }
+    .active-item a{
+        font-size: 14px;
+        color: #666;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+    .active-item {
+        margin-top: 15px;
+    }
+    .expert-team {
+        padding: 0 10px;
+        margin-top: 30px;
+    }
+    .top-box{
+        font-size: 14px;
+        color: #666;
+    }
+    .top-box i{
+        position: relative;
+        top: 2px;
+        margin-right: 5px;
+    }
+    .top-number{
+        float: right;
+        color: #666;
+        text-decoration: none;
+    }
+    .doctor-item{
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .doctor-item img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 10;
+        top: 30px;
+    }
+    .doctor-info{
+        padding: 10px;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+        padding-top: 40px;
+        font-size: 14px;
+        min-height: 140px;
+    }
+    .doctor-items{
+        display: block;
+        margin: 0 -10px;
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+    .doctor-list, .organ-img .img {
+        display: inline-block;
+        width: 33.3%;
+    }
+
+    .organ-img {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: inline-block;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .organ-img .img img{
+        width: 100%;
+        height: 100%;
+    }
+    .grade{
+        font-size: 12px;
+        color: #999;
+        margin-top: 5px;
+    }
+    .number{
+        font-size: 12px;
+        color: #999;
+    }
+    .y-m-hint{
+        background: #f6f6f6;
+    }
+    .y-m-hint .hint-content {
+        display: inline-block;
+        text-align: left;
+        margin: 30px;
+        color: #999;
+        font-size: 14px;
+        background: #fff;
+        padding: 10px;
     }
 }
 
