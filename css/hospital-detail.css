@@ -1728,6 +1728,7 @@
         margin: 15px 5px;
         margin-top: 0;
     }
+
     .tao-card-optimize .card-item img{
         width: 100%;
         border-top-left-radius: 10px;
@@ -1786,7 +1787,6 @@
         color: #ffa901;
         font-size: 21px;
     }
-}
 }
 
 @media only screen and (min-width: 1025px) {
