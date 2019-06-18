@@ -1394,12 +1394,14 @@
         color: #ff5c77;
         background: #FDF1F3;
         text-decoration: none;
+        padding-bottom: 8px;
+        font-size: 14px;
     }
 
     .more-btn-box .more-btn i {
         padding: 0 5px;
         position: relative;
-        top: 2px;
+        top: 1px;
     }
     .share-item .art-info > img{
         width: 50px;
@@ -1591,6 +1593,200 @@
         background: #fff;
         padding: 10px;
     }
+    .cons-box {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .cons-box a{
+        color: #666;
+        text-decoration: none;
+    }
+    .cons-box .hos-address{
+        display: block;
+        font-size: 14px;
+    }
+    .hos-address i{
+        position: relative;
+        top: 0px;
+        font-size: 14px;
+        color: #999;
+    }
+    .hos-address i.fa-ad{
+        color: #7ecaff;
+        border: 1px #97d3ff solid;
+        padding: 2px;
+        font-size: 13px;
+        border-radius: 3px;
+        color: #7ecaff;
+        top: -5px;
+    }
+    .cons-box .fa-hand-holding-usd{
+        color: #ff2742;
+        border: 1px #ff2742 solid;
+        padding: 1px;
+        font-size: 13px;
+        top: -6px;
+        border-radius: 3px;
+    }
+    .hos-address i.fa-map-marker-alt{
+        width: 19px;
+        text-align: center;
+        font-size: 16px;
+        top: -5px;
+    }
+    .hos-address i.fa-chevron-right{
+        top: -1px;
+        font-size: 12px;
+        color: #999;
+    }
+    .hos-detail-text{
+        width: 65%;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        text-overflow: ellipsis;
+        padding-right: 10px;
+        padding-left: 5px;
+    }
+    .hos-pay-bill,.cons-box a.hos-phone{
+        display: inline-block;
+        float: right;
+        width: 25%;
+        border-left: 1px #ccc solid;
+        text-align: right;
+    }
+
+    .hos-phone i, .hos-pay-bill{
+        color: #ff5c77;
+    }
+
+    .cons-box .hos-voucher {
+        width: 100%;
+        height: 60px;
+        white-space: nowrap;
+        overflow-x: scroll;
+        margin-top: 10px;
+    }
+
+    .cons-box .hos-voucher .voucher-item {
+        padding: 5px;
+        display: inline-block;
+        position: relative;
+        width: 25%;
+        height: 50px;
+        padding-right: 10px;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #ff90c2;
+        color: #fff;
+        position: relative;
+    }
+    .jian{
+        margin-top: -3px;
+        color: #fff;
+        font-size: 15px;
+    }
+    .man{
+        color: #fff0f2;
+        font-size: 13px;
+    }
+    .hos-voucher .left{
+        height: 10px;
+        width: 10px;
+        background: #fff;
+        left: -5px;
+        top: 19px;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .hos-voucher .right{
+        height: 10px;
+        width: 10px;
+        background: #fff;
+        right: -5px;
+        top: 19px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .tao-card-optimize {
+        overflow-x: scroll;
+        white-space: nowrap;
+        padding: 0 7px;
+    }
+
+    .tao-card-optimize .card-item {
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        border-radius: 10px;
+        background-color: #FFF;
+        -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+        margin: 15px 5px;
+        margin-top: 0;
+    }
+    .tao-card-optimize .card-item img{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .tao-card-optimize .card-item .tao-info {
+        height: 150px;
+        padding: 5px;
+    }
+    .tao-card-optimize .card-item .tao-info .tao-detail{
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        height: 44px;
+        white-space: normal;
+        line-height: 18px;
+    }
+    .tao-card-optimize .card-item .new-price {
+        font-size: 24px;
+        color: #ff5c77;
+    }
+    .tao-card-optimize .card-item .new-price i{
+        font-size: 12px;
+        color: #ff5c77;
+        margin-right: 3px;
+        font-style: normal;
+    }
+
+    .tao-card-optimize .card-item .tao-info .reserve-icon {
+        background: #262022;
+        border-radius: 10px;
+        padding: 0 15px;
+        line-height: 18px;
+        display: inline-block;
+        font-size: 13px;
+        width: 50px;
+        position: relative;
+    }
+    .tao-card-optimize .card-item .fa-plus-square{
+        color: #ffa901;
+    }
+    .tao-card-optimize .card-item .money-left{
+        background: #ffa901;
+        float: left;
+        position: absolute;
+        margin-left: 10px;
+        padding-right: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: #fff;
+    }
+    .card-item .fa-money-bill-alt{
+        float: right;
+        margin-top: 3px;
+        color: #ffa901;
+        font-size: 21px;
+    }
+}
 }
 
 @media only screen and (min-width: 1025px) {
