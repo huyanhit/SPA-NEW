@@ -1,11 +1,16 @@
 @font-face {
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    src: url(../font/HelveticaNeue.ttf);
-    src: url(../font/HelveticaNeue.woff);
-    src: url(../font/ElleFutura.woff);
+    font-family: 'Elle Futura';
+    src: url('../font/ElleFutura.woff2') format('woff2'),
+    url('../font/ElleFutura.woff') format('woff'),
+    url('../font/ElleFutura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 body{
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Elle Futura';
+    font-weight: normal;
+    font-style: normal;
 }
 
 .left, .flleft {
