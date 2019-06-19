@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Elle Futura;
+    src: url(../webfonts/ElleFutura-BoldItalic.eot);
+}
+
 .left, .flleft {
     float: left;
 }
@@ -443,6 +448,7 @@ a{
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 400;
+    font-family: Elle Futura, Arial, sans-serif;
 }
 .nav-menu-home li a:hover{
     color: #ff6980;
