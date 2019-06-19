@@ -1,6 +1,11 @@
 @font-face {
-    font-family: Elle Futura;
-    src: url(../webfonts/ElleFutura-BoldItalic.eot);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    src: url(../font/HelveticaNeue.ttf);
+    src: url(../font/HelveticaNeue.woff);
+    src: url(../font/ElleFutura.woff);
+}
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .left, .flleft {
