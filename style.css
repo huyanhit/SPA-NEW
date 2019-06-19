@@ -12,15 +12,6 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
     padding: 0;
     color: #333;
 }
-a{
-    text-decoration: none;
-}
-.pink {
-    color: #ff5370;
-}
-.fs-12, .ft12 {
-    font-size: 12px;
-}
 .c-999 {
     color: #999;
 }
@@ -73,11 +64,6 @@ a{
 .head-wrap .nav-link{
 	padding: 0
 }
-
-.head-wrap .nav-item:last-child .nav-link{
-    padding-right: 0 !important;
-}
-
 .head-wrap a i{
 	margin-right: 10px
 }
@@ -90,10 +76,6 @@ a{
 	position: relative;
     overflow: hidden;
     background: url(../images/phoneIcon.gif) no-repeat ;
-}
-
-.head-wrap .download-app span{
-    padding-left: 25px;
 }
 
 .head-wrap .item-download{
@@ -177,11 +159,6 @@ a{
 .header-main .search-box {
     position: relative;
     height: 36px;
-    margin-top: 15px;
-}
-
-.brand-right{
-    margin-top: 3px;
 }
 .header-main .search-home{
 	color: #ccc;
@@ -217,7 +194,7 @@ a{
 .header-main .slide-list {
     display: block;
     height: 56px;
-    padding: 0;
+    padding: 0 20px;
     float: right;
 }
 .header-main  .slide-list .slide-img {
@@ -451,10 +428,11 @@ a{
     color: #ff6980;
 }
 .dropdown:hover>.dropdown-menu {
-   display: block;
-   top: 34px;
-   z-index: 3000;
-   border-radius: 0;
+  display: block;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    margin-left: -25px;
 }
 
 .banner-wrap {
@@ -636,7 +614,7 @@ a{
 .spa-share{
     z-index: 10;
     top: 0px;
-    margin-top: 15px;
+    margin-top: 0;
 }
 
 .spa-share img{
@@ -885,7 +863,7 @@ a{
 /** footer */
 .footer-app-wrap {
     clear: both;
-    margin-top: 25px;
+    margin-top: 86px;
     padding: 9px 0;
     background: #000;
 }
@@ -951,7 +929,7 @@ a{
 }
 .footer-wrap .wrap-main {
     overflow: hidden;
-    padding: 60px 15px 50px 15px;
+    padding: 60px 0 50px 0;
 }
 .footer-wrap .wrap-main .data-txt {
     margin-top: 10px;
@@ -1079,7 +1057,7 @@ a{
 }
 
 .menu-scroll-carousel{
-    border: 1px #dfdfdf solid;
+    border: 1px #ccc solid;
     padding: 20px 0;
     text-align: center;
 }
@@ -1096,35 +1074,33 @@ a{
 
 .float-nav-wrap.active{
     position: fixed;
-    top: 0;
+    top: 50px;
     z-index: 2000;
     background: #fff;
     animation: slideup2 0.5s;
-    margin-top: 50px;
-    height: 60px;
+    margin-top: 0;
 }
 .float-nav-wrap.active .item{
     margin-top: 0px;
 }
 .float-nav-wrap.active a{
-    padding: 16px;
+padding: 16px;
 }
 
 .float-nav-wrap.active:before{
-    left: -37%;
-    content: '';
-    position: fixed;
-    background: #fff;
-    top: 0px;
-    border-bottom: 1px #dfdfdf solid;
-    height: 110px;
-    width: 200%;
-    animation:  slideup 0.5s;
+left: -37%;
+content: '';
+position: fixed;
+background: #fff;
+top: 0px;
+border-bottom: 1px #ccc solid;
+height: 110px;
+width: 200%;
 }
 
 
 .float-nav-wrap.active .prev, .float-nav-wrap.active .next{
-    margin-top: 17px;
+margin-top: 17px;
 }
 
 
@@ -1147,21 +1123,12 @@ a{
 }
 
 @keyframes slideup2 {
-    0% {
-        top: -110px;
-    }
-    100% {
-        top: 0px;
-    }
+0% {
+    top: 0px;
 }
-
-@keyframes slideup3 {
-    0% {
-        top: 0px;
-    }
-    100% {
-        top: 110px;
-    }
+100% {
+    top: 48px;
+}
 }
 
 /*<-- Menu right -->*/
@@ -1199,83 +1166,59 @@ a{
 }
 
 .modal .nav-tabs li a{
+    padding-right: 15px;
     text-decoration: none;
     color: #ff5370;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
+    width: 50%;
 }
 .modal .nav-tabs li{
     width: 50%;
     position: relative;
 }
-
-.modal-title{
-    margin-bottom: 0;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #666
-}
-.modal .nav-tabs li.active a:before{
+.modal .nav-tabs li a.active:before{
     content: "";
-    height: 2px;
+    height: 3px;
     position: absolute;
     width: 100%;
     background: #ff5370;
     top: 30px;
-    left: 0;
 }
 
 .modal .modal-dialog{
-    width: 370px;
-    margin-top: 150px;
+    width: 360px;
 }
-.modal .login-input-box input{
-    padding-top: 3px;
-}
+
 .modal .login-input-box input[type="text"]{
     width: 200px;
-    border: 1px #dfdfdf solid;
-    height: 37px;
-    padding: 5px 5px;
-    margin-top: 30px;
-    color: #999;
+    border: 1px #ff5370 solid;
+    height: 40px;
+    padding: 9px 5px;
+    margin-top: 13px;
 }
 
 .modal .login-input-box input[type="button"]{
-    height: 37px;
-    background: #f4f4f4;
+    height: 40px;
+    background: #eee;
     padding: 5px;
-    top: 0px;
+    top: -1px;
     position: relative;
     width: 120px;
-    border: 1px #dfdfdf solid;
-    margin-left: 11px;
+    border: 1px #000 solid;
 }
 
-.modal #sms-ma,#account-pwd1 {
-     border: 1px #dfdfdf solid;
-     height: 37px;
-     padding: 7px 5px;
-     margin-top: 18px;
-     width: 335px;
-     color: #999;
- }
-
-#account{
-    border: 1px #dfdfdf solid;
-    height: 37px;
-    padding: 7px 5px;
-    margin-top: 30px;
-    width: 335px;
-    color: #999;
+.modal #sms-ma,#account,#account-pwd1 {
+    height: 40px;
+    border: 1px #ff5370 solid;
+    height: 40px;
+    padding: 9px 5px;
+    margin-top: 13px;
+    width: 324px;
 }
 
 .modal .sms-bot{
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 10px;
-    color: #999;
-    margin-bottom: 10px;
+    color: #ccc;
 }
 
 .modal .tel-login-btn, .login-btn{
@@ -1283,12 +1226,11 @@ a{
     border: none;
     padding: 5px;
     position: relative;
-    width: 335px;
-    margin-top: 30px;
+    width: 324px;
+    margin-top: 10px;
     border-radius: 4px;
     background: #ff5370;
     color: #fff;
-    text-transform: uppercase;
 }
 
 .modal .remember-ls {
@@ -1303,19 +1245,11 @@ a{
     padding-top:  10px;
 }
 
-.modal a{
-    color: #ff5370;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 2px;
-}
-
 .modal .other-login{
     clear: both;
     text-align: center;
     padding-top: 10px;
-    color: #999;
-    font-size: 16px;
+    color: #ccc;
 }
 .modal .other-lab{
     text-align: center;
@@ -1325,38 +1259,19 @@ a{
     display: inline-block;width: 37px;
     height: 37px;
     margin: 0 22px;
+    background: url(../images/alert-login.png) no-repeat;
 }
-.modal .other-lab a i{
-    font-size: 35px;
+.modal .other-lab a.sina{
+    background-position: 0 -31px;
 }
-.modal .other-lab a .fa-facebook{
-    color: #1a91ff;
+.modal .other-lab a.qq{
+    background-position: -47px -77px;
 }
-.modal .other-lab a .fa-google{
-    color: #ff232a;
+.modal .other-lab a.weixin{
+    background-position: -96px -31px;
 }
-.modal .other-lab a .fa-twitter{
-    color: #5034ff;
-}
-
 .modal .register-test{
     text-align: center ;
-}
-
-.modal-content{
-    border-radius: 5px;
-}
-
-.modal .remember-ls {
-    color: #999;
-    margin-right: 8px;
-}
-
-.modal .remember-ls input[type="checkbox"]{
-    float: left;
-    position: relative;
-    top: 7px;
-    margin-right: 6px;
 }
 
 /*Hiden element on mobile*/
@@ -1412,10 +1327,10 @@ a{
     .float-nav-wrap.active {
         width: 100%;
         left: 0;
-        margin-top: 0px;
     }
     .float-nav-wrap.active {
-        border-bottom: 1px #dfdfdf solid;
+        animation: slideup3 0.5s;
+        border-bottom: 1px #ccc solid;
     }
 
     .float-nav-wrap.active:before {
@@ -1437,7 +1352,6 @@ a{
     .hosTao .tao-wrap a {
         width: 16.66%;
     }
-
 }
 
 /*Mobile UI*/
@@ -1669,35 +1583,4 @@ button:focus {outline:0;}
     border: 1px solid #fd536e;
     border-radius: 40px;
     color: #fd536e;
-}
-.modal-open{
-    padding-right: 0px !important;
-    overflow: unset !important;
-}
-
-.modal-open modal {
-    padding-right: 0px!important;
-}
-
-.banner-scroll.active, .banner-scroll.pause{
-    position: relative;
-}
-.banner-scroll.active .spa-share{
-    position: fixed;
-    top: 110px;
-    max-width: 170px;
-    animation: slideup3 0.3s;
-}
-.banner-scroll{
-    z-index: 1;
-}
-.banner-scroll.active{
-    position: relative;
-}
-.banner-scroll.pause .spa-share{
-    position: absolute;
-    bottom: 30px;
-    max-width: 170px;
-    animation: slideup3 0.5s;
-    top: auto;
 }
