@@ -1316,6 +1316,11 @@
         font-size: 14px;
     }
 
+    .tab-mobile-detail ul li a:hover {
+        background: #fdf1f3;
+        color: #e33347;
+    }
+
     .tab-mobile-detail ul {
         width: 100%;
         overflow-x: scroll;
@@ -1516,7 +1521,7 @@
     }
     .top-box i{
         position: relative;
-        top: 2px;
+        top: 1px;
         margin-right: 5px;
     }
     .top-number{
@@ -1738,6 +1743,7 @@
     .tao-card-optimize .card-item .tao-info {
         height: 150px;
         padding: 5px;
+        position: relative;
     }
     .tao-card-optimize .card-item .tao-info .tao-detail{
         display: inline-block;
@@ -1746,10 +1752,13 @@
         height: 44px;
         white-space: normal;
         line-height: 18px;
+        padding: 0 5px;
+        color: #666;
     }
     .tao-card-optimize .card-item .new-price {
         font-size: 24px;
         color: #ff5c77;
+        padding: 0 5px;
     }
     .tao-card-optimize .card-item .new-price i{
         font-size: 12px;
@@ -1766,7 +1775,9 @@
         display: inline-block;
         font-size: 13px;
         width: 50px;
-        position: relative;
+        position: absolute;
+        bottom: 12px;
+        left: 10px;
     }
     .tao-card-optimize .card-item .fa-plus-square{
         color: #ffa901;
@@ -1783,9 +1794,11 @@
     }
     .card-item .fa-money-bill-alt{
         float: right;
-        margin-top: 3px;
         color: #ffa901;
         font-size: 21px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
     }
 }
 
