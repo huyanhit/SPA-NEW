@@ -1,4 +1,13 @@
 
+.mapouter{
+    padding: 15px;
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    background: #f7f7f7;
+    margin-top: 25px;
+}
 .chanl-head {
     position: relative;
     z-index: 2;
@@ -125,7 +134,7 @@
 .header-hpt-main .collection{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15px;
     display: block;
     width: 62px;
     height: 53px;
@@ -162,7 +171,7 @@
 .header-hpt-main .act-head{
     position: absolute;
     bottom: 20px;
-    right: 0; 
+    right: 15px;
 }
 
 .header-hpt-main .act-head a{
@@ -243,7 +252,7 @@
     display: block;
     height: 18px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
     padding: 0 15px;
 }
@@ -261,6 +270,8 @@
     line-height: 32px;
     border: 2px solid #ffa5b3;
     display: inline-block;
+    float: right;
+    top: -5px;
 }
 .menu-hospital-detail #search-hospital-detail{
     position: relative;
@@ -471,6 +482,19 @@
     text-decoration: none;
     font-size: 14px;
 }
+.service-cont{
+    font-size: 14px;
+}
+.service-cont a:hover{
+    text-decoration: none;
+}
+
+.service-cont a:hover p{
+    color: #999;
+    transition: color 0.3s;
+}
+
+
 .service-cont .title{
     color: #666;
     margin-bottom: -15px;
@@ -1316,6 +1340,11 @@
         font-size: 14px;
     }
 
+    .tab-mobile-detail ul li a:hover {
+        background: #fdf1f3;
+        color: #e33347;
+    }
+
     .tab-mobile-detail ul {
         width: 100%;
         overflow-x: scroll;
@@ -1516,7 +1545,7 @@
     }
     .top-box i{
         position: relative;
-        top: 2px;
+        top: 1px;
         margin-right: 5px;
     }
     .top-number{
@@ -1738,6 +1767,7 @@
     .tao-card-optimize .card-item .tao-info {
         height: 150px;
         padding: 5px;
+        position: relative;
     }
     .tao-card-optimize .card-item .tao-info .tao-detail{
         display: inline-block;
@@ -1746,10 +1776,13 @@
         height: 44px;
         white-space: normal;
         line-height: 18px;
+        padding: 0 5px;
+        color: #666;
     }
     .tao-card-optimize .card-item .new-price {
         font-size: 24px;
         color: #ff5c77;
+        padding: 0 5px;
     }
     .tao-card-optimize .card-item .new-price i{
         font-size: 12px;
@@ -1766,7 +1799,9 @@
         display: inline-block;
         font-size: 13px;
         width: 50px;
-        position: relative;
+        position: absolute;
+        bottom: 12px;
+        left: 10px;
     }
     .tao-card-optimize .card-item .fa-plus-square{
         color: #ffa901;
@@ -1783,9 +1818,11 @@
     }
     .card-item .fa-money-bill-alt{
         float: right;
-        margin-top: 3px;
         color: #ffa901;
         font-size: 21px;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
     }
 }
 
