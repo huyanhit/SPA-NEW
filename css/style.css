@@ -452,13 +452,15 @@ a{
 }
 
 .nav-menu-home li a{
-    color: #666;
     position: relative;
     margin-right: 15px;
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
     font-family: Elle Futura, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: initial;
 }
 .nav-menu-home li a:hover{
     color: #ff6980;
@@ -833,6 +835,7 @@ a{
 }
 .list-item .img-labs .right {
     font-size: 13px;
+    margin-right: 5px;
 }
 .hosTao .hosImg {
     float: left;
@@ -925,15 +928,18 @@ a{
 .footer-app-wrap .app-main .down-txt .money {
     padding: 0 2px;
     font-family: 'Verdana';
-    font-size: 34px;
+    font-size: 28px;
     color: #ffe763;
-    vertical-align: middle;
 }
 .footer-app-wrap .app-main .code-box {
     position: relative;
     margin: 0;
     padding-top: 7px;
 }
+.footer-app-wrap .app-main .code-box a{
+    text-decoration: none;
+}
+
 .footer-app-wrap .app-main .code-btn {
     display: block;
     width: 187px;
@@ -945,6 +951,7 @@ a{
     border-radius: 4px;
     background: #fff;
 }
+
 .footer-app-wrap .app-main .show-code {
     position: absolute;
     bottom: 60px;
@@ -1013,12 +1020,8 @@ a{
     background: url(../images/yuemei-logo.png?ver=20180308) no-repeat 0 -324px;
 }
 .copy-right-wrap .copy-right-txt {
-    position: relative;
-    z-index: 0;
-    top: -7px;
-    font-size: 12px;
-    line-height: 20px;
     color: #969696;
+    text-align: center;
 }
 
 
