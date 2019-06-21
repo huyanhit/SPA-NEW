@@ -679,11 +679,7 @@ a{
     margin-top: 10px;
     font-family: Elle Futura, Arial, sans-serif;
 }
-.float-nav-wrap .owl-item{
-    margin-right: 5px !important;
-    width: auto !important;
-    padding: 0 10px;
-}
+
 
 .float-nav-wrap .owl-item a{
     display: inline-block;
@@ -1619,6 +1615,7 @@ button:focus {outline:0;}
 .owl-carousel{
     padding:  0 30px;
     height: 60px;
+    overflow: hidden;
 }
 .owl-carousel .owl-next {
     position: absolute;
