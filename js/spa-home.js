@@ -212,7 +212,7 @@ jQuery(document).ready(function($){
                     items: 3
                 },
                 992: {
-                    items: 5
+                    items: 8
                 },
             }
         });

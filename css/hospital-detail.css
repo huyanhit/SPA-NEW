@@ -1,4 +1,13 @@
 
+.mapouter{
+    padding: 15px;
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    background: #f7f7f7;
+    margin-top: 25px;
+}
 .chanl-head {
     position: relative;
     z-index: 2;
@@ -125,7 +134,7 @@
 .header-hpt-main .collection{
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15px;
     display: block;
     width: 62px;
     height: 53px;
@@ -162,7 +171,7 @@
 .header-hpt-main .act-head{
     position: absolute;
     bottom: 20px;
-    right: 0; 
+    right: 15px;
 }
 
 .header-hpt-main .act-head a{
@@ -243,7 +252,7 @@
     display: block;
     height: 18px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
     padding: 0 15px;
 }
@@ -261,6 +270,8 @@
     line-height: 32px;
     border: 2px solid #ffa5b3;
     display: inline-block;
+    float: right;
+    top: -5px;
 }
 .menu-hospital-detail #search-hospital-detail{
     position: relative;
@@ -471,6 +482,19 @@
     text-decoration: none;
     font-size: 14px;
 }
+.service-cont{
+    font-size: 14px;
+}
+.service-cont a:hover{
+    text-decoration: none;
+}
+
+.service-cont a:hover p{
+    color: #999;
+    transition: color 0.3s;
+}
+
+
 .service-cont .title{
     color: #666;
     margin-bottom: -15px;
