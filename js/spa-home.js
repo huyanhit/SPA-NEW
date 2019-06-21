@@ -259,6 +259,8 @@ jQuery(document).ready(function($){
             $(".fixed-top").removeClass("active");
         }
     }
+    menuScroll();
+
 
     if($(".child-tab").length) {
         $(".child-tab").on("click", "li.active", function () {
