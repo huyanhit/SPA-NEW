@@ -249,6 +249,7 @@ a{
     width: 128px;
     height: 56px;
     text-align: right;
+    margin-top: 7px;
 }
 #tabs{
 	background: #007b5e;
@@ -684,6 +685,7 @@ a{
 .float-nav-wrap .owl-item a{
     display: inline-block;
     line-height: 25px;
+    margin-top: 7px;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
