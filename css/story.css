@@ -190,17 +190,19 @@
 }
 .content_order .list-imgs{
     display: inline-block;
-    width: 100%;
     margin: 0 -5px;
 }
 .content_order .list-imgs img{
     padding:  0 5px;
+    width: 100%;
 }
 
 .content_order .list-imgs a{
     position: relative;
     text-decoration: none;
     color: #fff;
+    max-width: 20%;
+    min-width: 150px;
 }
 .content_order .list-imgs a i{
     position: absolute;
@@ -386,25 +388,312 @@
 
 .qa-list{
     margin-top: 20px;
+    clear: both;
+    display: inline-block;
+    width: calc(100% - 100px);
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 15px;
 }
+
 
 .qa-list .head-img{
     width: 70px;
     float: left;
 }
 
-.qa-list .head-cont{
-
-}
-
-.qa-list .cont-top{
-
-}
-
-.qa-list .list-cent{
-
-}
-
 .qa-list .bottom-cont{
 
+}
+.cont-top a{
+    text-decoration: none;
+}
+.head-cont .cont-top a:hover{
+    color: #007bff;
+}
+.qa-list img{
+    border-radius: 50%;
+}
+
+.cont-top .num-lou{
+    color: #999;
+    font-size: 12px;
+}
+.head-cont .cont-cent{
+    padding-top: 10px;
+
+}
+.head-cont .bottom-cont .praise-box{
+    display: inline-block;
+    float: right;
+
+    margin-top: 10px;
+}
+.qa-list .praise-box a{
+     padding-left: 10px;
+    color: #999999;
+    text-decoration: none;
+
+}
+.check-hospital-box{
+    margin-top: 20px;
+    text-align: center;
+    border: 1px #ccc solid;
+}
+.check-hospital-box .right-tit{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.check-hospital-box .img{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.check-hospital-box .img img{
+    height: 60px;
+    border-radius: 50%;
+}
+.check-hospital-box .hosName{
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+.check-hospital-box .hosAddr{
+    color: #999;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.check-hospital-box .box-service{
+    border: 1px #ff96a6 solid;
+    display: inline-block;
+    padding: 20px 35px;
+    margin: 45px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.part-diary-box{
+    margin-top: 20px;
+    border: 1px #ccc solid;
+}
+.part-diary-box .right-tit{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.part-diary-box .more-link{
+    color: #669;
+    color: #666;
+    margin-right: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.diary-text{
+    margin-bottom: 10px;
+}
+.diary-img .img-list {
+    width: 40%;
+    position: relative;
+}
+
+.diary-img .img-list img{
+    width: 100%;
+}
+
+ul .diary-list{
+    margin-left: 15px;
+}
+ul .diary-list .diary-bottom{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.diary-list .diary-bottom {
+    margin-left: 100px;
+    margin-top: 10px;
+    color: #999;
+    clear: both;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+}
+.diary-img .before:before{
+    content: "before";
+    position: absolute;
+    background: #0000008c;
+    z-index: 49;
+    bottom: 4px;
+    display: inline-block;
+    padding: 0 10px;
+    right: 0;
+
+    color: #fff;
+}
+
+.diary-img .after:before{
+    content: "after";
+    position: absolute;
+    position: absolute;
+    background: #ff96a68c;
+    z-index: 49;
+    bottom: 4px;
+    display: inline-block;
+    padding: 0 10px;
+    right: 0;
+    color: #fff;
+}
+
+.part-service-section{
+    margin-top: 20px;
+    border: 1px #ccc solid;
+    display: inline-block;
+    padding: 0 15px;
+    clear: both;
+    width: 100%;
+}
+.part-service-section .section-tit{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.part-service-section .more-link{
+
+    margin-right: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #666;
+}
+.part-service-section  .service-icon{
+    width: 20%;
+    float: left;
+}
+.part-service-section  .service-right{
+    width: 80%;
+    float: right;
+    padding-left: 5px;
+}
+
+.service-list{
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.service-icon i{
+    font-size: 20px;
+    border: 1px #ccc solid;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.service-right .service-tit {
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    color: #666;
+}
+
+.service-right .service-text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 6px;
+    color: #999;
+}
+
+.service-right .service-bottom{
+    font-size: 12px;
+}
+.service-right .service-bottom i, .service-right .service-bottom span{
+    padding-left: 5px;
+    color: #999;
+}
+.reservation-service-box{
+    margin-top: 20px;
+    border: 1px #ccc solid;
+    display: inline-block;
+    padding: 0 15px;
+    clear: both;
+    width: 100%;
+}
+.reservation-service-box  .right-tit {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.reservation-service-box .img-box {
+    display: block;
+}
+.reservation-service-box img{
+    width: 100%;
+}
+.reservation-service-box a{
+    text-decoration: none;
+    color: #666;
+    padding: 10px 0;
+
+    display: inline-block;
+}
+.reservation-service-box {
+    text-align: center;
+    display: block;
+}
+.reservation-service-box .now-see{
+    padding: 5px 10px;
+    margin: 30px 0;
+    color: #fff;
+    border-radius: 2px;
+    background: #ffb93f;
+    font-size: 16px;
+}
+.reservation-service-box .service-data span {
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    width: 30%;
+    height: 12px;
+    color: #999;
+    margin: 10px 0;
+}
+
+.reservation-service-box .service-data span i{
+    margin-left: 5px;
+    color: #ff526f;
+    font-style: normal;
+}
+.reservation-service-box  .spa-share a{
+    width: 100%;
+}
+.reservation-service-box  .service-hospital{
+   color: #999;
+}
+.reservation-service-box  .service-money .now{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff284c;
+}
+
+.spa-share a{
+    width: 270px;
 }
