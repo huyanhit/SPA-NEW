@@ -271,4 +271,140 @@
     padding: 10px 5px;
     background: #ff96a6;
     color: #fff;
+    position: relative;
+    top: -8px;
+}
+.state-btn-box{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.state-btn-box a{
+    border: 1px #ccc solid;
+    margin-right: 31px;
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #666;
+}
+
+.state-btn-box a i{
+    color: #999999;
+    margin-right: 5px;
+}
+
+.state-btn-box a:hover{
+    color: #ff6980;
+    border: 1px #ff6980 solid;
+    transition: 0.3s;
+}
+
+.state-btn-box a:hover i{
+    color: #ff6980;
+    transition: 0.3s;
+}
+.share-box{
+    display: inline-block;
+    clear: both;
+    width: 100%;
+}
+.left-labs{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-left: 100px;
+    width: 100%;
+}
+
+.left-labs a{
+    color: #666;
+    background: #f5f5f5;
+    padding: 2px 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.left-labs  a:hover{
+    color: #fff;
+    background: #ff6980;
+    transition: 0.3s;
+}
+
+.left-labs a.ask-doc{
+    float: right;
+    background: none;
+    color: #ff6980;
+    padding-right: 0;
+    margin-right: 0;
+}
+.ask-doc i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+.go-slide-link,.reply-list-box, .qa-list{
+    margin-left: 100px;
+}
+.go-slide-link{
+    clear: both;
+}
+.message .era-input{
+    width: 100%;
+    height: 200px;
+}
+
+.replyCont{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    clear: both;
+}
+
+.replyCont .subReply {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    padding: 3px 15px;
+    color: #fff;
+    background: #58b7f1
+}
+
+.replyCont .push-box{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 18px;
+    color: #999;
+}
+.reply-list-box{
+    border-left: 5px #007bff solid;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #666;
+}
+
+.qa-list{
+    margin-top: 20px;
+}
+
+.qa-list .head-img{
+    width: 70px;
+    float: left;
+}
+
+.qa-list .head-cont{
+
+}
+
+.qa-list .cont-top{
+
+}
+
+.qa-list .list-cent{
+
+}
+
+.qa-list .bottom-cont{
+
 }
