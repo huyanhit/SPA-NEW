@@ -697,3 +697,197 @@ ul .diary-list .diary-bottom{
 .spa-share a{
     width: 270px;
 }
+
+@keyframes slidestory {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 70px;
+    }
+}
+
+.fixed-diary{
+    display: none;
+}
+@media only screen and (max-width: 1025px) {
+    .top-bar-title{
+        width: 100%;
+        height: 10px;
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    .top-bar-title i {
+        font-size: 16px;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        margin-right: 30px;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .downIcon2 {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 55px;
+        background: url('../images/downIcon2.jpg') no-repeat 0 0;
+        background-size: 100% auto;
+    }
+
+    .downIcon2 .ymicon {
+        display: block;
+        max-width: 70%;
+        height: 60px;
+        margin-left: 10px;
+        padding-top: 8px;
+        padding-left: 47px;
+        font-size: 13px;
+        color: #ff526f;
+        background: url('../images/yuemei_logo3.png') no-repeat 0 8px;
+        background-size: 40px auto;
+    }
+
+    .downIcon2 .ymicon i {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 21px;
+        line-height: 21px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .downIcon2 .ymicon .item1,  .downIcon2 .ymicon .item2 {
+        padding: 0 5px;
+        display: block;
+    }
+
+    .downIcon2 .txt {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        width: 74px;
+        height: 25px;
+        margin-top: -12px;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        background: #ff5c77;
+    }
+
+    .menu-story.active .container{
+        display: none;
+    }
+    .menu-story.active .downIcon2{
+        display: block;
+    }
+    .fixed-diary {
+        position: fixed;
+        background: #fff;
+        display: inline-block;
+        height: 60px;
+        top: -70px;
+        z-index: 1000;
+        width: 100%;
+        border-bottom: 1px #ccc solid;
+    }
+    .fixed-diary.active{
+        animation: slidestory 1s;
+        top: 70px;
+    }
+    .fixed-diary .diary-img{
+        width: 60px;
+        float: left;
+        padding: 5px;
+    }
+    .fixed-diary img{
+        width: 100%;
+    }
+    .fixed-diary .diary-tit {
+        font-size: 14px;
+        text-transform: unset;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 33px;
+        overflow: hidden;
+        display: inline-block;
+        width: calc(100% - 60px);
+        padding-left: 5px;
+    }
+    .fixed-diary .diary-money .new{
+        color: #ff5370;
+        margin-right: 5px;
+        padding-left: 5px;
+    }
+
+    .detail-basewrap{
+
+    }
+    .detail-basewrap a{
+        padding: 10px;
+        display: inline-block;
+    }
+    .album-tit img{
+        border-radius: 50%;
+    }
+    .tit-detial {
+        float: right;
+        width: calc(100% - 70px);
+        margin-top: -5px;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .tit-detial .daren{
+        top: 5px;
+        position: relative;
+    }
+    .tit-detial i{
+        font-size: 14px;
+        text-transform: capitalize;
+        padding-top: 4px;
+        display: inline-block;
+    }
+    .photos-aandb{
+        padding: 0 5px;
+    }
+    .photos-aandb a{
+        position: relative;
+    }
+
+    .photos-aandb a span{
+        position: absolute;
+        bottom: 10px;
+        left: 12px;
+        color: #fff;
+        background: #0404048f;
+        padding: 0 10px;
+    }
+    .photos-aandb img{
+        width: 100%;
+    }
+    .photos-aandb a:first-child{
+        width: 50%;
+        float: left;
+        padding: 5px;
+    }
+    .photos-aandb a:last-child{
+        width: 50%;
+        float: right;
+        padding: 5px;
+    }
+}

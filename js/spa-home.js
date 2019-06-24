@@ -259,7 +259,12 @@ jQuery(document).ready(function($){
             $(".fixed-top").removeClass("active");
         }
     }
+
     menuScroll();
+    $(window).scroll(function() {
+        menuScroll();
+    })
+
 
 
     if($(".child-tab").length) {
