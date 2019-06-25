@@ -1171,6 +1171,8 @@ ul .diary-list .diary-bottom{
     }
     #box-story{
         margin-top: 30px;
+        border-top: 11px #F6f6f6 solid;
+        padding-top: 20px;
     }
     .content-page, .content-page-mobile {
         background: #fff;
@@ -1194,6 +1196,29 @@ ul .diary-list .diary-bottom{
         padding-right: 5px;
     }
     .expert-team {
+        border-top: 11px #F6f6f6 solid;
+        padding-top: 20px;
+    }
+    .base-inner .reply{
+        margin-bottom: 20px;
+    }
+    .base-inner .reply a{
+        width: 60px;
+        float: left;
+        padding: 0;
+
+    }
+    .base-inner .reply a img{
+        border-radius: 50%;
+    }
+    .detail-basewrap  .info .date b {
+        float: left;
+    }
+    .detail-basewrap  .info .date{
+        padding-left: 60px;
+    }
+    .detail-basewrap{
+
         border-top: 11px #F6f6f6 solid;
         padding-top: 20px;
     }
