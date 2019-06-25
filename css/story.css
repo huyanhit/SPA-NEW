@@ -714,6 +714,10 @@ ul .diary-list .diary-bottom{
     body {
         background: #f6f6f6;
     }
+    .fixed-diary .diary-wrap{
+        display: block;
+        width: 100%;
+    }
     .top-bar-title{
         width: 100%;
         height: 10px;
@@ -802,7 +806,7 @@ ul .diary-list .diary-bottom{
         background: #fff;
         display: inline-block;
         height: 60px;
-        top: -70px;
+        top: -100px;
         z-index: 1000;
         width: 100%;
         border-bottom: 1px #ccc solid;
@@ -843,6 +847,12 @@ ul .diary-list .diary-bottom{
     .detail-basewrap a,.diary-list{
         padding: 10px;
         display: inline-block;
+    }
+    .fixed-diary.active .diary-list{
+        padding: 0;
+        display: inline-block;
+        margin: 0;
+        width: 100%;
     }
     .album .section-story{
         padding: 10px;
@@ -1006,7 +1016,7 @@ ul .diary-list .diary-bottom{
     .detail-basewrap .wraper-tit {
         font-size: 16px;
         line-height: 100%;
-        padding: 10px;
+        padding: 10px 0;
         position: relative;
     }
     .diary-list .tab-btns {
@@ -1017,12 +1027,24 @@ ul .diary-list .diary-bottom{
         background: linear-gradient(to right, #ff91d7, #ff81a0);
         color: #fff;
     }
+    .diary-list .tab-cont{
+       position: relative;
+    }
+    .diary-list .tab-cont:before{
+        content: "";
+        border-left: 1px #ccc solid;
+        position: absolute;
+        height: 100%;
+        left: 13px;
+        top: 15px;
+    }
     .diary-list .tab-cont .cont-item {
         position: relative;
         display: block;
     }
     .diary-list .tab-cont .cont-item .tit b {
         color: #ff5c77;
+        font-size: 14px;
     }
     .diary-list .tab-btns span {
         display: inline-block;
@@ -1036,10 +1058,8 @@ ul .diary-list .diary-bottom{
     }
     .diary-list .tab-cont .item-wrap {
         position: relative;
-        padding-left: 10px;
-        padding-right: 5px;
-        border-left: 1px solid #e5e5e5;
         margin-bottom: 10px;
+        padding-left: 30px;
     }
     .diary-list .tab-cont .cont-item .tit {
         position: relative;
@@ -1048,9 +1068,9 @@ ul .diary-list .diary-bottom{
         margin-bottom: 10px;
     }
     .diary-list .tab-cont .cont-item .tit .icon {
-       position: absolute;
-        left: -28px;
-        top: -20px;
+        position: absolute;
+        left: -35px;
+        top: 1px;
         display: inline-block;
         width: 20px;
         height: 100%;
@@ -1060,13 +1080,18 @@ ul .diary-list .diary-bottom{
     .app-img3 {
         position: relative;
         overflow: hidden;
+        margin: 0 -3px;
     }
     .app-img3>img {
         float: left;
         position: relative;
-        width: 32%;
-        margin-right: 1%;
+        width: 33.3%;
+        padding: 0 3px;
         border-radius: 5px;
+    }
+
+    .app-img3>img .img{
+       width: 100%;
     }
     .app-img3>.img-num {
         position: absolute;
@@ -1109,9 +1134,10 @@ ul .diary-list .diary-bottom{
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 6;
         line-height: 24px;
-        font-size: 18px;
+        font-size: 14px;
         color: #555;
         margin-top: 10px;
+        text-align: justify;
     }
     .cont-info .app-mask {
         display: none;
@@ -1121,5 +1147,79 @@ ul .diary-list .diary-bottom{
     .cont-info .app-mask .mask-img {
         width: 100%;
         margin-left: -.04rem;
+    }
+    .detail-basewrap .cont-main .cont-item{
+        padding: 0;
+    }
+    .swiper-slide { width: 100%}
+    .swiper-slide a{ width: 100%}
+
+    .app-box a{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin-top: 30px;
+    }
+    .app-box .getmore{
+        border: 1px solid #ec6779;
+        color: #666;
+        padding: 0 10px;
+        border-radius: 50px;
+        padding: 10px 30px;
+        color: black;
+        color: #ec6779;
+    }
+    #box-story{
+        margin-top: 30px;
+        border-top: 11px #F6f6f6 solid;
+        padding-top: 20px;
+    }
+    .content-page, .content-page-mobile {
+        background: #fff;
+    }
+    .doctor-list, .organ-img .slide-link {
+        display: inline-block;
+        width: 33.3%;
+    }
+    .doctor-list, .organ-img .slide-link img{
+       width: 100%;
+    }
+    .doctor-list, .organ-img .img-title{
+        color: #666;
+        padding-top: 5px;
+    }
+    .doctor-list, .organ-img .img-price{
+        color: #FF94AB;
+        padding-top: 5px;
+    }
+    .doctor-list, .organ-img .img-price span{
+        padding-right: 5px;
+    }
+    .expert-team {
+        border-top: 11px #F6f6f6 solid;
+        padding-top: 20px;
+    }
+    .base-inner .reply{
+        margin-bottom: 20px;
+    }
+    .base-inner .reply a{
+        width: 60px;
+        float: left;
+        padding: 0;
+
+    }
+    .base-inner .reply a img{
+        border-radius: 50%;
+    }
+    .detail-basewrap  .info .date b {
+        float: left;
+    }
+    .detail-basewrap  .info .date{
+        padding-left: 60px;
+    }
+    .detail-basewrap{
+
+        border-top: 11px #F6f6f6 solid;
+        padding-top: 20px;
     }
 }

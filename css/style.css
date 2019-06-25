@@ -1733,3 +1733,8 @@ button:focus {outline:0;}
     animation: slideup3 0.5s;
     top: auto;
 }
+.tab-cont .getmore{
+    margin-left: 30px;
+    color: #999;
+    text-decoration: none;
+}
