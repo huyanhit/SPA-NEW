@@ -844,6 +844,12 @@ ul .diary-list .diary-bottom{
         padding: 10px;
         display: inline-block;
     }
+    .fixed-diary.active .diary-list{
+        padding: 0;
+        display: inline-block;
+        margin: 0;
+        width: 100%;
+    }
     .album .section-story{
         padding: 10px;
     }
@@ -1006,7 +1012,7 @@ ul .diary-list .diary-bottom{
     .detail-basewrap .wraper-tit {
         font-size: 16px;
         line-height: 100%;
-        padding: 10px;
+        padding: 10px 0;
         position: relative;
     }
     .diary-list .tab-btns {
@@ -1017,12 +1023,24 @@ ul .diary-list .diary-bottom{
         background: linear-gradient(to right, #ff91d7, #ff81a0);
         color: #fff;
     }
+    .diary-list .tab-cont{
+       position: relative;
+    }
+    .diary-list .tab-cont:before{
+        content: "";
+        border-left: 1px #ccc solid;
+        position: absolute;
+        height: 100%;
+        left: 13px;
+        top: 15px;
+    }
     .diary-list .tab-cont .cont-item {
         position: relative;
         display: block;
     }
     .diary-list .tab-cont .cont-item .tit b {
         color: #ff5c77;
+        font-size: 14px;
     }
     .diary-list .tab-btns span {
         display: inline-block;
@@ -1036,10 +1054,8 @@ ul .diary-list .diary-bottom{
     }
     .diary-list .tab-cont .item-wrap {
         position: relative;
-        padding-left: 10px;
-        padding-right: 5px;
-        border-left: 1px solid #e5e5e5;
         margin-bottom: 10px;
+        padding-left: 30px;
     }
     .diary-list .tab-cont .cont-item .tit {
         position: relative;
@@ -1048,9 +1064,9 @@ ul .diary-list .diary-bottom{
         margin-bottom: 10px;
     }
     .diary-list .tab-cont .cont-item .tit .icon {
-       position: absolute;
-        left: -28px;
-        top: -20px;
+        position: absolute;
+        left: -35px;
+        top: 1px;
         display: inline-block;
         width: 20px;
         height: 100%;
@@ -1060,13 +1076,18 @@ ul .diary-list .diary-bottom{
     .app-img3 {
         position: relative;
         overflow: hidden;
+        margin: 0 -3px;
     }
     .app-img3>img {
         float: left;
         position: relative;
-        width: 32%;
-        margin-right: 1%;
+        width: 33.3%;
+        padding: 0 3px;
         border-radius: 5px;
+    }
+
+    .app-img3>img .img{
+       width: 100%;
     }
     .app-img3>.img-num {
         position: absolute;
@@ -1109,9 +1130,10 @@ ul .diary-list .diary-bottom{
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 6;
         line-height: 24px;
-        font-size: 18px;
+        font-size: 14px;
         color: #555;
         margin-top: 10px;
+        text-align: justify;
     }
     .cont-info .app-mask {
         display: none;
@@ -1121,5 +1143,8 @@ ul .diary-list .diary-bottom{
     .cont-info .app-mask .mask-img {
         width: 100%;
         margin-left: -.04rem;
+    }
+    .detail-basewrap .cont-main .cont-item{
+        padding: 0;
     }
 }
