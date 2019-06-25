@@ -1153,4 +1153,48 @@ ul .diary-list .diary-bottom{
     }
     .swiper-slide { width: 100%}
     .swiper-slide a{ width: 100%}
+
+    .app-box a{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin-top: 30px;
+    }
+    .app-box .getmore{
+        border: 1px solid #ec6779;
+        color: #666;
+        padding: 0 10px;
+        border-radius: 50px;
+        padding: 10px 30px;
+        color: black;
+        color: #ec6779;
+    }
+    #box-story{
+        margin-top: 30px;
+    }
+    .content-page, .content-page-mobile {
+        background: #fff;
+    }
+    .doctor-list, .organ-img .slide-link {
+        display: inline-block;
+        width: 33.3%;
+    }
+    .doctor-list, .organ-img .slide-link img{
+       width: 100%;
+    }
+    .doctor-list, .organ-img .img-title{
+        color: #666;
+        padding-top: 5px;
+    }
+    .doctor-list, .organ-img .img-price{
+        color: #FF94AB;
+        padding-top: 5px;
+    }
+    .doctor-list, .organ-img .img-price span{
+        padding-right: 5px;
+    }
+    .expert-team {
+        border-top: 11px #F6f6f6 solid;
+        padding-top: 20px;
+    }
 }
