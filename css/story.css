@@ -714,6 +714,10 @@ ul .diary-list .diary-bottom{
     body {
         background: #f6f6f6;
     }
+    .fixed-diary .diary-wrap{
+        display: block;
+        width: 100%;
+    }
     .top-bar-title{
         width: 100%;
         height: 10px;
@@ -802,7 +806,7 @@ ul .diary-list .diary-bottom{
         background: #fff;
         display: inline-block;
         height: 60px;
-        top: -70px;
+        top: -100px;
         z-index: 1000;
         width: 100%;
         border-bottom: 1px #ccc solid;
