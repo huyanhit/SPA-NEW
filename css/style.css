@@ -31,6 +31,11 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 a{
     text-decoration: none;
 }
+.del, del {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999;
+}
 .pink {
     color: #ff5370;
 }
@@ -949,6 +954,7 @@ a{
     width: 187px;
     height: 44px;
     font-size: 20px;
+    margin-left: 5px;
     line-height: 44px;
     text-align: center;
     color: #333;
