@@ -31,6 +31,11 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 a{
     text-decoration: none;
 }
+.del, del {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999;
+}
 .pink {
     color: #ff5370;
 }
@@ -249,6 +254,7 @@ a{
     width: 128px;
     height: 56px;
     text-align: right;
+    margin-top: 7px;
 }
 #tabs{
 	background: #007b5e;
@@ -673,16 +679,18 @@ a{
 .float-nav-wrap .item {
     text-align: center;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 16px;
     display: inline-block;
     width: 100%;
     margin-top: 10px;
     font-family: Elle Futura, Arial, sans-serif;
 }
 
+
 .float-nav-wrap .owl-item a{
     display: inline-block;
     line-height: 25px;
+    margin-top: 7px;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
@@ -946,6 +954,7 @@ a{
     width: 187px;
     height: 44px;
     font-size: 20px;
+    margin-left: 5px;
     line-height: 44px;
     text-align: center;
     color: #333;
@@ -1594,7 +1603,7 @@ a{
     padding: 0;
     line-height: 0;
     position: relative;
-    top: -15px;
+    top: -17px;
     color: #ff92b1;
     outline : none;
 }
@@ -1614,6 +1623,7 @@ button:focus {outline:0;}
 .owl-carousel{
     padding:  0 30px;
     height: 60px;
+    overflow: hidden;
 }
 .owl-carousel .owl-next {
     position: absolute;
