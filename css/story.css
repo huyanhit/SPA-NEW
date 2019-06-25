@@ -1147,4 +1147,6 @@ ul .diary-list .diary-bottom{
     .detail-basewrap .cont-main .cont-item{
         padding: 0;
     }
+    .swiper-slide { width: 100%}
+    .swiper-slide a{ width: 100%}
 }
