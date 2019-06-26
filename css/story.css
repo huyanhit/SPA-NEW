@@ -1168,6 +1168,8 @@ ul .diary-list .diary-bottom{
         padding: 10px 30px;
         color: black;
         color: #ec6779;
+		margin-bottom: 30px;
+		display: inline-block;
     }
     #box-story{
         margin-top: 30px;
@@ -1198,7 +1200,13 @@ ul .diary-list .diary-bottom{
     .expert-team {
         border-top: 11px #F6f6f6 solid;
         padding-top: 20px;
+		padding: 0;
+		margin: 5px;
+		width: calc(100% - 10px);
     }
+	.expert-team .top-box{
+		margin-top: 40px
+	}
     .base-inner .reply{
         margin-bottom: 20px;
     }
@@ -1300,7 +1308,6 @@ ul .diary-list .diary-bottom{
     .about-tao-wrap {
         background: #fff;
         border-top: 11px #F6f6f6 solid;
-        margin-top: 40px;
     }
     .hot-tit {
         position: relative;
