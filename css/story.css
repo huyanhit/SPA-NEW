@@ -1306,18 +1306,15 @@ ul .diary-list .diary-bottom{
         position: relative;
         height: 45px;
         font-size: 15px;
-        font-weight: bold;
         line-height: 45px;
         color: #666;
         background: #fff;
+		margin-left: 10px;
     }
     .tao-list {
-        position: relative;
-        z-index: 1;
-        display: block;
-        overflow: hidden;
-        margin: 0 12px;
-        padding: 13px 0;
+		display: inline-block;
+		padding: 10px;
+		clear: bold;
     }
     .tao-list .tao-img {
         position: relative;
@@ -1329,21 +1326,18 @@ ul .diary-list .diary-bottom{
     }
     .tao-list .tao-img img {
         display: block;
-        width: 105px;
-        height: 105px;
+		width:100%;
     }
     .tao-list .tao-rs {
-        position: relative;
-        height: 105px;
-        margin-left: 120px;
-    }
+        float: right;
+		display: inline-block;
+		width: calc(100% - 115px);
+	}
+
     .tao-list .tao-rs .tao-tit {
         display: -webkit-box;
         overflow: hidden;
         height: auto;
-        max-height: 40px;
-        margin: 0;
-        padding: 0;
         font-size: 15px;
         line-height: 20px;
         text-overflow: ellipsis;        
@@ -1365,11 +1359,10 @@ ul .diary-list .diary-bottom{
         color: #999;
     }
     .tao-list .tao-rs .tao-bot {
-        position: absolute;
-        bottom: 5px;
-        height: 18px;
-        font-size: 0;
-        line-height: 18px;
+		height: 18px;
+		font-size: 0;
+		line-height: 18px;
+		margin-top: 15px;
     }
     .tao-list:first-child:after {
         top: -100%;
@@ -1416,4 +1409,7 @@ ul .diary-list .diary-bottom{
         vertical-align: middle;
         color: #bbb;
     }
+	.recommend .wraper-tit{
+		padding-left:10px
+	}
 }
