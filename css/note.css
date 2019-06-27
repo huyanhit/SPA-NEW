@@ -1,5 +1,4 @@
-
-.menu-hospital .menu-left{
+.menu-hospital .menu-left {
     display: none;
 }
 
@@ -9,16 +8,16 @@
     margin-left: -1px;
 }
 
-.menu-hospital ul.list-parent > li:hover .menu-left{
+.menu-hospital ul.list-parent > li:hover .menu-left {
     display: block;
 }
 
-.menu-hospital .list-parent{
-    list-style:  none;
+.menu-hospital .list-parent {
+    list-style: none;
     position: relative;
 }
 
-.menu-hospital ul.list-parent > li.item{
+.menu-hospital ul.list-parent > li.item {
     display: inline-block;
     width: 10%;
     line-height: 38px;
@@ -29,29 +28,32 @@
     position: absolute;
 }
 
-.menu-hospital ul.list-parent > li:first-child{
+.menu-hospital ul.list-parent > li:first-child {
     width: 25%;
     position: absolute;
     z-index: 1000;
 }
 
-.menu-hospital ul.list-parent > li:nth-child(2){
+.menu-hospital ul.list-parent > li:nth-child(2) {
     margin-left: 25%;
 }
 
-.show-slide .menu-left{
-   /* display: none; */
+.show-slide .menu-left {
+
+    /* display: none; */
 }
 
 .diary-banner .banner-parts {
     background: #fff;
 }
+
 .diary-banner .banner-parts dl {
     position: relative;
     overflow: hidden;
     padding-left: 72px;
     border-bottom: 1px dashed #e1e1e1;
 }
+
 .diary-banner .banner-parts dl dt {
     position: absolute;
     left: 0;
@@ -62,10 +64,12 @@
     font-size: 14px;
     color: #333;
 }
+
 .diary-banner .banner-parts dl dd {
     width: 194px;
     padding-bottom: 12px;
 }
+
 .diary-banner .banner-parts dl span {
     position: absolute;
     left: 0;
@@ -76,6 +80,7 @@
     line-height: 20px;
     margin-top: -10px;
 }
+
 .diary-banner .banner-parts dl dd .parts-list {
     overflow: hidden;
     width: 177px;
@@ -83,6 +88,7 @@
     margin-top: -4px;
     border-left: 1px solid #efefef;
 }
+
 .diary-banner .banner-parts dl dd a {
     display: block;
     width: 30%;
@@ -98,9 +104,10 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.banner-slide .img-box {
 
+.banner-slide .img-box {
 }
+
 .img-box .img-text {
     position: absolute;
     right: 0;
@@ -109,6 +116,7 @@
     width: 100%;
     height: 60px;
 }
+
 .img-box .img-text .text-bj {
     position: absolute;
     left: 0;
@@ -119,6 +127,7 @@
     filter: Alpha(opacity=50);
     opacity: 0.5;
 }
+
 .img-box .img-text .text-tit {
     height: 26px;
     line-height: 26px;
@@ -127,6 +136,7 @@
     position: relative;
     z-index: 1;
 }
+
 .img-box .img-text .text-cont {
     margin-top: 10px;
     height: 15px;
@@ -136,6 +146,7 @@
     position: relative;
     z-index: 1;
 }
+
 .text-hidden {
     word-break: keep-all;
     white-space: nowrap;
