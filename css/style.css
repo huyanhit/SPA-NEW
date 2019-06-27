@@ -1,68 +1,114 @@
 @font-face {
     font-family: 'Elle Futura';
-    src: url('../font/ElleFutura.woff2') format('woff2'),
-    url('../font/ElleFutura.woff') format('woff'),
-    url('../font/ElleFutura.ttf') format('truetype');
+    src: url('../font/ElleFutura.woff2') format('woff2'), url('../font/ElleFutura.woff') format('woff'), url('../font/ElleFutura.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal
 }
 
-body{
+body {
     font-family: 'Elle Futura';
     font-weight: normal;
     font-style: normal;
-    font-size: 14px;
+    font-size: 14px
 }
 
-.left, .flleft {
-    float: left;
+.left,
+.flleft {
+    float: left
 }
-.right, .flright {
-    float: right;
+
+.right,
+.flright {
+    float: right
 }
-ul, ol, li {
-    list-style: none;
+
+ul,
+ol,
+li {
+    list-style: none
 }
-body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+th,
+td,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+hr {
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333
 }
-a{
-    text-decoration: none;
+
+a {
+    text-decoration: none
 }
-.del, del {
+
+.del,
+del {
     font-size: 12px;
     text-decoration: line-through;
-    color: #999;
+    color: #999
 }
+
 .pink {
-    color: #ff5370;
+    color: #ff5370
 }
-.fs-12, .ft12 {
-    font-size: 12px;
+
+.fs-12,
+.ft12 {
+    font-size: 12px
 }
+
 .c-999 {
-    color: #999;
+    color: #999
 }
+
 .c-666 {
-    color: #666;
+    color: #666
 }
-.padding0{
+
+.padding0 {
     padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-right: 0 !important
 }
-.margin5{
+
+.margin5 {
     margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-right: 5px !important
 }
-.padding5{
+
+.padding5 {
     padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding-right: 5px !important
 }
-.nav-cont a.nav-a:hover, .nav-cont a.nav-a.now, .nav-cont .nav-a > a:hover, .nav-cont .nav-a > a.now, .nav-cont .now > a {
-    color: #ff6980;
+
+.nav-cont a.nav-a:hover,
+.nav-cont a.nav-a.now,
+.nav-cont .nav-a > a:hover,
+.nav-cont .nav-a > a.now,
+.nav-cont .now > a {
+    color: #ff6980
 }
+
 .nav-cont .nav-a {
     position: relative;
     float: left;
@@ -70,80 +116,95 @@ a{
     font-size: 16px;
     line-height: 40px;
     color: #666;
-    *margin-right: 23px;
+    *margin-right: 23px
 }
+
 .head-wrap {
-	position: relative;
+    position: relative;
     z-index: 10;
     font-size: 12px;
     margin: 0 auto;
     background: #fafafa;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf
 }
+
 .head-wrap .navbar-expand-lg {
-	padding: 0;
+    padding: 0
 }
-.nav-home-primary{
+
+.nav-home-primary {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 0
 }
+
 .head-wrap a {
-	color: #666;
-	font: 14px/35px 'Microsoft Yahei';
-}
-.head-wrap .nav-link{
-	padding: 0
+    color: #666;
+    font: 14px/35px 'Microsoft Yahei'
 }
 
-.head-wrap .nav-item:last-child .nav-link{
-    padding-right: 0 !important;
+.head-wrap .nav-link {
+    padding: 0
 }
 
-.head-wrap a i{
-	margin-right: 10px
+.head-wrap .nav-item:last-child .nav-link {
+    padding-right: 0 !important
 }
-.head-wrap .space-line{
-	cursor: initial;
-	padding-left: 0 !important;
-	padding-right:0 !important;
+
+.head-wrap a i {
+    margin-right: 10px
 }
-.head-wrap .download-app{
-	position: relative;
+
+.head-wrap .space-line {
+    cursor: initial;
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.head-wrap .download-app {
+    position: relative;
     overflow: hidden;
-    background: url(../images/phoneIcon.gif) no-repeat ;
+    background: url(../images/phoneIcon.gif) no-repeat
 }
 
-.head-wrap .download-app span{
-    padding-left: 25px;
+.head-wrap .download-app span {
+    padding-left: 25px
 }
 
-.head-wrap .item-download{
-	position: relative;
-	z-index: 3;
+.head-wrap .item-download {
+    position: relative;
+    z-index: 3
 }
-.head-wrap .item-download:hover .download{ display: block; }
+
+.head-wrap .item-download:hover .download {
+    display: block
+}
+
 .head-wrap .download {
     left: -69px;
     width: 250px;
     height: 430px;
-    background: url(../images/download.png) no-repeat;
+    background: url(../images/download.png) no-repeat
 }
+
 .download {
-	position: absolute;
+    position: absolute;
     z-index: 2;
     top: 25px;
     left: -34px;
     display: none;
     width: 178px;
-    height: 238px;
+    height: 238px
 }
-.header-main{
-	padding: 20px 0;
+
+.header-main {
+    padding: 20px 0
 }
+
 .header-main .city {
     position: relative;
-    z-index: 10;
+    z-index: 10
 }
+
 .header-main .citys {
     position: absolute;
     left: 245px;
@@ -154,17 +215,19 @@ a{
     padding: 8px 0 10px 0;
     cursor: pointer;
     border: 1px solid #fff;
-    border-bottom: none;
+    border-bottom: none
 }
-.header-main .citys .citynow{
-	position: relative;
+
+.header-main .citys .citynow {
+    position: relative;
     z-index: 2;
     display: block;
     height: 40px;
     background: #fff;
     border-bottom: none;
-    padding: 10px 0;
+    padding: 10px 0
 }
+
 .header-main .citys .citynow em {
     position: relative;
     z-index: 30;
@@ -177,35 +240,40 @@ a{
     color: #666;
     border-left: 1px solid #efefef;
     background-color: #fff;
-    background-position: right -1482px;
+    background-position: right -1482px
 }
+
 .citynow em {
-    background: url(../images/common-head.png) no-repeat;
+    background: url(../images/common-head.png) no-repeat
 }
+
 .header-main .citys .city-active em {
-    height: 26px; 
+    height: 26px;
     border-left-color: #fff;
-    background-position: right -1450px;
+    background-position: right -1450px
 }
-.header-main .logo{
-	width: 215px;
+
+.header-main .logo {
+    width: 215px;
     height: 68px;
     background: url(../images/yuemei-logo.png?ver=20180308) no-repeat 0 -422px;
     display: block;
     cursor: pointer;
-    float: left;
+    float: left
 }
+
 .header-main .search-box {
     position: relative;
     height: 36px;
-    margin-top: 15px;
+    margin-top: 15px
 }
 
-.brand-right{
-    margin-top: 3px;
+.brand-right {
+    margin-top: 3px
 }
-.header-main .search-home{
-	color: #ccc;
+
+.header-main .search-home {
+    color: #ccc;
     top: 0;
     width: 100%;
     height: 36px;
@@ -219,8 +287,9 @@ a{
     color: #333;
     border: 2px solid #ff6980;
     border-radius: 4px 0 0 4px;
-    background: #fff;
+    background: #fff
 }
+
 .header-main .search-btn {
     width: 61px;
     height: 36px;
@@ -233,52 +302,60 @@ a{
     top: 0;
     right: 0;
     border-radius: 0 4px 4px 0;
-    background: #ff6980;
+    background: #ff6980
 }
+
 .header-main .slide-list {
     display: block;
     height: 56px;
     padding: 0;
-    float: right;
+    float: right
 }
+
 .header-main  .slide-list .slide-img {
     display: block;
     overflow: hidden;
     width: 51px;
     height: 56px;
-    margin-right: 10px;
+    margin-right: 10px
 }
+
 .header-main  .slide-list .slide-cont {
     float: right;
     overflow: hidden;
     width: 128px;
     height: 56px;
     text-align: right;
-    margin-top: 7px;
-}
-#tabs{
-	background: #007b5e;
-    color: #eee;
-}
-#tabs h6.section-title{
-    color: #eee;
+    margin-top: 7px
 }
 
-#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+#tabs {
+    background: #007b5e;
+    color: #eee
+}
+
+#tabs h6.section-title {
+    color: #eee
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     background-color: transparent;
     border-color: transparent transparent #ff6a80;
     border-bottom: 2px solid !important;
     color: #ff6a80;
-    font-weight: bold;
+    font-weight: bold
 }
+
 #tabs .nav-tabs .nav-link {
     border: 1px solid transparent;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    color: #eee;
+    color: #eee
 }
-.cityshow{
-	position: absolute;
+
+.cityshow {
+    position: absolute;
     z-index: 1;
     top: 47px;
     display: none;
@@ -286,30 +363,33 @@ a{
     width: 430px;
     padding: 15px 16px;
     border: 1px solid #efefef;
-    background: #fff;
+    background: #fff
 }
-.cityshow .nav-tabs a{
-	margin-right: 16px;
+
+.cityshow .nav-tabs a {
+    margin-right: 16px;
     padding: 0 4px;
     font-size: 13px;
     line-height: 30px;
     text-decoration: none;
-    color: #666;
+    color: #666
 }
-.cityshow .tab-content .tab-pane span a{
+
+.cityshow .tab-content .tab-pane span a {
     display: block;
     float: left;
     width: 80px;
     margin: 18px 4px 0 0;
     font-size: 13px;
     text-decoration: none;
-    color: #666;
-}
-.city-active{
-	border: 1px solid #efefef;
+    color: #666
 }
 
-.title-siderbar-left{
+.city-active {
+    border: 1px solid #efefef
+}
+
+.title-siderbar-left {
     height: 37px;
     font-size: 14px;
     line-height: 37px;
@@ -318,22 +398,26 @@ a{
     border-radius: 4px 4px 0 0;
     background: #ff5370;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 16px
 }
-.menu-left{
+
+.menu-left {
     background-color: #fff;
-    border: 2px solid #ff5370;
+    border: 2px solid #ff5370
 }
-.menu-left .slide-box{
+
+.menu-left .slide-box {
     padding: 0;
     padding-top: 11px;
     padding-bottom: 20px;
-    background: #fff;
+    background: #fff
 }
+
 .slide-box > li {
     height: 38px;
-    line-height: 38px;
+    line-height: 38px
 }
+
 .slide-box > li span {
     position: relative;
     left: -7px;
@@ -342,49 +426,63 @@ a{
     padding-left: 62px;
     font-size: 14px;
     line-height: 38px;
-    color: #666;
+    color: #666
 }
+
 .slide-box > li:hover {
     color: #ff6a80;
-    background: #fff0f2;
+    background: #fff0f2
 }
+
 .slide-box > li a {
     font-size: 14px;
-    color: #666;
+    color: #666
 }
+
 .slide-box > li a:hover {
-    color: #ff6a80;
+    color: #ff6a80
 }
+
 .slide-box > .eye i {
-    background-position: 0 -12px;
+    background-position: 0 -12px
 }
+
 .slide-box > .nose i {
-    background-position: 0 -49px;
+    background-position: 0 -49px
 }
+
 .slide-box > .boniaosuan i {
-    background-position: 0 -393px;
+    background-position: 0 -393px
 }
+
 .slide-box > .face i {
-    background-position: 0 -87px;
+    background-position: 0 -87px
 }
+
 .slide-box > .facialwrinkles i {
-    background-position: 0 -239px;
+    background-position: 0 -239px
 }
+
 .slide-box > .fnbeauty i {
-    background-position: 0 -201px;
+    background-position: 0 -201px
 }
+
 .slide-box > .xizhi i {
-    background-position: 0 -163px;
+    background-position: 0 -163px
 }
+
 .slide-box > .chest i {
-    background-position: 0 -125px;
+    background-position: 0 -125px
 }
+
 .slide-box > .tooth i {
-    background-position: 0 -277px;
+    background-position: 0 -277px
 }
+
 .slide-box > .women i {
-    background-position: 0 -315px;
+    background-position: 0 -315px
 }
+
 .slide-box > li span i {
     position: absolute;
     top: 9px;
@@ -392,8 +490,9 @@ a{
     display: block;
     width: 22px;
     height: 22px;
-    background: url(../images/yuemei-home.png?v=1) no-repeat 50px 0;
+    background: url(../images/yuemei-home.png?v=1) no-repeat 50px 0
 }
+
 .part-slide-show {
     position: absolute;
     top: 0;
@@ -401,13 +500,15 @@ a{
     display: none;
     height: 418px;
     margin-left: -415px;
-    z-index: 10;
+    z-index: 10
 }
+
 .menu-left  .part-slide-show {
     left: 94%;
     margin-left: 0;
-    z-index: 200;
+    z-index: 200
 }
+
 .part-slide-show .slide-cont {
     position: relative;
     left: -5px;
@@ -420,45 +521,54 @@ a{
     border: 1px #ff5370 solid;
     border-radius: 0;
     background: #fff;
-    z-index: 2000;
+    z-index: 2000
 }
+
 .part-slide-show .slide-cont ul {
-    width: 800px;
+    width: 800px
 }
+
 .part-slide-show .slide-cont li {
     float: left;
     width: 230px;
     margin-right: 22px;
-    color: #ccc;
+    color: #ccc
 }
+
 .part-slide-show .slide-cont li .lv-2-tit {
     height: 15px;
     margin-top: 24px;
     font-size: 15px;
-    line-height: 15px;
+    line-height: 15px
 }
+
 .part-slide-show .slide-cont li .lv-2-cont {
     overflow: hidden;
     font-size: 12px;
-    line-height: 12px;
+    line-height: 12px
 }
+
 .part-slide-show .slide-cont li .lv-2-tit a {
-    color: #666;
+    color: #666
 }
+
 .part-slide-show .slide-cont li a:hover {
-    color: #ff5370;
+    color: #ff5370
 }
+
 .part-slide-show .slide-cont li .lv-2-cont a {
-    color: #898989;
+    color: #898989
 }
-.part-slide-show .slide-cont li .lv-2-cont a, .part-slide-show .slide-cont li .lv-2-cont span {
+
+.part-slide-show .slide-cont li .lv-2-cont a,
+.part-slide-show .slide-cont li .lv-2-cont span {
     float: left;
     margin: 8px 12px 0 0;
     white-space: nowrap;
-    height: 13px;
+    height: 13px
 }
 
-.nav-menu-home li a{
+.nav-menu-home li a {
     position: relative;
     margin-right: 15px;
     font-size: 18px;
@@ -467,35 +577,40 @@ a{
     text-transform: uppercase;
     font-family: Elle Futura, Arial, sans-serif;
     font-weight: 500;
-    text-transform: initial;
+    text-transform: initial
 }
-.nav-menu-home li a:hover{
+
+.nav-menu-home li a:hover {
+    color: #ff6980
+}
+
+.nav-menu-home .active a {
     color: #ff6980;
+    font-family: Elle Futura, Arial, sans-serif
 }
-.nav-menu-home .active a{
-    color: #ff6980;
-    font-family: Elle Futura, Arial, sans-serif;
-}
+
 .dropdown:hover>.dropdown-menu {
-   display: block;
-   top: 34px;
-   z-index: 3000;
-   border-radius: 0;
+    display: block;
+    top: 34px;
+    z-index: 3000;
+    border-radius: 0
 }
 
 .banner-wrap {
     position: relative;
     z-index: 0;
-    height: 405px;
+    height: 405px
 }
+
 .banner-wrap .banner-slide {
     position: relative;
     z-index: 0;
     top: 0;
     overflow: hidden;
     width: 100%;
-    height: 405px;
+    height: 405px
 }
+
 .banner-slide li {
     position: absolute;
     top: 0;
@@ -503,25 +618,30 @@ a{
     display: none;
     overflow: hidden;
     width: 100%;
-    height: 405px;
+    height: 405px
 }
+
 .banner-slide li.now {
-    display: block;
+    display: block
 }
-.banner-slide li a, .banner-slide li img {
-    display: block;
+
+.banner-slide li a,
+.banner-slide li img {
+    display: block
 }
 
 .banner-wrap .banner-next {
     right: 50%;
     margin-right: calc(50% - 40px);
-    background-position: -155px 0;
+    background-position: -155px 0
 }
+
 .banner-wrap .banner-prev {
     left: 50%;
     margin-left: calc(50% - 40px);
-    background-position: -251px 0;
+    background-position: -251px 0
 }
+
 .banner-wrap .banner-btn {
     position: absolute;
     top: 50%;
@@ -530,13 +650,15 @@ a{
     margin-top: -40px;
     cursor: pointer;
     opacity: .6;
-    background-image: url('../images/yuemei-home.png') ;
-    filter: Alpha(opacity=60);
+    background-image: url('../images/yuemei-home.png');
+    filter: Alpha(opacity=60)
 }
+
 .banner-wrap .banner-btn:hover {
     opacity: 1;
-    filter: Alpha(opacity=100);
+    filter: Alpha(opacity=100)
 }
+
 .banner-wrap .slide-btn {
     position: absolute;
     bottom: 20px;
@@ -544,7 +666,7 @@ a{
     height: 10px;
     font-size: 0;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .slide-btn span {
@@ -555,12 +677,14 @@ a{
     cursor: pointer;
     transition: all .6s linear 0s;
     border-radius: 5px;
-    background: #f3faff;
+    background: #f3faff
 }
+
 .slide-btn .now {
     width: 20px;
-    background: #f38299;
+    background: #f38299
 }
+
 .banner-hot-zt a {
     position: relative;
     left: 0;
@@ -568,37 +692,41 @@ a{
     overflow: hidden;
     height: 135px;
     transition: all .2s linear 0s;
-    background: #fff;
-}
-.banner-hot-zt a:hover {
-    left: -5px;
+    background: #fff
 }
 
-/*-- home main */
+.banner-hot-zt a:hover {
+    left: -5px
+}
+
 .home-main .floor-tit {
     height: 20px;
     margin: 36px 0 12px 0;
     font-size: 20px;
     line-height: 20px;
-    color: #333;
+    color: #333
 }
+
 .buy-floor-wrap {
     position: relative;
     overflow: hidden;
     min-height: 43px;
     padding-top: 3px;
-    padding-bottom: 5px;
+    padding-bottom: 5px
 }
-.buy-floor-wrap .item{
+
+.buy-floor-wrap .item {
     display: block;
     height: 159px;
-    padding: 14px 0;
+    padding: 14px 0
 }
+
 .buy-floor-wrap .item img {
     display: block;
     width: 300px;
-    height: 159px;
+    height: 159px
 }
+
 .buy-floor-wrap .sale {
     position: absolute;
     top: 0;
@@ -612,70 +740,81 @@ a{
     background-color: #ff88b7;
     border-radius: 0 0 8px 8px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px
 }
+
 .buy-floor-wrap .item .item-tit {
     overflow: hidden;
     height: 52px;
     padding-top: 4px;
     font-size: 18px;
     line-height: 26px;
-    text-indent: -9px;
+    text-indent: -9px
 }
+
 .buy-floor-wrap .item .item-info {
     padding-top: 9px;
     font-size: 13px;
-    color: #999;
+    color: #999
 }
-.buy-floor-wrap a{
-    text-decoration: none;
+
+.buy-floor-wrap a {
+    text-decoration: none
 }
+
 .buy-floor-wrap .item:hover {
-    background: #fafafa;
+    background: #fafafa
 }
+
 .buy-floor-wrap .item:hover .item-tit {
-    color: #ff5370;
+    color: #ff5370
 }
+
 .buy-floor-wrap .item .item-order {
     overflow: hidden;
-    margin-top: 46px;
+    margin-top: 46px
 }
-.buy-floor-wrap .item .item-order i{
-   color: #ffc107;
+
+.buy-floor-wrap .item .item-order i {
+    color: #ffc107
 }
+
 .buy-floor-wrap .item .item-order .dollor {
     position: relative;
     bottom: -2px;
     font-size: 16px;
-    color: #ff5a5f;
+    color: #ff5a5f
 }
+
 .buy-floor-wrap .item .item-order .price {
     position: relative;
     bottom: 10px;
     font-size: 26px;
     font-weight: normal;
     vertical-align: top;
-    color: #ff5a5f;
+    color: #ff5a5f
 }
 
-/** service spa */
-.spa-share{
+.spa-share {
     z-index: 10;
     top: 0px;
-    margin-top: 15px;
+    margin-top: 15px
 }
 
-.spa-share img{
-    width: 100%;
+.spa-share img {
+    width: 100%
 }
 
-.fixBox, .new_down {
+.fixBox,
+.new_down {
     position: relative;
-    z-index: 10;
+    z-index: 10
 }
-.float-nav-wrap{
+
+.float-nav-wrap {
     max-width: 1170px
 }
+
 .float-nav-wrap .item {
     text-align: center;
     text-transform: capitalize;
@@ -683,59 +822,67 @@ a{
     display: inline-block;
     width: 100%;
     margin-top: 10px;
-    font-family: Elle Futura, Arial, sans-serif;
+    font-family: Elle Futura, Arial, sans-serif
 }
 
-
-.float-nav-wrap .owl-item a{
+.float-nav-wrap .owl-item a {
     display: inline-block;
     line-height: 25px;
     margin-top: 7px;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis
 }
 
-/* content list service spa */
 .tab-cont-wrap {
     display: none;
-    overflow: hidden;;
-    padding-top: 0;
+    overflow: hidden;
+    padding-top: 0
 }
+
 .tab-cont-wrap.now {
-    display: block;
+    display: block
 }
+
 .list-item {
     position: relative;
     overflow: hidden;
-    margin-bottom: 28px;
+    margin-bottom: 28px
 }
+
 .list-item .img-top {
     position: relative;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 4px
 }
+
 .list-item .img-top .left {
     left: 0;
-    position: relative;
+    position: relative
 }
+
 .list-item .img-top .right {
     right: 0;
-    position: relative;
+    position: relative
 }
-.list-item .img-top .left, .list-item .img-top .right {
+
+.list-item .img-top .left,
+.list-item .img-top .right {
     overflow: hidden;
     width: 50%;
-    height: 100%;
+    height: 100%
 }
+
 .list-item .img-top .right .icon {
-    background-position: -77px 0;
+    background-position: -77px 0
 }
+
 .list-item .img-top img {
     display: block;
-    width: 100%;
+    width: 100%
 }
+
 .list-item .img-top .icon {
     position: absolute;
     z-index: 1;
@@ -743,55 +890,67 @@ a{
     left: 0;
     width: 67px;
     height: 26px;
-    background: url(../images/diary-icon.png) no-repeat 0 0;
+    background: url(../images/diary-icon.png) no-repeat 0 0
 }
+
 .list-item:hover {
     background: #fafafa;
-    cursor: pointer;
+    cursor: pointer
 }
+
 .has-video .video-icon {
     position: absolute;
     top: 10px;
     right: 8px;
     display: block;
     width: 54px;
-    height: 22px;
+    height: 22px
 }
+
 .video-icon {
-    background: url(../images/common-icon.png) no-repeat;
+    background: url(../images/common-icon.png) no-repeat
 }
+
 .list-item .img-bottom {
-    padding-left: 30px;
+    padding-left: 30px
 }
+
 .list-item .head-img {
     overflow: hidden;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 50%
 }
-.list-item .img-text{
+
+.list-item .img-text {
     margin-top: 8px;
-    line-height: 20px;
+    line-height: 20px
 }
 
 .list-item .user-name {
     padding-left: 6px;
     line-height: 30px;
     vertical-align: middle;
-    font-weight: 600;
+    font-weight: 600
 }
+
 .list-item .darenIcon {
-    vertical-align: middle;
+    vertical-align: middle
 }
-.darenIcon.icon1, .daren.icon1 {
-    background-position: -70px -150px;
+
+.darenIcon.icon1,
+.daren.icon1 {
+    background-position: -70px -150px
 }
-.darenIcon, .daren {
+
+.darenIcon,
+.daren {
     display: inline-block;
     width: 77px;
     height: 22px;
-    background: url(../images/signUp-icon.png) no-repeat scroll -70px -182px;
+    background: url(../images/signUp-icon.png) no-repeat scroll -70px -182px
 }
+
 .list-item .bought {
     position: relative;
     z-index: 3;
@@ -803,20 +962,23 @@ a{
     line-height: 38px;
     color: #666;
     border-radius: 2px;
-    background: #f4f4f4;
+    background: #f4f4f4
 }
+
 .list-item .bought .left i {
     display: inline-block;
     height: 38px;
     margin-left: 10px;
     padding-left: 27px;
     vertical-align: middle;
-    background: url(../images/yuemei-home.png?v=1) no-repeat -189px -186px;
+    background: url(../images/yuemei-home.png?v=1) no-repeat -189px -186px
 }
+
 .list-item .bought .right {
     margin-right: 10px;
-    position: relative;
+    position: relative
 }
+
 .list-item .cover-link {
     position: absolute;
     z-index: 2;
@@ -827,11 +989,13 @@ a{
     height: 100%;
     opacity: 0;
     background: #fff;
-    filter: alpha(opacity=0);
+    filter: alpha(opacity=0)
 }
+
 .list-item .img-bottom {
-    padding-left: 15px;
+    padding-left: 15px
 }
+
 .list-item .img-labs span.c-999 {
     display: inline-block;
     overflow: hidden;
@@ -840,27 +1004,31 @@ a{
     font-size: 13px;
     white-space: normal;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis
 }
+
 .list-item .img-labs .right {
     font-size: 13px;
-    margin-right: 5px;
+    margin-right: 5px
 }
+
 .hosTao .hosImg {
     float: left;
     width: 49px;
     height: 49px;
     margin-right: 14px;
     border: 1px solid #e8e8e8;
-    border-radius: 50%;
+    border-radius: 50%
 }
+
 .hosTao .hosName {
     display: block;
     margin-bottom: 4px;
     padding-top: 5px;
     font-size: 15px;
-    color: #333;
+    color: #333
 }
+
 .hosTao .checkHos {
     float: right;
     width: 105px;
@@ -870,29 +1038,35 @@ a{
     text-align: center;
     color: #ff5370;
     border: 1px solid #ff6980;
-    border-radius: 30px;
+    border-radius: 30px
 }
-.hosTao a{
-    text-decoration: none;
+
+.hosTao a {
+    text-decoration: none
 }
+
 .hosTao .hos-about i {
     padding-right: 5px;
     font-size: 13px;
-    color: #999;
+    color: #999
 }
+
 .hosTao .tao-wrap {
-    padding-top: 20px;
+    padding-top: 20px
 }
+
 .hosTao .tao-wrap a {
     float: left;
-    width: 33.33%;
+    width: 33.33%
 }
+
 .hosTao .tao-wrap img {
     display: block;
     width: 100%;
     padding: 0 15px;
-    border-radius: 4px;
+    border-radius: 4px
 }
+
 .hosTao .tao-wrap .tao-name {
     display: block;
     overflow: hidden;
@@ -901,52 +1075,59 @@ a{
     font-size: 15px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    color: #333;
+    color: #333
 }
+
 .hosTao .tao-wrap .price {
     font-size: 26px;
     color: #ff5a5f;
     display: inline-block;
     margin-left: 5px;
     margin-top: -5px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
-/** footer */
 .footer-app-wrap {
     clear: both;
     margin-top: 25px;
     padding: 9px 0;
-    background: #000;
+    background: #000
 }
+
 .footer-app-wrap .app-main {
-    height: 58px;
+    height: 58px
 }
-.footer-app-wrap .app-main .app-logo, .footer-app-wrap .app-main .app-logo img {
+
+.footer-app-wrap .app-main .app-logo,
+.footer-app-wrap .app-main .app-logo img {
     display: block;
     width: 58px;
-    height: 58px;
+    height: 58px
 }
+
 .footer-app-wrap .app-main .down-txt {
     height: 58px;
     padding-left: 15px;
     font-size: 22px;
     line-height: 48px;
-    color: #fff;
+    color: #fff
 }
+
 .footer-app-wrap .app-main .down-txt .money {
     padding: 0 2px;
     font-family: 'Verdana';
     font-size: 28px;
-    color: #ffe763;
+    color: #ffe763
 }
+
 .footer-app-wrap .app-main .code-box {
     position: relative;
     margin: 0;
-    padding-top: 7px;
+    padding-top: 7px
 }
-.footer-app-wrap .app-main .code-box a{
-    text-decoration: none;
+
+.footer-app-wrap .app-main .code-box a {
+    text-decoration: none
 }
 
 .footer-app-wrap .app-main .code-btn {
@@ -959,7 +1140,7 @@ a{
     text-align: center;
     color: #333;
     border-radius: 4px;
-    background: #fff;
+    background: #fff
 }
 
 .footer-app-wrap .app-main .show-code {
@@ -972,41 +1153,50 @@ a{
     padding: 37px 0;
     text-align: center;
     background: #fff;
-    box-shadow: 0 0 3px 1px #e6e5e5;
+    box-shadow: 0 0 3px 1px #e6e5e5
 }
+
 .footer-app-wrap .app-main .show-code > img {
     display: block;
     width: 158px;
     height: 158px;
-    margin: 0 auto;
+    margin: 0 auto
 }
+
 .footer-wrap {
     overflow: hidden;
-    padding-bottom: 15px;
+    padding-bottom: 15px
 }
+
 .footer-wrap .wrap-main {
     overflow: hidden;
-    padding: 60px 15px 50px 15px;
+    padding: 60px 15px 50px 15px
 }
+
 .footer-wrap .wrap-main .data-txt {
     margin-top: 10px;
     font-size: 13px;
     line-height: 15px;
-    color: #777;
+    color: #777
 }
+
 .footer-wrap .wrap-main .left-list .data-tit {
-    padding-bottom: 11px;
+    padding-bottom: 11px
 }
+
 .footer-wrap .wrap-main .data-tit {
     font-size: 20px;
     line-height: 20px;
-    color: #333;
+    color: #333
 }
+
 .footer-wrap .wrap-main .data-txt a {
     color: #777;
-    text-decoration: none;
+    text-decoration: none
 }
-.footer-wrap .wrap-main .right-top .wei-xin-box div, .footer-wrap .wrap-main .right-top .zhi-bo-box div {
+
+.footer-wrap .wrap-main .right-top .wei-xin-box div,
+.footer-wrap .wrap-main .right-top .zhi-bo-box div {
     margin-top: 8px;
     font-size: 13px;
     line-height: 15px;
@@ -1014,61 +1204,62 @@ a{
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: keep-all;
-    color: #545454;
+    color: #545454
 }
 
 .copy-right-wrap {
     clear: both;
     padding: 24px 0;
-    background: #f2f2f2;
+    background: #f2f2f2
 }
+
 .copy-right-wrap .copy-right-logo {
     display: block;
     width: 75px;
     height: 35px;
     margin-right: 24px;
-    background: url(../images/yuemei-logo.png?ver=20180308) no-repeat 0 -324px;
+    background: url(../images/yuemei-logo.png?ver=20180308) no-repeat 0 -324px
 }
+
 .copy-right-wrap .copy-right-txt {
     color: #969696;
-    text-align: center;
+    text-align: center
 }
 
-
-.fixed-main{
+.fixed-main {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
-#menu-scroll{
+#menu-scroll {
     position: fixed;
     width: 100%;
     z-index: 200;
     background: #fff;
     top: -120px;
-    animation: slidedown 1s;
+    animation: slidedown 1s
 }
 
-.menu-scroll-top{
+.menu-scroll-top {
     background: #ff92b1;
-    height: 51px;
+    height: 51px
 }
 
-.logo a{
+.logo a {
     display: block;
     float: left;
     width: 100%;
     height: 39px;
     background: url(../images/yuemei-logo.png)
     no-repeat 0 -376px;
-    margin-top: 5px;
+    margin-top: 5px
 }
 
 .form_search {
-    display: inline-block;
+    display: inline-block
 }
 
-.form_search input{
+.form_search input {
     width: 75%;
     height: 36px;
     font-size: 14px;
@@ -1077,9 +1268,10 @@ a{
     border: wheat;
     border-radius: 4px 0 0 4px;
     margin-top: 7px;
-    float: right;
+    float: right
 }
-.form_search button{
+
+.form_search button {
     display: block;
     float: right;
     width: 61px;
@@ -1090,58 +1282,61 @@ a{
     border-radius: 0 4px 4px 0;
     background: #ff6980;
     border: none;
-    margin-top: 7px;
+    margin-top: 7px
 }
-.app-link{
+
+.app-link {
     float: right;
     font-size: 18px;
     line-height: 39px;
     color: #fff;
     margin-top: 5px;
-    text-align: right;
+    text-align: right
 }
 
-.menu-scroll-carousel item{
+.menu-scroll-carousel item {
     display: inline-block;
     padding-right: 41px;
     font-size: 25px;
     line-height: 28px;
-    color: #333;
+    color: #333
 }
 
-.menu-scroll-carousel{
+.menu-scroll-carousel {
     border: 1px #dfdfdf solid;
     padding: 20px 0;
-    text-align: center;
+    text-align: center
 }
 
-#menu-scroll.active{
+#menu-scroll.active {
     display: block;
     animation: slideup 1s;
-    top: 0;
+    top: 0
 }
 
-.float-nav-wrap{
-    margin-top: 10px;
+.float-nav-wrap {
+    margin-top: 10px
 }
 
-.float-nav-wrap.active{
+.float-nav-wrap.active {
     position: fixed;
     top: 0;
     z-index: 2000;
     background: #fff;
     animation: slideup2 0.5s;
     margin-top: 50px;
-    height: 60px;
-}
-.float-nav-wrap.active .item{
-    margin-top: 0px;
-}
-.float-nav-wrap.active a{
-    padding: 16px;
+    height: 60px
 }
 
-.float-nav-wrap.active:before{
+.float-nav-wrap.active .item {
+    margin-top: 0px
+}
+
+.float-nav-wrap.active a {
+    padding: 16px
+}
+
+.float-nav-wrap.active:before {
     left: -37%;
     content: '';
     position: fixed;
@@ -1150,130 +1345,291 @@ a{
     border-bottom: 1px #dfdfdf solid;
     height: 110px;
     width: 200%;
-    animation:  slideup 0.5s;
+    animation: slideup 0.5s
 }
 
-
-.float-nav-wrap.active .prev, .float-nav-wrap.active .next{
-    margin-top: 17px;
+.float-nav-wrap.active .prev,
+.float-nav-wrap.active .next {
+    margin-top: 17px
 }
-
 
 @keyframes slidedown {
-0% {
-    top: 0;
-}
-100% {
-    top:-120px;
-}
+    0% {
+        top: 0
+    }
+
+    100% {
+        top: -120px
+    }
+
 }
 
 @keyframes slideup {
-0% {
-    top:-120px;
-}
-100% {
-    top: 0;
-}
+    0% {
+        top: -120px
+    }
+
+    100% {
+        top: 0
+    }
+
 }
 
 @keyframes slideup2 {
     0% {
-        top: -110px;
+        top: -110px
     }
+
     100% {
-        top: 0px;
+        top: 0px
     }
+
 }
 
 @keyframes slideup3 {
     0% {
-        top: 0px;
+        top: 0px
     }
+
     100% {
-        top: 110px;
+        top: 110px
     }
+
 }
 
-/*<-- Menu right -->*/
-.right-fixed-nav{ position: fixed; z-index: 300; top: 0; right: 0; width: 35px; height: 100%; background: #000; }
-.right-fixed-nav .data-head{ margin: 0 auto; }
-.right-fixed-nav .data-head, .right-fixed-nav .data-head img{ display: block; width: 25px; height: 25px; border-radius: 50%; }
-.right-fixed-nav .my-order{ position: relative; display: block; height: 126px; margin-top: 12px; padding: 0 5px; }
-.right-fixed-nav .my-order .icon{ position: absolute; top: 18px; left: 50%; display: block; width: 18px; height: 19px; margin-left: -9px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -74px; }
-.right-fixed-nav .my-order div{ position: relative; top: -1px; padding: 19px 0; border-top: 1px solid #444; border-bottom: 1px solid #444; }
-.right-fixed-nav .my-order p{ position: relative;position: relative;width: 30px;padding: 30px 0 18px 0;font-size: 10px;line-height: 20px;text-align: center;color: #fff;text-transform: uppercase;margin-left: -2px;}
-.right-fixed-nav .my-order:hover{ background: #ff5370; }
-.right-fixed-nav .hover-list{ position: relative; display: block; height: 35px; margin-top: 9px; line-height: 35px; }
-.right-fixed-nav .hover-list .icon{ position: absolute; z-index: 1; top: 50%; left: 50%; display: block; width: 20px; height: 20px; margin: -10px 0 0 -10px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat; }
-.right-fixed-nav .hover-list p{ position: absolute; z-index: 0; top: 0; right: -250px; height: 35px; padding: 0 42px 0 7px; font-size: 12px; line-height: 35px; transition: .2s; white-space: nowrap; color: #ff5370; border-radius: 4px 0 0 4px; background: #ff5370; }
-.right-fixed-nav .hospital-zx p{ background: #59abff; }
-.right-fixed-nav .hospital-phone p{ background: #59abff; }
-.right-fixed-nav .doctor-zx p{ background: #fd875b; }
-.right-fixed-nav .doctor-phone p{ background: #fd875b; }
-.right-fixed-nav .hover-list:hover p{ right: 0; color: #fff; }
-.right-fixed-nav .hover-news .icon{ background-position: -449px -28px; }
-.right-fixed-nav .hover-juan .icon{ background-position: -398px -103px; }
-.right-fixed-nav .hover-service .icon{ background-position: -477px 0; }
-.right-fixed-nav .hover-online-zx .icon{ background-position: -477px 0; }
-.right-fixed-nav .hover-phone .icon{ background-position: -449px 1px; }
-.right-fixed-nav .hover-app .icon{ background-position: -424px -28px; }
-.right-fixed-nav .data-cont{ position: absolute; top: 50%; width: 35px; margin-top: -190px; }
-.right-fixed-nav .go-top{ position: absolute; right: 0; bottom: 0; display: block; width: 35px; height: 39px; cursor: pointer; }
-.right-fixed-nav .go-top:hover{ background: #ff5370; }
-.right-fixed-nav .go-top .icon{ position: absolute; top: 50%; left: 50%; display: block; width: 22px; height: 18px; margin: -9px 0 0 -11px; background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -50px; }
+.right-fixed-nav {
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 100%;
+    background: #000
+}
 
-/*<-- Popup menu -->*/
+.right-fixed-nav .data-head {
+    margin: 0 auto
+}
+
+.right-fixed-nav .data-head,
+.right-fixed-nav .data-head img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%
+}
+
+.right-fixed-nav .my-order {
+    position: relative;
+    display: block;
+    height: 126px;
+    margin-top: 12px;
+    padding: 0 5px
+}
+
+.right-fixed-nav .my-order .icon {
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    display: block;
+    width: 18px;
+    height: 19px;
+    margin-left: -9px;
+    background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -74px
+}
+
+.right-fixed-nav .my-order div {
+    position: relative;
+    top: -1px;
+    padding: 19px 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444
+}
+
+.right-fixed-nav .my-order p {
+    position: relative;
+    position: relative;
+    width: 30px;
+    padding: 30px 0 18px 0;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: -2px
+}
+
+.right-fixed-nav .my-order:hover {
+    background: #ff5370
+}
+
+.right-fixed-nav .hover-list {
+    position: relative;
+    display: block;
+    height: 35px;
+    margin-top: 9px;
+    line-height: 35px
+}
+
+.right-fixed-nav .hover-list .icon {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    background: url('../images/yuemei-logo.png?ver=20180308') no-repeat
+}
+
+.right-fixed-nav .hover-list p {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: -250px;
+    height: 35px;
+    padding: 0 42px 0 7px;
+    font-size: 12px;
+    line-height: 35px;
+    transition: .2s;
+    white-space: nowrap;
+    color: #ff5370;
+    border-radius: 4px 0 0 4px;
+    background: #ff5370
+}
+
+.right-fixed-nav .hospital-zx p {
+    background: #59abff
+}
+
+.right-fixed-nav .hospital-phone p {
+    background: #59abff
+}
+
+.right-fixed-nav .doctor-zx p {
+    background: #fd875b
+}
+
+.right-fixed-nav .doctor-phone p {
+    background: #fd875b
+}
+
+.right-fixed-nav .hover-list:hover p {
+    right: 0;
+    color: #fff
+}
+
+.right-fixed-nav .hover-news .icon {
+    background-position: -449px -28px
+}
+
+.right-fixed-nav .hover-juan .icon {
+    background-position: -398px -103px
+}
+
+.right-fixed-nav .hover-service .icon {
+    background-position: -477px 0
+}
+
+.right-fixed-nav .hover-online-zx .icon {
+    background-position: -477px 0
+}
+
+.right-fixed-nav .hover-phone .icon {
+    background-position: -449px 1px
+}
+
+.right-fixed-nav .hover-app .icon {
+    background-position: -424px -28px
+}
+
+.right-fixed-nav .data-cont {
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    margin-top: -190px
+}
+
+.right-fixed-nav .go-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 35px;
+    height: 39px;
+    cursor: pointer
+}
+
+.right-fixed-nav .go-top:hover {
+    background: #ff5370
+}
+
+.right-fixed-nav .go-top .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 22px;
+    height: 18px;
+    margin: -9px 0 0 -11px;
+    background: url('../images/yuemei-logo.png?ver=20180308') no-repeat -398px -50px
+}
+
 .modal .nav-tabs {
     padding-bottom: 8px;
-    border-bottom: 1px #000 solid;
+    border-bottom: 1px #000 solid
 }
 
-.modal .nav-tabs li a{
+.modal .nav-tabs li a {
     text-decoration: none;
     color: #ff5370;
     display: block;
     text-align: center;
-    text-transform: uppercase;
-}
-.modal .nav-tabs li{
-    width: 50%;
-    position: relative;
+    text-transform: uppercase
 }
 
-.modal-title{
+.modal .nav-tabs li {
+    width: 50%;
+    position: relative
+}
+
+.modal-title {
     margin-bottom: 0;
     line-height: 24px;
     text-transform: uppercase;
     color: #666
 }
-.modal .nav-tabs li.active a:before{
+
+.modal .nav-tabs li.active a:before {
     content: "";
     height: 2px;
     position: absolute;
     width: 100%;
     background: #ff5370;
     top: 30px;
-    left: 0;
+    left: 0
 }
 
-.modal .modal-dialog{
+.modal .modal-dialog {
     width: 370px;
-    margin-top: 150px;
+    margin-top: 150px
 }
-.modal .login-input-box input{
-    padding-top: 3px;
+
+.modal .login-input-box input {
+    padding-top: 3px
 }
-.modal .login-input-box input[type="text"]{
+
+.modal .login-input-box input[type="text"] {
     width: 200px;
     border: 1px #dfdfdf solid;
     height: 37px;
     padding: 5px 5px;
     margin-top: 30px;
-    color: #999;
+    color: #999
 }
 
-.modal .login-input-box input[type="button"]{
+.modal .login-input-box input[type="button"] {
     height: 37px;
     background: #f4f4f4;
     padding: 5px;
@@ -1281,35 +1637,37 @@ a{
     position: relative;
     width: 120px;
     border: 1px #dfdfdf solid;
-    margin-left: 11px;
+    margin-left: 11px
 }
 
-.modal #sms-ma,#account-pwd1 {
-     border: 1px #dfdfdf solid;
-     height: 37px;
-     padding: 7px 5px;
-     margin-top: 18px;
-     width: 335px;
-     color: #999;
- }
+.modal #sms-ma,
+#account-pwd1 {
+    border: 1px #dfdfdf solid;
+    height: 37px;
+    padding: 7px 5px;
+    margin-top: 18px;
+    width: 335px;
+    color: #999
+}
 
-#account{
+#account {
     border: 1px #dfdfdf solid;
     height: 37px;
     padding: 7px 5px;
     margin-top: 30px;
     width: 335px;
-    color: #999;
+    color: #999
 }
 
-.modal .sms-bot{
+.modal .sms-bot {
     font-size: 14px;
     padding-top: 10px;
     color: #999;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
-.modal .tel-login-btn, .login-btn{
+.modal .tel-login-btn,
+.login-btn {
     height: 40px;
     border: none;
     padding: 5px;
@@ -1319,160 +1677,188 @@ a{
     border-radius: 4px;
     background: #ff5370;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .modal .remember-ls {
-    float: left;
+    float: left
 }
 
 .modal .forget {
-    float: right;
+    float: right
 }
 
-.modal .remember-box{
-    padding-top:  10px;
+.modal .remember-box {
+    padding-top: 10px
 }
 
-.modal a{
+.modal a {
     color: #ff5370;
     text-decoration: none;
     font-size: 14px;
-    margin-top: 2px;
+    margin-top: 2px
 }
 
-.modal .other-login{
+.modal .other-login {
     clear: both;
     text-align: center;
     padding-top: 10px;
     color: #999;
-    font-size: 16px;
+    font-size: 16px
 }
-.modal .other-lab{
+
+.modal .other-lab {
     text-align: center;
-    padding: 15px;
+    padding: 15px
 }
-.modal .other-lab a{
-    display: inline-block;width: 37px;
+
+.modal .other-lab a {
+    display: inline-block;
+    width: 37px;
     height: 37px;
-    margin: 0 22px;
-}
-.modal .other-lab a i{
-    font-size: 35px;
-}
-.modal .other-lab a .fa-facebook{
-    color: #1a91ff;
-}
-.modal .other-lab a .fa-google{
-    color: #ff232a;
-}
-.modal .other-lab a .fa-twitter{
-    color: #5034ff;
+    margin: 0 22px
 }
 
-.modal .register-test{
-    text-align: center ;
+.modal .other-lab a i {
+    font-size: 35px
 }
 
-.modal-content{
-    border-radius: 5px;
+.modal .other-lab a .fa-facebook {
+    color: #1a91ff
+}
+
+.modal .other-lab a .fa-google {
+    color: #ff232a
+}
+
+.modal .other-lab a .fa-twitter {
+    color: #5034ff
+}
+
+.modal .register-test {
+    text-align: center
+}
+
+.modal-content {
+    border-radius: 5px
 }
 
 .modal .remember-ls {
     color: #999;
-    margin-right: 8px;
+    margin-right: 8px
 }
 
-.modal .remember-ls input[type="checkbox"]{
+.modal .remember-ls input[type="checkbox"] {
     float: left;
     position: relative;
     top: 7px;
-    margin-right: 6px;
+    margin-right: 6px
 }
 
-/*Hiden element on mobile*/
-@media only screen and (max-width: 1025px) {
-    .header-main, #menu-scroll, .header-main, .menu-left, .spa-main, .head-wrap,
-    .floor-tit, .buy-floor-wrap, .right-fixed-nav, .copy-right-wrap,
-    .footer-app-wrap, .footer-wrap, .footer-app-wrap, .banner-scroll{display: none !important;}
+@media only screen and (max-width:1025px) {
+    .header-main,
+    #menu-scroll,
+    .header-main,
+    .menu-left,
+    .spa-main,
+    .head-wrap,
+    .floor-tit,
+    .buy-floor-wrap,
+    .right-fixed-nav,
+    .copy-right-wrap,
+    .footer-app-wrap,
+    .footer-wrap,
+    .footer-app-wrap,
+    .banner-scroll {
+        display: none !important
+    }
 
     .float-nav-wrap .item {
-        font-size: 14px;
+        font-size: 14px
     }
 
     .float-nav-wrap .owl-item .item a {
-        width: 110px;
+        width: 110px
     }
 
     .float-nav-wrap.active {
-        top: 0 !important;
+        top: 0 !important
     }
 
-    .list-item .img-bottom{
-        margin-top: 15px;
+    .list-item .img-bottom {
+        margin-top: 15px
     }
 
-    .list-item .img-text{
+    .list-item .img-text {
         font-size: 14px;
         text-align: justify;
-        margin-top: 4px;
+        margin-top: 4px
     }
 
-
-    .list-item:after{
+    .list-item:after {
         content: "";
         height: 5px;
         width: 100%;
         background: #eee;
-        margin-top: 30px;
+        margin-top: 30px
     }
 
     .hosTao .tao-wrap {
-        margin: 0;
-
+        margin: 0
     }
 
     .hosTao .tao-wrap img {
-        padding: 0px 7px;
+        padding: 0px 7px
     }
 
-    .spa-share{
-        display:  none;
+    .spa-share {
+        display: none
     }
 
     .float-nav-wrap.active {
         width: 100%;
         left: 0;
-        margin-top: 0px;
+        margin-top: 0px
     }
+
     .float-nav-wrap.active {
-        border-bottom: 1px #dfdfdf solid;
+        border-bottom: 1px #dfdfdf solid
     }
 
     .float-nav-wrap.active:before {
-        width: auto;
+        width: auto
     }
-    .float-nav-wrap.active .owl-nav{
-        display: none;
+
+    .float-nav-wrap.active .owl-nav {
+        display: none
     }
-    .hosTao-head{
-        width: 100%;
+
+    .hosTao-head {
+        width: 100%
     }
+
     .hosTao .checkHos {
-        margin-right: 15px;
+        margin-right: 15px
     }
+
 }
 
-@media only screen and (min-width: 1025px) {
-    .mobile-header, #search, .icon-link, .hot-huodong, .open-app {display: none !important;}
+@media only screen and (min-width:1025px) {
+    .mobile-header,
+    #search,
+    .icon-link,
+    .hot-huodong,
+    .open-app {
+        display: none !important
+    }
+
     .hosTao .tao-wrap a {
-        width: 16.66%;
+        width: 16.66%
     }
 
 }
 
-/*Mobile UI*/
-.mobile-header{
+.mobile-header {
     position: relative;
     z-index: 5;
     height: 30px;
@@ -1480,10 +1866,10 @@ a{
     color: #fff;
     border-bottom: 1px solid #ff5370;
     background: #ff5370;
-    display: inline-block;
+    display: inline-block
 }
 
-.mobile-header .icon-menu{
+.mobile-header .icon-menu {
     position: absolute;
     width: 23px;
     height: 20px;
@@ -1491,27 +1877,27 @@ a{
     right: -19px;
     background: url(../images/mCommon-logo.png) no-repeat;
     background-size: 50px auto;
-    background-position: right -37px;
+    background-position: right -37px
 }
 
-.mobile-header .contry{
+.mobile-header .contry {
     color: #fff;
     margin-top: 2px;
     display: inline-block;
-    position: relative;
+    position: relative
 }
 
-.mobile-header .logo{
+.mobile-header .logo {
     display: block;
     width: 41px;
     height: 30px;
     margin: 0 auto;
     background: url(../images/mCommon-logo.png) no-repeat;
     background-size: 50px auto;
-    background-position: 0 4px;
+    background-position: 0 4px
 }
 
-.mobile-header .menu{
+.mobile-header .menu {
     position: absolute;
     z-index: 10;
     top: 0;
@@ -1521,7 +1907,7 @@ a{
     height: 42px;
     background: url(../images/mCommon-logo.png) no-repeat;
     background-size: 50px auto;
-    background-position: right -110px;
+    background-position: right -110px
 }
 
 .mobile-header .top-box>img {
@@ -1530,11 +1916,11 @@ a{
     left: 23px;
     width: 15px;
     height: 15px;
-    z-index: 3;
+    z-index: 3
 }
 
-.mobile-header .search{
-    margin-top: 10px;
+.mobile-header .search {
+    margin-top: 10px
 }
 
 .mobile-header .top-box .search-input {
@@ -1553,78 +1939,164 @@ a{
     font-family: PingFangSC-Regular;
     font-weight: 400;
     border-radius: 34px;
-    padding-left: 39px;
+    padding-left: 39px
 }
 
-.navList{ overflow: hidden; width: 100%; margin-bottom: 10px; padding-bottom: 12px; background: #fff; }
-.navList ul{ padding-top: 6px; }
-.navList li{     float: left;
+.navList {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    background: #fff
+}
+
+.navList ul {
+    padding-top: 6px
+}
+
+.navList li {
+    float: left;
     width: 25%;
     height: 67px;
     padding: 0px 0 0;
     text-align: center;
     margin-top: 0px;
-    margin-top: 9px; }
-.navList li a{ padding-top: 46px;
+    margin-top: 9px
+}
+
+.navList li a {
+    padding-top: 46px;
     font-size: 10px;
     text-align: center;
     color: #666;
     line-height: 10px;
     width: 70px;
-    display: inline-block;}
-.navList li .ask{ background: url(../images/ask-v2.png) center 0 no-repeat; background-size: 38px 38px; }
-.navList li .dairy{ background: url(../images/dairy-v1.png) center 0 no-repeat; background-size: 42px 42px; }
-.navList li .doc{ background: url(../images/doc-v1.png) center 0 no-repeat; background-size: 42px 42px; }
-.navList li .hos{ background: url(../images/hos-v2.png) center 0 no-repeat; background-size: 38px 38px; }
-.navList li .haoyi{ background: url(../images/haoyi.png) center 0 no-repeat; background-size: 38px 38px; }
-.navList li .limit-sale{ background: url(../images/haoyi.png) center 0 no-repeat; background-size: 38px 38px; }
-.navList li .tao{ background: url(../images/tao-v1.png) center 0 no-repeat; background-size: 42px 42px; }
-.navList li .items{ background: url(../images/items-v1.png) center 0 no-repeat; background-size: 42px 42px; }
+    display: inline-block
+}
 
-.navList li .note{ background: url(../images/note.png) center 0 no-repeat; background-size: 42px 42px; }
+.navList li .ask {
+    background: url(../images/ask-v2.png) center 0 no-repeat;
+    background-size: 38px 38px
+}
 
-.flex{display: -webkit-flex; display: flex;}
-.flex a{ flex:1; }
-.flex a img{ width: 100%; display: block}
-.need-bd .flex a{ border-right: 1px solid #efefef; box-sizing: border-box; }
-.need-bd .flex a.no-border{ border: none; }
-.need-bd .flex a:last-child{ border: none}
-.hot-huodong{ margin-top: 10px;}
-.guanfang-icon{ position: relative; top:1px; left: 5px; display: inline-block; width: 25px; height: 13px; background: url("../images/index-v2.png") 0 -35px no-repeat; background-size: 50px auto;}
+.navList li .dairy {
+    background: url(../images/dairy-v1.png) center 0 no-repeat;
+    background-size: 42px 42px
+}
 
-.owl-carousel .owl-nav{
+.navList li .doc {
+    background: url(../images/doc-v1.png) center 0 no-repeat;
+    background-size: 42px 42px
+}
+
+.navList li .hos {
+    background: url(../images/hos-v2.png) center 0 no-repeat;
+    background-size: 38px 38px
+}
+
+.navList li .haoyi {
+    background: url(../images/haoyi.png) center 0 no-repeat;
+    background-size: 38px 38px
+}
+
+.navList li .limit-sale {
+    background: url(../images/haoyi.png) center 0 no-repeat;
+    background-size: 38px 38px
+}
+
+.navList li .tao {
+    background: url(../images/tao-v1.png) center 0 no-repeat;
+    background-size: 42px 42px
+}
+
+.navList li .items {
+    background: url(../images/items-v1.png) center 0 no-repeat;
+    background-size: 42px 42px
+}
+
+.navList li .note {
+    background: url(../images/note.png) center 0 no-repeat;
+    background-size: 42px 42px
+}
+
+.flex {
+    display: -webkit-flex;
+    display: flex
+}
+
+.flex a {
+    flex: 1
+}
+
+.flex a img {
+    width: 100%;
+    display: block
+}
+
+.need-bd .flex a {
+    border-right: 1px solid #efefef;
+    box-sizing: border-box
+}
+
+.need-bd .flex a.no-border {
+    border: none
+}
+
+.need-bd .flex a:last-child {
+    border: none
+}
+
+.hot-huodong {
+    margin-top: 10px
+}
+
+.guanfang-icon {
+    position: relative;
+    top: 1px;
+    left: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 13px;
+    background: url("../images/index-v2.png") 0 -35px no-repeat;
+    background-size: 50px auto
+}
+
+.owl-carousel .owl-nav {
     position: absolute;
     top: 17px;
     width: 100%;
-    left: 0;
+    left: 0
 }
 
-.owl-carousel .owl-nav span{
+.owl-carousel .owl-nav span {
     padding: 0;
     line-height: 0;
     position: relative;
     top: -17px;
     color: #ff92b1;
-    outline : none;
+    outline: none
 }
 
-button:focus {outline:0;}
+button:focus {
+    outline: 0
+}
 
-.owl-carousel .owl-prev{
+.owl-carousel .owl-prev {
     position: relative;
     font-size: 31px !important;
     border: 1px #ff92b1  solid !important;
     width: 25px;
     height: 25px;
     top: -8px;
-    left: 0px;
+    left: 0px
 }
 
-.owl-carousel{
-    padding:  0 30px;
+.owl-carousel {
+    padding: 0 30px;
     height: 60px;
-    overflow: hidden;
+    overflow: hidden
 }
+
 .owl-carousel .owl-next {
     position: absolute;
     font-size: 31px !important;
@@ -1632,42 +2104,44 @@ button:focus {outline:0;}
     width: 25px;
     height: 25px;
     top: -8px;
-    right: 0px;
+    right: 0px
 }
 
-.float-nav-wrap.active .owl-carousel button{
-    top: 0 !important;
+.float-nav-wrap.active .owl-carousel button {
+    top: 0 !important
 }
 
-.hosBanner{
-    text-align: center;
+.hosBanner {
+    text-align: center
 }
-.hosBanner a{
+
+.hosBanner a {
+    width: 100%
+}
+
+.hosBanner img {
     width: 100%;
-}
-.hosBanner img{
-    width: 100%;
-    margin-top: 15px;
+    margin-top: 15px
 }
 
-.hosBanner .tit1{
+.hosBanner .tit1 {
     font-size: 16px;
     min-height: 15px;
-    line-height: 18px;
+    line-height: 18px
 }
 
-.hosBanner .tit2{
+.hosBanner .tit2 {
     font-size: 12px;
     color: #999;
-    padding-top: 6px;
+    padding-top: 6px
 }
 
-/*//footer*/
 .open-app {
     padding: 23px 0 43px 0;
     text-align: center;
-    background: #f6f6f6;
+    background: #f6f6f6
 }
+
 .open-app .yuemei {
     display: inline-block;
     height: 57px;
@@ -1675,24 +2149,28 @@ button:focus {outline:0;}
     text-align: left;
     color: #333;
     background: url(../images/ym-norm-logo.png) no-repeat 0 0;
-    background-size: 57px auto;
+    background-size: 57px auto
 }
-.open-app .yuemei div{
+
+.open-app .yuemei div {
     padding-top: 5px;
     font-size: 18px;
-    color: #2E2E2E;
+    color: #2E2E2E
 }
-.open-app .yuemei p{
+
+.open-app .yuemei p {
     padding-top: 4px;
     font-size: 13px;
-    color: #2E2E2E;
+    color: #2E2E2E
 }
+
 .open-app .app-text {
     margin-top: 15px;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 16px
 }
-.open-app .app-text .s_app_hide{
+
+.open-app .app-text .s_app_hide {
     text-align: center;
     display: inline-block;
     width: 243px;
@@ -1700,41 +2178,48 @@ button:focus {outline:0;}
     line-height: 44px;
     border: 1px solid #fd536e;
     border-radius: 40px;
-    color: #fd536e;
+    color: #fd536e
 }
-.modal-open{
+
+.modal-open {
     padding-right: 0px !important;
-    overflow: unset !important;
+    overflow: unset !important
 }
 
 .modal-open modal {
-    padding-right: 0px!important;
+    padding-right: 0px !important
 }
 
-.banner-scroll.active, .banner-scroll.pause{
-    position: relative;
+.banner-scroll.active,
+.banner-scroll.pause {
+    position: relative
 }
-.banner-scroll.active .spa-share{
+
+.banner-scroll.active .spa-share {
     position: fixed;
     top: 110px;
     max-width: 170px;
-    animation: slideup3 0.3s;
+    animation: slideup3 0.3s
 }
-.banner-scroll{
-    z-index: 1;
+
+.banner-scroll {
+    z-index: 1
 }
-.banner-scroll.active{
-    position: relative;
+
+.banner-scroll.active {
+    position: relative
 }
-.banner-scroll.pause .spa-share{
+
+.banner-scroll.pause .spa-share {
     position: absolute;
     bottom: 30px;
     max-width: 170px;
     animation: slideup3 0.5s;
-    top: auto;
+    top: auto
 }
-.tab-cont .getmore{
+
+.tab-cont .getmore {
     margin-left: 30px;
     color: #999;
-    text-decoration: none;
+    text-decoration: none
 }
