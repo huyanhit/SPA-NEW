@@ -4,7 +4,7 @@ $(window).load(function() {
     controlNav: false,
     animationLoop: false,
     slideshow: false,
-    itemWidth: 110,
+    itemWidth: 66,
     itemMargin: 5,
     asNavFor: '#slider'
   });
