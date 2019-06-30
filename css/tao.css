@@ -151,6 +151,9 @@
 .group-method .order-left{
     margin-top: 15px;
 }
+.tabstab-box a:first-child {
+    border-left: none;
+}
 .lab-icon{
     clear: both;
     padding-top: 15px;
@@ -222,4 +225,63 @@
 	line-height: 42px;
     color: #666;
     text-decoration: none;
+}
+.tabstab-box{
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+    border: 1px #ccc solid;
+}
+
+.tabstab-box a{
+	padding: 7px  10px;
+    border: 1px #ccc solid;
+    text-transform: uppercase;
+    color: #ff5502;
+    border-right: 0;
+    display: inline-block;
+    margin-right: -4px;
+    text-decoration: none;
+    border-bottom: none;
+    border-top: 1px #fff solid;  
+}
+
+.tabstab-box a:last-child{
+ 	border-right: 1px #ccc solid;
+}
+.goOrder{
+    display: none;
+}
+.tabstab-box a.active{
+	border-top: 1px #ff5502 solid;
+}
+.mainbox{
+    padding:15px 0;
+}
+.fream{
+	margin-top: 30px
+}
+.fream .title{
+    font-size: 16px;
+    text-transform: uppercase;
+}	
+
+.fream .content{
+    margin-top: 10px;
+}	
+
+table{
+	width: 100%;
+}
+
+table td{
+    border: 1px #ccc solid;
+    padding: 2px 5px;
+}
+
+.hosInfo {
+    position: relative;
+    padding: 23px 15px 50px 15px;
+    text-align: center;
+    border: 1px solid #e7e7e7;
 }
