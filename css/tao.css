@@ -183,11 +183,20 @@
     min-width: 100px;
     text-align: center;
     color: #fff;
+    text-decoration: none;
+}
+
+.pos_rel a.chat-button:hover{
+	background: #fff;
+	transition: .4s;
+	color: #666;
+	border: 1px #666 solid;
 }
 
 .pos_rel a.chat-button{
     padding: 5px 20px;
     margin-top: 15px;
+    border: 1px #ff5502 solid;
     display: inline-block;
     min-width: 150px;
     text-align: center;
@@ -207,6 +216,13 @@
     font-size: 20px;    
     border: 1px #ccc solid;
 }
+.pos_rel a.goPay:hover{
+    border: 1px #ff5502 solid;
+    color: #fff;
+    background: #ff5502;
+    transition: .4s;
+}
+.tree{
 .tree{
 	line-height: 42px;
     color: #666;
