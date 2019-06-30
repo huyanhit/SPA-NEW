@@ -187,10 +187,9 @@
 }
 
 .pos_rel a.chat-button:hover{
-	background: #fff;
+	background: #f22d00;
 	transition: .4s;
-	color: #666;
-	border: 1px #666 solid;
+	color: #fff;
 }
 
 .pos_rel a.chat-button{
@@ -198,11 +197,12 @@
     margin-top: 15px;
     border: 1px #ff5502 solid;
     display: inline-block;
-    min-width: 150px;
+    min-width: 120px;
     text-align: center;
     color: #fff;
     background: #ff5502;
-    font-size: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .pos_rel a.goPay{
@@ -213,16 +213,11 @@
     text-align: center;
     color: #666;
     background: #fff;
-    font-size: 20px;    
-    border: 1px #ccc solid;
+    font-size: 16px;
+    text-transform: uppercase; 
+    border: 1px #666 solid;
 }
-.pos_rel a.goPay:hover{
-    border: 1px #ff5502 solid;
-    color: #fff;
-    background: #ff5502;
-    transition: .4s;
-}
-.tree{
+
 .tree{
 	line-height: 42px;
     color: #666;
