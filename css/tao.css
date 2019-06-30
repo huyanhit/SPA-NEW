@@ -395,3 +395,102 @@ table td{
     background: #17a2b8;
     color: #fff;
 }
+.feedback-box {
+    padding: 22px 24px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #666;
+    border: 1px solid #e7e7e7;
+    margin-top: 40px;
+    display: block;
+
+}
+.share{
+    margin-top: 33px;
+    color: #999;
+}
+.share span{
+	margin-right: 10px
+}
+a.collect{
+	color: #999;
+	text-decoration: none;
+}
+a.collect:hover{
+	color: #ff5502;
+}
+.collect i{
+	margin-right: 5px
+}
+.morePro{
+    border: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+    padding-bottom: 16px;
+    display: inline-block;
+}
+.sideTit{
+	margin-bottom: 10px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+.morePro dl{
+    padding: 10px;
+
+}
+.morePro dd a ,.morePro dt a {
+    float: left;
+    margin: 0 10px 12px 0;
+    padding: 0 9px;
+    font-size: 12px;
+    line-height: 27px;
+    white-space: nowrap;
+    color: #666;
+    border: 1px solid #e1e1e1;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.morePro dd a:hover,.morePro dt a:hover  {
+    color: #ff5370;
+    border-color: #ffe6ea;
+}
+.new_down{
+	
+    margin: 30px 0px;
+}
+.new_down img{
+	width: 100%
+}
+.sales .sale-img{
+    width: 45px;
+    height: 45px;
+    float: left;
+}
+.sales .sale-img img {
+	width: 100% 
+}
+.sale-content{
+	padding: 10px;
+}
+.sale-content .sale-info{
+    margin-left: 60px;
+}
+.sale-content .sale-info a{
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+.sale-content  a.sale-price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ff5370;
+    display: block;
+}
+.sale-content  a.sale-hos{
+    color: #999;
+}
