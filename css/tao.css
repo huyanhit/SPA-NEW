@@ -855,3 +855,62 @@ div.docInfo {
 .tao-instructions img{
 	margin-bottom: 30px
 }
+
+@media only screen and (max-width:1025px) {
+	.owl-carousel{
+		width: 100%;
+		display: inline-block;
+    	height: 100%;
+    	padding: 0;
+	}
+
+	.owl-carousel .owl-dots {
+		position: relative;
+	    display: inline-block;
+	    width: 100%;
+	    text-align: center;
+	    top: -20px;
+	}
+	.owl-carousel .owl-dots button{
+	    height: 8px;
+	    width: 8px;
+	    background: #ddd;
+	    margin: 0 5px;
+	    display: inline-block;
+	    border-radius: 10px;
+	}
+
+	.owl-carousel .owl-dot.active{
+	    background: #ff5c77;
+	    transition: 0.3s;
+	}
+	.tao-slider-mobile .goBack,
+	 .tao-slider-mobile .goIndex,
+	 .tao-slider-mobile .share,
+	 .swiper-container .goBack,
+	.swiper-container .goIndex, 
+	.swiper-container .share {
+	    position: absolute;
+	    top: 10px;
+	    display: block;
+	    width: 35px;
+	    height: 35px;
+	    z-index: 2;
+	    border: none;
+	    text-align: center;
+	    line-height: 34px;
+	    border-radius: 40px;
+	    background: #21252975;
+	    color: #fff;
+	}
+	.tao-slider-mobile .goBack, .swiper-container .goBack {
+	    left: 12px;
+	}
+	.tao-slider-mobile .share, .tao-slider-mobile  .share {
+	    right: 58px;
+    	top: -24px;
+	}
+	.tao-slider-mobile .goIndex, .tao-slider-mobile .goIndex {
+	    right: 12px;
+	}
+}
