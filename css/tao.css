@@ -1,3 +1,4 @@
+
 .content-page .flexslider {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -1268,7 +1269,13 @@ div.docInfo {
 		width: 100%;
 	}
 	.outerBase .docBox{
-		    display: inline-block;
-    margin: 20px 0;
+		display: inline-block;
+    	margin: 20px 0;
+	}
+}
+
+@media only screen and (min-width:1025px) {
+	.mobile{
+		display: none !important;
 	}
 }
