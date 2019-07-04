@@ -222,6 +222,23 @@ jQuery(document).ready(function($){
         return false;
 	});
 
+	// carousel
+    if($(".owl-carousel").length) {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                992: {
+                    items: 8
+                },
+            }
+        });
+    }
 
 
     var offsetAdv = $(".banner-scroll").offset();
@@ -259,7 +276,12 @@ jQuery(document).ready(function($){
             $(".fixed-top").removeClass("active");
         }
     }
+
     menuScroll();
+    $(window).scroll(function() {
+        menuScroll();
+    })
+
 
 
     if($(".child-tab").length) {
