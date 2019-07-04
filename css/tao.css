@@ -1262,15 +1262,6 @@ div.docInfo {
 		color: #666;
 	}
 
-	.fen-iteam .star-box2,
-	.fen-iteam .star-box2 .star-num2 {
-		position: relative;
-		width: 60px;
-		height: 10px;
-		background: url('../images/doc_tao.png') no-repeat;
-		background-size: 160px auto;
-	}
-
 	.fen-iteam .star-box2 {
 		margin-top: 6px;
 		background-position: 0 -228px;
