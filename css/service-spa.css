@@ -1,0 +1,102 @@
+.breadcrumb {
+    float: left;
+    padding: 14px 0;
+    font-family: 'Microsoft Yahei';
+}
+.breadcrumb a, .breadcrumb span {
+    color: #333;
+}
+/* carosuel*/
+.outer {
+	margin: 0 auto;
+	max-width: 800px
+}
+.owl-carousel {
+    padding: 0 30px;
+    height: 400px;
+    overflow: hidden;
+}
+#big .item {
+	background: #fff;
+	padding: 10px 0;
+	margin: 2px;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center
+}
+
+#thumbs .item {
+	background: #c9c9c9;
+	height: 100px;
+	line-height: 70px;
+	padding: 0;
+	margin: 2px;
+	color: #fff;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer
+}
+
+#thumbs .item h1 {
+	font-size: 18px
+}
+
+#thumbs .current .item {
+	background: #ff5722
+}
+#thumbs.owl-theme .owl-next,
+#thumbs.owl-theme .owl-prev{
+    width: 35px;
+	height: 35px;
+	background: #2d7dcf!important;
+	z-index: 20;
+	position: absolute
+}
+#thumbs.owl-theme .owl-next{
+    right: 0
+}
+#thumbs.owl-theme .owl-prev{
+    left: 0
+}
+.owl-theme .owl-nav [class*=owl-] {
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease
+}
+
+.owl-theme .owl-nav [class*=owl-].disabled:hover {
+	background-color: #d6d6d6
+}
+
+#big.owl-theme {
+	position: relative
+}
+
+#big.owl-theme .owl-next,
+#big.owl-theme .owl-prev {
+	background: #333;
+	width: 22px;
+	line-height: 40px;
+	height: 40px;
+	margin-top: -20px;
+	position: absolute;
+	text-align: center;
+	top: 50%
+}
+
+#big.owl-theme .owl-prev {
+	left: 10px
+}
+
+#big.owl-theme .owl-next {
+	right: 10px
+}
+
+#thumbs.owl-theme .owl-next,
+#thumbs.owl-theme .owl-prev {
+	top: calc(50% - 17.5px)
+}
+
+#thumbs.owl-theme .owl-prev,
+.owl-nav {
+	cursor: pointer
+}
