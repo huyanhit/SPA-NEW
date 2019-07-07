@@ -4,12 +4,15 @@
     font-weight: normal;
     font-style: normal
 }
+*{
+    outline: none;
+}
 
 body {
     font-family: 'Elle Futura';
     font-weight: normal;
     font-style: normal;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .left, .flleft {
@@ -32,6 +35,7 @@ body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre
 
 a{
     text-decoration: none;
+    color: #999;
 }
 
 a:hover{
