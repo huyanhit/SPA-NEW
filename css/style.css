@@ -12,58 +12,34 @@ body {
     font-size: 14px
 }
 
-.left,
-.flleft {
+.left, .flleft {
     float: left
 }
 
-.right,
-.flright {
+.right, .flright {
     float: right
 }
 
-ul,
-ol,
-li {
+ul, ol, li {
     list-style: none
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-th,
-td,
-p,
-blockquote,
-pre,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-hr {
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, blockquote, pre, form, fieldset, legend, input, button, textarea, hr {
     margin: 0;
     padding: 0;
     color: #333
 }
 
-a {
-    text-decoration: none
+a{
+    text-decoration: none;
 }
 
-.del,
-del {
+a:hover{
+    color: #ff5c77;
+}
+
+
+.del, del {
     font-size: 12px;
     text-decoration: line-through;
     color: #999
@@ -73,8 +49,7 @@ del {
     color: #ff5370
 }
 
-.fs-12,
-.ft12 {
+.fs-12, .ft12 {
     font-size: 12px
 }
 
@@ -101,11 +76,7 @@ del {
     padding-right: 5px !important
 }
 
-.nav-cont a.nav-a:hover,
-.nav-cont a.nav-a.now,
-.nav-cont .nav-a > a:hover,
-.nav-cont .nav-a > a.now,
-.nav-cont .now > a {
+.nav-cont a.nav-a:hover, .nav-cont a.nav-a.now, .nav-cont .nav-a > a:hover, .nav-cont .nav-a > a.now, .nav-cont .now > a {
     color: #ff6980
 }
 
@@ -338,8 +309,7 @@ del {
     color: #eee
 }
 
-#tabs .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     background-color: transparent;
     border-color: transparent transparent #ff6a80;
     border-bottom: 2px solid !important;
@@ -560,8 +530,7 @@ del {
     color: #898989
 }
 
-.part-slide-show .slide-cont li .lv-2-cont a,
-.part-slide-show .slide-cont li .lv-2-cont span {
+.part-slide-show .slide-cont li .lv-2-cont a, .part-slide-show .slide-cont li .lv-2-cont span {
     float: left;
     margin: 8px 12px 0 0;
     white-space: nowrap;
@@ -625,8 +594,7 @@ del {
     display: block
 }
 
-.banner-slide li a,
-.banner-slide li img {
+.banner-slide li a, .banner-slide li img {
     display: block
 }
 
@@ -805,8 +773,7 @@ del {
     width: 100%
 }
 
-.fixBox,
-.new_down {
+.fixBox, .new_down {
     position: relative;
     z-index: 10
 }
@@ -867,8 +834,7 @@ del {
     position: relative
 }
 
-.list-item .img-top .left,
-.list-item .img-top .right {
+.list-item .img-top .left, .list-item .img-top .right {
     overflow: hidden;
     width: 50%;
     height: 100%
@@ -938,13 +904,11 @@ del {
     vertical-align: middle
 }
 
-.darenIcon.icon1,
-.daren.icon1 {
+.darenIcon.icon1, .daren.icon1 {
     background-position: -70px -150px
 }
 
-.darenIcon,
-.daren {
+.darenIcon, .daren {
     display: inline-block;
     width: 77px;
     height: 22px;
@@ -1099,8 +1063,7 @@ del {
     height: 58px
 }
 
-.footer-app-wrap .app-main .app-logo,
-.footer-app-wrap .app-main .app-logo img {
+.footer-app-wrap .app-main .app-logo, .footer-app-wrap .app-main .app-logo img {
     display: block;
     width: 58px;
     height: 58px
@@ -1196,8 +1159,7 @@ del {
     text-decoration: none
 }
 
-.footer-wrap .wrap-main .right-top .wei-xin-box div,
-.footer-wrap .wrap-main .right-top .zhi-bo-box div {
+.footer-wrap .wrap-main .right-top .wei-xin-box div, .footer-wrap .wrap-main .right-top .zhi-bo-box div {
     margin-top: 8px;
     font-size: 13px;
     line-height: 15px;
@@ -1349,8 +1311,7 @@ del {
     animation: slideup 0.5s
 }
 
-.float-nav-wrap.active .prev,
-.float-nav-wrap.active .next {
+.float-nav-wrap.active .prev, .float-nav-wrap.active .next {
     margin-top: 17px
 }
 
@@ -1412,8 +1373,7 @@ del {
     margin: 0 auto
 }
 
-.right-fixed-nav .data-head,
-.right-fixed-nav .data-head img {
+.right-fixed-nav .data-head, .right-fixed-nav .data-head img {
     display: block;
     width: 25px;
     height: 25px;
@@ -1641,8 +1601,7 @@ del {
     margin-left: 11px
 }
 
-.modal #sms-ma,
-#account-pwd1 {
+.modal #sms-ma, #account-pwd1 {
     border: 1px #dfdfdf solid;
     height: 37px;
     padding: 7px 5px;
@@ -1667,8 +1626,7 @@ del {
     margin-bottom: 10px
 }
 
-.modal .tel-login-btn,
-.login-btn {
+.modal .tel-login-btn, .login-btn {
     height: 40px;
     border: none;
     padding: 5px;
@@ -1757,20 +1715,7 @@ del {
 }
 
 @media only screen and (max-width:1025px) {
-    .header-main,
-    #menu-scroll,
-    .header-main,
-    .menu-left,
-    .spa-main,
-    .head-wrap,
-    .floor-tit,
-    .buy-floor-wrap,
-    .right-fixed-nav,
-    .copy-right-wrap,
-    .footer-app-wrap,
-    .footer-wrap,
-    .footer-app-wrap,
-    .banner-scroll {
+    .header-main, #menu-scroll, .header-main, .menu-left, .spa-main, .head-wrap, .floor-tit, .buy-floor-wrap, .right-fixed-nav, .copy-right-wrap, .footer-app-wrap, .footer-wrap, .footer-app-wrap, .banner-scroll {
         display: none !important
     }
 
@@ -1845,11 +1790,7 @@ del {
 }
 
 @media only screen and (min-width:1025px) {
-    .mobile-header,
-    #search,
-    .icon-link,
-    .hot-huodong,
-    .open-app {
+    .mobile-header, #search, .icon-link, .hot-huodong, .open-app {
         display: none !important
     }
 
@@ -2190,8 +2131,7 @@ button:focus {
     padding-right: 0px !important
 }
 
-.banner-scroll.active,
-.banner-scroll.pause {
+.banner-scroll.active, .banner-scroll.pause {
     position: relative
 }
 
