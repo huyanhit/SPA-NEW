@@ -17,7 +17,7 @@
     width: 100%;
     position: relative;
     top: 39px;
-    z-index: 100;
+    z-index: 2;
     display: block;
 }
 
@@ -63,7 +63,7 @@
 .menu-hospital ul.list-parent > li:first-child {
     width: 25%;
     position: absolute;
-    z-index: 1000;
+    z-index: 2;
 }
 
 .menu-hospital ul.list-parent > li:nth-child(2) {
