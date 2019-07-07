@@ -1091,7 +1091,8 @@ del {
     clear: both;
     margin-top: 25px;
     padding: 9px 0;
-    background: #000
+    background: #000;
+    width: 100%
 }
 
 .footer-app-wrap .app-main {
@@ -2093,7 +2094,6 @@ button:focus {
 
 .owl-carousel {
     padding: 0 30px;
-    height: 60px;
     overflow: hidden
 }
 
