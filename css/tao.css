@@ -752,13 +752,16 @@ a.collect:hover {
 .fream .has-judge {
 	width: 30%;
 	float: left;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .fream .item2 {
-	width: 30%;
-	display: inline-block;
-	margin-top: 30px;
-	padding-right: 30px;
+    width: 30%;
+    display: inline-block;
+    margin-top: 10px;
+    padding-right: 30px;
+    margin-bottom: 30px;
 }
 
 .fream .ft18 .pink {
