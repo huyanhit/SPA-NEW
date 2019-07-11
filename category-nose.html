@@ -1,0 +1,2614 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/fontawesome.min.css">
+      <link rel="stylesheet" href="./css/all.min.css">
+      <link rel="stylesheet" href="./css/owl.carousel.css"  >
+      <link rel="stylesheet" href="./css/style.css"  >
+      <link rel="stylesheet" href="./css/hospital.css"  >
+   </head>
+   <body>
+      <!-- Popup -->
+      <div class="modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Login | Quick Registration</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <ul class="nav nav-tabs">
+                     <li class="active"><a data-toggle="tab" href="#registration" class="active">SMS Registration</a></li>
+                     <li><a data-toggle="tab" href="#login">Login</a></li>
+                  </ul>
+                  <div class="tab-content">
+                     <div id="registration" class="tab-pane active">
+                        <form class="nav-cont">
+                           <div class="login-input-box">
+                              <input type="text" id="sms-tel" class="sms-input samll-input input-error" init="" value="Phone number">
+                              <input type="button" class="get-tel-code down-time" value="SMS code" disabled="disabled">
+                           </div>
+                           <input type="text" id="sms-ma" class="sms-input input-error" value="SMS">
+                           <input type="button" class="tel-login-btn" value="log in">
+                           <div class="sms-bot">Unregistered will automatically create a account</div>
+                        </form>
+                     </div>
+                     <div id="login" class="tab-pane">
+                        <form class="nav-cont">
+                           <input type="text" id="account" class="login-input input-error"  value="Username">
+                           <input type="password" id="account-pwd1" class="login-input" value="Password">
+                           <input type="button" class="login-btn" value="log in">
+                           <div class="remember-box">
+                              <div class="remember-ls check-me"><i></i>
+                                 <span>Remember me</span>
+                                 <input type="checkbox" checked="checked">
+                              </div>
+                              <a href="user/getpwd" class="forget">Forget password?</a>
+                           </div>
+                           <div class="other-login">Log in using other methods</div>
+                           <div class="other-lab">
+                              <a href="#">
+                              <i class="fab fa-facebook"></i>
+                              </a>
+                              <a href="#" ><i class="fab fa-google"></i></i></a>
+                              <a href="#" ><i class="fab fa-twitter"></i></a>
+                           </div>
+                           <div class="register-test">Still not a US account? <a href="user/register">Sign up now</a></div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header wap -->
+      <div class="head-wrap">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg" >
+               <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i>Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link space-line">|</a>
+                     </li>
+                     <li class="nav-item item-download">
+                        <a class="nav-link download-app" href="#"><span>Download App</span></a>
+                        <em class="download"></em>
+                     </li>
+                  </ul>
+                  <span class="navbar-text">
+                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#">Đăng nhập - Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link space-line">|</a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#">Đăng ký bác sĩ</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link space-line">|</a>
+                        </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="#">Liên Hệ</a>
+                        </li>
+                     </ul>
+                  </span>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- menu right -->
+      <div class="right-fixed-nav">
+         <div class="data-cont">
+            <div class="data-head"><img src="./uploads/hospital/noavatar1_50_50.jpg" alt=""></div>
+            <div class="my-order">
+               <i class="icon"></i>
+               <div>
+                  <p>Đơn hàng</p>
+               </div>
+            </div>
+            <div class="hover-list hover-news">
+               <span class="message_click icon"></span>
+               <p>Tin nhắn</p>
+            </div>
+            <div class="hover-list hover-juan">
+               <span class="coupon_click icon"></span>
+               <p>Mã giảm giá</p>
+            </div>
+            <div _ymaname="chat_hospital" _ymapos="tao_list_right" class="hover-list hover-service chat-button _yma">
+               <span class="icon"></span>
+               <p>Dịch vụ trực tuyến</p>
+            </div>
+            <div class="hover-list hover-phone">
+               <a href="#" >
+                  <span class="icon"></span>
+                  <p>Điện thoại 000000000</p>
+               </a>
+            </div>
+            <div class="hover-list hover-app">
+               <a href="#" >
+                  <span class="icon"></span>
+                  <p>Tải APP</p>
+               </a>
+            </div>
+         </div>
+         <div class="go-top">
+            <div class="icon"></div>
+         </div>
+      </div>
+      <!-- header page -->
+      <div class="header-main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <a class=logo></a>
+                  <div class="city">
+                     <div class="citys">
+                        <span class="citynow"><em>TP HCM</em></span>
+                        <div class="cityshow">
+                           <nav>
+                              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Miền Bắc</a>
+                                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Miền Trung</a>
+                                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Miền Nam</a>
+                              </div>
+                           </nav>
+                           <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                 <span><a href="#">Thành phố 1</a></span>
+                                 <span><a href="#">Thành phố 2</a></span>
+                                 <span><a href="#">Thành phố 3</a></span>
+                                 <span><a href="#">Thành phố 4</a></span>
+                                 <span><a href="#">Thành phố 5</a></span>
+                              </div>
+                              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                 <span><a href="#">Thành phố 1</a></span>
+                                 <span><a href="#">Thành phố 2</a></span>
+                                 <span><a href="#">Thành phố 3</a></span>
+                                 <span><a href="#">Thành phố 4</a></span>
+                                 <span><a href="#">Thành phố 5</a></span>
+                              </div>
+                              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                 <span><a href="#">Thành phố 1</a></span>
+                                 <span><a href="#">Thành phố 2</a></span>
+                                 <span><a href="#">Thành phố 3</a></span>
+                                 <span><a href="#">Thành phố 4</a></span>
+                                 <span><a href="#">Thành phố 5</a></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="clearfix"></div>
+               </div>
+               <div class="col-md-5">
+                  <div class="search-box ">
+                     <input class="form-control search-home" type="text" placeholder="Search" aria-label="Search">
+                     <a class="search-btn ">Search</a>
+                  </div>
+               </div>
+               <div class="brand-right col-md-3">
+                  <div class="slide-list">
+                     <div class="left slide-img">
+                        <img src="./uploads/hospital/header-banner-1.png" alt="">
+                     </div>
+                     <div class="slide-cont">
+                        <div class="slide-tit">Hội Thẩm Mỹ</div>
+                        <div class="slide-text">Đơn Vị Điều Hành</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- menu hospital page -->
+      <div class="menu-hospital">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <ul class="list-parent">
+                     <li class="nav-item">
+                        <div class="title-siderbar-left">Cửa Hàng Tại TPHCM</div>
+                        <div class="menu-left">
+                           <ul class="slide-box">
+                              <li class="eye"><span><i></i><a href="#" target="_blank">Mắt</a></span></li>
+                              <li class="nose"><span><i></i><a href="#" target="_blank">Mũi</a></span></li>
+                              <li class="boniaosuan"><span><i></i><a href="#" target="_blank">Hyaluronic acid</a> · <a href="#" target="_blank">kim ánh sáng nước</a></span></li>
+                              <li class="face"><span><i></i><a href="#" target="_blank">đường nét trên khuôn mặt</a> · <a href="#" target="_blank">Botox</a></span></li>
+                              <li class="facialwrinkles"><span><i></i><a href="#" target="_blank">Chống nhăn và chống lão hóa</a></span></li>
+                              <li class="fnbeauty"><span><i></i><a href="#" target="_blank">Làm đẹp da</a></span></li>
+                              <li class="xizhi"><span><i></i><a href="#" target="_blank">Hút mỡ</a> · <a href="#" target="_blank">mỡ tự thân</a></span></li>
+                              <li class="chest"><span><i></i><a href="#" target="_blank">Tạo hình ngực</a> và <a href="#" target="_blank">cơ thể</a></span></li>
+                              <li class="tooth"><span><i></i><a href="#" target="_blank">Răng</a> và <a href="#" target="_blank">tóc</a></span></li>
+                              <li class="women"><span><i></i><a href="#" target="_blank">Phái đẹp</a> , <a href="#" target="_blank">Quý ông</a></span></li>
+                           </ul>
+                           <div class="part-slide-show" >
+                              <div class="slide-cont">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đôi mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Nhúng mí đôi </a><a target="_blank" href="#">Hàn Quốc đôi mí đôi </a><a target="_blank" href="#">toàn mí</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Mở mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Mở góc trong của mắt và mở góc ngoài của </a><a target="_blank" href="#">mắt</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đi đến túi mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Laser vào túi mắt </a><a target="_blank" href="#">, cắt túi mắt </a><a target="_blank" href="#">, cắt túi mắt, </a><a target="_blank" href="#">chất béo hòa tan chất xơ, đi </a>><a target="_blank" href="#">>đến túi mắt </a><a target="_blank" href="#">>, nhúng túi mắt </a><a target="_blank" href="#">>, </a><a target="_blank" href="#">>tháo túi mắt, </a><a target="_blank" href="#">tháo túi, </a><a target="_blank" href="#">đi đến túi, </a><a target="_blank" href="#">đi đến túi dưới mắt.</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đi đến quầng thâm</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Laser để quầng thâm </a><a target="_blank" href="#">vi kim thành quầng thâm </a><a target="_blank" href="#">axit hyaluronic thành quầng thâm </a><a target="_blank" href="#">RF thành quầng thâm</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tổng hợp mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Định hình mắt tích hợp</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa mắt thất bại</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Sửa mí mắt sửa chữa </a><a target="_blank" href="#">góc trong </a>><a target="_blank" href="#">>sửa chữa </a><a target="_blank" href="#">>góc </a><a target="_blank" href="#">mắt ngoài sửa chữa </a><a target="_blank" href="#">túi mắt sửa chữa</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Ptosis </a><a target="_blank" href="#">xuống mi mắt dưới để</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hốc mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Autologous mỡ hốc mắt </a><a target="_blank" href="#">hyaluronic axit hốc mắt</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đôi mắt trẻ hơn</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Brow cắt lông mày </a><a target="_blank" href="#">nhiệt mắt Maggie</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tằm giàu</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Mỡ tự thân, lách, tằm, </a><a target="_blank" href="#">axit hyaluronic, tằm, </a><a target="_blank" href="#">tằm, tằm</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đổ đầy nước mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic làm đầy rãnh nước mắt </a><a target="_blank" href="#">collagen làm đầy nước mắt cặn bã </a><a target="_blank" href="#">chất béo tự động làm rách rãnh</a></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-2" style="left: -5px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Nâng mũi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">augmentation mũi </a><a target="_blank" href="#">mở rộng giả mũi </a><a target="_blank" href="#">axit hyaluronic tăng thêm </a><a target="_blank" href="#">chất béo tự thân tăng thêm </a><a target="_blank" href="#">dòng khắc mũi </a><a target="_blank" href="#">Man Tebo augmentation giả </a><a target="_blank" href="#">tự thân da tăng thêm </a><a target="_blank" href="#">vách ngăn sụn tăng thêm </a><a target="_blank" href="#">từ sụn sườn augmentation </a><a target="_blank" href="#">tai sụn tự thân tăng thêm</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tổng hợp mũi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Phẫu thuật thẩm mỹ mũi toàn diện</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa mũi thất bại</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Sửa mũi</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa mũi / mũi / lỗ mũi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Phẫu thuật cắt bỏ </a>><a target="_blank" href="#">>mũi, thu nhỏ </a><a target="_blank" href="#">>mũi </a><a target="_blank" href="#">, độc </a><a target="_blank" href="#">tố </a>><a target="_blank" href="#">>nọc </a><a target="_blank" href="#">>độc, đầu </a><a target="_blank" href="#">>mũi </a><a target="_blank" href="#">>, </a><a target="_blank" href="#">sửa lỗ mũi</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Mở rộng cột mũi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Phẫu thuật kéo dài cột mũi</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Mũi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Autopous </a>><a target="_blank" href="#">>pad </a><a target="_blank" href="#">>sụn mũi mũi Autodermal </a><a target="_blank" href="#">pad tip</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cơ sở mũi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Mỡ tự thân, </a><a target="_blank" href="#">chân giả mũi, nền mũi, </a><a target="_blank" href="#">axit hyaluronic, cơ sở mũi</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa mũi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Eagle sửa mũi </a><a target="_blank" href="#">bướu </a>><a target="_blank" href="#">>sửa </a><a target="_blank" href="#">>mũi sửa </a><a target="_blank" href="#">mũi </a><a target="_blank" href="#">rộng sửa </a><a target="_blank" href="#">mũi dài sửa </a><a target="_blank" href="#">mũi Chaotian sửa mũi</a></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-4" style="left: 0px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit nâng mũi</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic acid điền vào mặt</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit cơ táo</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Axit Hyaluronic</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic mẫu tinh chế axit</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit cơ sở mũi</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit cằm</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit môi</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Son dưỡng môi axit hyaluronic</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hốc mắt axit hyaluronic</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit vào quầng thâm</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Axit Hyaluronic</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Axit Hyaluronic</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit làm đầy rãnh nước mắt</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit nhăn</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit vào cổ</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit má</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Axit Hyaluronic</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hyaluronic axit cung lông mày</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Kim nước</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Kim nước</a></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-7" style="left: 0px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cằm</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Feng cằm axit hyaluronic </a><a target="_blank" href="#">khỏi cơ thể chất béo Fung cằm </a><a target="_blank" href="#">silicone giả cằm pad </a><a target="_blank" href="#">mở rộng giả cằm pad </a><a target="_blank" href="#">Man Tebo giả cằm pad </a><a target="_blank" href="#">loại bỏ cằm cấy ghép</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Nâng mặt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Face-lift pin </a><a target="_blank" href="#">xơ-lift chất béo hòa tan </a><a target="_blank" href="#">lấy mỡ pad mặt-lift </a><a target="_blank" href="#">RF tan mỡ-lift </a><a target="_blank" href="#">hút mỡ khuôn mặt-lift </a><a target="_blank" href="#">Laser lipolysis-lift</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Điền đầy đủ / đa phần</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic acid làm đầy da mặt </a><a target="_blank" href="#">tự động</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Chùa phong</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic axit khô cằn đền thờ </a><a target="_blank" href="#">chất béo tự thân dồi dào </a><a target="_blank" href="#">chân giả</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đi cằm đôi</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ gấp đôi cằm </a><a target="_blank" href="#">làm tan mỡ thành cằm đôi</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Fengtoutou</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic axit dồi dào trán </a>><a target="_blank" href="#">>giả </a>
+                                          <a target="_blank" href="#">chất béo dồi dào</a><a target="_blank" href="#">></a>
+                                       </div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cơ táo dồi dào</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic acid, cơ táo, </a><a target="_blank" href="#">mỡ tự thân, cơ táo</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cung lông mày dài</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic axit lông mày cung </a><a target="_blank" href="#">tự động chất béo lông mày cung </a><a target="_blank" href="#">chân giả pad cung lông mày</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tằm giàu</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic acid, tằm, tằm, </a><a target="_blank" href="#">mỡ tự thân, tằm, tằm, </a><a target="_blank" href="#">phẫu thuật, tằm</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Phong má</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic axit dồi dào </a><a target="_blank" href="#">mỡ bụng tự thân</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Phong Er</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic axit dái tai </a><a target="_blank" href="#">chất béo dồi dào</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Lúm đồng tiền</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Phẫu thuật lúm đồng tiền nhân tạo</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa tai</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Tuyển dụng chỉnh sửa </a><a target="_blank" href="#">tai tái cấu trúc </a><a target="_blank" href="#">tách tai </a><a target="_blank" href="#">phụ kiện tháo tai</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Thuốc tiêm</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cổng vòm</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Gò má phẫu thuật thẩm mỹ </a><a target="_blank" href="#">xương gò má trong việc đẩy mạnh</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Xương mài</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Phiến xương hàm góc cạnh </a><a target="_blank" href="#">ba mảnh </a><a target="_blank" href="#">cằm phẫu thuật cắt xương mặt </a><a target="_blank" href="#">V-LINE</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Định hình hàm trên và hàm dưới</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hàm trên nhô ra / ngày gói để </a><a target="_blank" href="#">các hàm dưới trước lồi / ngày quấn </a><a target="_blank" href="#">hàm phẫu thuật / chỉnh trên ống hút chiếu</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox xóa nếp nhăn</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Kim bếp</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox thư giãn cơ bắp thư giãn</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox rùa</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox để mũi</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Kim nâng mặt</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox để mô hình con rối</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox để chân quạ</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox để nâng đầu</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox đến Chuanzi</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tiêm vào cơ thể</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Vai thon</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox điều trị mồ hôi</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox để sương</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox vào miệng</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Botox để nghị định</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-2" style="left: 0px; display: block;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Chống nhăn</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">nhăn Botox </a><a target="_blank" href="#">nhiệt Maggie </a><a target="_blank" href="#">nhăn axit hyaluronic </a><a target="_blank" href="#">siêu âm lưỡi </a><a target="_blank" href="#">nhúng nâng cao </a><a target="_blank" href="#">nhiệt Lahti </a><a target="_blank" href="#">phẫu thuật nâng hệ thống treo </a><a target="_blank" href="#">huyết thanh tự thân PRP da </a><span>nội soi phẫu thuật nâng </span><a target="_blank" href="#">facelift nâng </a><a target="_blank" href="#">vết rạch nhỏ nâng </a><a target="_blank" href="#">SMA rhytidectomy </a><a target="_blank" href="#">RF Săn Chắc đài phát thanh </a><a target="_blank" href="#">microneedles Thắt chặt </a><a target="_blank" href="#">nâng laser</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Chân quạ</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Botox để chân quạ</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Ngẩng cao đầu</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Botox để nâng đầu</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Mẫu nghị định</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic axit để nghị định dòng, </a><a target="_blank" href="#">chất béo tự động, </a><a target="_blank" href="#">giảm, độc tố botulinum, nghị định</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đi đến từ Tứ Xuyên</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Botox đến Chuanzi</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Rạn da</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">RF để kéo dài </a><a target="_blank" href="#">laser </a>><a target="_blank" href="#">>đánh dấu </a><a target="_blank" href="#">>để kéo dài </a><a target="_blank" href="#">vi tinh thể đến các vết rạn</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đổ đầy nước mắt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hyaluronic axit làm đầy nước mắt cặn bã </a><a target="_blank" href="#">chất béo tự động</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đôi mắt trẻ hơn</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Mắt nóng</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hình xăm cổ</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Cổ </a><a target="_blank" href="#">siêu âm </a>><a target="_blank" href="#">>Maji </a><a target="_blank" href="#">>cổ dao siêu âm </a><a target="_blank" href="#">để đường viền cổ </a><a target="_blank" href="#">hyaluronic axit đến đường viền cổ</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Các nếp nhăn khác</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Botox đi vào mặt sau của </a><a target="_blank" href="#">độc tố botulinum để đi đến </a>><a target="_blank" href="#">>độc tố </a><a target="_blank" href="#">>rối loạn </a><a target="_blank" href="#">botulinum</a></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-3" style="left: -5px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Trang điểm bán vĩnh viễn</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Lông mày </a><a target="_blank" href="#">bán vĩnh viễn Môi </a><a target="_blank" href="#">bán vĩnh viễn Mô hình </a><a target="_blank" href="#">bán cố định Lash line bán vĩnh viễn lông mi </a><a target="_blank" href="#">mang thai phẫu thuật cắt lông mi </a><a target="_blank" href="#">bán vĩnh viễn kẻ mắt </a><a target="_blank" href="#">bán vĩnh viễn đường </a><a target="_blank" href="#">quầng vú</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Mụn trứng cá / mụn trứng cá / mụn trứng cá</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Trẻ hóa axit trái cây </a><a target="_blank" href="#">đỏ xanh mụn trứng cá </a><a target="_blank" href="#">pixel laser </a><a target="_blank" href="#">rõ ràng mụn </a><a target="_blank" href="#">CO2 chấm ma trận laser </a><a target="_blank" href="#">vi kim làm đẹp mụn </a><a target="_blank" href="#">vàng vi kim</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tàn nhang</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Laser tàn nhang </a><a target="_blank" href="#">E tàn nhang </a><a target="_blank" href="#">y học Trung Quốc tàn nhang </a><a target="_blank" href="#">picosecond laser</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đi sẹo</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Laser 祛</a><a target="_blank" href="#">grinding mài da 祛 疤</a><a target="_blank" href="#">phẫu thuật 祛</a><a target="_blank" href="#">thuốc thuốc </a><a target="_blank" href="#">giãn 祛</a><a target="_blank" href="#">tiêm 祛</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đi đến</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Phẫu thuật cắt </a><a target="_blank" href="#">laser tại chỗ</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Giảm sắc tố / vết bớt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">E ánh sáng đến </a><a target="_blank" href="#">photon máu </a><a target="_blank" href="#">đỏ thành </a><a target="_blank" href="#">tia </a>><a target="_blank" href="#">>máu đỏ </a><a target="_blank" href="#">>đến tia </a><a target="_blank" href="#">>máu đỏ </a><a target="_blank" href="#">>để </a><span>>phẫu thuật </span><a target="_blank" href="#">>thai nhi </a><span>để sinh nở</span></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Làm trắng và trẻ hóa da</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Làm trắng </a><a target="_blank" href="#">da búp bê mặt đen </a><a target="_blank" href="#">Photon trẻ hóa </a><a target="_blank" href="#">sứ trắng sứ </a><a target="_blank" href="#">E Ánh sáng trẻ hóa </a><a target="_blank" href="#">sóng &amp; Giới thiệu vi kim</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đi đến mùi cơ thể</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Tiêm vào cơ thể mùi </a><a target="_blank" href="#">laser để đi </a>><a target="_blank" href="#">>phẫu thuật </a><a target="_blank" href="#">>mùi cơ thể </a><a target="_blank" href="#">để đi đến mùi cơ thể</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Rửa hình xăm / hình xăm</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Bút kẻ mắt, </a>><a target="_blank" href="#">>rửa </a>
+                                          <a target="_blank" href="#">chân mày </a>><a target="_blank" href="#">>, kẻ viền </a>
+                                          <a target="_blank" href="#">môi, </a><a target="_blank" href="#">rửa hình xăm</a>
+                                       </div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Triệt lông toàn thân / đa vị trí</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Tẩy lông bằng photon, tẩy lông </a><a target="_blank" href="#">toàn thân, </a><a target="_blank" href="#">điểm đông, tẩy lông</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Triệt lông mặt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Tắt bộ râu </a><a target="_blank" href="#">ra khỏi bộ râu </a><a target="_blank" href="#">chân tóc tóc </a><a target="_blank" href="#">ra khỏi tóc môi</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Các vấn đề về da khác</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Laser để mỡ hạt </a><a target="_blank" href="#">laser để mụn đầu đen</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Giữ ẩm</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Shuiguang kim </a><a target="_blank" href="#">kim Shuiguang </a><a target="_blank" href="#">siêu nhỏ bong bóng </a><a target="_blank" href="#">Capture ôxy nước</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tẩy lông toàn thân</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Tẩy lông thân mật </a><a target="_blank" href="#">bikini </a>><a target="_blank" href="#">>loại bỏ </a><a target="_blank" href="#">>lông </a><a target="_blank" href="#">chân </a><a target="_blank" href="#">ra khỏi </a>><a target="_blank" href="#">>lông chân tóc </a><a target="_blank" href="#">>ra khỏi tóc </a><a target="_blank" href="#">ra khỏi tóc </a><a target="_blank" href="#">ra </a><a target="_blank" href="#">khỏi chân tóc </a><a target="_blank" href="#">ra khỏi lông cánh tay</a></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-2" style="left: -5px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hút mỡ</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ, </a><a target="_blank" href="#">hút mỡ, lưng mỏng, </a><a target="_blank" href="#">hút mỡ, đùi mỏng, </a><a target="_blank" href="#">hút mỡ, cánh tay mỏng, </a><a target="_blank" href="#">hút mỡ, eo thon</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hút mỡ thủy lực</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ thủy lực eo mỏng cổ trướng Năng </a><a target="_blank" href="#">động hút mỡ cánh tay </a><a target="_blank" href="#">mỏng </a>><a target="_blank" href="#">>Hút mỡ thủy lực </a><a target="_blank" href="#">>đùi mỏng </a><a target="_blank" href="#">Hút mỡ thủy lực</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Khuôn mặt hút mỡ</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hút mỡ chân</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hút mỡ cằm đôi</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Hút mỡ vào sữa phó</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Autologous béo mặt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">mặt chất béo tự thân đầy </a><a target="_blank" href="#">phong phú chất béo tự thân của những ngôi đền </a><a target="_blank" href="#">mỡ tự thân Feng trán </a><a target="_blank" href="#">mỡ tự thân tăng thêm </a><a target="_blank" href="#">với tự thân chất béo Fung má </a><a target="_blank" href="#">mỡ tự thân để điền vào chỗ rách máng </a><a target="_blank" href="#">mỡ tự thân đi nếp gấp mũi má </a><a target="_blank" href="#">mỡ tự thân Feng dái tai </a><a target="_blank" href="#">tự thân phong phú chất béo cơ táo </a><a target="_blank" href="#">tự thân chất béo Feng nằm tằm </a><a target="_blank" href="#">tự thân chất béo Feng cằm </a><a target="_blank" href="#">tự thân chất béo Fengbi cơ sở </a><a target="_blank" href="#">tự béo môi </a><a target="_blank" href="#">tự béo mỡ cung lông mày </a><a target="_blank" href="#">tự thân béo</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Autologous cơ thể điêu khắc chất béo</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Mỡ tự thân, săn chắc và săn chắc, </a><a target="_blank" href="#">mỡ tự thân, nâng ngực, </a><a target="_blank" href="#">mỡ tự thân, mỡ tay, </a><a target="_blank" href="#">mỡ cơ thể, mông</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa chữa mỡ tự động</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Sửa mỡ tự thân</a></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-4" style="left: -5px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Nâng ngực</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Nâng ngực giả nâng ngực </a><a target="_blank" href="#">tự thân nâng </a><a target="_blank" href="#">ngực</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đến quán sữa</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ đến </a>><a target="_blank" href="#">>phẫu thuật </a><a target="_blank" href="#">>vú thứ hai </a><a target="_blank" href="#">sang sữa thứ hai</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Núm vú / quầng vú định hình</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Núm vú thu hẹp </a><a target="_blank" href="#">núm vú điều chỉnh </a><a target="_blank" href="#">giảm quầng vú</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa ngực</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">></a>><a target="_blank" href="#">>Phẫu thuật </a><a target="_blank" href="#">>cắt bỏ </a><a target="_blank" href="#">ngực tiêm ngực để loại bỏ </a><a target="_blank" href="#">nâng ngực thất bại sửa chữa</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Ngực cảnh</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Vú chảy xệ sửa </a><a target="_blank" href="#">ngực lớn</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Đùi mỏng</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ thủy lực đùi mỏng mỡ đùi </a><a target="_blank" href="#">đông lạnh mỡ đùi </a><a target="_blank" href="#">trống rỗng mỡ đùi mỏng </a><a target="_blank" href="#">mỡ đùi </a><a target="_blank" href="#">tan chảy mỡ đùi </a><a target="_blank" href="#">nóng nhựa mỏng đùi </a><a target="_blank" href="#">RF mỡ đùi mỏng </a><a target="_blank" href="#">tan chảy mỡ đùi mỏng </a><a target="_blank" href="#">tuyệt vời đùi mỏng</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cánh tay mỏng</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ thủy lực cánh tay mỏng </a><a target="_blank" href="#">Laser lipolysis cánh tay mỏng </a><a target="_blank" href="#">đông lạnh mỡ cánh tay mỏng cánh tay </a><a target="_blank" href="#">mỏng </a><a target="_blank" href="#">tuyệt vời nhựa cánh tay mỏng </a><a target="_blank" href="#">RF chất béo cánh tay mỏng </a><a target="_blank" href="#">tan mỡ cánh tay </a><a target="_blank" href="#">mỏng nhựa nóng cánh tay </a><a target="_blank" href="#">mỏng mỡ cánh tay mỏng</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Eo thon</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Đông eo mỏng tan mỡ bụng và bụng </a><a target="_blank" href="#">tần số vô tuyến mỡ eo và </a><a target="_blank" href="#">mỡ bụng </a><a target="_blank" href="#">tan </a><a target="_blank" href="#">mỡ </a>><a target="_blank" href="#">>eo bụng </a><a target="_blank" href="#">>nước năng động </a><a target="_blank" href="#">>mỡ </a><span>bụng </span>><a target="_blank" href="#">>eo thon mỡ </a><span>>bụng thành bụng phẫu thuật </span><a target="_blank" href="#">tuyệt vời eo mỏng </a>><span>>bụng </span>
+                                          <a target="_blank" href="#">nhựa nhiệt eo </a><a target="_blank" href="#">mỏng mỡ bụng Bụng </a><a target="_blank" href="#">trống mỡ eo thon</a>
+                                       </div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Mông mỏng</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ thủy lực, mông mỏng, </a><a target="_blank" href="#">nhựa tuyệt vời, mông mỏng, </a><a target="_blank" href="#">nhựa nóng, mông mỏng, </a><span>trống, béo, mỏng, mông, </span><a target="_blank" href="#">laser, mỡ, mỏng, mông, </a><a target="_blank" href="#">chất xơ, mỡ, mỏng, mông, </a><a target="_blank" href="#">đông lạnh, béo, mỏng, hông, </a><a target="_blank" href="#">mỡ, mỏng, hông, </a><a target="_blank" href="#">RF</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Chân gầy</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Stovepipe kim </a><a target="_blank" href="#">hút mỡ thủy động lực chân mỏng </a><a target="_blank" href="#">khối chân thần kinh </a><a target="_blank" href="#">RF tan mỡ chân mỏng </a><span>lipolysis Laser chân mỏng </span><a target="_blank" href="#">tốt nhất Li nhựa chân mỏng </a><a target="_blank" href="#">Lấy tan mỡ chân mỏng </a><a target="_blank" href="#">chân mỏng hút mỡ </a><a target="_blank" href="#">chân mỏng quang chất béo hòa tan </a><a target="_blank" href="#">nhiệt Li nhựa chân mỏng </a><a target="_blank" href="#">đông lạnh Lipolysis và chân mỏng</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Lưng gầy</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">hút mỡ thủy động lực mỏng lại </a><a target="_blank" href="#">hút mỡ mỏng lại </a><a target="_blank" href="#">RF mỏng lại chất béo hòa tan </a><a target="_blank" href="#">Laser lipolysis tựa lưng </a><a target="_blank" href="#">tốt Li mỏng nhựa lại </a><a target="_blank" href="#">quang mỏng lại chất béo hòa tan </a><a target="_blank" href="#">đông lạnh mỏng lại chất béo hòa tan </a><a target="_blank" href="#">Lấy một tan mỡ lưng mỏng </a><a target="_blank" href="#">nhiệt Li nhựa mỏng trở lại</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Mông giàu</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Chân </a>><a target="_blank" href="#">>giả </a><a target="_blank" href="#">>mỡ bụng </a><a target="_blank" href="#">giả</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Vai mỏng</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Kim vai mỏng </a><a target="_blank" href="#">đông lạnh mỡ vai mỏng </a><a target="_blank" href="#">hút mỡ </a>><a target="_blank" href="#">>vai </a><a target="_blank" href="#">>mỏng </a><a target="_blank" href="#">nhựa tuyệt vời </a>><a target="_blank" href="#">>vai </a><a target="_blank" href="#">>mỏng </a><a target="_blank" href="#">thủy lực hút mỡ vai mỏng mỡ </a><a target="_blank" href="#">môi vai mỏng </a><a target="_blank" href="#">RF béo vai </a><a target="_blank" href="#">mỏng nhựa nóng vai </a><span>mỏng mỡ vai mỏng </span><a target="_blank" href="#">sợi quang vai mỏng</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cơ thể mỏng / nhiều bộ phận</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Hút mỡ </a><a target="_blank" href="#">tần số vô tuyến lipolysis </a><a target="_blank" href="#">tuyệt vời Li nhựa </a><a target="_blank" href="#">đông lạnh chất béo </a><a target="_blank" href="#">nhúng giảm cân </a><a target="_blank" href="#">tan trong không khí lipohydrate </a><a target="_blank" href="#">thủy động lực học </a><a target="_blank" href="#">nhựa nóng </a><a target="_blank" href="#">laser hệ thống lipolysis </a><a target="_blank" href="#">hút mỡ</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa chữa thất bại</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Sửa chữa hút mỡ</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Định hình cơ thể khác</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Phẫu thuật bàn chân lớn</a></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-2" style="left: -5px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Cấy ghép nha khoa</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Cấy ghép nha khoa</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Chỉnh nha</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Chỉnh sửa vô hình </a><a target="_blank" href="#">Khung gốm </a>><a target="_blank" href="#">>Chỉnh sửa </a><a target="_blank" href="#">>Khung </a><a target="_blank" href="#">kim loại Chỉnh sửa </a><a target="_blank" href="#">Lưỡi sửa </a><a target="_blank" href="#">Tự khóa Khung hiệu chỉnh </a><a target="_blank" href="#">Không có khung Chỉnh sửa vô hình</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Răng sứ</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Răng sứ kim loại quý răng sứ </a><a target="_blank" href="#">zirconia </a>><a target="_blank" href="#">>răng </a><a target="_blank" href="#">>sứ </a><a target="_blank" href="#">titan nguyên chất răng </a><a target="_blank" href="#">sứ hợp kim răng </a><a target="_blank" href="#">sứ tất cả răng sứ</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Làm sạch răng</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Làm sạch siêu âm, </a><a target="_blank" href="#">nổ mìn và làm sạch răng</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Làm trắng răng</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Lạnh nhẹ làm trắng </a><a target="_blank" href="#">răng</a></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Điều trị nha khoa</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Nha khoa </a><a target="_blank" href="#">gốc điều trị ống </a><a target="_blank" href="#">Extraction</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Veneer răng</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Veneer </a><a target="_blank" href="#">nhựa veneer</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Điều trị rụng tóc</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Trồng tóc</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Trồng tóc</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">tóc cá nhân phát triển </a><a target="_blank" href="#">lông ngực lớn</a></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Trồng tóc mặt</a></div>
+                                       <div class="lv-2-cont"><a target="_blank" href="#">Trồng </a><a target="_blank" href="#">lông </a>><a target="_blank" href="#">>mi trồng </a>
+                                          <a target="_blank" href="#">râu </a><a target="_blank" href="#">mọc tóc mọc </a><a target="_blank" href="#">sừng trồng trồng làm </a><a target="_blank" href="#">đẹp</a>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="slide-cont has-3" style="left: -5px; display: none;">
+                                 <ul>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Sửa chữa màng trinh</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tẩy trắng tư nhân</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Laser riêng tư</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Phẫu thuật thân mật</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Chất béo khép kín</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Dao siêu âm thân mật và nhỏ gọn</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Labia minora định hình</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Phẫu thuật thẩm mỹ âm vật</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tiêm điểm G</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Làm dày dương vật</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                    <li>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Tăng trưởng dương vật</a></div>
+                                       <div class="lv-2-cont"></div>
+                                       <div class="lv-2-tit"><a target="_blank" href="#">Phẫu thuật bao quy đầu</a></div>
+                                       <div class="lv-2-cont"></div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang chủ
+                        </a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown">Amoy
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                           <a class="dropdown-item" href="#">Shaping</a>
+                           <a class="dropdown-item" href="#">Yue US</a>
+                           <a class="dropdown-item" href="#">Protection</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Featured diary</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" >Cộng đồng
+                        </a>
+                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                           <a class="dropdown-item" href="#">Action</a>
+                           <a class="dropdown-item" href="#">Another action</a>
+                           <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Bác Sĩ/ Bệnh Viện</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- breadcrumb -->
+      <div class="breadcrumb">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="position clearfix">
+                     <div class="link-index left">
+                        <a href="#">Trang chủ</a>
+                     </div>
+                     <div class="scroll left">
+                        <span class="arrow">&gt;</span><a class="current" href="#">Bệnh viện</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- app mobile -->
+      <div class="fixed-top">
+         <img class="red-logo" src="./uploads/hospital/logo-red.png" alt="">
+         <div class="logo-text">
+            <p class="tit">Làm đẹp vi phẫu</p>
+            <p class="sec-tit">Tư vấn trực tuyến <br/>với bệnh viện lân cận</p>
+         </div>
+         <a href="#">Ứng dụng</a>
+      </div>
+      <!-- tab-link-page-mobile -->
+      <div class="tab-link-page tab-mobile">
+         <div class="container">
+            <div class="row">
+               <h3 class="title-tap">Bệnh viện Yuemei</h3>
+               <div class="mobile-menu">
+                  <div class="backIndex">
+                     <a href="#"><i class="fas fa-angle-left"></i> Trở về</a>
+                  </div>
+                  <div class="menu">
+                     <a><i class="fas fa-ellipsis-h"></i></a>
+                     <div class="fadein">
+                        <a href="#"><i class="fas fa-home"></i>Trang chủ</a>
+                        <a href="#"><i class="fas fa-user"></i>Hồ sơ</a>
+                        <a href="#"><i class="fas fa-search"></i>Tìm kiếm</a>
+                        <a href="#"><i class="fas fa-download"></i>APP</a>
+                        <a href="#"><i class="fas fa-phone-volume"></i>Liên lạc</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="parent-tab">
+               <ul class="nav nav-pills">
+                  <li class="active">
+                     <i class="fas fa-atom"> </i>
+                     <a href="#" data-toggle="tab">Dịch vụ</a>
+                  </li>
+                  <li class="">
+                     <i class="fas fa-spa"> </i>
+                     <a href="#" data-toggle="tab">Bác sỹ</a>
+                  </li>
+                  <li class="">
+                     <i class="fas fa-seedling"></i>
+                     <a href="#" data-toggle="tab">Bệnh Viện</a>
+                  </li>
+               </ul>
+               <div class="tab-content">
+                  <div class="tab-pane active" id="m1a">
+                     <div class="item-mobile child-tab">
+                        <ul class="nav nav-pills">
+                           <li>
+                              <a href="#" data-toggle="tab">Vùng</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Chuyên</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Kỹ thuật</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Thêm</a><i class="fas fa-angle-down"></i>
+                           </li>
+                        </ul>
+                        <div class="tab-content">
+                           <div class="tab-pane " id="m1aa">
+                              <div class="location">
+                                 <span><a href="#">Bắc Kinh </a></span>
+                                 <span><a href="#">Thượng Hải </a></span>
+                                 <span><a href="#">Quảng Đông</a></span>
+                                 <span><a href="#">Tứ Xuyên</a></span>
+                                 <span><a href="#">Giang Tô</a></span>
+                                 <span><a href="#">Chiết Giang</a></span>
+                                 <span><a href="#">Trùng Khánh</a></span>
+                                 <span><a href="#">Hồ Bắc</a></span>
+                                 <span><a href="#">Hà Nam</a></span>
+                                 <span><a href="#">Sơn Tây</a></span>
+                                 <span><a href="#">Hồ Nam</a></span>
+                                 <span><a href="#">Cam Túc</a></span>
+                                 <span><a href="#">Thanh Hải</a></span>
+                                 <span><a href="#">Tân Cương</a></span>
+                                 <span><a href="#">Hải Nam</a></span>
+                                 <span><a href="#">Ninh Hạ</a></span>
+                                 <span><a href="#">Vân Nam</a></span>
+                                 <span><a href="#">Quý Châu</a></span>
+                                 <span><a href="#">Quảng Tây</a></span>
+                                 <span><a href="#">Cát Lâm</a></span>
+                                 <span><a href="#">Heilongjiang </a></span>
+                                 <span><a href="#">Tianjin </a></span>
+                                 <span><a href="#">Hebei </a></span>
+                                 <span><a href="#">Shanxi </a></span>
+                                 <span><a href="#">Inner Mongolia </a></span>
+                                 <span><a href="#">Sơn Đông</a></span>
+                                 <span><a href="#">An Huy </a></span>
+                                 <span><a href="#">Phúc Kiến </a></span>
+                                 <span><a href="#">Giang Tây </a></span>
+                                 <span><a href="#">Liêu Ninh</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m2aa">
+                              <div class="good">
+                                 <span><a href="#">Mắt </a></span>
+                                 <span><a href="#">Mũi </a></span>
+                                 <span><a href="#">đường viền mặt</a></span>
+                                 <span><a href="#">da</a></span>
+                                 <span><a href="#">ngực</a></span>
+                                 <span><a href="#">cơ thể</a></span>
+                                 <span><a href="#">mỡ</a></span>
+                                 <span><a href="#">lão hóa</a></span>
+                                 <span><a href="#">môi</a></span>
+                                 <span><a href="#">hút mỡ</a></span>
+                                 <span><a href="#">nha khoa</a></span>
+                                 <span><a href="#">cấy tóc</a></span>
+                                 <span><a href="#">thẩm mỹ tiêm</a></span>
+                                 <span><a href="#">phẫu thuật</a></span>
+                              </div>
+                              <div class="good">
+                                 <span><a href="#">Chân chim</a></span>
+                                 <span><a href="#">Trang điểm</a></span>
+                                 <span><a href="#">VÚ</a></span>
+                                 <span><a href="#">ĐÙI Thon</a></span>
+                                 <span><a href="#">Eo Thon</a></span>
+                                 <span><a href="#">MẮT HAI MÍ</a></span>
+                                 <span><a href="#">Bọng MẮT</a></span>
+                                 <span><a href="#">Quầng THÂM</a></span>
+                                 <span><a href="#">Mặt gọn</a></span>
+                                 <span><a href="#">CẰM</a></span>
+                                 <span><a href="#">MÁ</a></span>
+                                 <span><a href="#">MŨI</a></span>
+                                 <span><a href="#">LÀM TRẮNG DA</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m3aa">
+                              <div class="pos_rel">
+                                 <span><a href="#">King's style laser </a></span>
+                                 <span><a href="#">to freckles </a></span>
+                                 <span><a href="#">wonderful peach prosthesis </a></span>
+                                 <span><a href="#">brilliant 360 laser </a></span>
+                                 <span><a href="#">Q laser spotting </a></span>
+                                 <span><a href="#">Shu Yan hyaluronic acid Feideng </a></span>
+                                 <span><a href="#">laser </a></span>
+                                 <span><a href="#">king style skin rejuvenation </a></span>
+                                 <span><a href="#">moonlight vacuum hair removal </a></span>
+                                 <span><a href="#">imported silica gel </a></span>
+                                 <span><a href="#">Felton second </a></span>
+                                 <span><a href="#">high tex </a></span>
+                                 <span><a href="#">treatment coffee spot </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">Maige prosthesis </a></span>
+                                 <span><a href="#">deep blue RF </a></span>
+                                 <span><a href="#">Yimei Hyaluronic acid felton </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">freezing point waltz hair removal </a></span>
+                                 <span><a href="#">carbon dioxide laser</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m4aa">
+                              <div class="properties">
+                                 <a href="#">Trình độ chuyên môn</a>
+                              </div>
+                              <div class="button-link">
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">public </a>
+                                 <a href="#">private</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane" id="m2a">
+                     <div class="item-mobile child-tab">
+                        <ul class="nav nav-pills">
+                           <li>
+                              <a href="#" data-toggle="tab">Vùng</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Chuyên</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Kỹ thuật</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Thêm</a><i class="fas fa-angle-down"></i>
+                           </li>
+                        </ul>
+                        <div class="tab-content">
+                           <div class="tab-pane " id="m1ba">
+                              <div class="location">
+                                 <span><a href="#">Bắc Kinh </a></span>
+                                 <span><a href="#">Thượng Hải </a></span>
+                                 <span><a href="#">Quảng Đông</a></span>
+                                 <span><a href="#">Tứ Xuyên</a></span>
+                                 <span><a href="#">Giang Tô</a></span>
+                                 <span><a href="#">Chiết Giang</a></span>
+                                 <span><a href="#">Trùng Khánh</a></span>
+                                 <span><a href="#">Hồ Bắc</a></span>
+                                 <span><a href="#">Hà Nam</a></span>
+                                 <span><a href="#">Sơn Tây</a></span>
+                                 <span><a href="#">Hồ Nam</a></span>
+                                 <span><a href="#">Cam Túc</a></span>
+                                 <span><a href="#">Thanh Hải</a></span>
+                                 <span><a href="#">Tân Cương</a></span>
+                                 <span><a href="#">Hải Nam</a></span>
+                                 <span><a href="#">Ninh Hạ</a></span>
+                                 <span><a href="#">Vân Nam</a></span>
+                                 <span><a href="#">Quý Châu</a></span>
+                                 <span><a href="#">Quảng Tây</a></span>
+                                 <span><a href="#">Cát Lâm</a></span>
+                                 <span><a href="#">Heilongjiang </a></span>
+                                 <span><a href="#">Tianjin </a></span>
+                                 <span><a href="#">Hebei </a></span>
+                                 <span><a href="#">Shanxi </a></span>
+                                 <span><a href="#">Inner Mongolia </a></span>
+                                 <span><a href="#">Sơn Đông</a></span>
+                                 <span><a href="#">An Huy </a></span>
+                                 <span><a href="#">Phúc Kiến </a></span>
+                                 <span><a href="#">Giang Tây </a></span>
+                                 <span><a href="#">Liêu Ninh</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m2ba">
+                              <div class="good">
+                                 <span><a href="#">Mắt </a></span>
+                                 <span><a href="#">Mũi </a></span>
+                                 <span><a href="#">đường viền mặt</a></span>
+                                 <span><a href="#">da</a></span>
+                                 <span><a href="#">ngực</a></span>
+                                 <span><a href="#">cơ thể</a></span>
+                                 <span><a href="#">mỡ</a></span>
+                                 <span><a href="#">lão hóa</a></span>
+                                 <span><a href="#">môi</a></span>
+                                 <span><a href="#">hút mỡ</a></span>
+                                 <span><a href="#">nha khoa</a></span>
+                                 <span><a href="#">cấy tóc</a></span>
+                                 <span><a href="#">thẩm mỹ tiêm</a></span>
+                                 <span><a href="#">phẫu thuật</a></span>
+                              </div>
+                              <div class="good">
+                                 <span><a href="#">Chân chim</a></span>
+                                 <span><a href="#">Trang điểm</a></span>
+                                 <span><a href="#">VÚ</a></span>
+                                 <span><a href="#">ĐÙI Thon</a></span>
+                                 <span><a href="#">Eo Thon</a></span>
+                                 <span><a href="#">MẮT HAI MÍ</a></span>
+                                 <span><a href="#">Bọng MẮT</a></span>
+                                 <span><a href="#">Quầng THÂM</a></span>
+                                 <span><a href="#">Mặt gọn</a></span>
+                                 <span><a href="#">CẰM</a></span>
+                                 <span><a href="#">MÁ</a></span>
+                                 <span><a href="#">MŨI</a></span>
+                                 <span><a href="#">LÀM TRẮNG DA</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m3ba">
+                              <div class="pos_rel">
+                                 <span><a href="#">King's style laser </a></span>
+                                 <span><a href="#">to freckles </a></span>
+                                 <span><a href="#">wonderful peach prosthesis </a></span>
+                                 <span><a href="#">brilliant 360 laser </a></span>
+                                 <span><a href="#">Q laser spotting </a></span>
+                                 <span><a href="#">Shu Yan hyaluronic acid Feideng </a></span>
+                                 <span><a href="#">laser </a></span>
+                                 <span><a href="#">king style skin rejuvenation </a></span>
+                                 <span><a href="#">moonlight vacuum hair removal </a></span>
+                                 <span><a href="#">imported silica gel </a></span>
+                                 <span><a href="#">Felton second </a></span>
+                                 <span><a href="#">high tex </a></span>
+                                 <span><a href="#">treatment coffee spot </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">Maige prosthesis </a></span>
+                                 <span><a href="#">deep blue RF </a></span>
+                                 <span><a href="#">Yimei Hyaluronic acid felton </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">freezing point waltz hair removal </a></span>
+                                 <span><a href="#">carbon dioxide laser</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m4ba">
+                              <div class="properties">
+                                 <a href="#">Trình độ chuyên môn</a>
+                              </div>
+                              <div class="button-link">
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">public </a>
+                                 <a href="#">private</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane " id="m3a">
+                     <div class="item-mobile child-tab">
+                        <ul class="nav nav-pills">
+                           <li>
+                              <a href="#" data-toggle="tab">Vùng</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Chuyên</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Kỹ thuật</a><i class="fas fa-angle-down"></i>
+                           </li>
+                           <li class="">
+                              <a href="#" data-toggle="tab">Thêm</a><i class="fas fa-angle-down"></i>
+                           </li>
+                        </ul>
+                        <div class="tab-content">
+                           <div class="tab-pane " id="m1ca">
+                              <div class="location">
+                                 <span><a href="#">Bắc Kinh </a></span>
+                                 <span><a href="#">Thượng Hải </a></span>
+                                 <span><a href="#">Quảng Đông</a></span>
+                                 <span><a href="#">Tứ Xuyên</a></span>
+                                 <span><a href="#">Giang Tô</a></span>
+                                 <span><a href="#">Chiết Giang</a></span>
+                                 <span><a href="#">Trùng Khánh</a></span>
+                                 <span><a href="#">Hồ Bắc</a></span>
+                                 <span><a href="#">Hà Nam</a></span>
+                                 <span><a href="#">Sơn Tây</a></span>
+                                 <span><a href="#">Hồ Nam</a></span>
+                                 <span><a href="#">Cam Túc</a></span>
+                                 <span><a href="#">Thanh Hải</a></span>
+                                 <span><a href="#">Tân Cương</a></span>
+                                 <span><a href="#">Hải Nam</a></span>
+                                 <span><a href="#">Ninh Hạ</a></span>
+                                 <span><a href="#">Vân Nam</a></span>
+                                 <span><a href="#">Quý Châu</a></span>
+                                 <span><a href="#">Quảng Tây</a></span>
+                                 <span><a href="#">Cát Lâm</a></span>
+                                 <span><a href="#">Heilongjiang </a></span>
+                                 <span><a href="#">Tianjin </a></span>
+                                 <span><a href="#">Hebei </a></span>
+                                 <span><a href="#">Shanxi </a></span>
+                                 <span><a href="#">Inner Mongolia </a></span>
+                                 <span><a href="#">Sơn Đông</a></span>
+                                 <span><a href="#">An Huy </a></span>
+                                 <span><a href="#">Phúc Kiến </a></span>
+                                 <span><a href="#">Giang Tây </a></span>
+                                 <span><a href="#">Liêu Ninh</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m2ca">
+                              <div class="good">
+                                 <span><a href="#">Mắt </a></span>
+                                 <span><a href="#">Mũi </a></span>
+                                 <span><a href="#">đường viền mặt</a></span>
+                                 <span><a href="#">da</a></span>
+                                 <span><a href="#">ngực</a></span>
+                                 <span><a href="#">cơ thể</a></span>
+                                 <span><a href="#">mỡ</a></span>
+                                 <span><a href="#">lão hóa</a></span>
+                                 <span><a href="#">môi</a></span>
+                                 <span><a href="#">hút mỡ</a></span>
+                                 <span><a href="#">nha khoa</a></span>
+                                 <span><a href="#">cấy tóc</a></span>
+                                 <span><a href="#">thẩm mỹ tiêm</a></span>
+                                 <span><a href="#">phẫu thuật</a></span>
+                              </div>
+                              <div class="good">
+                                 <span><a href="#">Chân chim</a></span>
+                                 <span><a href="#">Trang điểm</a></span>
+                                 <span><a href="#">VÚ</a></span>
+                                 <span><a href="#">ĐÙI Thon</a></span>
+                                 <span><a href="#">Eo Thon</a></span>
+                                 <span><a href="#">MẮT HAI MÍ</a></span>
+                                 <span><a href="#">Bọng MẮT</a></span>
+                                 <span><a href="#">Quầng THÂM</a></span>
+                                 <span><a href="#">Mặt gọn</a></span>
+                                 <span><a href="#">CẰM</a></span>
+                                 <span><a href="#">MÁ</a></span>
+                                 <span><a href="#">MŨI</a></span>
+                                 <span><a href="#">LÀM TRẮNG DA</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m3ca">
+                              <div class="pos_rel">
+                                 <span><a href="#">King's style laser </a></span>
+                                 <span><a href="#">to freckles </a></span>
+                                 <span><a href="#">wonderful peach prosthesis </a></span>
+                                 <span><a href="#">brilliant 360 laser </a></span>
+                                 <span><a href="#">Q laser spotting </a></span>
+                                 <span><a href="#">Shu Yan hyaluronic acid Feideng </a></span>
+                                 <span><a href="#">laser </a></span>
+                                 <span><a href="#">king style skin rejuvenation </a></span>
+                                 <span><a href="#">moonlight vacuum hair removal </a></span>
+                                 <span><a href="#">imported silica gel </a></span>
+                                 <span><a href="#">Felton second </a></span>
+                                 <span><a href="#">high tex </a></span>
+                                 <span><a href="#">treatment coffee spot </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">Maige prosthesis </a></span>
+                                 <span><a href="#">deep blue RF </a></span>
+                                 <span><a href="#">Yimei Hyaluronic acid felton </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">freezing point waltz hair removal </a></span>
+                                 <span><a href="#">carbon dioxide laser</a></span>
+                              </div>
+                           </div>
+                           <div class="tab-pane " id="m4ca">
+                              <div class="properties">
+                                 <a href="#">Trình độ chuyên môn</a>
+                              </div>
+                              <div class="button-link">
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">public </a>
+                                 <a href="#">private</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tab-link-page -->
+      <div class="tab-link-page">
+         <div class="container">
+            <h3 class="title-tap">Bệnh viện Yuemei</h3>
+            <div class="mobile-menu">
+               <div class="backIndex">
+                  <a href="#"><i class="fas fa-angle-left"></i> Trở về</a>
+               </div>
+               <div class="menu">
+                  <a><i class="fas fa-ellipsis-h"></i></a>
+                  <div class="fadein">
+                     <a href="#"><i class="fas fa-home"></i>Trang chủ</a>
+                     <a href="#"><i class="fas fa-user"></i>Hồ sơ</a>
+                     <a href="#"><i class="fas fa-search"></i>Tìm kiếm</a>
+                     <a href="#"><i class="fas fa-download"></i>APP</a>
+                     <a href="#"><i class="fas fa-phone-volume"></i>Liên lạc</a>
+                  </div>
+               </div>
+            </div>
+            <div id="parent-tab">
+               <ul class="nav nav-pills">
+                  <li class="active">
+                     <i class="fas fa-atom"> </i>
+                     <a href="#1a" data-toggle="tab">Dịch vụ</a>
+                  </li>
+                  <li class="">
+                     <i class="fas fa-spa"> </i>
+                     <a href="#2a" data-toggle="tab">Bác sỹ</a>
+                  </li>
+                  <li class="">
+                     <i class="fas fa-seedling"></i>
+                     <a href="#3a" data-toggle="tab">Bệnh Viện</a>
+                  </li>
+               </ul>
+               <div class="tab-content">
+                  <div class="tab-pane active" id="1a">
+                     <div class="item">
+                        <span class="title">Vùng</span>
+                        <dl class="left item-links">
+                           <dt class="left all"><a href="#" class="now">Tất cả</a></dt>
+                           <dd class="left eachLink">
+                              <div class="clearfix">
+                                 <span><a href="#">Bắc Kinh </a></span>
+                                 <span><a href="#">Thượng Hải </a></span>
+                                 <span><a href="#">Quảng Đông</a></span>
+                                 <span><a href="#">Tứ Xuyên</a></span>
+                                 <span><a href="#">Giang Tô</a></span>
+                                 <span><a href="#">Chiết Giang</a></span>
+                                 <span><a href="#">Trùng Khánh</a></span>
+                                 <span><a href="#">Hồ Bắc</a></span>
+                                 <span><a href="#">Hà Nam</a></span>
+                                 <span><a href="#">Sơn Tây</a></span>
+                                 <span><a href="#">Hồ Nam</a></span>
+                                 <span><a href="#">Cam Túc</a></span>
+                                 <span><a href="#">Thanh Hải</a></span>
+                                 <span><a href="#">Tân Cương</a></span>
+                                 <span><a href="#">Hải Nam</a></span>
+                                 <span><a href="#">Ninh Hạ</a></span>
+                                 <span><a href="#">Vân Nam</a></span>
+                                 <span><a href="#">Quý Châu</a></span>
+                                 <span><a href="#">Quảng Tây</a></span>
+                                 <span><a href="#">Cát Lâm</a></span>
+                                 <span><a href="#">Heilongjiang </a></span>
+                                 <span><a href="#">Tianjin </a></span>
+                                 <span><a href="#">Hebei </a></span>
+                                 <span><a href="#">Shanxi </a></span>
+                                 <span><a href="#">Inner Mongolia </a></span>
+                                 <span><a href="#">Sơn Đông</a></span>
+                                 <span><a href="#">An Huy </a></span>
+                                 <span><a href="#">Phúc Kiến </a></span>
+                                 <span><a href="#">Giang Tây </a></span>
+                                 <span><a href="#">Liêu Ninh</a></span>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                     <div class="item">
+                        <span class="title">Chuyên</span>
+                        <dl class="left item-links">
+                           <dt class="left all"><a href="#" class="now">Tất cả</a></dt>
+                           <dd class="left eachLink leftA">
+                              <div class="clearfix showTab">
+                                 <span><a href="#">Mắt </a></span>
+                                 <span><a href="#">Mũi </a></span>
+                                 <span><a href="#">đường viền mặt</a></span>
+                                 <span><a href="#">da</a></span>
+                                 <span><a href="#">ngực</a></span>
+                                 <span><a href="#">cơ thể</a></span>
+                                 <span><a href="#">mỡ</a></span>
+                                 <span><a href="#">lão hóa</a></span>
+                                 <span><a href="#">môi</a></span>
+                                 <span><a href="#">hút mỡ</a></span>
+                                 <span><a href="#">nha khoa</a></span>
+                                 <span><a href="#">cấy tóc</a></span>
+                                 <span><a href="#">thẩm mỹ tiêm</a></span>
+                                 <span><a href="#">phẫu thuật</a></span>
+                              </div>
+                              <div class="showForPart" style="display: block;">
+                                 <div class="classCont">
+                                    <span><a href="#">Chân chim</a></span>
+                                    <span><a href="#">Trang điểm</a></span>
+                                    <span><a href="#">VÚ</a></span>
+                                    <span><a href="#">ĐÙI Thon</a></span>
+                                    <span><a href="#">Eo Thon</a></span>
+                                    <span><a href="#">MẮT HAI MÍ</a></span>
+                                    <span><a href="#">Bọng MẮT</a></span>
+                                    <span><a href="#">Quầng THÂM</a></span>
+                                    <span><a href="#">Mặt gọn</a></span>
+                                    <span><a href="#">CẰM</a></span>
+                                    <span><a href="#">MÁ</a></span>
+                                    <span><a href="#">MŨI</a></span>
+                                    <span><a href="#">LÀM TRẮNG DA</a></span>
+                                 </div>
+                              </div>
+                              <div class="showForPart" style="display: none;">
+                                 <div class="classCont centA">
+                                    <span><a href="#">Double eyelids </a></span>
+                                    <span><a href="#">open the eyes </a></span>
+                                    <span><a href="#">to the eye bags </a></span>
+                                    <span><a href="#">to the dark circles, the </a></span>
+                                    <span><a href="#">eyes, the </a></span>
+                                    <span><a href="#">eye, the plastic surgery, the repair, the </a></span>
+                                    <span><a href="#">eye shape, the correction </a></span>
+                                    <span><a href="#">, the eye socket </a></span>
+                                    <span><a href="#">, the silkworm, the </a></span>
+                                    <span><a href="#">filling, the tears, the </a></span>
+                                    <span><a href="#">eye, the young</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Rhinoplasty </a></span>
+                                    <span><a href="#">combined </a></span>
+                                    <span><a href="#">rhinoplasty failure repair </a></span>
+                                    <span><a href="#">nose / nose / nostril correction </a></span>
+                                    <span><a href="#">nasal column prolonged </a></span>
+                                    <span><a href="#">nasal correction </a></span>
+                                    <span><a href="#">pad nasal base </a></span>
+                                    <span><a href="#">pad nose tip</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Thin face </a></span>
+                                    <span><a href="#">pad chin </a></span>
+                                    <span><a href="#">full / multi-part fill </a></span>
+                                    <span><a href="#">Feng Yang points </a></span>
+                                    <span><a href="#">to double chin </a></span>
+                                    <span><a href="#">Feng Futou </a></span>
+                                    <span><a href="#">Feng apple muscle </a></span>
+                                    <span><a href="#">long eyebrow </a></span>
+                                    <span><a href="#">>bow </a></span><span><a href="#">Feng Qi cheeks </a></span>
+                                    <span><a href="#">Feng silkworm </a></span>
+                                    <span><a href="#">ear lobe </a></span>
+                                    <span><a href="#">dimples </a></span>
+                                    <span><a href="#">ear shape correction </a></span>
+                                    <span><a href="#">bone </a></span>
+                                    <span><a href="#">injection injection </a></span>
+                                    <span><a href="#">upper and lower jaw plastic </a></span>
+                                    <span><a href="#">humeral arch bow plastic surgery</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <div class="classCont">
+                                    <span><a href="#">Semi-permanent makeup </a></span>
+                                    <span><a href="#">acne / acne pit / acne </a></span>
+                                    <span><a href="#">>marks </a></span><span><a href="#">sputum </a></span>
+                                    <span><a href="#">to scars </a></span>
+                                    <span><a href="#">to 痣</a></span>
+                                    <span><a href="#">whitening skin </a></span>
+                                    <span><a href="#">to pigment / birthmark </a></span>
+                                    <span><a href="#">to body odor </a></span>
+                                    <span><a href="#">wash tattoo / tattoo </a></span>
+                                    <span><a href="#">hydrating </a></span>
+                                    <span><a href="#">body / multi-part hair removal </a></span>
+                                    <span><a href="#">facial hair removal </a></span>
+                                    <span><a href="#">other skin problems </a></span>
+                                    <span><a href="#">body hair removal</a></span>
+                                 </div>
+                              </div>
+                              <div class="showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Breast augmentation </a></span>
+                                    <span><a href="#">to the secondary </a></span>
+                                    <span><a href="#">nipple / areola shaping </a></span>
+                                    <span><a href="#">chest landscaping </a></span>
+                                    <span><a href="#">breast augmentation repair</a></span>
+                                 </div>
+                              </div>
+                              <div class="showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Thin thighs </a></span>
+                                    <span><a href="#">thin arms </a></span>
+                                    <span><a href="#">thin waist abdomen </a></span>
+                                    <span><a href="#">thin hips </a></span>
+                                    <span><a href="#">thin legs </a></span>
+                                    <span><a href="#">thin back </a></span>
+                                    <span><a href="#">hip buttocks </a></span>
+                                    <span><a href="#">thin body / multi-part </a></span>
+                                    <span><a href="#">thin shoulder </a></span>
+                                    <span><a href="#">liposuction failure repair </a></span>
+                                    <span><a href="#">other body shaping</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Autologous fat facial filling </a></span>
+                                    <span><a href="#">autologous fat body sculpture </a></span>
+                                    <span><a href="#">autologous fat failure repair</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Wrinkle anti-aging </a></span>
+                                    <span><a href="#">crow's feet </a></span>
+                                    <span><a href="#">to raise the head </a></span>
+                                    <span><a href="#">lines </a></span>
+                                    <span><a href="#">to </a></span>
+                                    ><span><a href="#">>go to the law line </a></span><span><a href="#">>to go to the Sichuan word pattern </a></span><span><a href="#">to stretch marks to </a></span>
+                                    <span><a href="#">fill the tears of the </a></span>
+                                    <span><a href="#">eye to rejuvenate the </a></span>
+                                    <span><a href="#">neck to </a></span>
+                                    <span><a href="#">wrinkle other wrinkles</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Shorten </a></span>
+                                    <span><a href="#">the lip/lip </a></span>
+                                    <span><a href="#">lip lip balm in the person </a></span>
+                                    <span><a href="#">to dew</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Water needle</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Liposuction </a></span>
+                                    <span><a href="#">hydrodynamic liposuction </a></span>
+                                    <span><a href="#">liposuction to vice milk </a></span>
+                                    <span><a href="#">liposuction to double chin </a></span>
+                                    <span><a href="#">liposuction face-lifting </a></span>
+                                    <span><a href="#">liposuction skinny legs</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Implant </a></span>
+                                    <span><a href="#">orthodontic </a></span>
+                                    <span><a href="#">porcelain teeth </a></span>
+                                    <span><a href="#">scaling </a></span>
+                                    <span><a href="#">teeth whitening </a></span>
+                                    <span><a href="#">veneers </a></span>
+                                    <span><a href="#">dental treatment</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Treatment of hair loss </a></span>
+                                    <span><a href="#">facial hair planting </a></span>
+                                    <span><a href="#">body hair planting</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Check test </a></span>
+                                    <span><a href="#">procedure earlier diagnosis</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Hyaluronic acid </a></span>
+                                    <span><a href="#">botulinum toxin </a></span>
+                                    <span><a href="#">other filler </a></span>
+                                    <span><a href="#">injection repair</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Female private </a></span>
+                                    <span><a href="#">male privacy</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Myopia correction</a></span>
+                                 </div>
+                              </div>
+                              <!--//每个Lần对应的链接内容-->
+                           </dd>
+                        </dl>
+                     </div>
+                     <div class="item">
+                        <span class="title">Kỹ thuật</span>
+                        <dl class="left item-links">
+                           <dt class="left all"><a href="#" class="now">Tất cả</a></dt>
+                           <dd class="left eachLink leftA pos_rel showAll">
+                              <i class="showAll-icon"></i>
+                              <div class="clearfix">
+                                 <span><a href="#">King's style laser </a></span>
+                                 <span><a href="#">to freckles </a></span>
+                                 <span><a href="#">wonderful peach prosthesis </a></span>
+                                 <span><a href="#">brilliant 360 laser </a></span>
+                                 <span><a href="#">Q laser spotting </a></span>
+                                 <span><a href="#">Shu Yan hyaluronic acid Feideng </a></span>
+                                 <span><a href="#">laser </a></span>
+                                 <span><a href="#">king style skin rejuvenation </a></span>
+                                 <span><a href="#">moonlight vacuum hair removal </a></span>
+                                 <span><a href="#">imported silica gel </a></span>
+                                 <span><a href="#">Felton second </a></span>
+                                 <span><a href="#">high tex </a></span>
+                                 <span><a href="#">treatment coffee spot </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">Maige prosthesis </a></span>
+                                 <span><a href="#">deep blue RF </a></span>
+                                 <span><a href="#">Yimei Hyaluronic acid felton </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">freezing point waltz hair removal </a></span>
+                                 <span><a href="#">carbon dioxide laser</a></span>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                     <div class="item">
+                        <span class="title">Thêm</span>
+                        <div class="left pos-re">
+                           <div class="showMore money">
+                              <span>price range</span>
+                              <div>
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">100 yuan below </a>
+                                 <a href="#">100-1000 yuan </a>
+                                 <a href="#">1000-3000 yuan </a>
+                                 <a href="#">3000-5000 yuan </a>
+                                 <a href="#">5000-10000 yuan </a>
+                                 <a href="#">1-2 million </a>
+                                 <a href="#">yuan more than 20,000 yuan</a>
+                              </div>
+                           </div>
+                           <div class="showMore hos">
+                              <span>Hospital qualification</span>
+                              <div>
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">public </a>
+                                 <a href="#">private</a>
+                              </div>
+                           </div>
+                           <div class="showMore hosHb">
+                              <span>Offer</span>
+                              <div>
+                                 <a href="#">Unlimited </a>
+                                 <a href="#" rel="nofollow">red envelope</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane" id="2a">
+                     <div class="item">
+                        <span class="title">area</span>
+                        <dl class="left item-links">
+                           <dt class="left all"><a href="#" class="now">Unlimited</a></dt>
+                           <dd class="left eachLink leftA">
+                              <div class="clearfix">
+                                 <span><a href="#">Beijing </a></span>
+                                 <span><a href="#">Shanghai </a></span>
+                                 <span><a href="#">Guangdong Guangdong </a></span>
+                                 <span><a href="#">Sichuan </a></span>
+                                 <span><a href="#">Jiangsu </a></span>
+                                 <span><a href="#">Zhejiang </a></span>
+                                 <span><a href="#">Chongqing </a></span>
+                                 <span><a href="#">Hubei </a></span>
+                                 <span><a href="#">Henan </a></span>
+                                 <span><a href="#">Shaanxi </a></span>
+                                 <span><a href="#">Hunan </a></span>
+                                 <span><a href="#">Gansu </a></span>
+                                 <span><a href="#">Qinghai </a></span>
+                                 <span><a href="#">Xinjiang </a></span>
+                                 <span><a href="#">Hainan </a></span>
+                                 <span><a href="#">Ningxia </a></span>
+                                 <span><a href="#">Yunnan </a></span>
+                                 <span><a href="#">Guizhou </a></span>
+                                 <span><a href="#">Guangxi </a></span>
+                                 <span><a href="#">Jilin </a></span>
+                                 <span><a href="#">Heilongjiang </a></span>
+                                 <span><a href="#">Tianjin </a></span>
+                                 <span><a href="#">Hebei </a></span>
+                                 <span><a href="#">Shanxi </a></span>
+                                 <span><a href="#">Inner Mongolia </a></span>
+                                 <span><a href="#">Shandong </a></span>
+                                 <span><a href="#">Anhui </a></span>
+                                 <span><a href="#">Fujian </a></span>
+                                 <span><a href="#">Jiangxi </a></span>
+                                 <span><a href="#">Liaoning</a></span>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                     <div class="item">
+                        <span class="title">theme</span>
+                        <dl class="left item-links">
+                           <dt class="left all"><a href="#" class="now">Unlimited</a></dt>
+                           <dd class="left eachLink leftA pos_rel showAll">
+                              <i class="showAll-icon"></i>
+                              <div class="clearfix">
+                                 <span><a href="#">King's style laser </a></span>
+                                 <span><a href="#">to freckles </a></span>
+                                 <span><a href="#">wonderful peach prosthesis </a></span>
+                                 <span><a href="#">brilliant 360 laser </a></span>
+                                 <span><a href="#">Q laser spotting </a></span>
+                                 <span><a href="#">Shu Yan hyaluronic acid Feideng </a></span>
+                                 <span><a href="#">laser </a></span>
+                                 <span><a href="#">king style skin rejuvenation </a></span>
+                                 <span><a href="#">moonlight vacuum hair removal </a></span>
+                                 <span><a href="#">imported silica gel </a></span>
+                                 <span><a href="#">Felton second </a></span>
+                                 <span><a href="#">high tex </a></span>
+                                 <span><a href="#">treatment coffee spot </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">Maige prosthesis </a></span>
+                                 <span><a href="#">deep blue RF </a></span>
+                                 <span><a href="#">Yimei Hyaluronic acid felton </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">freezing point waltz hair removal </a></span>
+                                 <span><a href="#">carbon dioxide laser</a></span>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                     <div class="item">
+                        <span class="title">More</span>
+                        <div class="left pos-re">
+                           <div class="showMore money">
+                              <span>price range</span>
+                              <div>
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">100 yuan below </a>
+                                 <a href="#">100-1000 yuan </a>
+                                 <a href="#">1000-3000 yuan </a>
+                                 <a href="#">3000-5000 yuan </a>
+                                 <a href="#">5000-10000 yuan </a>
+                                 <a href="#">1-2 million </a>
+                                 <a href="#">yuan more than 20,000 yuan</a>
+                              </div>
+                           </div>
+                           <div class="showMore hos">
+                              <span>Hospital qualification</span>
+                              <div>
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">public </a>
+                                 <a href="#">private</a>
+                              </div>
+                           </div>
+                           <div class="showMore hosHb">
+                              <span>Offer</span>
+                              <div>
+                                 <a href="#">Unlimited </a>
+                                 <a href="#" rel="nofollow">red envelope</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane " id="3a">
+                     <div class="item">
+                        <span class="title">Part</span>
+                        <dl class="left item-links">
+                           <dt class="left all"><a href="#" class="now">Unlimited</a></dt>
+                           <dd class="left eachLink leftA">
+                              <div class="clearfix showTab">
+                                 <span class="now"><a href="#">Popular</a><i></i></span>                                                            <span class=""><a href="#">Eye </a></span>
+                                 <span class=""><a href="#">nose </a></span>
+                                 <span class=""><a href="#">facial contour </a></span>
+                                 <span class=""><a href="#">skin beauty </a></span>
+                                 <span><a href="#">chest </a></span>
+                                 <span><a href="#">weight loss shaping </a></span>
+                                 <span class=""><a href="#">autologous fat </a></span>
+                                 <span><a href="#">facial wrinkle </a></span>
+                                 <span><a href="#">lip surgery </a></span>
+                                 <span class=""><a href="#">water light needle </a></span>
+                                 <span class=""><a href="#">liposuction </a></span>
+                                 <span class=""><a href="#">tooth </a></span>
+                                 <span><a href="#">hair transplantation </a></span>
+                                 <span class=""><a href="#">detection </a></span>
+                                 <span><a href="#">injection beauty </a></span>
+                                 <span><a href="#">private plastic </a></span>
+                                 <span><a href="#">myopia</a></span>
+                              </div>
+                              <!--每个Lần对应的链接内容-->
+                              <div class="greyBg mTop7 showForPart" style="display: block;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Go to the crow's feet </a></span>
+                                    <span><a href="#">to go to the law, the pattern, the </a></span>
+                                    <span><a href="#">breast, the </a></span>
+                                    <span><a href="#">thin thigh, the </a></span>
+                                    <span><a href="#">thin waist, the </a></span>
+                                    <span><a href="#">thin buttocks, the </a></span>
+                                    <span><a href="#">double eyelids, the </a></span>
+                                    <span><a href="#">open eyes, the eye </a></span>
+                                    <span><a href="#">bags, the </a></span>
+                                    <span><a href="#">dark circles, the </a></span>
+                                    <span><a href="#">thin face </a></span>
+                                    <span><a href="#">pads, the chin </a></span>
+                                    <span><a href="#">, the cheeks, the </a></span>
+                                    <span><a href="#">nose, the nose, the </a></span>
+                                    <span><a href="#">whitening and the skin.</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Double eyelids </a></span>
+                                    <span><a href="#">open the eyes </a></span>
+                                    <span><a href="#">to the eye bags </a></span>
+                                    <span><a href="#">to the dark circles, the </a></span>
+                                    <span><a href="#">eyes, the </a></span>
+                                    <span><a href="#">eye, the plastic surgery, the repair, the </a></span>
+                                    <span><a href="#">eye shape, the correction </a></span>
+                                    <span><a href="#">, the eye socket </a></span>
+                                    <span><a href="#">, the silkworm, the </a></span>
+                                    <span><a href="#">filling, the tears, the </a></span>
+                                    <span><a href="#">eye, the young</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Rhinoplasty </a></span>
+                                    <span><a href="#">combined </a></span>
+                                    <span><a href="#">rhinoplasty failure repair </a></span>
+                                    <span><a href="#">nose / nose / nostril correction </a></span>
+                                    <span><a href="#">nasal column prolonged </a></span>
+                                    <span><a href="#">nasal correction </a></span>
+                                    <span><a href="#">pad nasal base </a></span>
+                                    <span><a href="#">pad nose tip</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Thin face </a></span>
+                                    <span><a href="#">pad chin </a></span>
+                                    <span><a href="#">full / multi-part fill </a></span>
+                                    <span><a href="#">Feng Yang points </a></span>
+                                    <span><a href="#">to double chin </a></span>
+                                    <span><a href="#">Feng Futou </a></span>
+                                    <span><a href="#">Feng apple muscle </a></span>
+                                    <span><a href="#">long eyebrow </a></span>
+                                    <span><a href="#">>bow </a></span><span><a href="#">Feng Qi cheeks </a></span>
+                                    <span><a href="#">Feng silkworm </a></span>
+                                    <span><a href="#">ear lobe </a></span>
+                                    <span><a href="#">dimples </a></span>
+                                    <span><a href="#">ear shape correction </a></span>
+                                    <span><a href="#">bone </a></span>
+                                    <span><a href="#">injection injection </a></span>
+                                    <span><a href="#">upper and lower jaw plastic </a></span>
+                                    <span><a href="#">humeral arch bow plastic surgery</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Semi-permanent makeup </a></span>
+                                    <span><a href="#">acne / acne pit / acne </a></span>
+                                    <span><a href="#">>marks </a></span><span><a href="#">sputum </a></span>
+                                    <span><a href="#">to scars </a></span>
+                                    <span><a href="#">to 痣</a></span>
+                                    <span><a href="#">whitening skin </a></span>
+                                    <span><a href="#">to pigment / birthmark </a></span>
+                                    <span><a href="#">to body odor </a></span>
+                                    <span><a href="#">wash tattoo / tattoo </a></span>
+                                    <span><a href="#">hydrating </a></span>
+                                    <span><a href="#">body / multi-part hair removal </a></span>
+                                    <span><a href="#">facial hair removal </a></span>
+                                    <span><a href="#">other skin problems </a></span>
+                                    <span><a href="#">body hair removal</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Breast augmentation </a></span>
+                                    <span><a href="#">to the secondary </a></span>
+                                    <span><a href="#">nipple / areola shaping </a></span>
+                                    <span><a href="#">chest landscaping </a></span>
+                                    <span><a href="#">breast augmentation repair</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Thin thighs </a></span>
+                                    <span><a href="#">thin arms </a></span>
+                                    <span><a href="#">thin waist abdomen </a></span>
+                                    <span><a href="#">thin hips </a></span>
+                                    <span><a href="#">thin legs </a></span>
+                                    <span><a href="#">thin back </a></span>
+                                    <span><a href="#">hip buttocks </a></span>
+                                    <span><a href="#">thin body / multi-part </a></span>
+                                    <span><a href="#">thin shoulder </a></span>
+                                    <span><a href="#">liposuction failure repair </a></span>
+                                    <span><a href="#">other body shaping</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Autologous fat facial filling </a></span>
+                                    <span><a href="#">autologous fat body sculpture </a></span>
+                                    <span><a href="#">autologous fat failure repair</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Wrinkle anti-aging </a></span>
+                                    <span><a href="#">crow's feet </a></span>
+                                    <span><a href="#">to raise the head </a></span>
+                                    <span><a href="#">lines </a></span>
+                                    <span><a href="#">to </a></span>
+                                    <span><a href="#">>go to the law line </a></span><span><a href="#">>to go to the Sichuan word pattern </a></span><span><a href="#">to stretch marks to </a></span>
+                                    <span><a href="#">fill the tears of the </a></span>
+                                    <span><a href="#">eye to rejuvenate the </a></span>
+                                    <span><a href="#">neck to </a></span>
+                                    <span><a href="#">wrinkle other wrinkles</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Shorten </a></span>
+                                    <span><a href="#">the lip/lip </a></span>
+                                    <span><a href="#">lip lip balm in the person </a></span>
+                                    <span><a href="#">to dew</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Water needle</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Liposuction </a></span>
+                                    <span><a href="#">hydrodynamic liposuction </a></span>
+                                    <span><a href="#">liposuction to vice milk </a></span>
+                                    <span><a href="#">liposuction to double chin </a></span>
+                                    <span><a href="#">liposuction face-lifting </a></span>
+                                    <span><a href="#">liposuction skinny legs</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Implant </a></span>
+                                    <span><a href="#">orthodontic </a></span>
+                                    <span><a href="#">porcelain teeth </a></span>
+                                    <span><a href="#">scaling </a></span>
+                                    <span><a href="#">teeth whitening </a></span>
+                                    <span><a href="#">veneers </a></span>
+                                    <span><a href="#">dental treatment</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Treatment of hair loss </a></span>
+                                    <span><a href="#">facial hair planting </a></span>
+                                    <span><a href="#">body hair planting</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Check test </a></span>
+                                    <span><a href="#">procedure earlier diagnosis</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Hyaluronic acid </a></span>
+                                    <span><a href="#">botulinum toxin </a></span>
+                                    <span><a href="#">other filler </a></span>
+                                    <span><a href="#">injection repair</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Female private </a></span>
+                                    <span><a href="#">male privacy</a></span>
+                                 </div>
+                              </div>
+                              <div class="greyBg mTop7 showForPart" style="display: none;">
+                                 <span class="classify left">project<i></i></span>
+                                 <div class="classCont centA">
+                                    <span><a href="#">Myopia correction</a></span>
+                                 </div>
+                              </div>
+                              <!--//每个Lần对应的链接内容-->
+                           </dd>
+                        </dl>
+                     </div>
+                     <div class="item">
+                        <span class="title">theme</span>
+                        <dl class="left item-links">
+                           <dt class="left all"><a href="#" class="now">Unlimited</a></dt>
+                           <dd class="left eachLink leftA pos_rel showAll">
+                              <i class="showAll-icon"></i>
+                              <div class="clearfix">
+                                 <span><a href="#">King's style laser </a></span>
+                                 <span><a href="#">to freckles </a></span>
+                                 <span><a href="#">wonderful peach prosthesis </a></span>
+                                 <span><a href="#">brilliant 360 laser </a></span>
+                                 <span><a href="#">Q laser spotting </a></span>
+                                 <span><a href="#">Shu Yan hyaluronic acid Feideng </a></span>
+                                 <span><a href="#">laser </a></span>
+                                 <span><a href="#">king style skin rejuvenation </a></span>
+                                 <span><a href="#">moonlight vacuum hair removal </a></span>
+                                 <span><a href="#">imported silica gel </a></span>
+                                 <span><a href="#">Felton second </a></span>
+                                 <span><a href="#">high tex </a></span>
+                                 <span><a href="#">treatment coffee spot </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">Maige prosthesis </a></span>
+                                 <span><a href="#">deep blue RF </a></span>
+                                 <span><a href="#">Yimei Hyaluronic acid felton </a></span>
+                                 <span><a href="#">ice point hair removal </a></span>
+                                 <span><a href="#">freezing point waltz hair removal </a></span>
+                                 <span><a href="#">carbon dioxide laser</a></span>
+                              </div>
+                           </dd>
+                        </dl>
+                     </div>
+                     <div class="item">
+                        <span class="title">More</span>
+                        <div class="left pos-re">
+                           <div class="showMore money">
+                              <span>price range</span>
+                              <div>
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">100 yuan below </a>
+                                 <a href="#">100-1000 yuan </a>
+                                 <a href="#">1000-3000 yuan </a>
+                                 <a href="#">3000-5000 yuan </a>
+                                 <a href="#">5000-10000 yuan </a>
+                                 <a href="#">1-2 million </a>
+                                 <a href="#">yuan more than 20,000 yuan</a>
+                              </div>
+                           </div>
+                           <div class="showMore hos">
+                              <span>Hospital qualification</span>
+                              <div>
+                                 <a href="#">Not limited to </a>
+                                 <a href="#">public </a>
+                                 <a href="#">private</a>
+                              </div>
+                           </div>
+                           <div class="showMore hosHb">
+                              <span>Offer</span>
+                              <div>
+                                 <a href="#">Unlimited </a>
+                                 <a href="#" rel="nofollow">red envelope</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- content-page-mobile -->
+      <div class="content-page-mobile">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <a class="hospital-item" href="#">
+                     <div class="item-img">
+                        <img class="img" src="./uploads/hospital/15142599422305.jpg">
+                     </div>
+                     <div class="item-cont">
+                        <div class="type-icon ">
+                           <span class="icon">v</span>
+                           <span class="text">tư nhân</span>
+                        </div>
+                        <div class="cont-title text-hidden">Bệnh viện thẩm mỹ Bắc Kinh</div>
+                        <div class="level-data">
+                           <div class="xin-box">
+                              <i style="width:100%;"></i>
+                              <p></p>
+                           </div>
+                           <span class="fen">5.0 Sao</span>
+                           <span class="diary-data">30510 người đã đặt</span>
+                        </div>
+                        <div class="cont-text text-hidden">Phòng 1001, 1002, Tòa nhà 2, Quận Triều Dương, Bắc Kinh</div>
+                        <div class="cont-lab">
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">bác sĩ hút mỡ</span>
+                              <span class="lab-text lab-money c-999">￥300</span>
+                           </div>
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">Xóa nếp nhăn</span>
+                              <span class="lab-text lab-money c-999">￥999</span>
+                           </div>
+                        </div>
+                        <div class="server-data">52 dịch vụ</div>
+                     </div>
+                  </a>
+                  <a class="hospital-item " href="#">
+                     <div class="item-img">
+                        <img class="img" src="./uploads/hospital/15142599422305.jpg">
+                     </div>
+                     <div class="item-cont">
+                        <div class="type-icon ">
+                           <span class="icon">v</span>
+                           <span class="text">tư nhân</span>
+                        </div>
+                        <div class="cont-title text-hidden">Bệnh viện thẩm mỹ Bắc Kinh</div>
+                        <div class="level-data">
+                           <div class="xin-box">
+                              <i style="width:100%;"></i>
+                              <p></p>
+                           </div>
+                           <span class="fen">5.0 Sao</span>
+                           <span class="diary-data">30510 người đã đặt</span>
+                        </div>
+                        <div class="cont-text text-hidden">Phòng 1001, 1002, Tòa nhà 2, Quận Triều Dương, Bắc Kinh</div>
+                        <div class="cont-lab">
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">bác sĩ hút mỡ</span>
+                              <span class="lab-text lab-money c-999">￥300</span>
+                           </div>
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">Xóa nếp nhăn</span>
+                              <span class="lab-text lab-money c-999">￥999</span>
+                           </div>
+                        </div>
+                        <div class="server-data">52 dịch vụ</div>
+                     </div>
+                  </a>
+                  <a class="hospital-item " href="#">
+                     <div class="item-img">
+                        <img class="img" src="./uploads/hospital/15142599422305.jpg">
+                     </div>
+                     <div class="item-cont">
+                        <div class="type-icon ">
+                           <span class="icon">v</span>
+                           <span class="text">tư nhân</span>
+                        </div>
+                        <div class="cont-title text-hidden">Bệnh viện thẩm mỹ Bắc Kinh</div>
+                        <div class="level-data">
+                           <div class="xin-box">
+                              <i style="width:100%;"></i>
+                              <p></p>
+                           </div>
+                           <span class="fen">5.0 Sao</span>
+                           <span class="diary-data">30510 người đã đặt</span>
+                        </div>
+                        <div class="cont-text text-hidden">Phòng 1001, 1002, Tòa nhà 2, Quận Triều Dương, Bắc Kinh</div>
+                        <div class="cont-lab">
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">bác sĩ hút mỡ</span>
+                              <span class="lab-text lab-money c-999">￥300</span>
+                           </div>
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">Xóa nếp nhăn</span>
+                              <span class="lab-text lab-money c-999">￥999</span>
+                           </div>
+                        </div>
+                        <div class="server-data">52 dịch vụ</div>
+                     </div>
+                  </a>
+                  <a class="hospital-item " href="#">
+                     <div class="item-img">
+                        <img class="img" src="./uploads/hospital/15142599422305.jpg">
+                     </div>
+                     <div class="item-cont">
+                        <div class="type-icon ">
+                           <span class="icon">v</span>
+                           <span class="text">tư nhân</span>
+                        </div>
+                        <div class="cont-title text-hidden">Bệnh viện thẩm mỹ Bắc Kinh</div>
+                        <div class="level-data">
+                           <div class="xin-box">
+                              <i style="width:100%;"></i>
+                              <p></p>
+                           </div>
+                           <span class="fen">5.0 Sao</span>
+                           <span class="diary-data">30510 người đã đặt</span>
+                        </div>
+                        <div class="cont-text text-hidden">Phòng 1001, 1002, Tòa nhà 2, Quận Triều Dương, Bắc Kinh</div>
+                        <div class="cont-lab">
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">bác sĩ hút mỡ</span>
+                              <span class="lab-text lab-money c-999">￥300</span>
+                           </div>
+                           <div class="lab-list">
+                              <span class="lab-icon gou">GÓi </span>
+                              <span class="lab-text">Xóa nếp nhăn</span>
+                              <span class="lab-text lab-money c-999">￥999</span>
+                           </div>
+                        </div>
+                        <div class="server-data">52 dịch vụ</div>
+                     </div>
+                  </a>
+                  <div class="row group-theS">
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row group-theS">
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row group-theS">
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="theS">
+                           <span class="teyao"><i class="fas fa-medal"></i> Lời mời đặc biệt</span>
+                           <div class="cardImg">
+                              <img src="./uploads/hospital/727729.jpg" alt="">
+                           </div>
+                           <div class="cover"></div>
+                           <div class="cardInfo">
+                              <p class="item1">
+                                 <span class="ft20">Bác sĩ của </span>
+                                 <i>Luo Jialin</i>
+                              </p>
+                              <p class="item2">Phòng khám làm đẹp y tế Yuemei</p>
+                              <p class="item3">
+                                 <span class="left">Chấm điểm<b>4.9</b>điểm</span>
+                                 <span class="right"><i>6280</i>người dùng</span>
+                              </p>
+                              <div class="doc-baby">
+                                 <a href="#" target="_blank"><span class="left">Nếp nhăn mắt Ngôi sao châu Âu 4D ánh sáng quyến rũ Mắt chặt mắt quầng mắt làm mịn nếp nhăn mắt để </span>
+                                 <i class="sale66_icon3">Pro</i>
+                                 <i class="right">￥1940</i></a>
+                                 <a href="#" target="_blank"><span class="left">
+                                 gửi quà tặng 580 nhân dân tệ ❤ Mặt </span>
+                                 <i class="right">￥9800</i></a>
+                              </div>
+                              <a target="_blank" href="#" class="checkMore _yma">Xem thêm <b>5</b> dịch vụ</a>
+                              <div class="goIndex">
+                                 <a href="#" target="_blank" class="_yma">Trang chủ</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 downBtnCont">
+                  <a class="downBtn" href="#">
+                  <span><i class="fas fa-download"></i> Tải xuống ứng dụng</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="navPage-box">
+            <div class="navpage"><span>1</span>
+               <a href="#" rel="nofollow">2</a>
+               <a href="#" rel="nofollow">3</a>
+               <a href="#" rel="nofollow">4</a>
+               <a href="#" rel="nofollow">5</a>
+               <a class="next-page-btn" href="#" rel="nofollow">Trang tiếp</a>
+               <a href="#" rel="nofollow">Trang cuối</a>
+               <span class="all-num">Tổng cộng<i> 53 </i>Trang</span>
+            </div>
+         </div>
+      </div>
+      <!-- content-page -->
+      <div class="content-page">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-xl-10 tab-link-page">
+                  <div >
+                     <ul class="nav nav-pills">
+                        <li class="active">
+                           <a href="#" data-toggle="tab">Sắp xếp</a>
+                        </li>
+                        <li class="">
+                           <a href="#" data-toggle="tab">bán </a>
+                           <i class="fas fa-arrow-down"></i>
+                        </li>
+                        <li class="">
+                           <a href="#" data-toggle="tab">giá </a>
+                           <i class="fas fa-arrow-down"></i>
+                        </li>
+                        <li class="">
+                           <a href="#" data-toggle="tab">mới</a>
+                           <i class="fas fa-arrow-down"></i>
+                        </li>
+                        <li class="">
+                           <i class="far fa-square"></i>
+                           <a href="#" data-toggle="tab">nhật ký</a>
+                        </li>
+                        <li class="">
+                           <i class="far fa-square"></i>
+                           <a href="#" data-toggle="tab">Yue Mei</a>
+                        </li>
+                        <li class="">
+                           <i class="far fa-check-square"></i>
+                           <a href="#" data-toggle="tab">giá trị hàng</a>
+                        </li>
+                        <li class="navlink">
+                           <div class="prevnextpage">
+                              <a href="#"><i class="fas fa-chevron-left"></i></a>
+                              <em>1/53</em>
+                              <a href="#"><i class="fas fa-chevron-right"></i></a>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="tab-content">
+                        <div class="tab-pane tab-list active" id="1b">
+                           <div class="row list-item ">
+                              <div class="col-lg-12 col-xl-5 img-top has-video left">
+                                <div class="left">
+                                  <img src="./uploads/category/nose/180924143600_02b5e8.jpg">
+                                  <div class="icon"></div>
+                                </div>
+                                <div class="right">
+                                  <img src="./uploads/category/nose/190607135042_2674aa.jpg">
+                                  <div class="icon"></div>
+                                </div>
+                                <div class="video-icon"></div>
+                              </div>
+                              <div class="col-lg-12 col-xl-7 img-bottom left">
+                                <div class="left head-img">
+                                  <img src="./uploads/category/nose/07_avatar_50_50.jpg">
+                                </div>
+                                <span class="user-name">Răng rất xấu hổ</span>
+                                <span class="darenIcon icon1"></span>
+                                <div class="img-text">Gần đây tôi thấy mình hơi lười biếng hoặc đang cố cập nhật. Tôi đã đi ra ngoài và tôi đột nhiên nhớ đến việc cập nhật nó trong hai ngày qua. Thời gian tôi đột nhiên nhớ ra là hoàn toàn đúng. Đó là một tháng kể từ lần cập nhật cuối cùng. </div>
+                                <a href="http://spa.thietkeweb-gialai.com/tao.html" class="bought" target="_blank">
+                                    <span class="left"><i></i>Nâng mũi Cấu trúc L-Line · Bệnh viện thẩm mỹ ABC </span>
+                                    <i class="right">8.000.000 vnđ</i>
+                                </a>
+                                <a href="#" class="cover-link _yma" target="_blank"></a>
+                                <div class="img-labs">
+                                <span class="c-999">
+                                        <i># Mỡ tự thân</i>
+                                        <i># Điêu khắc cơ thể béo tự thân </i>
+                                        <i># Nâng ngực</i>
+                                    </span>
+                                    <div class="right c-666">Xem <i class="c-999">5,51 triệu +</i></div>
+                                    <div class="right c-666">Bình luận <i class="c-999">20900</i></div>
+                                    <div class="right c-666">Thích <i class="c-999">161</i></div>
+                              </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-2 ct-right-bar padding-left-0">
+                  <div class="why">
+                     <a href="#" target="_blank"><img src="./uploads/hospital/whyYM.jpg" alt="为什么选择悦美" class="mt15"></a>
+                  </div>
+                  <div class="sales">
+                     <p class="sideTit">Xếp hạng doanh số</p>
+                     <a target="_blank" class="rank-item" href="#">
+                        <span class="babyImg"><img src="./uploads/hospital/jt190425104410_a8a552.jpg"><i class="icon">1</i></span>
+                        <div class="babyInfo">
+                           <p>1111 nhân dân tệ / Chạy Baiyan 3 / kim mặt mỏng 3 / kim nước nhẹ 3 lần / lạnh nhẹ răng đẹp 3 lần bạn chọn giống nhau</p>
+                           <span><i class="pink left">￥1111</i></span>
+                        </div>
+                     </a>
+                     <a target="_blank" class="rank-item" href="#">
+                        <span class="babyImg"><img src="./uploads/hospital/jt190430155547_35106c.jpg"><i class="icon">2</i></span>
+                        <div class="babyInfo">
+                           <p>Thư riêng để gửi món quà trị giá 580 nhân dân tệ ❤ Nữ hoàng trẻ hóa IPL photon làm trắng da nhược điểm để in lỗ chân lông thu nhỏ làm sáng tông màu da</p>
+                           <span><i class="pink left">￥88</i></span>
+                        </div>
+                     </a>
+                     <a target="_blank" class="rank-item" href="#">
+                        <span class="babyImg"><img alt="Thời gian có hạn để mua ❤100 chiếc ❤ Lan Châu Hengli botulinum độc tố mặt mỏng needle kim mỏng mặt ❤ bảo hành chính hãng ❤ hỗ trợ kiểm tra" src="./uploads/hospital/jt190510095318_e7546f.jpg"><i class="icon">3</i></span>
+                        <div class="babyInfo">
+                           <p>限时抢购❤100单位❤兰州衡力肉毒素瘦脸❤瘦脸针❤正品保证❤支持检验</p>
+                           <span><i class="pink left">￥580</i></span>
+                        </div>
+                     </a>
+                     <a target="_blank" class="rank-item" href="#">
+                        <span class="babyImg"><img src="./uploads/hospital/jt190310183934_664956.jpg"><i class="icon">4</i></span>
+                        <div class="babyInfo">
+                           <p>Đi trị mụn đầu đen / làm sạch sâu / dưỡng ẩm mà không làm căng da</p>
+                           <span><i class="pink left">￥11</i></span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="zhuanzhen">
+                     <p>Do sự khác biệt cá nhân, nếu bạn muốn biết cách làm đẹp phù hợp với mình, vui lòng bấm vào đây để được tư vấn ...</p>
+                     <a href="#" target="_blank" rel="nofollow">Tham khảo ý kiến</a>
+                  </div>
+                  <div class="banner-scroll">
+                     <div class="spa-share">
+                        <a class="gg-link">
+                        <img src="./uploads/hospital/share-img_01.jpg" >
+                        </a>
+                        <a href="#" target="_blank"><img src="./uploads/hospital/pei.jpg" ></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="navPage-box">
+            <div class="navpage"><span>1</span>
+               <a href="#" rel="nofollow">2</a>
+               <a href="#" rel="nofollow">3</a>
+               <a href="#" rel="nofollow">4</a>
+               <a href="#" rel="nofollow">5</a>
+               <a class="next-page-btn" href="#" rel="nofollow">Trang tiếp</a>
+               <a href="#" rel="nofollow">Trang cuối</a>
+               <span class="all-num">Tổng cộng<i> 53 </i>Trang</span>
+            </div>
+         </div>
+      </div>
+      <!-- footer mobile -->
+      <div class="footer-mobile">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12 open-app">
+                  <div class="yuemei">
+                     <div>APP</div>
+                     <p>Dẫn đầu về dịch vụ làm đẹp</p>
+                  </div>
+                  <div class="app-text">
+                     <a href="#" class="s_app_hide">Tải <i>APP</i> Về điện thoại</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer -->
+      <div class="footer-app-wrap">
+         <div class="container wrap-main app-main">
+            <div class="left">
+               <a href="#" target="_blank" class="app-logo left">
+               <img src="./uploads/hospital/yuemei-icon.png" alt="">
+               </a>
+               <span class="left down-txt">Đăng ký phiếu Giảm Giá <i class="money">2.000.000 VND</i></span>
+            </div>
+            <div class="right code-box">
+               <a href="#" class="code-btn">Quét Mã Code</a>
+               <div class="show-code" style="display: none;">
+                  <img src="./uploads/hospital/yuemei-code-img.jpg" alt="">
+                  <p>Tải mã</p>
+                  <div class="show-jiao"></div>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+         </div>
+      </div>
+      <!-- footer absolute -->
+      <div class="footer-wrap">
+         <div class="container wrap-main ">
+            <div class="row">
+               <div class="col-md-2">
+                  <div class="data-tit">Về chúng tôi</div>
+                  <div class="data-txt"><a href="#">Về Yuemei</a></div>
+                  <div class="data-txt"><a rel="nofollow" href="#" target="_blank">Tham gia với chúng tôi</a></div>
+                  <div class="data-txt"><a href="#">Liên lạc với chúng tôi</a></div>
+                  <div class="data-txt"><a href="#">Tuyên bố bản quyền</a></div>
+                  <div class="data-txt"><a href="#">Trung tâm trợ giúp</a></div>
+                  <div class="data-txt"><a href="#">Báo cáo phản hồi</a></div>
+               </div>
+               <div class="col-md-2">
+                  <div class="data-tit">Truy cập nhanh</div>
+                  <div class="data-txt"><a href="#">Phẫu thuật thẩm mỹ Amoy</a></div>
+                  <div class="data-txt"><a href="#">Cộng đồng</a></div>
+                  <div class="data-txt"><a href="#">Nhật ký nổi bật</a></div>
+                  <div class="data-txt"><a href="#">Bác sĩ</a> / <a href="#">bệnh viện</a></div>
+                  <div class="data-txt"><a href="#">Dự án</a></div>
+                  <div class="data-txt"><a href="#">Vẻ đẹp y tế</a></div>
+                  <div class="data-txt"><a href="#">Thông tin nhựa</a></div>
+               </div>
+               <div class="col-md-2">
+                  <div class="data-tit">Đối tác chiến lược</div>
+                  <div class="data-txt">Thượng Hải Jiuyuan</div>
+                  <div class="data-txt">Bệnh viện phẫu thuật thẩm mỹ Xijing</div>
+                  <div class="data-txt">Bệnh viện phẫu thuật thẩm mỹ miền Nam</div>
+                  <div class="data-txt">Bệnh viện Đại học Y Liên minh Bắc Kinh</div>
+                  <div class="data-txt">Hiệp hội bác sĩ y khoa trung quốc</div>
+                  <div class="data-txt">Hiệp hội y tế Trung Quốc toàn chi nhánh</div>
+                  <div class="data-txt">Bệnh viện Tây Nam</div>
+               </div>
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="data-tit">Điện Thoại</div>
+                        <div class="phone-number">400-056-7118</div>
+                        <div class="work-time">Time：9:00-21:00</div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="data-tit">Ứng Dụng</div>
+                        <div class="data-txt">Link ứng dung</div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="left wei-xin-box">
+                           <img src="./uploads/hospital/weixin-img.jpg" alt="">
+                           <div class="wei-xin-txt">APP IOS</div>
+                        </div>
+                        <div class="left wei-xin-box">
+                           <img src="./uploads/hospital/huajiao-code-img.jpg?v=1123" alt="">
+                           <div class="wei-xin-txt">APP Adroid</div>
+                        </div>
+                        <div class="clearfix"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer copyright -->
+      <div class="copy-right-wrap">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 wrap-main">
+                  <div class="copy-right-txt">
+                     Copyright © Spa@ 2019. All Rights Reserved.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
+   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="./js/fontawesome.min.js"></script>
+   <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+   <script type="text/javascript" src="./js/spa-home.js"></script>
+</html>
