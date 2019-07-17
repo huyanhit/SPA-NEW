@@ -3,103 +3,217 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome.min.css">
     <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/jquery.jscrollpane.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin-style.css">
   </head>
 
   <body>
     <div class="page-content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-2">
-              <div class="title">
-                Lorem ipsum
+            <div class="col-md-3">
+              <div class="menu-padding scroll-pane">
+                <div class="menu-title">
+                  Lorem ipsum
+                </div>
+                <ul class="menu">
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem incididunt ut </span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem incididunt ut </span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem incididunt ut </span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
+                  <li><i class="fab fa-accusoft"></i><span>Lorem ut ipsum</span> </li>
+                </ul>
               </div>
-              <ul class="menu">
-                <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
-                <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
-                <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
-                <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
-                <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
-                <li><i class="fab fa-accusoft"></i><span>Lorem ipsum</span> </li>
-              </ul>
             </div>
-            <div class="col-md-10">
-              <div class="row header">
-                <div class="col-md-4">
-                  <div class="title">Post Manager</div>
-                </div>
-                <div class="col-md-8">
-                  <div class="tool-option">
-                      <span class="stats"><i class="fas fa-search"></i> Stats</span>
-                      <span class="notice"><i class="fas fa-search"></i> Notifications <i class="fas fa-caret-down"></i></span>
-                      <span class="logout"><i class="fas fa-search"></i> Logout</span>
+            <div class="col-md-9">
+              <div class="content-page">
+                <div class="header">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="title">Post Manager</div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="tool-option">
+                          <span class="stats"><i class="fas fa-search"></i> Stats</span>
+                          <span class="notice"><i class="fas fa-search"></i> Notifications <i class="fas fa-caret-down"></i></span>
+                          <span class="logout"><i class="fas fa-search"></i> Logout</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="content">
-                <div class="top">
-                  <div class="top-title">
-                    <h3>Post List</h3>
-                    <div class="scription">The page show all and some tools for post manager</div>
+                <div class="content">
+                  <div class="top">
+                    <div class="top-title">
+                      <h5>Post List</h5>
+                      <div class="scription">The page show all and some tools for post manager</div>
+                    </div>
+                    <div class="top-option">
+                      <span class="filter"><i class="fas fa-search"></i> Filter</span>
+                      <span class="add-post"><i class="fas fa-plus"></i>Add post</span>
+                    </div>
                   </div>
-                  <div class="top-option">
-                    <span class="filter"><i class="fas fa-search"></i> Filter</span>
-                    <span class="add-post"><i class="fas fa-plus"></i>Add post</span>
+                  <div class="table-content  scroll-pane">
+                    <table class="table ">
+                      <thead class="">
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Post Title</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Category</th>
+                          <th scope="col">User</th>
+                          <th scope="col">Option</th>
+                        </tr>
+                      </thead>
+                      <tbody class="">
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">123</th>
+                          <td>Lorem ipsum dolor sit amet</td>
+                          <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
+                          <td>incididunt</td>
+                          <td>labore</td>
+                          <td>
+                            <span class="edit"><i class="fas fa-pen"></i></span>
+                            <span class="delete"><i class="fas fa-times"></i></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
-                <table class="table">
-                  <thead class="">
-                    <tr>
-                      <th scope="col">ID</th>
-                      <th scope="col">Post Title</th>
-                      <th scope="col">Description</th>
-                      <th scope="col">Category</th>
-                      <th scope="col">User</th>
-                      <th scope="col">Option</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">123</th>
-                      <td>Lorem ipsum dolor sit amet</td>
-                      <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
-                      <td>incididunt</td>
-                      <td>labore</td>
-                      <td>
-                        <span><i class="fas fa-pen"></i></span>
-                        <span><i class="fas fa-times"></i></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">123</th>
-                      <td>Lorem ipsum dolor sit amet</td>
-                      <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
-                      <td>incididunt</td>
-                      <td>labore</td>
-                      <td>
-                        <span><i class="fas fa-pen"></i></span>
-                        <span><i class="fas fa-times"></i></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">123</th>
-                      <td>Lorem ipsum dolor sit amet</td>
-                      <td>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</td>
-                      <td>incididunt</td>
-                      <td>labore</td>
-                      <td>
-                        <span><i class="fas fa-pen"></i></span>
-                        <span><i class="fas fa-times"></i></span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
           </div>
@@ -109,7 +223,17 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.simplyscroll.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="../js/jquery.jscrollpane.min.js"></script>
     <script type="text/javascript" src="../js/fontawesome.min.js"></script>
     <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+      $(function()
+      {
+          $('.scroll-pane').jScrollPane();
+      });
+    </script>
   </body>
 </html>

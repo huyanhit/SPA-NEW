@@ -1,0 +1,64 @@
+body {
+	background: #007bff;
+}
+body .content-login{
+    text-align: center;
+}
+.form-login{
+	max-width: 400px;
+    margin: auto;
+    margin-top: 20%;
+    padding: 20px;
+}
+
+.form-login input{
+	border-radius: 50px;
+    height: 45px;
+    padding-left: 40px;
+    color: #999;
+    font-weight: 600;
+}
+.form-login .form-group{
+	position: relative;
+    margin-bottom: 10px;
+}
+
+.form-login .form-group i{
+	position: absolute;
+    left: 20px;
+    top: 16px;
+    font-size: 14px;
+    color: #999;
+}
+.form-login .title h3{
+	margin-top: 10px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.form-login button{
+    width: 100%;
+    border-radius: 50px;
+    height: 45px;
+    font-weight: bold;
+    background: #333;
+    margin-top: 10px;
+}
+.form-login .forget-pass{
+    color: #fff;
+    margin-top: 25px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-login .forget-pass:hover{
+    color: #fff;
+    margin-top: 25px;
+    display: inline-block;
+    text-decoration: none;
+}
+.logo{
+
+}
+.logo img{
+	width: 100px;
+}
