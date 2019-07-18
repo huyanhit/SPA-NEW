@@ -57,7 +57,7 @@ body{
 }
 .page-content .menu-padding{
     max-width: 350px;
-    min-width: 300px;
+    min-width: 250px;
     float: right;
     background: #fff;
     overflow-y: scroll;
@@ -289,7 +289,7 @@ body{
 	.icon-response{
 		display: inline-block;
 	    position: absolute;
-	    right: 11px;
+	    right: 25px;
 	    top: 5px;
 	    border: 1px #6c757d solid;
 	    width: 25px;
@@ -299,5 +299,17 @@ body{
 	    background: #fff;
 	    color: #004085;
 	    z-index: 1000;
+	}
+
+	.row > div{
+		padding: 0;
+	}
+}
+@media (min-width: 992px) and (max-width: 1024px){
+	.row > div{
+		padding: 0;
+	}
+	.content-page .header:after {
+	    left: 0;
 	}
 }
