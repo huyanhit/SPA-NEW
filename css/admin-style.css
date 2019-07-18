@@ -17,6 +17,9 @@ body{
     font-size: 14px;
 }
 
+.text-center{
+	text-align: center;
+}
 .page-content .menu-title{
 	font-size: 20px;
     color: #999;
@@ -31,12 +34,17 @@ body{
     color: #999;
     text-transform: uppercase;
     font-size: 14px;
-    padding-right: 30px;
-    margin-top: 20px;
-    padding-left: 15px;
+}
+.menu li:nth-child(odd)
+{
+    background: #f7f7f7;
+}
+.menu li:hover
+{
+    background: #eee;
 }
 .menu li{
-    padding: 10px 0;
+    padding: 10px 15px;
 }
 .menu li i{
     margin-right: 10px;
@@ -45,17 +53,18 @@ body{
     top: 3px;
 }
 .page-content{
-    background: #f7f7f7;
+    background: #eee;
 }
 .page-content .menu-padding{
-    max-width: 300px;
+    max-width: 350px;
+    min-width: 300px;
     float: right;
     background: #fff;
     overflow-y: scroll;
     height: 800px;
 }
 .content-page{
-	background: #f7f7f7;
+	background: #eee;
     padding: 15px 0;
 
 }
@@ -89,15 +98,16 @@ body{
     padding-left: 20px;
 }
 .content-page .content {
-    margin: 30px 40px;
+    margin: 30px;
     background: #fff;
     display: inline-block;
 }
+
 .table-content{
 	height: 500px;
     overflow-y: scroll;
     border-bottom: 1px #ccc solid;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
 }
 .content .top{
     padding: 20px;
@@ -112,15 +122,24 @@ body{
 .top-option{
 	text-align: right;
 }
+.input-option{
+	position: relative;
+}
+.input-option .i-filter{
+	position: absolute;
+    left: 15px;
+    top: 2px;
+}
 .top-option .filter{
     margin-right: 15px;
-    border: 1px #b3d7ff solid;
+    border: 2px #b3d7ff solid;
     padding: 10px 20px;
     border-radius: 27px;
     color: #b3d7ff;
+    padding-left: 40px;
 }
 .top-option .add-post{
-    border: 1px #dc3545 solid;
+    border: 2px #dc3545 solid;
     padding: 10px 20px;
     border-radius: 27px;
     color: #dc3545;
@@ -141,13 +160,22 @@ body{
 }
 .table td, .table th {
     font-size: 16px;
+    vertical-align: middle;
+}
+.table tr:nth-child(odd)
+{
+    background: #f7f7f7;
+}
+.table tr:hover
+{
+    background: #eee;
 }
 .table .edit{
 	border: 2px #b3d7ff solid;
     border-radius: 50px;
-    height: 30px;
-    width: 30px;
-    line-height: 28px;
+       height: 25px;
+    width: 35px;
+    line-height: 22px;
     text-align: center;
     display: inline-block;
     color: #b3d7ff;
@@ -156,17 +184,21 @@ body{
 .table .delete{
 	border: 2px #dc3545 solid;
     border-radius: 50px;
-    height: 30px;
-    width: 30px;
-    line-height: 28px;
+        height: 25px;
+    width: 35px;
+    line-height: 22px;
     text-align: center;
     display: inline-block;
     color: #dc3545;
     font-size: 12px;
+    margin-top: 5px;
 }
 .content .pagination{
 	float: right;
 	margin-bottom: 5px;
     margin-right: 20px;
     border: 1px #ccc solid;
+}
+.table thead th.th-option{
+	min-width: 120px;
 }
