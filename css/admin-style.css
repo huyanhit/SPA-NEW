@@ -64,7 +64,7 @@ body{
     height: 800px;
 }
 .content-page{
-	background: #eee;
+	background: #f7f7f7;
     padding: 15px 0;
 
 }
@@ -101,6 +101,7 @@ body{
     margin: 30px;
     background: #fff;
     display: inline-block;
+    border: 1px #eee solid;
 }
 
 .table-content{
