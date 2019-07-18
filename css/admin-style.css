@@ -121,6 +121,7 @@ body{
 }
 .top-option{
 	text-align: right;
+    margin-top: 15px;
 }
 .input-option{
 	position: relative;
@@ -131,18 +132,23 @@ body{
     top: 2px;
 }
 .top-option .filter{
-    margin-right: 15px;
+    
     border: 2px #b3d7ff solid;
     padding: 10px 20px;
     border-radius: 27px;
     color: #b3d7ff;
     padding-left: 40px;
+    display: inline-block;
+    margin-top: 10px;
 }
 .top-option .add-post{
     border: 2px #dc3545 solid;
     padding: 10px 20px;
     border-radius: 27px;
     color: #dc3545;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 15px;
 }
 .top-option .filter i{
     padding-right: 5px;
@@ -196,9 +202,101 @@ body{
 .content .pagination{
 	float: right;
 	margin-bottom: 5px;
-    margin-right: 20px;
-    border: 1px #ccc solid;
+    margin-right: 5px;
 }
 .table thead th.th-option{
 	min-width: 120px;
+}
+.response{
+	display: none;
+}
+.icon-response{
+	display: none;
+}
+@media only screen and (max-width: 992px) {
+	.table thead{
+		display: none;
+	}
+	.table td, .table th {
+	    font-size: 16px;
+	    vertical-align: middle;
+	    display: inline-block;
+	    width: 100%;
+    	text-align: left !important;
+
+	}
+	.response{
+		display: inline-block;
+	    float: left;
+	    font-weight: bold;
+	    margin-right: 10px;
+	}
+	.response:after{
+		content: ":"
+	}
+
+	.table   .edit {
+		float: right;
+	    position: absolute;
+	    right: 70px;
+	    margin-top: 0;
+	    width: 50px;
+	    height: 30px;
+	    line-height: 27px;
+	    font-size: 20px;
+	    background: #fff;
+	}
+	.table .delete{
+	   float: right;
+	    right: 70px;
+	    margin-top: 0;
+	    width: 50px;
+	    height: 30px;
+	    line-height: 27px;
+	    font-size: 20px;
+	    background: #fff;
+	}
+
+	.table tr{
+		position: relative;
+	}
+
+	.content-page .content {
+		margin: 0;
+	}
+	.content-page .header:after {
+	    left: 0;
+	}
+	.content-page .header .title {
+	    text-align: center;
+	}
+	.tool-option {
+    	text-align: center;
+	}
+	.page-content .menu-padding {
+		max-width: unset;
+		width: 100%;
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    z-index: 10;
+	    display: none;
+	}
+	.page-content .menu-padding.active{
+ 		display: block;
+	}
+	.icon-response{
+		display: inline-block;
+	    position: absolute;
+	    right: 11px;
+	    top: 5px;
+	    border: 1px #6c757d solid;
+	    width: 25px;
+	    height: 25px;
+	    text-align: center;
+	    line-height: 25px;
+	    background: #fff;
+	    color: #004085;
+	    z-index: 1000;
+	}
 }
