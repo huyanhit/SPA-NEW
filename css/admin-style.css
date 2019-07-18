@@ -289,7 +289,7 @@ body{
 	.icon-response{
 		display: inline-block;
 	    position: absolute;
-	    right: 25px;
+	    right: 15px;
 	    top: 5px;
 	    border: 1px #6c757d solid;
 	    width: 25px;
@@ -301,15 +301,25 @@ body{
 	    z-index: 1000;
 	}
 
-	.row > div{
+	.row > div,.container-fluid{
 		padding: 0;
+	}
+	.row{
+		margin: 0;
 	}
 }
 @media (min-width: 992px) and (max-width: 1024px){
-	.row > div{
+	.row > div,.container-fluid{
 		padding: 0;
+	}
+	.row{
+		margin: 0;
 	}
 	.content-page .header:after {
 	    left: 0;
+	}
+	.content-page .content {
+	    margin: 5px;
+	    margin-top: -15px;
 	}
 }
