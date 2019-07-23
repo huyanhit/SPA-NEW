@@ -62,8 +62,11 @@ body{
     min-width: 250px;
     float: right;
     background: #fff;
+    border: 1px #eee solid;
+}
+.page-content .menu-padding .menu-scroll{
     overflow-y: scroll;
-    max-height: 800px;
+    max-height: calc(100vh - 130px);
 }
 .content-page{
 	background: #f7f7f7;
@@ -82,7 +85,6 @@ body{
     background: #c1c1c1;
     display: inline-block;
     position: absolute;
-    left: -30px;
     bottom: -1px;
 }
 .content-page .header .title{
@@ -100,20 +102,19 @@ body{
     padding-left: 20px;
 }
 .content-page .content {
-    margin: 30px;
     background: #fff;
     display: inline-block;
     border: 1px #eee solid;
 }
 
 .table-content{
-	max-height: 500px;
+	max-height: calc(100vh - 260px);
     overflow-y: scroll;
     border-bottom: 1px #ccc solid;
     margin-bottom: 8px;
 }
 .content .top{
-    padding: 20px;
+    padding: 10px 20px;
 }
 .top-title h5{
     margin-bottom: 0;
@@ -135,18 +136,17 @@ body{
     top: 2px;
 }
 .top-option .filter{
-    
     border: 2px #b3d7ff solid;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 27px;
     color: #b3d7ff;
     padding-left: 40px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .top-option .add-post{
     border: 2px #dc3545 solid;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 27px;
     color: #dc3545;
     display: inline-block;
@@ -163,12 +163,13 @@ body{
 }
 .table thead th {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     min-width: 90px;
     text-align: center;
 }
 .table td, .table th {
-    font-size: 16px;
+	padding: 5px;
+    font-size: 14px;
     vertical-align: middle;
 }
 .table tr:nth-child(odd)
@@ -182,7 +183,7 @@ body{
 .table .edit{
 	border: 2px #b3d7ff solid;
     border-radius: 50px;
-       height: 25px;
+    height: 25px;
     width: 35px;
     line-height: 22px;
     text-align: center;
@@ -217,7 +218,7 @@ body{
 	display: none;
 }
 .footer{
-	height: 100px;
+	height: 40px;
 }
 @media only screen and (max-width: 992px) {
 	.table thead{
@@ -326,6 +327,14 @@ body{
 	.content-page .content {
 	    margin: 5px;
 	    margin-top: -15px;
+	}
+	.content-page .content {
+	    margin: 0;
+	}
+}
+@media only screen and (max-width: 1333px){
+	.content-page .content {
+	    margin: 0px;
 	}
 }
 @media only screen and (min-width: 1024px){
