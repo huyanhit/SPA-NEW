@@ -18,6 +18,10 @@ body{
     margin: 0px;
 }
 
+.menu-col{
+	background: #fff;
+    padding: 0;
+}
 .text-center{
 	text-align: center;
 }
@@ -25,9 +29,9 @@ body{
 	font-size: 20px;
     color: #999;
     padding: 20px 0;
-    border-bottom: 1px #ccc solid;
     text-transform: uppercase;
     padding-left: 15px;
+    border-bottom: 1px #ccc solid
 }
 .menu{
 	list-style: none;
@@ -36,16 +40,13 @@ body{
     text-transform: uppercase;
     font-size: 14px;
 }
-.menu li:nth-child(odd)
-{
-    background: #f7f7f7;
-}
 .menu li:hover
 {
     background: #eee;
 }
 .menu li{
     padding: 10px 15px;
+
 }
 .menu li i{
     margin-right: 10px;
@@ -62,16 +63,15 @@ body{
     min-width: 250px;
     float: right;
     background: #fff;
-    border: 1px #eee solid;
 }
 .page-content .menu-padding .menu-scroll{
     overflow-y: scroll;
-    max-height: calc(100vh - 130px);
+    max-height: calc(100vh - 125px);
 }
 .content-page{
 	background: #f7f7f7;
     padding: 15px 0;
-
+    padding-left: 15px;
 }
 .content-page .header{
     margin-bottom: 20px;
@@ -88,7 +88,7 @@ body{
     bottom: -1px;
 }
 .content-page .header .title{
-    padding: 10px 30px;
+    padding: 10px 0px;
     font-size: 16px;
     font-weight: 600;
     color: #999;
@@ -105,13 +105,13 @@ body{
     background: #fff;
     display: inline-block;
     border: 1px #eee solid;
+    width: 100%;
 }
 
 .table-content{
 	max-height: calc(100vh - 260px);
     overflow-y: scroll;
     border-bottom: 1px #ccc solid;
-    margin-bottom: 8px;
 }
 .content .top{
     padding: 10px 20px;
@@ -168,7 +168,7 @@ body{
     text-align: center;
 }
 .table td, .table th {
-	padding: 5px;
+	padding: 7px;
     font-size: 14px;
     vertical-align: middle;
 }
@@ -219,6 +219,8 @@ body{
 }
 .footer{
 	height: 40px;
+    padding-top: 10px;
+    background: #f7f7f7;
 }
 @media only screen and (max-width: 992px) {
 	.table thead{
